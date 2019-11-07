@@ -1,0 +1,150 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F887 ]
+[d frameptr 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"41 D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"78
+[v _zero zero `(v  1 e 1 0 ]
+"82
+[v _one one `(v  1 e 1 0 ]
+"86
+[v _two two `(v  1 e 1 0 ]
+"90
+[v _three three `(v  1 e 1 0 ]
+"94
+[v _four four `(v  1 e 1 0 ]
+"98
+[v _five five `(v  1 e 1 0 ]
+"102
+[v _six six `(v  1 e 1 0 ]
+"107
+[v _seven seven `(v  1 e 1 0 ]
+"111
+[v _eight eight `(v  1 e 1 0 ]
+"116
+[v _nine nine `(v  1 e 1 0 ]
+"126
+[v _Timer_Delay Timer_Delay `(v  1 e 1 0 ]
+[s S48 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+`uc 1 RA6 1 0 :1:6 
+`uc 1 RA7 1 0 :1:7 
+]
+"183 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f887.h
+[u S57 . 1 `S48 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES57  1 e 1 @5 ]
+"290
+[v _PORTC PORTC `VEuc  1 e 1 @7 ]
+[s S117 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+]
+"553
+[u S125 . 1 `S117 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES125  1 e 1 @12 ]
+"657
+[v _TMR1L TMR1L `VEuc  1 e 1 @14 ]
+"664
+[v _TMR1H TMR1H `VEuc  1 e 1 @15 ]
+"671
+[v _T1CON T1CON `VEuc  1 e 1 @16 ]
+[s S26 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+`uc 1 TRISA6 1 0 :1:6 
+`uc 1 TRISA7 1 0 :1:7 
+]
+"1433
+[u S35 . 1 `S26 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES35  1 e 1 @133 ]
+"1540
+[v _TRISC TRISC `VEuc  1 e 1 @135 ]
+"1702
+[v _PIE1 PIE1 `VEuc  1 e 1 @140 ]
+"1862
+[v _OSCCON OSCCON `VEuc  1 e 1 @143 ]
+"3387
+[v _ANSEL ANSEL `VEuc  1 e 1 @392 ]
+"3449
+[v _ANSELH ANSELH `VEuc  1 e 1 @393 ]
+"41 D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"77
+} 0
+"78
+[v _zero zero `(v  1 e 1 0 ]
+{
+"81
+} 0
+"86
+[v _two two `(v  1 e 1 0 ]
+{
+"89
+} 0
+"90
+[v _three three `(v  1 e 1 0 ]
+{
+"93
+} 0
+"102
+[v _six six `(v  1 e 1 0 ]
+{
+"105
+} 0
+"107
+[v _seven seven `(v  1 e 1 0 ]
+{
+"110
+} 0
+"82
+[v _one one `(v  1 e 1 0 ]
+{
+"85
+} 0
+"116
+[v _nine nine `(v  1 e 1 0 ]
+{
+"119
+} 0
+"94
+[v _four four `(v  1 e 1 0 ]
+{
+"97
+} 0
+"98
+[v _five five `(v  1 e 1 0 ]
+{
+"101
+} 0
+"111
+[v _eight eight `(v  1 e 1 0 ]
+{
+"114
+} 0
+"126
+[v _Timer_Delay Timer_Delay `(v  1 e 1 0 ]
+{
+"135
+} 0

@@ -1,0 +1,1211 @@
+
+
+Microchip MPLAB XC8 Assembler V2.10 build 88905656 
+                                                                                               Wed Oct 09 11:40:43 2019
+
+Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1 
+     1                           	processor	16F887
+     2                           	opt	pw 120
+     3                           	opt	flic
+     4                           	psect	cinit,global,class=CODE,merge=1,delta=2
+     5                           	psect	cstackCOMMON,global,class=COMMON,space=1,delta=1
+     6                           	psect	maintext,global,class=CODE,split=1,delta=2
+     7                           	psect	text1,local,class=CODE,merge=1,delta=2
+     8                           	psect	text2,local,class=CODE,merge=1,delta=2
+     9                           	psect	text3,local,class=CODE,merge=1,delta=2
+    10                           	psect	text4,local,class=CODE,merge=1,delta=2
+    11                           	psect	text5,local,class=CODE,merge=1,delta=2
+    12                           	psect	text6,local,class=CODE,merge=1,delta=2
+    13                           	dabs	1,0x7E,2
+    14  0000                     
+    15                           ; Version 2.10
+    16                           ; Generated 31/07/2019 GMT
+    17                           ; 
+    18                           ; Copyright © 2019, Microchip Technology Inc. and its subsidiaries ("Microchip")
+    19                           ; All rights reserved.
+    20                           ; 
+    21                           ; This software is developed by Microchip Technology Inc. and its subsidiaries ("Microch
+      +                          ip").
+    22                           ; 
+    23                           ; Redistribution and use in source and binary forms, with or without modification, are
+    24                           ; permitted provided that the following conditions are met:
+    25                           ; 
+    26                           ;     1. Redistributions of source code must retain the above copyright notice, this lis
+      +                          t of
+    27                           ;        conditions and the following disclaimer.
+    28                           ; 
+    29                           ;     2. Redistributions in binary form must reproduce the above copyright notice, this 
+      +                          list
+    30                           ;        of conditions and the following disclaimer in the documentation and/or other
+    31                           ;        materials provided with the distribution.
+    32                           ; 
+    33                           ;     3. Microchip's name may not be used to endorse or promote products derived from th
+      +                          is
+    34                           ;        software without specific prior written permission.
+    35                           ; 
+    36                           ; THIS SOFTWARE IS PROVIDED BY MICROCHIP "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES,
+    37                           ; INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS F
+      +                          OR
+    38                           ; PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL MICROCHIP BE LIABLE FOR ANY DIRECT, INDIREC
+      +                          T,
+    39                           ; INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING BUT NOT LIMITED TO
+    40                           ; PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA OR PROFITS; OR BUSINESS
+    41                           ; INTERRUPTION) HOWSOEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, ST
+      +                          RICT
+    42                           ; LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE U
+      +                          SE OF
+    43                           ; THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+    44                           ; 
+    45                           ; 
+    46                           ; Code-generator required, PIC16F887 Definitions
+    47                           ; 
+    48                           ; SFR Addresses
+    49  0000                     	;# 
+    50  0001                     	;# 
+    51  0002                     	;# 
+    52  0003                     	;# 
+    53  0004                     	;# 
+    54  0005                     	;# 
+    55  0006                     	;# 
+    56  0007                     	;# 
+    57  0008                     	;# 
+    58  0009                     	;# 
+    59  000A                     	;# 
+    60  000B                     	;# 
+    61  000C                     	;# 
+    62  000D                     	;# 
+    63  000E                     	;# 
+    64  000E                     	;# 
+    65  000F                     	;# 
+    66  0010                     	;# 
+    67  0011                     	;# 
+    68  0012                     	;# 
+    69  0013                     	;# 
+    70  0014                     	;# 
+    71  0015                     	;# 
+    72  0015                     	;# 
+    73  0016                     	;# 
+    74  0017                     	;# 
+    75  0018                     	;# 
+    76  0019                     	;# 
+    77  001A                     	;# 
+    78  001B                     	;# 
+    79  001B                     	;# 
+    80  001C                     	;# 
+    81  001D                     	;# 
+    82  001E                     	;# 
+    83  001F                     	;# 
+    84  0081                     	;# 
+    85  0085                     	;# 
+    86  0086                     	;# 
+    87  0087                     	;# 
+    88  0088                     	;# 
+    89  0089                     	;# 
+    90  008C                     	;# 
+    91  008D                     	;# 
+    92  008E                     	;# 
+    93  008F                     	;# 
+    94  0090                     	;# 
+    95  0091                     	;# 
+    96  0092                     	;# 
+    97  0093                     	;# 
+    98  0093                     	;# 
+    99  0093                     	;# 
+   100  0094                     	;# 
+   101  0095                     	;# 
+   102  0096                     	;# 
+   103  0097                     	;# 
+   104  0098                     	;# 
+   105  0099                     	;# 
+   106  009A                     	;# 
+   107  009B                     	;# 
+   108  009C                     	;# 
+   109  009D                     	;# 
+   110  009E                     	;# 
+   111  009F                     	;# 
+   112  0105                     	;# 
+   113  0107                     	;# 
+   114  0108                     	;# 
+   115  0109                     	;# 
+   116  010C                     	;# 
+   117  010C                     	;# 
+   118  010D                     	;# 
+   119  010E                     	;# 
+   120  010F                     	;# 
+   121  0185                     	;# 
+   122  0187                     	;# 
+   123  0188                     	;# 
+   124  0189                     	;# 
+   125  018C                     	;# 
+   126  018D                     	;# 
+   127  0000                     	;# 
+   128  0001                     	;# 
+   129  0002                     	;# 
+   130  0003                     	;# 
+   131  0004                     	;# 
+   132  0005                     	;# 
+   133  0006                     	;# 
+   134  0007                     	;# 
+   135  0008                     	;# 
+   136  0009                     	;# 
+   137  000A                     	;# 
+   138  000B                     	;# 
+   139  000C                     	;# 
+   140  000D                     	;# 
+   141  000E                     	;# 
+   142  000E                     	;# 
+   143  000F                     	;# 
+   144  0010                     	;# 
+   145  0011                     	;# 
+   146  0012                     	;# 
+   147  0013                     	;# 
+   148  0014                     	;# 
+   149  0015                     	;# 
+   150  0015                     	;# 
+   151  0016                     	;# 
+   152  0017                     	;# 
+   153  0018                     	;# 
+   154  0019                     	;# 
+   155  001A                     	;# 
+   156  001B                     	;# 
+   157  001B                     	;# 
+   158  001C                     	;# 
+   159  001D                     	;# 
+   160  001E                     	;# 
+   161  001F                     	;# 
+   162  0081                     	;# 
+   163  0085                     	;# 
+   164  0086                     	;# 
+   165  0087                     	;# 
+   166  0088                     	;# 
+   167  0089                     	;# 
+   168  008C                     	;# 
+   169  008D                     	;# 
+   170  008E                     	;# 
+   171  008F                     	;# 
+   172  0090                     	;# 
+   173  0091                     	;# 
+   174  0092                     	;# 
+   175  0093                     	;# 
+   176  0093                     	;# 
+   177  0093                     	;# 
+   178  0094                     	;# 
+   179  0095                     	;# 
+   180  0096                     	;# 
+   181  0097                     	;# 
+   182  0098                     	;# 
+   183  0099                     	;# 
+   184  009A                     	;# 
+   185  009B                     	;# 
+   186  009C                     	;# 
+   187  009D                     	;# 
+   188  009E                     	;# 
+   189  009F                     	;# 
+   190  0105                     	;# 
+   191  0107                     	;# 
+   192  0108                     	;# 
+   193  0109                     	;# 
+   194  010C                     	;# 
+   195  010C                     	;# 
+   196  010D                     	;# 
+   197  010E                     	;# 
+   198  010F                     	;# 
+   199  0185                     	;# 
+   200  0187                     	;# 
+   201  0188                     	;# 
+   202  0189                     	;# 
+   203  018C                     	;# 
+   204  018D                     	;# 
+   205  000C                     _PIR1bits	set	12
+   206  0010                     _T1CON	set	16
+   207  000F                     _TMR1H	set	15
+   208  000E                     _TMR1L	set	14
+   209  0009                     _PORTE	set	9
+   210  0007                     _PORTC	set	7
+   211  008C                     _PIE1	set	140
+   212  0089                     _TRISE	set	137
+   213  0087                     _TRISC	set	135
+   214  008F                     _OSCCON	set	143
+   215  0189                     _ANSELH	set	393
+   216  0188                     _ANSEL	set	392
+   217                           
+   218                           ; #config settings
+   219  0000                     
+   220                           	psect	cinit
+   221  07FC                     start_initialization:	
+   222  07FC                     __initialization:	
+   223  07FC                     end_of_initialization:	
+   224                           ;End of C runtime variable initialization code
+   225                           
+   226  07FC                     __end_of__initialization:	
+   227  07FC  0183               	clrf	3
+   228  07FD  120A  118A  2EE2   	ljmp	_main	;jump to C main() function
+   229                           
+   230                           	psect	cstackCOMMON
+   231  0070                     __pcstackCOMMON:	
+   232  0070                     ?_Secuence_One:	
+   233  0070                     ?_Secuence_Two:	
+   234                           ; 1 bytes @ 0x0
+   235                           
+   236  0070                     ?_Secuence_Three:	
+   237                           ; 1 bytes @ 0x0
+   238                           
+   239  0070                     ?_Secuence_Four:	
+   240                           ; 1 bytes @ 0x0
+   241                           
+   242  0070                     ?_Secuence_Five:	
+   243                           ; 1 bytes @ 0x0
+   244                           
+   245  0070                     ?_main:	
+   246                           ; 1 bytes @ 0x0
+   247                           
+   248  0070                     ?_Timer_Delay:	
+   249                           ; 1 bytes @ 0x0
+   250                           
+   251  0070                     ??_Timer_Delay:	
+   252                           ; 1 bytes @ 0x0
+   253                           
+   254                           
+   255                           ; 1 bytes @ 0x0
+   256  0070                     	ds	1
+   257  0071                     ??_Secuence_One:	
+   258  0071                     ??_Secuence_Two:	
+   259                           ; 1 bytes @ 0x1
+   260                           
+   261  0071                     ??_Secuence_Three:	
+   262                           ; 1 bytes @ 0x1
+   263                           
+   264  0071                     ??_Secuence_Four:	
+   265                           ; 1 bytes @ 0x1
+   266                           
+   267  0071                     ??_Secuence_Five:	
+   268                           ; 1 bytes @ 0x1
+   269                           
+   270  0071                     ??_main:	
+   271                           ; 1 bytes @ 0x1
+   272                           
+   273                           
+   274                           ; 1 bytes @ 0x1
+   275  0071                     	ds	1
+   276                           
+   277                           	psect	maintext
+   278  06E2                     __pmaintext:	
+   279 ;;
+   280 ;;Main: autosize = 0, tempsize = 1, incstack = 0, save=0
+   281 ;;
+   282 ;; *************** function _main *****************
+   283 ;; Defined at:
+   284 ;;		line 21 in file "main.c"
+   285 ;; Parameters:    Size  Location     Type
+   286 ;;		None
+   287 ;; Auto vars:     Size  Location     Type
+   288 ;;		None
+   289 ;; Return value:  Size  Location     Type
+   290 ;;                  1    wreg      void 
+   291 ;; Registers used:
+   292 ;;		wreg, status,2, status,0, pclath, cstack
+   293 ;; Tracked objects:
+   294 ;;		On entry : B00/0
+   295 ;;		On exit  : 0/0
+   296 ;;		Unchanged: 0/0
+   297 ;; Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+   298 ;;      Params:         0       0       0       0       0
+   299 ;;      Locals:         0       0       0       0       0
+   300 ;;      Temps:          1       0       0       0       0
+   301 ;;      Totals:         1       0       0       0       0
+   302 ;;Total ram usage:        1 bytes
+   303 ;; Hardware stack levels required when called:    2
+   304 ;; This function calls:
+   305 ;;		_Secuence_Five
+   306 ;;		_Secuence_Four
+   307 ;;		_Secuence_One
+   308 ;;		_Secuence_Three
+   309 ;;		_Secuence_Two
+   310 ;; This function is called by:
+   311 ;;		Startup code after reset
+   312 ;; This function uses a non-reentrant model
+   313 ;;
+   314                           
+   315                           
+   316                           ;psect for function _main
+   317  06E2                     _main:	
+   318  06E2                     l769:	
+   319                           ;incstack = 0
+   320                           ; Regs used in _main: [wreg+status,2+status,0+pclath+cstack]
+   321                           
+   322                           
+   323                           ;main.c: 23:      OSCCON = 0x15;
+   324  06E2  3015               	movlw	21
+   325  06E3  1683               	bsf	3,5	;RP0=1, select bank1
+   326  06E4  1303               	bcf	3,6	;RP1=0, select bank1
+   327  06E5  008F               	movwf	15	;volatile
+   328  06E6                     l771:	
+   329                           
+   330                           ;main.c: 25:     ANSEL &= 0x0;
+   331  06E6  1683               	bsf	3,5	;RP0=1, select bank3
+   332  06E7  1703               	bsf	3,6	;RP1=1, select bank3
+   333  06E8  0188               	clrf	8	;volatile
+   334  06E9                     l773:	
+   335                           
+   336                           ;main.c: 26:     ANSELH &=0x0;
+   337  06E9  0189               	clrf	9	;volatile
+   338  06EA                     l775:	
+   339                           
+   340                           ;main.c: 28:     TRISC &= 0x0;
+   341  06EA  1683               	bsf	3,5	;RP0=1, select bank1
+   342  06EB  1303               	bcf	3,6	;RP1=0, select bank1
+   343  06EC  0187               	clrf	7	;volatile
+   344  06ED                     l777:	
+   345                           
+   346                           ;main.c: 29:     TRISE &= 0x0;
+   347  06ED  0189               	clrf	9	;volatile
+   348  06EE                     l779:	
+   349                           
+   350                           ;main.c: 31:     PORTC &= 0x0;
+   351  06EE  1283               	bcf	3,5	;RP0=0, select bank0
+   352  06EF  1303               	bcf	3,6	;RP1=0, select bank0
+   353  06F0  0187               	clrf	7	;volatile
+   354  06F1                     l781:	
+   355                           
+   356                           ;main.c: 32:     PORTE &= 0B001;
+   357  06F1  3001               	movlw	1
+   358  06F2  00F1               	movwf	??_main
+   359  06F3  0871               	movf	??_main,w
+   360  06F4  0589               	andwf	9,f	;volatile
+   361  06F5                     l783:	
+   362                           
+   363                           ;main.c: 36:         Secuence_One();
+   364  06F5  120A  118A  268F  120A  118A  	fcall	_Secuence_One
+   365  06FA                     l785:	
+   366                           
+   367                           ;main.c: 37:         Secuence_Two();
+   368  06FA  120A  118A  27A2  120A  118A  	fcall	_Secuence_Two
+   369  06FF                     l787:	
+   370                           
+   371                           ;main.c: 38:         Secuence_Three();
+   372  06FF  120A  118A  2712  120A  118A  	fcall	_Secuence_Three
+   373  0704                     l789:	
+   374                           
+   375                           ;main.c: 39:         Secuence_Four();
+   376  0704  120A  118A  2750  120A  118A  	fcall	_Secuence_Four
+   377  0709                     l791:	
+   378                           
+   379                           ;main.c: 40:         Secuence_Five();
+   380  0709  120A  118A  26B4  120A  118A  	fcall	_Secuence_Five
+   381  070E  2EF5               	goto	l783
+   382  070F  120A  118A  2800   	ljmp	start
+   383  0712                     __end_of_main:	
+   384                           
+   385                           	psect	text1
+   386  07A2                     __ptext1:	
+   387 ;; *************** function _Secuence_Two *****************
+   388 ;; Defined at:
+   389 ;;		line 65 in file "main.c"
+   390 ;; Parameters:    Size  Location     Type
+   391 ;;		None
+   392 ;; Auto vars:     Size  Location     Type
+   393 ;;		None
+   394 ;; Return value:  Size  Location     Type
+   395 ;;                  1    wreg      void 
+   396 ;; Registers used:
+   397 ;;		wreg, status,2, status,0, pclath, cstack
+   398 ;; Tracked objects:
+   399 ;;		On entry : 0/0
+   400 ;;		On exit  : 0/0
+   401 ;;		Unchanged: 0/0
+   402 ;; Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+   403 ;;      Params:         0       0       0       0       0
+   404 ;;      Locals:         0       0       0       0       0
+   405 ;;      Temps:          0       0       0       0       0
+   406 ;;      Totals:         0       0       0       0       0
+   407 ;;Total ram usage:        0 bytes
+   408 ;; Hardware stack levels used:    1
+   409 ;; Hardware stack levels required when called:    1
+   410 ;; This function calls:
+   411 ;;		_Timer_Delay
+   412 ;; This function is called by:
+   413 ;;		_main
+   414 ;; This function uses a non-reentrant model
+   415 ;;
+   416                           
+   417                           
+   418                           ;psect for function _Secuence_Two
+   419  07A2                     _Secuence_Two:	
+   420  07A2                     l671:	
+   421                           ;incstack = 0
+   422                           ; Regs used in _Secuence_Two: [wreg+status,2+status,0+pclath+cstack]
+   423                           
+   424                           
+   425                           ;main.c: 67:     PORTC = 0x80;
+   426  07A2  3080               	movlw	128
+   427  07A3  1283               	bcf	3,5	;RP0=0, select bank0
+   428  07A4  1303               	bcf	3,6	;RP1=0, select bank0
+   429  07A5  0087               	movwf	7	;volatile
+   430  07A6                     l673:	
+   431                           
+   432                           ;main.c: 68:     Timer_Delay();
+   433  07A6  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
+   434  07AB                     l675:	
+   435                           
+   436                           ;main.c: 69:     PORTC = 0xC0;
+   437  07AB  30C0               	movlw	192
+   438  07AC  1283               	bcf	3,5	;RP0=0, select bank0
+   439  07AD  1303               	bcf	3,6	;RP1=0, select bank0
+   440  07AE  0087               	movwf	7	;volatile
+   441                           
+   442                           ;main.c: 70:     Timer_Delay();
+   443  07AF  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
+   444  07B4                     l677:	
+   445                           
+   446                           ;main.c: 71:     PORTC = 0xE0;
+   447  07B4  30E0               	movlw	224
+   448  07B5  1283               	bcf	3,5	;RP0=0, select bank0
+   449  07B6  1303               	bcf	3,6	;RP1=0, select bank0
+   450  07B7  0087               	movwf	7	;volatile
+   451  07B8                     l679:	
+   452                           
+   453                           ;main.c: 72:     Timer_Delay();
+   454  07B8  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
+   455                           
+   456                           ;main.c: 73:     PORTC = 0xF0;
+   457  07BD  30F0               	movlw	240
+   458  07BE  1283               	bcf	3,5	;RP0=0, select bank0
+   459  07BF  1303               	bcf	3,6	;RP1=0, select bank0
+   460  07C0  0087               	movwf	7	;volatile
+   461  07C1                     l681:	
+   462                           
+   463                           ;main.c: 74:     Timer_Delay();
+   464  07C1  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
+   465  07C6                     l683:	
+   466                           
+   467                           ;main.c: 75:     PORTC = 0xF8;
+   468  07C6  30F8               	movlw	248
+   469  07C7  1283               	bcf	3,5	;RP0=0, select bank0
+   470  07C8  1303               	bcf	3,6	;RP1=0, select bank0
+   471  07C9  0087               	movwf	7	;volatile
+   472                           
+   473                           ;main.c: 76:     Timer_Delay();
+   474  07CA  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
+   475  07CF                     l685:	
+   476                           
+   477                           ;main.c: 77:     PORTC = 0x78;
+   478  07CF  3078               	movlw	120
+   479  07D0  1283               	bcf	3,5	;RP0=0, select bank0
+   480  07D1  1303               	bcf	3,6	;RP1=0, select bank0
+   481  07D2  0087               	movwf	7	;volatile
+   482  07D3                     l687:	
+   483                           
+   484                           ;main.c: 78:     Timer_Delay();
+   485  07D3  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
+   486                           
+   487                           ;main.c: 79:     PORTC = 0x38;
+   488  07D8  3038               	movlw	56
+   489  07D9  1283               	bcf	3,5	;RP0=0, select bank0
+   490  07DA  1303               	bcf	3,6	;RP1=0, select bank0
+   491  07DB  0087               	movwf	7	;volatile
+   492  07DC                     l689:	
+   493                           
+   494                           ;main.c: 80:     Timer_Delay();
+   495  07DC  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
+   496  07E1                     l691:	
+   497                           
+   498                           ;main.c: 81:     PORTC = 0x18;
+   499  07E1  3018               	movlw	24
+   500  07E2  1283               	bcf	3,5	;RP0=0, select bank0
+   501  07E3  1303               	bcf	3,6	;RP1=0, select bank0
+   502  07E4  0087               	movwf	7	;volatile
+   503                           
+   504                           ;main.c: 82:     Timer_Delay();
+   505  07E5  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
+   506  07EA                     l693:	
+   507                           
+   508                           ;main.c: 83:     PORTC = 0x8;
+   509  07EA  3008               	movlw	8
+   510  07EB  1283               	bcf	3,5	;RP0=0, select bank0
+   511  07EC  1303               	bcf	3,6	;RP1=0, select bank0
+   512  07ED  0087               	movwf	7	;volatile
+   513  07EE                     l695:	
+   514                           
+   515                           ;main.c: 84:     Timer_Delay();
+   516  07EE  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
+   517  07F3                     l697:	
+   518                           
+   519                           ;main.c: 85:     PORTC = 0x00;
+   520  07F3  1283               	bcf	3,5	;RP0=0, select bank0
+   521  07F4  1303               	bcf	3,6	;RP1=0, select bank0
+   522  07F5  0187               	clrf	7	;volatile
+   523  07F6                     l699:	
+   524                           
+   525                           ;main.c: 86:     Timer_Delay();
+   526  07F6  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
+   527  07FB                     l54:	
+   528  07FB  0008               	return
+   529  07FC                     __end_of_Secuence_Two:	
+   530                           
+   531                           	psect	text2
+   532  0712                     __ptext2:	
+   533 ;; *************** function _Secuence_Three *****************
+   534 ;; Defined at:
+   535 ;;		line 89 in file "main.c"
+   536 ;; Parameters:    Size  Location     Type
+   537 ;;		None
+   538 ;; Auto vars:     Size  Location     Type
+   539 ;;		None
+   540 ;; Return value:  Size  Location     Type
+   541 ;;                  1    wreg      void 
+   542 ;; Registers used:
+   543 ;;		wreg, status,2, status,0, pclath, cstack
+   544 ;; Tracked objects:
+   545 ;;		On entry : 0/0
+   546 ;;		On exit  : 0/0
+   547 ;;		Unchanged: 0/0
+   548 ;; Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+   549 ;;      Params:         0       0       0       0       0
+   550 ;;      Locals:         0       0       0       0       0
+   551 ;;      Temps:          0       0       0       0       0
+   552 ;;      Totals:         0       0       0       0       0
+   553 ;;Total ram usage:        0 bytes
+   554 ;; Hardware stack levels used:    1
+   555 ;; Hardware stack levels required when called:    1
+   556 ;; This function calls:
+   557 ;;		_Timer_Delay
+   558 ;; This function is called by:
+   559 ;;		_main
+   560 ;; This function uses a non-reentrant model
+   561 ;;
+   562                           
+   563                           
+   564                           ;psect for function _Secuence_Three
+   565  0712                     _Secuence_Three:	
+   566  0712                     l701:	
+   567                           ;incstack = 0
+   568                           ; Regs used in _Secuence_Three: [wreg+status,2+status,0+pclath+cstack]
+   569                           
+   570                           
+   571                           ;main.c: 91:     PORTC = 0x0;
+   572  0712  1283               	bcf	3,5	;RP0=0, select bank0
+   573  0713  1303               	bcf	3,6	;RP1=0, select bank0
+   574  0714  0187               	clrf	7	;volatile
+   575  0715                     l703:	
+   576                           
+   577                           ;main.c: 92:     Timer_Delay();
+   578  0715  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
+   579  071A                     l705:	
+   580                           
+   581                           ;main.c: 93:     PORTC = 0x88;
+   582  071A  3088               	movlw	136
+   583  071B  1283               	bcf	3,5	;RP0=0, select bank0
+   584  071C  1303               	bcf	3,6	;RP1=0, select bank0
+   585  071D  0087               	movwf	7	;volatile
+   586  071E                     l707:	
+   587                           
+   588                           ;main.c: 94:     Timer_Delay();
+   589  071E  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
+   590  0723                     l709:	
+   591                           
+   592                           ;main.c: 95:     PORTC = 0xD8;
+   593  0723  30D8               	movlw	216
+   594  0724  1283               	bcf	3,5	;RP0=0, select bank0
+   595  0725  1303               	bcf	3,6	;RP1=0, select bank0
+   596  0726  0087               	movwf	7	;volatile
+   597  0727                     l711:	
+   598                           
+   599                           ;main.c: 96:     Timer_Delay();
+   600  0727  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
+   601  072C                     l713:	
+   602                           
+   603                           ;main.c: 97:     PORTC = 0xF8;
+   604  072C  30F8               	movlw	248
+   605  072D  1283               	bcf	3,5	;RP0=0, select bank0
+   606  072E  1303               	bcf	3,6	;RP1=0, select bank0
+   607  072F  0087               	movwf	7	;volatile
+   608  0730                     l715:	
+   609                           
+   610                           ;main.c: 98:     Timer_Delay();
+   611  0730  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
+   612  0735                     l717:	
+   613                           
+   614                           ;main.c: 99:     PORTC = 0xD8;
+   615  0735  30D8               	movlw	216
+   616  0736  1283               	bcf	3,5	;RP0=0, select bank0
+   617  0737  1303               	bcf	3,6	;RP1=0, select bank0
+   618  0738  0087               	movwf	7	;volatile
+   619  0739                     l719:	
+   620                           
+   621                           ;main.c: 100:     Timer_Delay();
+   622  0739  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
+   623  073E                     l721:	
+   624                           
+   625                           ;main.c: 101:     PORTC = 0x88;
+   626  073E  3088               	movlw	136
+   627  073F  1283               	bcf	3,5	;RP0=0, select bank0
+   628  0740  1303               	bcf	3,6	;RP1=0, select bank0
+   629  0741  0087               	movwf	7	;volatile
+   630  0742                     l723:	
+   631                           
+   632                           ;main.c: 102:     Timer_Delay();
+   633  0742  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
+   634  0747                     l725:	
+   635                           
+   636                           ;main.c: 103:     PORTC = 0x0;
+   637  0747  1283               	bcf	3,5	;RP0=0, select bank0
+   638  0748  1303               	bcf	3,6	;RP1=0, select bank0
+   639  0749  0187               	clrf	7	;volatile
+   640  074A                     l727:	
+   641                           
+   642                           ;main.c: 104:     Timer_Delay();
+   643  074A  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
+   644  074F                     l57:	
+   645  074F  0008               	return
+   646  0750                     __end_of_Secuence_Three:	
+   647                           
+   648                           	psect	text3
+   649  068F                     __ptext3:	
+   650 ;; *************** function _Secuence_One *****************
+   651 ;; Defined at:
+   652 ;;		line 56 in file "main.c"
+   653 ;; Parameters:    Size  Location     Type
+   654 ;;		None
+   655 ;; Auto vars:     Size  Location     Type
+   656 ;;		None
+   657 ;; Return value:  Size  Location     Type
+   658 ;;                  1    wreg      void 
+   659 ;; Registers used:
+   660 ;;		wreg, status,2, status,0, pclath, cstack
+   661 ;; Tracked objects:
+   662 ;;		On entry : 0/0
+   663 ;;		On exit  : 0/0
+   664 ;;		Unchanged: 0/0
+   665 ;; Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+   666 ;;      Params:         0       0       0       0       0
+   667 ;;      Locals:         0       0       0       0       0
+   668 ;;      Temps:          0       0       0       0       0
+   669 ;;      Totals:         0       0       0       0       0
+   670 ;;Total ram usage:        0 bytes
+   671 ;; Hardware stack levels used:    1
+   672 ;; Hardware stack levels required when called:    1
+   673 ;; This function calls:
+   674 ;;		_Timer_Delay
+   675 ;; This function is called by:
+   676 ;;		_main
+   677 ;; This function uses a non-reentrant model
+   678 ;;
+   679                           
+   680                           
+   681                           ;psect for function _Secuence_One
+   682  068F                     _Secuence_One:	
+   683  068F                     l663:	
+   684                           ;incstack = 0
+   685                           ; Regs used in _Secuence_One: [wreg+status,2+status,0+pclath+cstack]
+   686                           
+   687                           
+   688                           ;main.c: 58:     PORTC = 0xF8;
+   689  068F  30F8               	movlw	248
+   690  0690  1283               	bcf	3,5	;RP0=0, select bank0
+   691  0691  1303               	bcf	3,6	;RP1=0, select bank0
+   692  0692  0087               	movwf	7	;volatile
+   693  0693                     l665:	
+   694                           
+   695                           ;main.c: 59:     Timer_Delay();
+   696  0693  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
+   697  0698                     l667:	
+   698                           
+   699                           ;main.c: 60:     PORTC = 0x0;
+   700  0698  1283               	bcf	3,5	;RP0=0, select bank0
+   701  0699  1303               	bcf	3,6	;RP1=0, select bank0
+   702  069A  0187               	clrf	7	;volatile
+   703  069B                     l669:	
+   704                           
+   705                           ;main.c: 61:     Timer_Delay();
+   706  069B  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
+   707  06A0                     l51:	
+   708  06A0  0008               	return
+   709  06A1                     __end_of_Secuence_One:	
+   710                           
+   711                           	psect	text4
+   712  0750                     __ptext4:	
+   713 ;; *************** function _Secuence_Four *****************
+   714 ;; Defined at:
+   715 ;;		line 107 in file "main.c"
+   716 ;; Parameters:    Size  Location     Type
+   717 ;;		None
+   718 ;; Auto vars:     Size  Location     Type
+   719 ;;		None
+   720 ;; Return value:  Size  Location     Type
+   721 ;;                  1    wreg      void 
+   722 ;; Registers used:
+   723 ;;		wreg, status,2, status,0, pclath, cstack
+   724 ;; Tracked objects:
+   725 ;;		On entry : 0/0
+   726 ;;		On exit  : 0/0
+   727 ;;		Unchanged: 0/0
+   728 ;; Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+   729 ;;      Params:         0       0       0       0       0
+   730 ;;      Locals:         0       0       0       0       0
+   731 ;;      Temps:          0       0       0       0       0
+   732 ;;      Totals:         0       0       0       0       0
+   733 ;;Total ram usage:        0 bytes
+   734 ;; Hardware stack levels used:    1
+   735 ;; Hardware stack levels required when called:    1
+   736 ;; This function calls:
+   737 ;;		_Timer_Delay
+   738 ;; This function is called by:
+   739 ;;		_main
+   740 ;; This function uses a non-reentrant model
+   741 ;;
+   742                           
+   743                           
+   744                           ;psect for function _Secuence_Four
+   745  0750                     _Secuence_Four:	
+   746  0750                     l729:	
+   747                           ;incstack = 0
+   748                           ; Regs used in _Secuence_Four: [wreg+status,2+status,0+pclath+cstack]
+   749                           
+   750                           
+   751                           ;main.c: 109:     PORTC = 0x80;
+   752  0750  3080               	movlw	128
+   753  0751  1283               	bcf	3,5	;RP0=0, select bank0
+   754  0752  1303               	bcf	3,6	;RP1=0, select bank0
+   755  0753  0087               	movwf	7	;volatile
+   756  0754                     l731:	
+   757                           
+   758                           ;main.c: 110:     Timer_Delay();
+   759  0754  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
+   760  0759                     l733:	
+   761                           
+   762                           ;main.c: 111:     PORTC = 0x40;
+   763  0759  3040               	movlw	64
+   764  075A  1283               	bcf	3,5	;RP0=0, select bank0
+   765  075B  1303               	bcf	3,6	;RP1=0, select bank0
+   766  075C  0087               	movwf	7	;volatile
+   767                           
+   768                           ;main.c: 112:     Timer_Delay();
+   769  075D  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
+   770  0762                     l735:	
+   771                           
+   772                           ;main.c: 113:     PORTC = 0x20;
+   773  0762  3020               	movlw	32
+   774  0763  1283               	bcf	3,5	;RP0=0, select bank0
+   775  0764  1303               	bcf	3,6	;RP1=0, select bank0
+   776  0765  0087               	movwf	7	;volatile
+   777  0766                     l737:	
+   778                           
+   779                           ;main.c: 114:     Timer_Delay();
+   780  0766  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
+   781                           
+   782                           ;main.c: 115:     PORTC = 0x10;
+   783  076B  3010               	movlw	16
+   784  076C  1283               	bcf	3,5	;RP0=0, select bank0
+   785  076D  1303               	bcf	3,6	;RP1=0, select bank0
+   786  076E  0087               	movwf	7	;volatile
+   787  076F                     l739:	
+   788                           
+   789                           ;main.c: 116:     Timer_Delay();
+   790  076F  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
+   791  0774                     l741:	
+   792                           
+   793                           ;main.c: 117:     PORTC = 0x8;
+   794  0774  3008               	movlw	8
+   795  0775  1283               	bcf	3,5	;RP0=0, select bank0
+   796  0776  1303               	bcf	3,6	;RP1=0, select bank0
+   797  0777  0087               	movwf	7	;volatile
+   798                           
+   799                           ;main.c: 118:     Timer_Delay();
+   800  0778  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
+   801  077D                     l743:	
+   802                           
+   803                           ;main.c: 119:     PORTC = 0x10;
+   804  077D  3010               	movlw	16
+   805  077E  1283               	bcf	3,5	;RP0=0, select bank0
+   806  077F  1303               	bcf	3,6	;RP1=0, select bank0
+   807  0780  0087               	movwf	7	;volatile
+   808  0781                     l745:	
+   809                           
+   810                           ;main.c: 120:     Timer_Delay();
+   811  0781  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
+   812                           
+   813                           ;main.c: 121:     PORTC = 0x20;
+   814  0786  3020               	movlw	32
+   815  0787  1283               	bcf	3,5	;RP0=0, select bank0
+   816  0788  1303               	bcf	3,6	;RP1=0, select bank0
+   817  0789  0087               	movwf	7	;volatile
+   818  078A                     l747:	
+   819                           
+   820                           ;main.c: 122:     Timer_Delay();
+   821  078A  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
+   822  078F                     l749:	
+   823                           
+   824                           ;main.c: 123:     PORTC = 0x40;
+   825  078F  3040               	movlw	64
+   826  0790  1283               	bcf	3,5	;RP0=0, select bank0
+   827  0791  1303               	bcf	3,6	;RP1=0, select bank0
+   828  0792  0087               	movwf	7	;volatile
+   829                           
+   830                           ;main.c: 124:     Timer_Delay();
+   831  0793  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
+   832  0798                     l751:	
+   833                           
+   834                           ;main.c: 125:     PORTC = 0x80;
+   835  0798  3080               	movlw	128
+   836  0799  1283               	bcf	3,5	;RP0=0, select bank0
+   837  079A  1303               	bcf	3,6	;RP1=0, select bank0
+   838  079B  0087               	movwf	7	;volatile
+   839  079C                     l753:	
+   840                           
+   841                           ;main.c: 126:     Timer_Delay();
+   842  079C  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
+   843  07A1                     l60:	
+   844  07A1  0008               	return
+   845  07A2                     __end_of_Secuence_Four:	
+   846                           
+   847                           	psect	text5
+   848  06B4                     __ptext5:	
+   849 ;; *************** function _Secuence_Five *****************
+   850 ;; Defined at:
+   851 ;;		line 129 in file "main.c"
+   852 ;; Parameters:    Size  Location     Type
+   853 ;;		None
+   854 ;; Auto vars:     Size  Location     Type
+   855 ;;		None
+   856 ;; Return value:  Size  Location     Type
+   857 ;;                  1    wreg      void 
+   858 ;; Registers used:
+   859 ;;		wreg, status,2, status,0, pclath, cstack
+   860 ;; Tracked objects:
+   861 ;;		On entry : 0/0
+   862 ;;		On exit  : 0/0
+   863 ;;		Unchanged: 0/0
+   864 ;; Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+   865 ;;      Params:         0       0       0       0       0
+   866 ;;      Locals:         0       0       0       0       0
+   867 ;;      Temps:          0       0       0       0       0
+   868 ;;      Totals:         0       0       0       0       0
+   869 ;;Total ram usage:        0 bytes
+   870 ;; Hardware stack levels used:    1
+   871 ;; Hardware stack levels required when called:    1
+   872 ;; This function calls:
+   873 ;;		_Timer_Delay
+   874 ;; This function is called by:
+   875 ;;		_main
+   876 ;; This function uses a non-reentrant model
+   877 ;;
+   878                           
+   879                           
+   880                           ;psect for function _Secuence_Five
+   881  06B4                     _Secuence_Five:	
+   882  06B4                     l755:	
+   883                           ;incstack = 0
+   884                           ; Regs used in _Secuence_Five: [wreg+status,2+status,0+pclath+cstack]
+   885                           
+   886                           
+   887                           ;main.c: 131:     PORTC = 0xA8;
+   888  06B4  30A8               	movlw	168
+   889  06B5  1283               	bcf	3,5	;RP0=0, select bank0
+   890  06B6  1303               	bcf	3,6	;RP1=0, select bank0
+   891  06B7  0087               	movwf	7	;volatile
+   892  06B8                     l757:	
+   893                           
+   894                           ;main.c: 132:     Timer_Delay();
+   895  06B8  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
+   896  06BD                     l759:	
+   897                           
+   898                           ;main.c: 133:     PORTC = 0x50;
+   899  06BD  3050               	movlw	80
+   900  06BE  1283               	bcf	3,5	;RP0=0, select bank0
+   901  06BF  1303               	bcf	3,6	;RP1=0, select bank0
+   902  06C0  0087               	movwf	7	;volatile
+   903                           
+   904                           ;main.c: 134:     Timer_Delay();
+   905  06C1  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
+   906  06C6                     l761:	
+   907                           
+   908                           ;main.c: 135:     PORTC = 0xF8;
+   909  06C6  30F8               	movlw	248
+   910  06C7  1283               	bcf	3,5	;RP0=0, select bank0
+   911  06C8  1303               	bcf	3,6	;RP1=0, select bank0
+   912  06C9  0087               	movwf	7	;volatile
+   913  06CA                     l763:	
+   914                           
+   915                           ;main.c: 136:     Timer_Delay();
+   916  06CA  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
+   917                           
+   918                           ;main.c: 137:     PORTC = 0x50;
+   919  06CF  3050               	movlw	80
+   920  06D0  1283               	bcf	3,5	;RP0=0, select bank0
+   921  06D1  1303               	bcf	3,6	;RP1=0, select bank0
+   922  06D2  0087               	movwf	7	;volatile
+   923  06D3                     l765:	
+   924                           
+   925                           ;main.c: 138:     Timer_Delay();
+   926  06D3  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
+   927  06D8                     l767:	
+   928                           
+   929                           ;main.c: 139:     PORTC = 0xA8;
+   930  06D8  30A8               	movlw	168
+   931  06D9  1283               	bcf	3,5	;RP0=0, select bank0
+   932  06DA  1303               	bcf	3,6	;RP1=0, select bank0
+   933  06DB  0087               	movwf	7	;volatile
+   934                           
+   935                           ;main.c: 140:     Timer_Delay();
+   936  06DC  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
+   937  06E1                     l63:	
+   938  06E1  0008               	return
+   939  06E2                     __end_of_Secuence_Five:	
+   940                           
+   941                           	psect	text6
+   942  06A1                     __ptext6:	
+   943 ;; *************** function _Timer_Delay *****************
+   944 ;; Defined at:
+   945 ;;		line 45 in file "main.c"
+   946 ;; Parameters:    Size  Location     Type
+   947 ;;		None
+   948 ;; Auto vars:     Size  Location     Type
+   949 ;;		None
+   950 ;; Return value:  Size  Location     Type
+   951 ;;                  1    wreg      void 
+   952 ;; Registers used:
+   953 ;;		wreg, status,2, status,0
+   954 ;; Tracked objects:
+   955 ;;		On entry : 0/0
+   956 ;;		On exit  : 0/0
+   957 ;;		Unchanged: 0/0
+   958 ;; Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+   959 ;;      Params:         0       0       0       0       0
+   960 ;;      Locals:         0       0       0       0       0
+   961 ;;      Temps:          1       0       0       0       0
+   962 ;;      Totals:         1       0       0       0       0
+   963 ;;Total ram usage:        1 bytes
+   964 ;; Hardware stack levels used:    1
+   965 ;; This function calls:
+   966 ;;		Nothing
+   967 ;; This function is called by:
+   968 ;;		_Secuence_One
+   969 ;;		_Secuence_Two
+   970 ;;		_Secuence_Three
+   971 ;;		_Secuence_Four
+   972 ;;		_Secuence_Five
+   973 ;; This function uses a non-reentrant model
+   974 ;;
+   975                           
+   976                           
+   977                           ;psect for function _Timer_Delay
+   978  06A1                     _Timer_Delay:	
+   979  06A1                     l655:	
+   980                           ;incstack = 0
+   981                           ; Regs used in _Timer_Delay: [wreg+status,2+status,0]
+   982                           
+   983                           
+   984                           ;main.c: 48:     PIE1 &= 0x1;
+   985  06A1  3001               	movlw	1
+   986  06A2  00F0               	movwf	??_Timer_Delay
+   987  06A3  0870               	movf	??_Timer_Delay,w
+   988  06A4  1683               	bsf	3,5	;RP0=1, select bank1
+   989  06A5  1303               	bcf	3,6	;RP1=0, select bank1
+   990  06A6  058C               	andwf	12,f	;volatile
+   991  06A7                     l657:	
+   992                           
+   993                           ;main.c: 49:     TMR1L = 0x18;
+   994  06A7  3018               	movlw	24
+   995  06A8  1283               	bcf	3,5	;RP0=0, select bank0
+   996  06A9  1303               	bcf	3,6	;RP1=0, select bank0
+   997  06AA  008E               	movwf	14	;volatile
+   998  06AB                     l659:	
+   999                           
+  1000                           ;main.c: 50:     TMR1H = 0x86;
+  1001  06AB  3086               	movlw	134
+  1002  06AC  008F               	movwf	15	;volatile
+  1003  06AD                     l661:	
+  1004                           
+  1005                           ;main.c: 51:     T1CON |= 0x1;
+  1006  06AD  1410               	bsf	16,0	;volatile
+  1007  06AE                     l45:	
+  1008                           ;main.c: 52:     while(PIR1bits.TMR1IF == 0);
+  1009                           
+  1010  06AE  1C0C               	btfss	12,0	;volatile
+  1011  06AF  2EB1               	goto	u11
+  1012  06B0  2EB2               	goto	u10
+  1013  06B1                     u11:	
+  1014  06B1  2EAE               	goto	l45
+  1015  06B2                     u10:	
+  1016  06B2                     l47:	
+  1017                           
+  1018                           ;main.c: 53:     PIR1bits.TMR1IF = 0;
+  1019  06B2  100C               	bcf	12,0	;volatile
+  1020  06B3                     l48:	
+  1021  06B3  0008               	return
+  1022  06B4                     __end_of_Timer_Delay:	
+  1023  007E                     btemp	set	126	;btemp
+  1024  007E                     wtemp0	set	126
+
+
+Data Sizes:
+    Strings     0
+    Constant    0
+    Data        0
+    BSS         0
+    Persistent  0
+    Stack       0
+
+Auto Spaces:
+    Space          Size  Autos    Used
+    COMMON           14      2       2
+    BANK0            80      0       0
+    BANK1            80      0       0
+    BANK3            96      0       0
+    BANK2            96      0       0
+
+Pointer List with Targets:
+
+    None.
+
+Critical Paths under _main in COMMON
+
+    _Secuence_Two->_Timer_Delay
+    _Secuence_Three->_Timer_Delay
+    _Secuence_One->_Timer_Delay
+    _Secuence_Four->_Timer_Delay
+    _Secuence_Five->_Timer_Delay
+
+Critical Paths under _main in BANK0
+
+    None.
+
+Critical Paths under _main in BANK1
+
+    None.
+
+Critical Paths under _main in BANK3
+
+    None.
+
+Critical Paths under _main in BANK2
+
+    None.
+
+Call Graph Tables:
+
+ ---------------------------------------------------------------------------------
+ (Depth) Function   	        Calls       Base Space   Used Autos Params    Refs
+ ---------------------------------------------------------------------------------
+ (0) _main                                                 1     1      0       0
+                                              1 COMMON     1     1      0
+                      _Secuence_Five
+                      _Secuence_Four
+                       _Secuence_One
+                     _Secuence_Three
+                       _Secuence_Two
+ ---------------------------------------------------------------------------------
+ (1) _Secuence_Two                                         0     0      0       0
+                        _Timer_Delay
+ ---------------------------------------------------------------------------------
+ (1) _Secuence_Three                                       0     0      0       0
+                        _Timer_Delay
+ ---------------------------------------------------------------------------------
+ (1) _Secuence_One                                         0     0      0       0
+                        _Timer_Delay
+ ---------------------------------------------------------------------------------
+ (1) _Secuence_Four                                        0     0      0       0
+                        _Timer_Delay
+ ---------------------------------------------------------------------------------
+ (1) _Secuence_Five                                        0     0      0       0
+                        _Timer_Delay
+ ---------------------------------------------------------------------------------
+ (2) _Timer_Delay                                          1     1      0       0
+                                              0 COMMON     1     1      0
+ ---------------------------------------------------------------------------------
+ Estimated maximum stack depth 2
+ ---------------------------------------------------------------------------------
+
+ Call Graph Graphs:
+
+ _main (ROOT)
+   _Secuence_Five
+     _Timer_Delay
+   _Secuence_Four
+     _Timer_Delay
+   _Secuence_One
+     _Timer_Delay
+   _Secuence_Three
+     _Timer_Delay
+   _Secuence_Two
+     _Timer_Delay
+
+ Address spaces:
+Name               Size   Autos  Total    Cost      Usage
+BITCOMMON            E      0       0       0        0.0%
+EEDATA             100      0       0       0        0.0%
+NULL                 0      0       0       0        0.0%
+CODE                 0      0       0       0        0.0%
+COMMON               E      2       2       1       14.3%
+BITSFR0              0      0       0       1        0.0%
+SFR0                 0      0       0       1        0.0%
+BITSFR1              0      0       0       2        0.0%
+SFR1                 0      0       0       2        0.0%
+STACK                0      0       0       2        0.0%
+ABS                  0      0       0       3        0.0%
+BITBANK0            50      0       0       4        0.0%
+BITSFR3              0      0       0       4        0.0%
+SFR3                 0      0       0       4        0.0%
+BANK0               50      0       0       5        0.0%
+BITSFR2              0      0       0       5        0.0%
+SFR2                 0      0       0       5        0.0%
+BITBANK1            50      0       0       6        0.0%
+BANK1               50      0       0       7        0.0%
+BITBANK3            60      0       0       8        0.0%
+BANK3               60      0       0       9        0.0%
+BITBANK2            60      0       0      10        0.0%
+BANK2               60      0       0      11        0.0%
+DATA                 0      0       0      12        0.0%
+
+
+Microchip Technology PIC Macro Assembler V2.10 build 88905656 
+Symbol Table                                                                                   Wed Oct 09 11:40:43 2019
+
+        ?_Secuence_Three 0070                       l51 06A0                       l60 07A1  
+                     l45 06AE                       l54 07FB                       l47 06B2  
+                     l63 06E1                       l48 06B3                       l57 074F  
+                     u10 06B2                       u11 06B1                      l701 0712  
+                    l711 0727                      l703 0715                      l721 073E  
+                    l713 072C                      l705 071A                      l731 0754  
+                    l723 0742                      l715 0730                      l707 071E  
+                    l661 06AD                      l741 0774                      l733 0759  
+                    l725 0747                      l717 0735                      l709 0723  
+                    l655 06A1                      l751 0798                      l743 077D  
+                    l735 0762                      l663 068F                      l727 074A  
+                    l719 0739                      l671 07A2                      l657 06A7  
+                    l761 06C6                      l753 079C                      l745 0781  
+                    l737 0766                      l729 0750                      l665 0693  
+                    l681 07C1                      l673 07A6                      l659 06AB  
+                    l763 06CA                      l755 06B4                      l747 078A  
+                    l739 076F                      l667 0698                      l691 07E1  
+                    l683 07C6                      l675 07AB                      l771 06E6  
+                    l765 06D3                      l757 06B8                      l749 078F  
+                    l669 069B                      l693 07EA                      l685 07CF  
+                    l677 07B4                      l781 06F1                      l773 06E9  
+                    l767 06D8                      l759 06BD                      l695 07EE  
+                    l687 07D3                      l679 07B8                      l791 0709  
+                    l783 06F5                      l775 06EA                      l697 07F3  
+                    l689 07DC                      l785 06FA                      l777 06ED  
+                    l769 06E2                      l699 07F6                      l787 06FF  
+                    l779 06EE                      l789 0704                     _PIE1 008C  
+                   _main 06E2                     btemp 007E                     start 0000  
+                  ?_main 0070            __CFG_WDTE$OFF 0000                    _ANSEL 0188  
+                  _T1CON 0010                    _TMR1H 000F                    _TMR1L 000E  
+                  _PORTC 0007                    _PORTE 0009                    _TRISC 0087  
+                  _TRISE 0089                    status 0003                    wtemp0 007E  
+        __initialization 07FC             __end_of_main 0712                   ??_main 0071  
+                 _ANSELH 0189                   _OSCCON 008F            ??_Timer_Delay 0070  
+          ?_Secuence_One 0070  __end_of__initialization 07FC            ?_Secuence_Two 0070  
+       ??_Secuence_Three 0071           __pcstackCOMMON 0070      __end_of_Timer_Delay 06B4  
+         ??_Secuence_One 0071           ??_Secuence_Two 0071               __pmaintext 06E2  
+ __size_of_Secuence_Five 002E   __size_of_Secuence_Four 0052              _Timer_Delay 06A1  
+                __ptext1 07A2                  __ptext2 0712                  __ptext3 068F  
+                __ptext4 0750                  __ptext5 06B4                  __ptext6 06A1  
+          _Secuence_Five 06B4            _Secuence_Four 0750     end_of_initialization 07FC  
+   __end_of_Secuence_One 06A1     __end_of_Secuence_Two 07FC           ?_Secuence_Five 0070  
+         ?_Secuence_Four 0070      start_initialization 07FC          ??_Secuence_Five 0071  
+        ??_Secuence_Four 0071                ___latbits 0002    __size_of_Secuence_One 0012  
+  __size_of_Secuence_Two 005A  __size_of_Secuence_Three 003E             ?_Timer_Delay 0070  
+           _Secuence_One 068F             _Secuence_Two 07A2                 _PIR1bits 000C  
+          __size_of_main 0030           _Secuence_Three 0712     __size_of_Timer_Delay 0013  
+ __end_of_Secuence_Three 0750    __end_of_Secuence_Five 06E2    __end_of_Secuence_Four 07A2  
