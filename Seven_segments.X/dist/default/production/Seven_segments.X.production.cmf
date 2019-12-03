@@ -26,9 +26,9 @@ text10 CODE 0 73F 73F 5 2
 text11 CODE 0 771 771 13 2
 maintext CODE 0 784 784 78 2
 cstackCOMMON COMMON 1 70 70 1 1
-$C:\Users\Soul_PC\AppData\Local\Temp\shuo.o
+$C:\Users\Soul_PC\AppData\Local\Temp\s1hc.o
 end_init CODE 0 0 0 3 2
-config CONFIG 0 2007 2007 2 2
+config CONFIG 0 2007 2007 1 2
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
 # is described on a single line as follows:
@@ -56,6 +56,7 @@ SFR1 80-9F 1
 SFR2 100-10F 1
 SFR3 180-18F 1
 COMMON 71-7D 1
+CONFIG 2008-2008 2
 EEDATA 2100-21FF 2
 STRCODE 3-73E 2
 STRCODE 800-1FFF 2
@@ -75,77 +76,77 @@ STRING 800-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\Seven_segments.X.production.o
-7FC cinit CODE >457:C:\Users\Soul_PC\AppData\Local\Temp\shuo.s
-7FC cinit CODE >460:C:\Users\Soul_PC\AppData\Local\Temp\shuo.s
-7FC cinit CODE >466:C:\Users\Soul_PC\AppData\Local\Temp\shuo.s
-7FC cinit CODE >468:C:\Users\Soul_PC\AppData\Local\Temp\shuo.s
-7FD cinit CODE >469:C:\Users\Soul_PC\AppData\Local\Temp\shuo.s
-771 text11 CODE >126:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-771 text11 CODE >129:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-777 text11 CODE >130:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-77B text11 CODE >131:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-77D text11 CODE >132:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-77E text11 CODE >133:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-782 text11 CODE >134:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-783 text11 CODE >135:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-73F text10 CODE >111:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-73F text10 CODE >113:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-743 text10 CODE >114:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-744 text9 CODE >98:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-744 text9 CODE >100:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-748 text9 CODE >101:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-749 text8 CODE >94:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-749 text8 CODE >96:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-74D text8 CODE >97:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-74E text7 CODE >116:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-74E text7 CODE >118:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-752 text7 CODE >119:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-753 text6 CODE >82:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-753 text6 CODE >84:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-757 text6 CODE >85:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-758 text5 CODE >107:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-758 text5 CODE >109:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-75C text5 CODE >110:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-75D text4 CODE >102:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-75D text4 CODE >104:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-761 text4 CODE >105:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-762 text3 CODE >90:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-762 text3 CODE >92:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-766 text3 CODE >93:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-767 text2 CODE >86:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-767 text2 CODE >88:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-76B text2 CODE >89:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-76C text1 CODE >78:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-76C text1 CODE >80:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-770 text1 CODE >81:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-784 maintext CODE >41:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-784 maintext CODE >44:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-788 maintext CODE >45:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-78B maintext CODE >46:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-78C maintext CODE >47:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-78F maintext CODE >48:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-790 maintext CODE >49:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-793 maintext CODE >50:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-794 maintext CODE >53:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-799 maintext CODE >54:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-79E maintext CODE >55:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-7A3 maintext CODE >56:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-7A8 maintext CODE >57:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-7AD maintext CODE >58:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-7B2 maintext CODE >59:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-7B7 maintext CODE >60:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-7BC maintext CODE >61:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-7C1 maintext CODE >62:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-7C6 maintext CODE >63:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-7CB maintext CODE >64:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-7D0 maintext CODE >65:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-7D5 maintext CODE >66:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-7DA maintext CODE >67:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-7DF maintext CODE >68:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-7E4 maintext CODE >69:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-7E9 maintext CODE >70:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-7EE maintext CODE >71:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-7F3 maintext CODE >72:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+7FC cinit CODE >443:C:\Users\Soul_PC\AppData\Local\Temp\s1hc.s
+7FC cinit CODE >446:C:\Users\Soul_PC\AppData\Local\Temp\s1hc.s
+7FC cinit CODE >452:C:\Users\Soul_PC\AppData\Local\Temp\s1hc.s
+7FC cinit CODE >454:C:\Users\Soul_PC\AppData\Local\Temp\s1hc.s
+7FD cinit CODE >455:C:\Users\Soul_PC\AppData\Local\Temp\s1hc.s
+771 text11 CODE >137:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+771 text11 CODE >140:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+777 text11 CODE >142:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+77B text11 CODE >143:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+77D text11 CODE >146:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+77E text11 CODE >148:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+782 text11 CODE >149:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+783 text11 CODE >150:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+73F text10 CODE >123:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+73F text10 CODE >125:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+743 text10 CODE >126:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+744 text9 CODE >111:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+744 text9 CODE >113:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+748 text9 CODE >114:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+749 text8 CODE >107:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+749 text8 CODE >109:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+74D text8 CODE >110:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+74E text7 CODE >127:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+74E text7 CODE >129:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+752 text7 CODE >130:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+753 text6 CODE >95:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+753 text6 CODE >97:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+757 text6 CODE >98:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+758 text5 CODE >119:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+758 text5 CODE >121:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+75C text5 CODE >122:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+75D text4 CODE >115:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+75D text4 CODE >117:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+761 text4 CODE >118:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+762 text3 CODE >103:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+762 text3 CODE >105:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+766 text3 CODE >106:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+767 text2 CODE >99:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+767 text2 CODE >101:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+76B text2 CODE >102:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+76C text1 CODE >91:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+76C text1 CODE >93:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+770 text1 CODE >94:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+784 maintext CODE >54:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+784 maintext CODE >57:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+788 maintext CODE >60:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+78B maintext CODE >61:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+78C maintext CODE >63:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+78F maintext CODE >64:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+790 maintext CODE >65:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+793 maintext CODE >66:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+794 maintext CODE >69:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+799 maintext CODE >70:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+79E maintext CODE >71:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+7A3 maintext CODE >72:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+7A8 maintext CODE >73:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+7AD maintext CODE >74:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+7B2 maintext CODE >75:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+7B7 maintext CODE >76:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+7BC maintext CODE >77:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+7C1 maintext CODE >78:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+7C6 maintext CODE >79:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+7CB maintext CODE >80:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+7D0 maintext CODE >81:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+7D5 maintext CODE >82:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+7DA maintext CODE >83:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+7DF maintext CODE >84:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+7E4 maintext CODE >85:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+7E9 maintext CODE >86:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+7EE maintext CODE >87:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+7F3 maintext CODE >88:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -159,43 +160,40 @@ $dist/default/production\Seven_segments.X.production.o
 # is the name of the object file in which the symbol was defined.
 %SYMTAB
 ___latbits 2 0 ABS 0 - dist/default/production\Seven_segments.X.production.o
-__Hspace_0 2009 0 ABS 0 - -
+__Hspace_0 2008 0 ABS 0 - -
 __Hspace_1 71 0 ABS 0 - -
 __Hspace_2 0 0 ABS 0 - -
 __Hspace_3 0 0 ABS 0 - -
-__CFG_IESO$OFF 0 0 ABS 0 - dist/default/production\Seven_segments.X.production.o
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
 __Hstrings 0 0 ABS 0 strings -
 _PIE1 8C 0 ABS 0 - dist/default/production\Seven_segments.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\Soul_PC\AppData\Local\Temp\shuo.o
+___sp 0 0 STACK 2 stack C:\Users\Soul_PC\AppData\Local\Temp\s1hc.o
 _five E88 0 CODE 0 text9 dist/default/production\Seven_segments.X.production.o
 _four E92 0 CODE 0 text8 dist/default/production\Seven_segments.X.production.o
 _main F08 0 CODE 0 maintext dist/default/production\Seven_segments.X.production.o
 _nine E9C 0 CODE 0 text7 dist/default/production\Seven_segments.X.production.o
 _zero ED8 0 CODE 0 text1 dist/default/production\Seven_segments.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\Seven_segments.X.production.o
-start 0 0 CODE 0 init C:\Users\Soul_PC\AppData\Local\Temp\shuo.o
-__CFG_BOREN$OFF 0 0 ABS 0 - dist/default/production\Seven_segments.X.production.o
+start 0 0 CODE 0 init C:\Users\Soul_PC\AppData\Local\Temp\s1hc.o
 __size_of_five 0 0 ABS 0 - dist/default/production\Seven_segments.X.production.o
 __size_of_four 0 0 ABS 0 - dist/default/production\Seven_segments.X.production.o
 __size_of_main 0 0 ABS 0 - dist/default/production\Seven_segments.X.production.o
 __size_of_nine 0 0 ABS 0 - dist/default/production\Seven_segments.X.production.o
 __size_of_zero 0 0 ABS 0 - dist/default/production\Seven_segments.X.production.o
 __Hpowerup 0 0 CODE 0 powerup -
-intlevel0 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\shuo.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\shuo.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\shuo.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\shuo.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\shuo.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\shuo.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\s1hc.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\s1hc.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\s1hc.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\s1hc.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\s1hc.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\s1hc.o
 wtemp0 7E 0 ABS 0 - dist/default/production\Seven_segments.X.production.o
 __Hfunctab 0 0 ENTRY 0 functab -
 __Hclrtext 0 0 ABS 0 clrtext -
 _ANSELH 189 0 ABS 0 - dist/default/production\Seven_segments.X.production.o
 __Lmaintext 0 0 ABS 0 maintext -
-__CFG_FOSC$INTRC_CLKOUT 0 0 ABS 0 - dist/default/production\Seven_segments.X.production.o
-___stackhi 0 0 ABS 0 - C:\Users\Soul_PC\AppData\Local\Temp\shuo.o
-___stacklo 0 0 ABS 0 - C:\Users\Soul_PC\AppData\Local\Temp\shuo.o
+___stackhi 0 0 ABS 0 - C:\Users\Soul_PC\AppData\Local\Temp\s1hc.o
+___stacklo 0 0 ABS 0 - C:\Users\Soul_PC\AppData\Local\Temp\s1hc.o
 __size_of_eight 0 0 ABS 0 - dist/default/production\Seven_segments.X.production.o
 __size_of_seven 0 0 ABS 0 - dist/default/production\Seven_segments.X.production.o
 __size_of_three 0 0 ABS 0 - dist/default/production\Seven_segments.X.production.o
@@ -203,7 +201,7 @@ __end_of_Timer_Delay F08 0 CODE 0 text11 dist/default/production\Seven_segments.
 start_initialization FF8 0 CODE 0 cinit dist/default/production\Seven_segments.X.production.o
 _OSCCON 8F 0 ABS 0 - dist/default/production\Seven_segments.X.production.o
 _TRISAbits 85 0 ABS 0 - dist/default/production\Seven_segments.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\Soul_PC\AppData\Local\Temp\shuo.o
+___int_sp 0 0 STACK 2 stack C:\Users\Soul_PC\AppData\Local\Temp\s1hc.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -213,7 +211,7 @@ __Hidloc 0 0 IDLOC 0 idloc -
 __Hstack 0 0 STACK 2 stack -
 __Hmaintext 0 0 ABS 0 maintext -
 __Hcommon 0 0 ABS 0 common -
-__Hconfig 4012 0 CONFIG 0 config -
+__Hconfig 4010 0 CONFIG 0 config -
 __Lbank0 0 0 ABS 0 bank0 -
 __Lbank1 0 0 ABS 0 bank1 -
 __Lbank2 0 0 ABS 0 bank2 -
@@ -239,19 +237,18 @@ __Lsfr2 0 0 ABS 0 sfr2 -
 __Lsfr3 0 0 ABS 0 sfr3 -
 __Ltext 0 0 ABS 0 text -
 __HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
-__S0 2009 0 ABS 0 - -
+__S0 2008 0 ABS 0 - -
 __S1 71 0 ABS 0 - -
 __S2 0 0 ABS 0 - -
 __S3 0 0 ABS 0 - -
 _one EA6 0 CODE 0 text6 dist/default/production\Seven_segments.X.production.o
 _six EBA 0 CODE 0 text4 dist/default/production\Seven_segments.X.production.o
 _two ECE 0 CODE 0 text2 dist/default/production\Seven_segments.X.production.o
-__CFG_BOR4V$BOR40V 0 0 ABS 0 - dist/default/production\Seven_segments.X.production.o
 __end_of_one EB0 0 CODE 0 text6 dist/default/production\Seven_segments.X.production.o
 __end_of_six EC4 0 CODE 0 text4 dist/default/production\Seven_segments.X.production.o
 __end_of_two ED8 0 CODE 0 text2 dist/default/production\Seven_segments.X.production.o
 __Lintentry 0 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\Soul_PC\AppData\Local\Temp\shuo.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Soul_PC\AppData\Local\Temp\s1hc.o
 __size_of_Timer_Delay 0 0 ABS 0 - dist/default/production\Seven_segments.X.production.o
 __ptext10 E7E 0 CODE 0 text10 dist/default/production\Seven_segments.X.production.o
 __ptext11 EE2 0 CODE 0 text11 dist/default/production\Seven_segments.X.production.o
@@ -265,7 +262,6 @@ __Lspace_2 0 0 ABS 0 - -
 __Lspace_3 0 0 ABS 0 - -
 _PIR1bits C 0 ABS 0 - dist/default/production\Seven_segments.X.production.o
 __Lend_init 0 0 CODE 0 end_init -
-__CFG_LVP$ON 0 0 ABS 0 - dist/default/production\Seven_segments.X.production.o
 __LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
 end_of_initialization FF8 0 CODE 0 cinit dist/default/production\Seven_segments.X.production.o
 __Hintentry 0 0 CODE 0 intentry -
@@ -312,8 +308,6 @@ __size_of_one 0 0 ABS 0 - dist/default/production\Seven_segments.X.production.o
 __size_of_six 0 0 ABS 0 - dist/default/production\Seven_segments.X.production.o
 __size_of_two 0 0 ABS 0 - dist/default/production\Seven_segments.X.production.o
 __initialization FF8 0 CODE 0 cinit dist/default/production\Seven_segments.X.production.o
-__CFG_PWRTE$OFF 0 0 ABS 0 - dist/default/production\Seven_segments.X.production.o
-__CFG_WRT$OFF 0 0 ABS 0 - dist/default/production\Seven_segments.X.production.o
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.
@@ -354,7 +348,7 @@ text11 0 771 EE2 13 2
 maintext 0 784 F08 78 2
 cstackCOMMON 1 70 70 1 1
 reset_vec 0 0 0 3 2
-config 0 2007 400E 2 2
+config 0 2007 400E 1 2
 # OTES Section
 # This section contains data of all the note-psects.  The beginning of the section
 # is indicated by OTES. The first line indicates the name and decimal

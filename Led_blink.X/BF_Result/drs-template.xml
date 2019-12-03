@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--EDRS Version 2.0-->
+<global>
+   <file name="C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\pic16f887.h" comment="">
+      <scalar name="ANSEL" comment="" line="3387" base_type="uint8" attributes="volatile extern" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="12" init_range="" global_assert="disabled" assert_range="disabled"/>
+      <scalar name="ANSELH" comment="" line="3449" base_type="uint8" attributes="volatile extern" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="12" init_range="" global_assert="disabled" assert_range="disabled"/>
+      <scalar name="OSCCON" comment="" line="1862" base_type="uint8" attributes="volatile extern" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="12" init_range="" global_assert="disabled" assert_range="disabled"/>
+      <scalar name="PORTC" comment="" line="290" base_type="uint8" attributes="volatile extern" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="12" init_range="" global_assert="disabled" assert_range="disabled"/>
+      <scalar name="PORTE" comment="" line="414" base_type="uint8" attributes="volatile extern" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="12" init_range="" global_assert="disabled" assert_range="disabled"/>
+      <scalar name="TRISC" comment="" line="1540" base_type="uint8" attributes="volatile extern" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="12" init_range="" global_assert="disabled" assert_range="disabled"/>
+      <scalar name="TRISE" comment="" line="1664" base_type="uint8" attributes="volatile extern" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="12" init_range="" global_assert="disabled" assert_range="disabled"/>
+   </file>
+   <file name="D:\\Autocapacitacion\\Codigo\\Programas_PIC16F887\\Led_blink.X\\main.c" comment="">
+      <function name="delay" comment="" line="74" main_generator_called="MAIN_GENERATOR"/>
+      <function name="main" comment="" line="48" main_generator_called="MAIN_GENERATOR">
+         <scalar name="return" comment="" line="48" base_type="int16" complete_type="int16" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+   </file>
+</global>

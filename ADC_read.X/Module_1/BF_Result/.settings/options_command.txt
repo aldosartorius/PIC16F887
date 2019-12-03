@@ -1,0 +1,29 @@
+# Options file
+-I C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include
+-I C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\C90
+-prog ADC_read_polyspace
+-verif-version 1.0
+-author Soul_PC
+-sources-list-file D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\Module_1\BF_Result\.settings\source_command.txt
+-lang C
+-target i386
+-compiler gnu4.9
+-D __XC8
+-D __PICC__
+-D __CLANG__
+-D _16F887
+-dos
+-misra3 mandatory-required
+-main-generator-writes-variables public
+-main-generator-calls unused
+-float-rounding-mode to-nearest
+-scalar-overflows-checks signed
+-scalar-overflows-behavior truncate-on-error
+-uncalled-function-checks none
+-check-subnormal allow
+-O2
+-to Software Safety Analysis level 2
+-import-comments D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\Module_1\BF_Result
+-no-default-system-includes
+-custom-target false,8,2,2,-1,4,8,4,4,4,2,1,1,little,unsigned_int,int,unknown
+

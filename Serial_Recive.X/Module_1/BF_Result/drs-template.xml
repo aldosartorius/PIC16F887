@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--EDRS Version 2.0-->
+<global>
+   <file name="C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\pic16f887.h" comment="">
+      <struct name="BAUDCTLbits" comment="" line="3352" attributes="volatile extern">
+         <struct comment="" line="3352" attributes="volatile extern">
+            <scalar name="BRG16" comment="" line="3352" base_type="uint1" attributes="volatile extern" complete_type="uint1" init_mode="MAIN_GENERATOR" init_modes_allowed="12" init_range="" global_assert="disabled" assert_range="disabled"/>
+         </struct>
+      </struct>
+      <struct name="INTCONbits" comment="" line="482" attributes="volatile extern">
+         <struct comment="" line="482" attributes="volatile extern">
+            <scalar name="GIE" comment="" line="482" base_type="uint1" attributes="volatile extern" complete_type="uint1" init_mode="MAIN_GENERATOR" init_modes_allowed="12" init_range="" global_assert="disabled" assert_range="disabled"/>
+            <scalar name="PEIE" comment="" line="482" base_type="uint1" attributes="volatile extern" complete_type="uint1" init_mode="MAIN_GENERATOR" init_modes_allowed="12" init_range="" global_assert="disabled" assert_range="disabled"/>
+         </struct>
+      </struct>
+      <scalar name="OSCCON" comment="" line="1862" base_type="uint8" attributes="volatile extern" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="12" init_range="" global_assert="disabled" assert_range="disabled"/>
+      <struct name="PIE1bits" comment="" line="1718" attributes="volatile extern">
+         <struct comment="" line="1718" attributes="volatile extern">
+            <scalar name="RCIE" comment="" line="1718" base_type="uint1" attributes="volatile extern" complete_type="uint1" init_mode="MAIN_GENERATOR" init_modes_allowed="12" init_range="" global_assert="disabled" assert_range="disabled"/>
+         </struct>
+      </struct>
+      <struct name="PIR1bits" comment="" line="553" attributes="volatile extern">
+         <struct comment="" line="553" attributes="volatile extern">
+            <scalar name="RCIF" comment="" line="553" base_type="uint1" attributes="volatile extern" complete_type="uint1" init_mode="MAIN_GENERATOR" init_modes_allowed="12" init_range="" global_assert="disabled" assert_range="disabled"/>
+         </struct>
+      </struct>
+      <scalar name="RCREG" comment="" line="1140" base_type="uint8" attributes="volatile extern" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="12" init_range="" global_assert="disabled" assert_range="disabled"/>
+      <struct name="RCSTAbits" comment="" line="1068" attributes="volatile extern">
+         <struct comment="" line="1068" attributes="volatile extern">
+            <scalar name="CREN" comment="" line="1068" base_type="uint1" attributes="volatile extern" complete_type="uint1" init_mode="MAIN_GENERATOR" init_modes_allowed="12" init_range="" global_assert="disabled" assert_range="disabled"/>
+            <scalar name="SPEN" comment="" line="1068" base_type="uint1" attributes="volatile extern" complete_type="uint1" init_mode="MAIN_GENERATOR" init_modes_allowed="12" init_range="" global_assert="disabled" assert_range="disabled"/>
+         </struct>
+      </struct>
+      <scalar name="SPBRG" comment="" line="2642" base_type="uint8" attributes="volatile extern" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="12" init_range="" global_assert="disabled" assert_range="disabled"/>
+      <struct name="TRISCbits" comment="" line="1557" attributes="volatile extern">
+         <struct comment="" line="1557" attributes="volatile extern">
+            <scalar name="TRISC7" comment="" line="1557" base_type="uint1" attributes="volatile extern" complete_type="uint1" init_mode="MAIN_GENERATOR" init_modes_allowed="12" init_range="" global_assert="disabled" assert_range="disabled"/>
+         </struct>
+      </struct>
+      <scalar name="TRISD" comment="" line="1602" base_type="uint8" attributes="volatile extern" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="12" init_range="" global_assert="disabled" assert_range="disabled"/>
+      <struct name="TXSTAbits" comment="" line="2582" attributes="volatile extern">
+         <struct comment="" line="2582" attributes="volatile extern">
+            <scalar name="BRGH" comment="" line="2582" base_type="uint1" attributes="volatile extern" complete_type="uint1" init_mode="MAIN_GENERATOR" init_modes_allowed="12" init_range="" global_assert="disabled" assert_range="disabled"/>
+            <scalar name="SYNC" comment="" line="2582" base_type="uint1" attributes="volatile extern" complete_type="uint1" init_mode="MAIN_GENERATOR" init_modes_allowed="12" init_range="" global_assert="disabled" assert_range="disabled"/>
+         </struct>
+      </struct>
+   </file>
+   <file name="D:\\Autocapacitacion\\Codigo\\Programas_PIC16F887\\Serial_Recive.X\\LCD_driver.h" comment="">
+      <function name="Lcd_Print_Char" comment="" line="18" main_generator_called="disabled" attributes="extern">
+         <scalar name="arg1" comment="" line="18" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Lcd_Set_Cursor" comment="" line="16" main_generator_called="disabled" attributes="extern">
+         <scalar name="arg1" comment="" line="16" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg2" comment="" line="16" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+   </file>
+   <file name="D:\\Autocapacitacion\\Codigo\\Programas_PIC16F887\\Serial_Recive.X\\main.c" comment="">
+      <function name="Init_Clock" comment="" line="85" main_generator_called="MAIN_GENERATOR"/>
+      <function name="Init_USART" comment="" line="91" main_generator_called="MAIN_GENERATOR"/>
+      <scalar name="i" comment="" line="46" base_type="uint16" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="15" init_range="" global_assert="NO" assert_range=""/>
+      <function name="main" comment="" line="49" main_generator_called="MAIN_GENERATOR">
+         <scalar name="return" comment="" line="49" base_type="int16" complete_type="int16" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <scalar name="rc_data_char" comment="" line="45" base_type="uint8" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="15" init_range="" global_assert="NO" assert_range=""/>
+      <function name="receive_char" comment="" line="113" main_generator_called="MAIN_GENERATOR"/>
+   </file>
+</global>

@@ -11,19 +11,19 @@
 [v ___eecpymem __eecpymem `(v  1 e 1 0 ]
 "39
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
-"21 D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-[v _main main `(v  1 e 1 0 ]
-"45
+"47 D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+[v _main main `(i  1 e 2 0 ]
+"73
 [v _Timer_Delay Timer_Delay `(v  1 e 1 0 ]
-"56
+"88
 [v _Secuence_One Secuence_One `(v  1 e 1 0 ]
-"65
+"96
 [v _Secuence_Two Secuence_Two `(v  1 e 1 0 ]
-"89
+"120
 [v _Secuence_Three Secuence_Three `(v  1 e 1 0 ]
-"107
+"138
 [v _Secuence_Four Secuence_Four `(v  1 e 1 0 ]
-"129
+"160
 [v _Secuence_Five Secuence_Five `(v  1 e 1 0 ]
 "290 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f887.h
 [v _PORTC PORTC `VEuc  1 e 1 @7 ]
@@ -58,38 +58,38 @@
 [v _ANSEL ANSEL `VEuc  1 e 1 @392 ]
 "3449
 [v _ANSELH ANSELH `VEuc  1 e 1 @393 ]
-"21 D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-[v _main main `(v  1 e 1 0 ]
+"47 D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+[v _main main `(i  1 e 2 0 ]
 {
-"43
+"71
 } 0
-"65
+"96
 [v _Secuence_Two Secuence_Two `(v  1 e 1 0 ]
 {
-"87
+"118
 } 0
-"89
+"120
 [v _Secuence_Three Secuence_Three `(v  1 e 1 0 ]
 {
-"105
+"136
 } 0
-"56
+"88
 [v _Secuence_One Secuence_One `(v  1 e 1 0 ]
 {
-"63
+"94
 } 0
-"107
+"138
 [v _Secuence_Four Secuence_Four `(v  1 e 1 0 ]
 {
-"127
+"158
 } 0
-"129
+"160
 [v _Secuence_Five Secuence_Five `(v  1 e 1 0 ]
 {
-"142
+"172
 } 0
-"45
+"73
 [v _Timer_Delay Timer_Delay `(v  1 e 1 0 ]
 {
-"54
+"86
 } 0

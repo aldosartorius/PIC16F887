@@ -11,9 +11,9 @@
 [v ___eecpymem __eecpymem `(v  1 e 1 0 ]
 "39
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
-"33 D:\Autocapacitacion\Codigo\Programas_PIC16F887\Buttom_enclaved.X\main.c
-[v _main main `(v  1 e 1 0 ]
-"69
+"43 D:\Autocapacitacion\Codigo\Programas_PIC16F887\Buttom_enclaved.X\main.c
+[v _main main `(i  1 e 2 0 ]
+"79
 [v _Timer_Delay Timer_Delay `(v  1 e 1 0 ]
 [s S77 . 1 `uc 1 RC0 1 0 :1:0 
 `uc 1 RC1 1 0 :1:1 
@@ -98,15 +98,15 @@
 [v _TRISEbits TRISEbits `VES69  1 e 1 @137 ]
 "1702
 [v _PIE1 PIE1 `VEuc  1 e 1 @140 ]
-"33 D:\Autocapacitacion\Codigo\Programas_PIC16F887\Buttom_enclaved.X\main.c
-[v _main main `(v  1 e 1 0 ]
+"43 D:\Autocapacitacion\Codigo\Programas_PIC16F887\Buttom_enclaved.X\main.c
+[v _main main `(i  1 e 2 0 ]
 {
-"35
+"45
 [v main@flag flag `s  1 a 2 1 ]
-"66
+"76
 } 0
-"69
+"79
 [v _Timer_Delay Timer_Delay `(v  1 e 1 0 ]
 {
-"78
+"88
 } 0

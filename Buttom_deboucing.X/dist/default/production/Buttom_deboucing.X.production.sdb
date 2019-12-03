@@ -11,8 +11,8 @@
 [v ___eecpymem __eecpymem `(v  1 e 1 0 ]
 "39
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
-"30 D:\Autocapacitacion\Codigo\Programas_PIC16F887\Buttom_deboucing.X\main.c
-[v _main main `(v  1 e 1 0 ]
+"40 D:\Autocapacitacion\Codigo\Programas_PIC16F887\Buttom_deboucing.X\main.c
+[v _main main `(i  1 e 2 0 ]
 [s S77 . 1 `uc 1 RC0 1 0 :1:0 
 `uc 1 RC1 1 0 :1:1 
 `uc 1 RC2 1 0 :1:2 
@@ -77,8 +77,8 @@
 "1677
 [u S69 . 1 `S64 1 . 1 0 ]
 [v _TRISEbits TRISEbits `VES69  1 e 1 @137 ]
-"30 D:\Autocapacitacion\Codigo\Programas_PIC16F887\Buttom_deboucing.X\main.c
-[v _main main `(v  1 e 1 0 ]
+"40 D:\Autocapacitacion\Codigo\Programas_PIC16F887\Buttom_deboucing.X\main.c
+[v _main main `(i  1 e 2 0 ]
 {
-"52
+"61
 } 0

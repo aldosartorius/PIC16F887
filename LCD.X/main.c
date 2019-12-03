@@ -3,50 +3,62 @@
  * Author: Soul_PC
  *
  * Created on 17 de octubre de 2019, 07:09 AM
- */
+ * MISRA 12 verified on November 09, 2019
+*/
+/*                          ***********                                           */
+/*                          *         *                                           */
+/*  (Analogic Input) RA1--> *         *                                           */
+/*                          *         *                                           */
+/*                          *         *                                           */
+/*                          *         *                                           */
+/*                          *         *                                           */
+/*                          *         *                                           */
+/*                          *         *                                           */
+/*                          *         *                                           */
+/*                          *         *                                           */
+/*                          *         *                                           */
+/*                          *         * -->RD2 (LCD  RS)                          */
+/*                          *         * -->RD3 (LCD  R/W)                         */
+/*                          *         * -->RD4 (LCD  data)                        */
+/*                          *         * -->RD5 (LCD  data)                        */
+/*                          *         * -->RD6 (LCD  data)                        */
+/*                          *         * -->RD7 (LCD  data)                        */
+/*                          *         *                                           */
+/*                          *         *                                           */
+/*                          *         *                                           */
+/*                          ***********                                           */ 
 
+
+#pragma config WDTE = OFF               // Watchdog Timer Enable bit (WDT disabled)
+ 
 #include <xc.h>
-#include "LCD_driver.c"
+#include <stdio.h> 
+#include "LCD_driver.h"
 
-#pragma config FOSC = HS        // Oscillator Selection bits (HS oscillator)
-#pragma config WDTE = OFF       // Watchdog Timer Enable bit (WDT disabled)
-#pragma config PWRTE = ON       // Power-up Timer Enable bit (PWRT enabled)
-#pragma config BOREN = ON       // Brown-out Reset Enable bit (BOR enabled)
-#pragma config LVP = OFF        // Low-Voltage (Single-Supply) In-Circuit Serial Programming Enable bit (RB3 is digital I/O, HV on MCLR must be used for programming)
-#pragma config CPD = OFF        // Data EEPROM Memory Code Protection bit (Data EEPROM code protection off)
-#pragma config WRT = OFF        // Flash Program Memory Write Enable bits (Write protection off; all program memory may be written to by EECON control)
-#pragma config CP = OFF         // Flash Program Memory Code Protection bit (Code protection off)
+//Function prototypes
+int main(void);
 
 
-int main()
+int main(void)
 {
-    int ia=1;
-    unsigned int a;
-    TRISD = 0x00;
+    
+     //Oscillator Control Register (OSCCON)
+    OSCCON = 0x71;                      //Define internal oscilator, Fosc = 8 MHz (For timer delay)
+   
+    //Tri State Control Register (TRIS)
+    TRISD = (unsigned char)0x00;        //All port D defined as output
     Lcd_Start();
     
     while(1){
-        
-        ia++;
-        if(ia ==15){
-            ia=1;
-        }
+       
         Lcd_Clear(); 
-        Lcd_Set_Cursor(1,1);
-        Lcd_Print_String("Aldo Sartorius");
-        
-        if(ia%2 == 0){
-           
-            Lcd_Set_Cursor(2,ia);
-             Lcd_Print_String("PAR");
-             __delay_ms(100);
+        Lcd_Set_Cursor((char)1,(char)1);
+        Lcd_Print_String((char *)"Aldo Sartorius");
+        Lcd_Set_Cursor((char)2,(char)1);
+        Lcd_Print_String((char *)"Prueba LCD");
+        for (int count=0; count<=20; count++ ){
+            Timer_Delay();
         }
-        else{
-            
-            Lcd_Set_Cursor(2,ia);
-             Lcd_Print_String("IMPAR");
-             __delay_ms(100);
-        }
+ 
     }
-    return 0;
 }

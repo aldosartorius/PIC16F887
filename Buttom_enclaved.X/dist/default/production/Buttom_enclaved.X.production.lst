@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.10 build 88905656 
-                                                                                               Mon Oct 14 12:18:05 2019
+                                                                                               Sun Nov 10 16:08:10 2019
 
 Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1 
      1                           	processor	16F887
@@ -245,7 +245,7 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
    231                           ; 1 bytes @ 0x0
    232                           
    233                           
-   234                           ; 1 bytes @ 0x0
+   234                           ; 2 bytes @ 0x0
    235  0070                     	ds	1
    236  0071                     ??_main:	
    237  0071                     main@flag:	
@@ -262,13 +262,13 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
    248 ;;
    249 ;; *************** function _main *****************
    250 ;; Defined at:
-   251 ;;		line 33 in file "main.c"
+   251 ;;		line 43 in file "main.c"
    252 ;; Parameters:    Size  Location     Type
    253 ;;		None
    254 ;; Auto vars:     Size  Location     Type
    255 ;;  flag            2    1[COMMON] short 
    256 ;; Return value:  Size  Location     Type
-   257 ;;                  1    wreg      void 
+   257 ;;                  2   28[None  ] int 
    258 ;; Registers used:
    259 ;;		wreg, status,2, status,0, pclath, cstack
    260 ;; Tracked objects:
@@ -297,36 +297,36 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
    283                           ; Regs used in _main: [wreg+status,2+status,0+pclath+cstack]
    284                           
    285                           
-   286                           ;main.c: 35:     short flag = 0;
+   286                           ;main.c: 45:     short flag = 0;
    287  07CC  01F1               	clrf	main@flag
    288  07CD  01F2               	clrf	main@flag+1
    289  07CE                     l643:	
    290                           
-   291                           ;main.c: 36:     TRISCbits.TRISC7 = 0;
+   291                           ;main.c: 47:     TRISCbits.TRISC7 = 0;
    292  07CE  1683               	bsf	3,5	;RP0=1, select bank1
    293  07CF  1303               	bcf	3,6	;RP1=0, select bank1
    294  07D0  1387               	bcf	7,7	;volatile
    295  07D1                     l645:	
    296                           
-   297                           ;main.c: 37:     TRISDbits.TRISD0 = 1;
+   297                           ;main.c: 48:     TRISDbits.TRISD0 = 1;
    298  07D1  1408               	bsf	8,0	;volatile
    299  07D2                     l647:	
    300                           
-   301                           ;main.c: 38:     TRISEbits.TRISE0 = 0;
+   301                           ;main.c: 49:     TRISEbits.TRISE0 = 0;
    302  07D2  1009               	bcf	9,0	;volatile
    303  07D3                     l649:	
    304                           
-   305                           ;main.c: 40:     PORTCbits.RC7 = 0;
+   305                           ;main.c: 51:     PORTCbits.RC7 = 0;
    306  07D3  1283               	bcf	3,5	;RP0=0, select bank0
    307  07D4  1303               	bcf	3,6	;RP1=0, select bank0
    308  07D5  1387               	bcf	7,7	;volatile
    309  07D6                     l651:	
    310                           
-   311                           ;main.c: 41:     PORTEbits.RE0 = 0;
+   311                           ;main.c: 52:     PORTEbits.RE0 = 0;
    312  07D6  1009               	bcf	9,0	;volatile
    313  07D7                     l653:	
    314                           
-   315                           ;main.c: 45:         if(PORTDbits.RD0 == 0 ){
+   315                           ;main.c: 56:         if(PORTDbits.RD0 == 0 ){
    316  07D7  1283               	bcf	3,5	;RP0=0, select bank0
    317  07D8  1303               	bcf	3,6	;RP1=0, select bank0
    318  07D9  1808               	btfsc	8,0	;volatile
@@ -337,7 +337,7 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
    323  07DD                     u20:	
    324  07DD                     l655:	
    325                           
-   326                           ;main.c: 46:             if(flag == 0){
+   326                           ;main.c: 57:             if(flag == 0){
    327  07DD  0871               	movf	main@flag,w
    328  07DE  0472               	iorwf	main@flag+1,w
    329  07DF  1D03               	btfss	3,2
@@ -348,42 +348,42 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
    334  07E3                     u30:	
    335  07E3                     l657:	
    336                           
-   337                           ;main.c: 47:                 PORTEbits.RE0 = 1;
+   337                           ;main.c: 58:                 PORTEbits.RE0 = 1;
    338  07E3  1409               	bsf	9,0	;volatile
    339                           
-   340                           ;main.c: 48:                 PORTCbits.RC7 = 1;
+   340                           ;main.c: 59:                 PORTCbits.RC7 = 1;
    341  07E4  1787               	bsf	7,7	;volatile
    342  07E5                     l659:	
    343                           
-   344                           ;main.c: 49:                 flag = 1;
+   344                           ;main.c: 60:                 flag = 1;
    345  07E5  3001               	movlw	1
    346  07E6  00F1               	movwf	main@flag
    347  07E7  3000               	movlw	0
    348  07E8  00F2               	movwf	main@flag+1
    349                           
-   350                           ;main.c: 51:             }
+   350                           ;main.c: 62:             }
    351  07E9  2FEE               	goto	l663
    352  07EA                     l31:	
-   353                           ;main.c: 52:             else{
+   353                           ;main.c: 63:             else{
    354                           
    355                           
-   356                           ;main.c: 53:                 PORTEbits.RE0 = 0;
+   356                           ;main.c: 64:                 PORTEbits.RE0 = 0;
    357  07EA  1009               	bcf	9,0	;volatile
    358                           
-   359                           ;main.c: 54:                 PORTCbits.RC7 = 0;
+   359                           ;main.c: 65:                 PORTCbits.RC7 = 0;
    360  07EB  1387               	bcf	7,7	;volatile
    361  07EC                     l661:	
    362                           
-   363                           ;main.c: 55:                 flag = 0;
+   363                           ;main.c: 66:                 flag = 0;
    364  07EC  01F1               	clrf	main@flag
    365  07ED  01F2               	clrf	main@flag+1
    366  07EE                     l663:	
    367                           
-   368                           ;main.c: 60:         Timer_Delay();
+   368                           ;main.c: 71:         Timer_Delay();
    369  07EE  120A  118A  27B9  120A  118A  	fcall	_Timer_Delay
    370  07F3                     l665:	
    371                           
-   372                           ;main.c: 61:         Timer_Delay();
+   372                           ;main.c: 72:         Timer_Delay();
    373  07F3  120A  118A  27B9  120A  118A  	fcall	_Timer_Delay
    374  07F8  2FD7               	goto	l653
    375  07F9  120A  118A  2800   	ljmp	start
@@ -393,7 +393,7 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
    379  07B9                     __ptext1:	
    380 ;; *************** function _Timer_Delay *****************
    381 ;; Defined at:
-   382 ;;		line 69 in file "main.c"
+   382 ;;		line 79 in file "main.c"
    383 ;; Parameters:    Size  Location     Type
    384 ;;		None
    385 ;; Auto vars:     Size  Location     Type
@@ -428,7 +428,7 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
    414                           ; Regs used in _Timer_Delay: [wreg+status,2+status,0]
    415                           
    416                           
-   417                           ;main.c: 72:     PIE1 &= 0x1;
+   417                           ;main.c: 82:     PIE1 &= (unsigned char)0x1;
    418  07B9  3001               	movlw	1
    419  07BA  00F0               	movwf	??_Timer_Delay
    420  07BB  0870               	movf	??_Timer_Delay,w
@@ -437,22 +437,22 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
    423  07BE  058C               	andwf	12,f	;volatile
    424  07BF                     l635:	
    425                           
-   426                           ;main.c: 73:     TMR1L = 0x90;
+   426                           ;main.c: 83:     TMR1L = 0x90;
    427  07BF  3090               	movlw	144
    428  07C0  1283               	bcf	3,5	;RP0=0, select bank0
    429  07C1  1303               	bcf	3,6	;RP1=0, select bank0
    430  07C2  008E               	movwf	14	;volatile
    431  07C3                     l637:	
    432                           
-   433                           ;main.c: 74:     TMR1H = 0xFD;
+   433                           ;main.c: 84:     TMR1H = 0xFD;
    434  07C3  30FD               	movlw	253
    435  07C4  008F               	movwf	15	;volatile
    436  07C5                     l639:	
    437                           
-   438                           ;main.c: 75:     T1CON |= 0x1;
+   438                           ;main.c: 85:     T1CON |= (unsigned char)0x1;
    439  07C5  1410               	bsf	16,0	;volatile
    440  07C6                     l38:	
-   441                           ;main.c: 76:     while(PIR1bits.TMR1IF == 0);
+   441                           ;main.c: 86:     while(PIR1bits.TMR1IF == 0){};
    442                           
    443  07C6  1C0C               	btfss	12,0	;volatile
    444  07C7  2FC9               	goto	u11
@@ -462,7 +462,7 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
    448  07CA                     u10:	
    449  07CA                     l40:	
    450                           
-   451                           ;main.c: 77:     PIR1bits.TMR1IF = 0;
+   451                           ;main.c: 87:     PIR1bits.TMR1IF = 0;
    452  07CA  100C               	bcf	12,0	;volatile
    453  07CB                     l41:	
    454  07CB  0008               	return
@@ -560,30 +560,26 @@ DATA                 0      0       0      12        0.0%
 
 
 Microchip Technology PIC Macro Assembler V2.10 build 88905656 
-Symbol Table                                                                                   Mon Oct 14 12:18:05 2019
+Symbol Table                                                                                   Sun Nov 10 16:08:10 2019
 
-            __CFG_CP$OFF 0000                       l31 07EA                       l40 07CA  
-                     l41 07CB                       l38 07C6                       u10 07CA  
-                     u11 07C9                       u20 07DD                       u21 07DC  
-                     u30 07E3                       u31 07E2              __CFG_LVP$ON 0000  
-                    l633 07B9                      l641 07CC                      l635 07BF  
-                    l651 07D6                      l643 07CE                      l637 07C3  
-                    l661 07EC                      l653 07D7                      l645 07D1  
-                    l639 07C5                      l655 07DD                      l663 07EE  
-                    l647 07D2                      l665 07F3                      l657 07E3  
-                    l649 07D3                      l659 07E5             __CFG_CPD$OFF 0000  
-           __CFG_IESO$ON 0000                     _PIE1 008C             __CFG_WRT$OFF 0000  
-          __CFG_FCMEN$ON 0000                     _main 07CC                     btemp 007E  
-          __CFG_BOREN$ON 0000                     start 0000            __CFG_MCLRE$ON 0000  
-                  ?_main 0070            __CFG_WDTE$OFF 0000                    _T1CON 0010  
-                  _TMR1H 000F                    _TMR1L 000E                    status 0003  
-                  wtemp0 007E          __initialization 07FC             __end_of_main 07FC  
-                 ??_main 0071           __CFG_PWRTE$OFF 0000            ??_Timer_Delay 0070  
+                     l31 07EA                       l40 07CA                       l41 07CB  
+                     l38 07C6                       u10 07CA                       u11 07C9  
+                     u20 07DD                       u21 07DC                       u30 07E3  
+                     u31 07E2                      l633 07B9                      l641 07CC  
+                    l635 07BF                      l651 07D6                      l643 07CE  
+                    l637 07C3                      l661 07EC                      l653 07D7  
+                    l645 07D1                      l639 07C5                      l655 07DD  
+                    l663 07EE                      l647 07D2                      l665 07F3  
+                    l657 07E3                      l649 07D3                      l659 07E5  
+                   _PIE1 008C                     _main 07CC                     btemp 007E  
+                   start 0000                    ?_main 0070            __CFG_WDTE$OFF 0000  
+                  _T1CON 0010                    _TMR1H 000F                    _TMR1L 000E  
+                  status 0003                    wtemp0 007E          __initialization 07FC  
+           __end_of_main 07FC                   ??_main 0071            ??_Timer_Delay 0070  
 __end_of__initialization 07FC           __pcstackCOMMON 0070      __end_of_Timer_Delay 07CC  
              __pmaintext 07CC              _Timer_Delay 07B9                  __ptext1 07B9  
    end_of_initialization 07FC                _PORTCbits 0007                _PORTDbits 0008  
               _PORTEbits 0009                _TRISCbits 0087                _TRISDbits 0088  
               _TRISEbits 0089      start_initialization 07FC                ___latbits 0002  
- __CFG_FOSC$INTRC_CLKOUT 0000             ?_Timer_Delay 0070                 _PIR1bits 000C  
-      __CFG_BOR4V$BOR40V 0000            __size_of_main 0030                 main@flag 0071  
-   __size_of_Timer_Delay 0013  
+           ?_Timer_Delay 0070                 _PIR1bits 000C            __size_of_main 0030  
+               main@flag 0071     __size_of_Timer_Delay 0013  

@@ -5,7 +5,7 @@ Linker command line:
 -W-3 --edf=C:\Program Files (x86)\Microchip\xc8\v2.10\pic\dat\en_msgs.txt \
   -cs -h+dist/default/production\Seven_segments.X.production.sym \
   --cmf=dist/default/production\Seven_segments.X.production.cmf -z -Q16F887 \
-  -oC:\Users\Soul_PC\AppData\Local\Temp\shuo.2 --defsym=__MPLAB_BUILD=1 \
+  -oC:\Users\Soul_PC\AppData\Local\Temp\s1hc.2 --defsym=__MPLAB_BUILD=1 \
   -Mdist/default/production/Seven_segments.X.production.map -E1 -ver=XC8 \
   --acfsm=1493 -ASTACK=0110h-016Fh -pstack=STACK -ACODE=00h-07FFhx4 \
   -ASTRCODE=00h-01FFFh -ASTRING=00h-0FFhx32 -ACONST=00h-0FFhx32 \
@@ -18,7 +18,7 @@ Linker command line:
   -pfunctab=ENTRY -ACONFIG=02007h-02008h -pconfig=CONFIG -DCONFIG=2 \
   -AIDLOC=02000h-02003h -pidloc=IDLOC -DIDLOC=2 -AEEDATA=00h-0FFh/02100h \
   -peeprom_data=EEDATA -DEEDATA=2 -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 \
-  -DENTRY=2 -k C:\Users\Soul_PC\AppData\Local\Temp\shuo.o \
+  -DENTRY=2 -k C:\Users\Soul_PC\AppData\Local\Temp\s1hc.o \
   dist/default/production\Seven_segments.X.production.o 
 
 Object code version is 3.11
@@ -28,9 +28,9 @@ Machine type is 16F887
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\Soul_PC\AppData\Local\Temp\shuo.o
+C:\Users\Soul_PC\AppData\Local\Temp\s1hc.o
                 end_init                              0        0        3        0       0
-                config                             2007     2007        2     400E       0
+                config                             2007     2007        1     400E       0
 dist/default/production\Seven_segments.X.production.o
                 cinit                               7FC      7FC        4      FF8       0
                 text11                              771      771       13      EE2       0
@@ -99,7 +99,7 @@ TOTAL           Name                               Link     Load   Length     Sp
         CLASS   SFR3           
 
         CLASS   CONFIG         
-                config                             2007     2007        2         0
+                config                             2007     2007        1         0
 
         CLASS   IDLOC          
 
@@ -124,7 +124,7 @@ SEGMENTS        Name                           Load    Length   Top    Selector 
                 text11                         000771  000013  000784       EE2       0  CODE        2
                 maintext                       000784  000078  0007FC       F08       0  CODE        2
                 cinit                          0007FC  000004  000800       FF8       0  CODE        2
-                config                         002007  000002  002009      400E       0  CONFIG      2
+                config                         002007  000001  002008      400E       0  CONFIG      2
 
 
 UNUSED ADDRESS RANGES
@@ -137,6 +137,7 @@ UNUSED ADDRESS RANGES
         CODE             0003-073E            73C           2
                          0800-1FFF            800
         COMMON           0071-007D              D           1
+        CONFIG           2008-2008              1           2
         CONST            0003-073E            100           2
                          0800-1FFF            100
         EEDATA           2100-21FF            100           2
@@ -172,14 +173,7 @@ _TMR1L                   (abs)        000E
 _TRISAbits               (abs)        0085
 _TRISC                   (abs)        0087
 _Timer_Delay             text11       0771
-__CFG_BOR4V$BOR40V       (abs)        0000
-__CFG_BOREN$OFF          (abs)        0000
-__CFG_FOSC$INTRC_CLKOUT  (abs)        0000
-__CFG_IESO$OFF           (abs)        0000
-__CFG_LVP$ON             (abs)        0000
-__CFG_PWRTE$OFF          (abs)        0000
 __CFG_WDTE$OFF           (abs)        0000
-__CFG_WRT$OFF            (abs)        0000
 __Habs1                  abs1         0000
 __Hbank0                 bank0        0000
 __Hbank1                 bank1        0000
@@ -189,7 +183,7 @@ __Hcinit                 cinit        0800
 __Hclrtext               clrtext      0000
 __Hcode                  code         0000
 __Hcommon                common       0000
-__Hconfig                config       2009
+__Hconfig                config       2008
 __HcstackCOMMON          cstackCOMMON 0000
 __Heeprom_data           eeprom_data  0000
 __Hend_init              end_init     0003
@@ -205,7 +199,7 @@ __Hsfr0                  sfr0         0000
 __Hsfr1                  sfr1         0000
 __Hsfr2                  sfr2         0000
 __Hsfr3                  sfr3         0000
-__Hspace_0               (abs)        2009
+__Hspace_0               (abs)        2008
 __Hspace_1               (abs)        0071
 __Hspace_2               (abs)        0000
 __Hspace_3               (abs)        0000
@@ -244,7 +238,7 @@ __Lspace_3               (abs)        0000
 __Lstack                 stack        0000
 __Lstrings               strings      0000
 __Ltext                  text         0000
-__S0                     (abs)        2009
+__S0                     (abs)        2008
 __S1                     (abs)        0071
 __S2                     (abs)        0000
 __S3                     (abs)        0000
@@ -321,13 +315,13 @@ FUNCTION INFORMATION:
 
  *************** function _main *****************
  Defined at:
-		line 41 in file "main.c"
+		line 54 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
 		None
  Return value:  Size  Location     Type
-                  1    wreg      void 
+                  2   50[None  ] int 
  Registers used:
 		wreg, status,2, status,0, pclath, cstack
  Tracked objects:
@@ -360,7 +354,7 @@ Total ram usage:        0 bytes
 
  *************** function _zero *****************
  Defined at:
-		line 78 in file "main.c"
+		line 91 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -389,7 +383,7 @@ Total ram usage:        0 bytes
 
  *************** function _two *****************
  Defined at:
-		line 86 in file "main.c"
+		line 99 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -418,7 +412,7 @@ Total ram usage:        0 bytes
 
  *************** function _three *****************
  Defined at:
-		line 90 in file "main.c"
+		line 103 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -447,7 +441,7 @@ Total ram usage:        0 bytes
 
  *************** function _six *****************
  Defined at:
-		line 102 in file "main.c"
+		line 115 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -476,7 +470,7 @@ Total ram usage:        0 bytes
 
  *************** function _seven *****************
  Defined at:
-		line 107 in file "main.c"
+		line 119 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -505,7 +499,7 @@ Total ram usage:        0 bytes
 
  *************** function _one *****************
  Defined at:
-		line 82 in file "main.c"
+		line 95 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -534,7 +528,7 @@ Total ram usage:        0 bytes
 
  *************** function _nine *****************
  Defined at:
-		line 116 in file "main.c"
+		line 127 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -563,7 +557,7 @@ Total ram usage:        0 bytes
 
  *************** function _four *****************
  Defined at:
-		line 94 in file "main.c"
+		line 107 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -592,7 +586,7 @@ Total ram usage:        0 bytes
 
  *************** function _five *****************
  Defined at:
-		line 98 in file "main.c"
+		line 111 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -621,7 +615,7 @@ Total ram usage:        0 bytes
 
  *************** function _eight *****************
  Defined at:
-		line 111 in file "main.c"
+		line 123 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -650,7 +644,7 @@ Total ram usage:        0 bytes
 
  *************** function _Timer_Delay *****************
  Defined at:
-		line 126 in file "main.c"
+		line 137 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type

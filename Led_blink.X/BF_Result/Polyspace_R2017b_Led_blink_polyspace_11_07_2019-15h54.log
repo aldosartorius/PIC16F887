@@ -1,0 +1,163 @@
+<polyspace-bug-finder-nodesktop R2017b PID25280 PGID25280>
+
+Polyspace verification of Led_blink_polyspace project.
+Starting at 11/07/2019, 15h54.
+
+Option -main-generator-writes-variables has no effect in Polyspace Bug Finder.
+Option -main-generator-calls has no effect in Polyspace Bug Finder.
+Option -float-rounding-mode has no effect in Polyspace Bug Finder.
+Option -scalar-overflows-checks has no effect in Polyspace Bug Finder.
+Option -scalar-overflows-behavior has no effect in Polyspace Bug Finder.
+Option -uncalled-function-checks has no effect in Polyspace Bug Finder.
+Option -check-subnormal has no effect in Polyspace Bug Finder.
+Option -O2 has no effect in Polyspace Bug Finder.
+
+Activated checkers: 
+       INT_ZERO_DIV, FLOAT_ZERO_DIV, INT_CONV_OVFL, UINT_CONV_OVFL, SIGN_CHANGE, FLOAT_CONV_OVFL, 
+  INT_STD_LIB, FLOAT_STD_LIB, OUT_BOUND_ARRAY, NULL_PTR, OUT_BOUND_PTR, FUNC_CAST, PTR_CAST, 
+  MEM_STD_LIB, STR_STD_LIB, FREED_PTR, DOUBLE_DEALLOCATION, BAD_FREE, BAD_EQUAL_USE, 
+  BAD_EQUAL_EQUAL_USE, DECL_MISMATCH, MISSING_NULL_CHAR, PTR_SIZEOF_MISMATCH, TYPEDEF_MISMATCH, 
+  USELESS_WRITE, NON_INIT_VAR, NON_INIT_PTR, VAR_SHADOWING, MISSING_RETURN, RESOURCE_LEAK, 
+  UNREACHABLE, DEAD_CODE, PARTIALLY_ACCESSED_ARRAY, USELESS_IF, DEADLOCK, BAD_LOCK, DOUBLE_LOCK, 
+  DATA_RACE, DOUBLE_UNLOCK, BAD_UNLOCK, OTHER_STD_LIB, ASSERT, STRING_FORMAT, IMPROPER_ARRAY_INIT, 
+  BAD_PTR_SCALING, SIZEOF_MISUSE, FLOAT_ABSORPTION, LOCAL_ADDR_ESCAPE, STR_FORMAT_BUFFER_OVERFLOW, 
+  STRLIB_BUFFER_OVERFLOW, STRLIB_BUFFER_UNDERFLOW, PUTENV_AUTO_VAR, PTR_TO_DIFF_ARRAY, 
+  ALIGNMENT_CHANGE, READ_ONLY_RESOURCE_WRITE, CLOSED_RESOURCE_USE, DOUBLE_RESOURCE_CLOSE, 
+  DOUBLE_RESOURCE_OPEN, OPERATOR_PRECEDENCE, STD_FUNC_ARG_MISMATCH, INVALID_MEMORY_ASSUMPTION, 
+  CONSTANT_OBJECT_WRITE, INVALID_VA_LIST_ARG, NON_POSITIVE_VLA_SIZE, MEMCMP_STRINGS, 
+  MEMCMP_PADDING_DATA, ERRNO_MISUSE, MISSING_ERRNO_RESET, CHARACTER_MISUSE, CHAR_EOF_CONFUSED, 
+  IO_INTERLEAVING, SIG_HANDLER_COMP_EXCP_RETURN, SIG_HANDLER_CALLING_SIGNAL, 
+  UNPROTOTYPED_FUNC_CALL, FILE_OBJECT_MISUSE, FLEXIBLE_ARRAY_MEMBER_STRUCT_MISUSE, 
+  SIG_HANDLER_SHARED_OBJECT, DATA_RACE_STD_LIB
+
+Remark: By default, some results are not generated for headers.
+|       Search for '-generate-results-for' in user documentation to generate results for these headers.
+
+Verifying sources compliance ...
+
+Options used with Verifier:
+-bug-finder=true
+-polyspace-version=2.4 (R2017b)
+-date=07/11/2019
+
+User:
+-compiler=gnu4.9
+-lang=C
+-author=Soul_PC
+-results-dir=D:\Autocapacitacion\Codigo\Programas_PIC16F887\Led_blink.X\BF_Result
+-target=i386
+-verif-version=1.0
+-no-default-system-includes=true (non-official option)
+-prog=Led_blink_polyspace
+-D1=__XC8
+-D2=__PICC_
+-D3=__CLANG__
+-D4=_16F877
+-to=Software Safety Analysis level 2
+-I1=C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\c99
+-I2=C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include
+-I3=C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\c90
+-import-comments=D:\Autocapacitacion\Codigo\Programas_PIC16F887\Led_blink.X\BF_Result\comments_bak
+-dos=true
+-custom-target=[false,8,2,2,-1,4,8,4,4,4,2,1,1,little,unsigned_int,int,unknown] (non-official option)
+
+
+Verifying host configuration:
+Number of cores:                4
+Processor type:                 amd64
+Processor model:                Intel(R) Core(TM) i7-4710HQ CPU @ 2.50GHz
+Processor frequency:            2.494 GHz
+Memory > 4 GB:                                                 15.92 GB
+Tmp space available in C:\Users\Soul_PC\AppData\Local\Temp:    45.21 GB
+
+Remark: 4 core(s) detected. The verification uses 4 core(s).
+*** Configuration of the host :	OK
+
+
+Type D:\Autocapacitacion\Codigo\Programas_PIC16F887\Led_blink.X\BF_Result\kill-rte-kernel.bat on host DESKTOP-P36S46J to halt Verifier process
+
+
+Polyspace C analysis
+Copyright 1999-2017 The MathWorks, Inc.
+All rights reserved.
+
+Starting at: Thu Nov 07 15:54:48 2019
+Host: MINGW64_NTx_64-6.2 DESKTOP-P36S46J 0 amd64
+User: Soul_PC
+**********************************************************
+***
+*** Verifying GNU C 4.9 sources
+***
+**********************************************************
+
+Verifying sources ...
+Verifying main.c (1/1)
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\c99\bits\alltypes.h, line 168: error: identifier "__int24" is undefined
+|  typedef __int24           int24_t;
+|          ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\c99\bits\alltypes.h, line 204: error: identifier "__uint24" is undefined
+|  typedef __uint24        uint24_t;
+|          ^
+
+D:\Autocapacitacion\Codigo\Programas_PIC16F887\Led_blink.X\main.c, line 25: error: identifier "OSCCON" is undefined
+|      OSCCON = 111;        //Define 8 mHZ
+|      ^
+
+D:\Autocapacitacion\Codigo\Programas_PIC16F887\Led_blink.X\main.c, line 27: error: identifier "ANSEL" is undefined
+|      ANSEL &= 0x0;        //Disable  port A as analogic port (Energy saving, Port A enable darlington diodes for LCD)
+|      ^
+
+D:\Autocapacitacion\Codigo\Programas_PIC16F887\Led_blink.X\main.c, line 28: error: identifier "ANSELH" is undefined
+|      ANSELH &=0x0;        //Disable  port B as analogic port (Energy saving, Port B Reads butoms)
+|      ^
+
+D:\Autocapacitacion\Codigo\Programas_PIC16F887\Led_blink.X\main.c, line 32: error: identifier "TRISC" is undefined
+|      TRISC &= 0x0;        //all C port as Output
+|      ^
+
+D:\Autocapacitacion\Codigo\Programas_PIC16F887\Led_blink.X\main.c, line 33: error: identifier "TRISE" is undefined
+|      TRISE &= 0x0;        //all E port as Output (Port E activate Darlington Driver)
+|      ^
+
+D:\Autocapacitacion\Codigo\Programas_PIC16F887\Led_blink.X\main.c, line 35: error: identifier "PORTC" is undefined
+|      PORTC &= 0x0;       //Clean port C
+|      ^
+
+D:\Autocapacitacion\Codigo\Programas_PIC16F887\Led_blink.X\main.c, line 36: error: identifier "PORTE" is undefined
+|      PORTE &= 0b001;     //Write 0b001 in port E (activate A5 in Darlington diode)
+|      ^
+
+9 errors detected in the compilation of "main.c".
+D:\Autocapacitacion\Codigo\Programas_PIC16F887\Led_blink.X\main.c: warning: Failed compilation.
+Global compilation phase...
+
+Packing compilation data
+done.
+
+Importing comments from D:\Autocapacitacion\Codigo\Programas_PIC16F887\Led_blink.X\BF_Result\comments_bak folder
+
+Operation completed:
+--------------------
+
+
+**********************************************************
+***
+*** GNU C 4.9 sources verification done
+***
+**********************************************************
+Ending at: Thu Nov 07 15:54:51 2019
+User time for compilation: 00:00:03.28 (3.28real, 3.28u + 0s)
+
+
+-------------------------------------------------------------------
+---                                                             ---
+---  Verifier has detected compilation error(s) in the code.    ---
+---  Please correct them and launch the analysis again.         ---
+---                                                             ---
+-------------------------------------------------------------------
+
+
+Failure at: Thu Nov 07 15:54:51 2019
+Error: Exiting because of previous error
+User time for polyspace-bug-finder-nodesktop: 00:00:04.6 (4.07real, 4.07u + 0s)

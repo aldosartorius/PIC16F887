@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.10 build 88905656 
-                                                                                               Wed Oct 09 11:40:43 2019
+                                                                                               Fri Nov 08 18:15:54 2019
 
 Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1 
      1                           	processor	16F887
@@ -256,17 +256,17 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
    242  0070                     ?_Secuence_Five:	
    243                           ; 1 bytes @ 0x0
    244                           
-   245  0070                     ?_main:	
+   245  0070                     ?_Timer_Delay:	
    246                           ; 1 bytes @ 0x0
    247                           
-   248  0070                     ?_Timer_Delay:	
+   248  0070                     ??_Timer_Delay:	
    249                           ; 1 bytes @ 0x0
    250                           
-   251  0070                     ??_Timer_Delay:	
+   251  0070                     ?_main:	
    252                           ; 1 bytes @ 0x0
    253                           
    254                           
-   255                           ; 1 bytes @ 0x0
+   255                           ; 2 bytes @ 0x0
    256  0070                     	ds	1
    257  0071                     ??_Secuence_One:	
    258  0071                     ??_Secuence_Two:	
@@ -295,13 +295,13 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
    281 ;;
    282 ;; *************** function _main *****************
    283 ;; Defined at:
-   284 ;;		line 21 in file "main.c"
+   284 ;;		line 47 in file "main.c"
    285 ;; Parameters:    Size  Location     Type
    286 ;;		None
    287 ;; Auto vars:     Size  Location     Type
    288 ;;		None
    289 ;; Return value:  Size  Location     Type
-   290 ;;                  1    wreg      void 
+   290 ;;                  2   38[None  ] int 
    291 ;; Registers used:
    292 ;;		wreg, status,2, status,0, pclath, cstack
    293 ;; Tracked objects:
@@ -334,63 +334,63 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
    320                           ; Regs used in _main: [wreg+status,2+status,0+pclath+cstack]
    321                           
    322                           
-   323                           ;main.c: 23:      OSCCON = 0x15;
+   323                           ;main.c: 50:     OSCCON = 0x15;
    324  06E2  3015               	movlw	21
    325  06E3  1683               	bsf	3,5	;RP0=1, select bank1
    326  06E4  1303               	bcf	3,6	;RP1=0, select bank1
    327  06E5  008F               	movwf	15	;volatile
    328  06E6                     l771:	
    329                           
-   330                           ;main.c: 25:     ANSEL &= 0x0;
+   330                           ;main.c: 53:     ANSEL &= (unsigned char)0x0;
    331  06E6  1683               	bsf	3,5	;RP0=1, select bank3
    332  06E7  1703               	bsf	3,6	;RP1=1, select bank3
    333  06E8  0188               	clrf	8	;volatile
    334  06E9                     l773:	
    335                           
-   336                           ;main.c: 26:     ANSELH &=0x0;
+   336                           ;main.c: 54:     ANSELH &=(unsigned char)0x0;
    337  06E9  0189               	clrf	9	;volatile
    338  06EA                     l775:	
    339                           
-   340                           ;main.c: 28:     TRISC &= 0x0;
+   340                           ;main.c: 57:     TRISC &= (unsigned char)0x0;
    341  06EA  1683               	bsf	3,5	;RP0=1, select bank1
    342  06EB  1303               	bcf	3,6	;RP1=0, select bank1
    343  06EC  0187               	clrf	7	;volatile
    344  06ED                     l777:	
    345                           
-   346                           ;main.c: 29:     TRISE &= 0x0;
+   346                           ;main.c: 58:     TRISE &= (unsigned char)0x0;
    347  06ED  0189               	clrf	9	;volatile
    348  06EE                     l779:	
    349                           
-   350                           ;main.c: 31:     PORTC &= 0x0;
+   350                           ;main.c: 60:     PORTC &= (unsigned char)0x0;
    351  06EE  1283               	bcf	3,5	;RP0=0, select bank0
    352  06EF  1303               	bcf	3,6	;RP1=0, select bank0
    353  06F0  0187               	clrf	7	;volatile
    354  06F1                     l781:	
    355                           
-   356                           ;main.c: 32:     PORTE &= 0B001;
+   356                           ;main.c: 61:     PORTE &= (unsigned char)0B001;
    357  06F1  3001               	movlw	1
    358  06F2  00F1               	movwf	??_main
    359  06F3  0871               	movf	??_main,w
    360  06F4  0589               	andwf	9,f	;volatile
    361  06F5                     l783:	
    362                           
-   363                           ;main.c: 36:         Secuence_One();
+   363                           ;main.c: 65:         Secuence_One();
    364  06F5  120A  118A  268F  120A  118A  	fcall	_Secuence_One
    365  06FA                     l785:	
    366                           
-   367                           ;main.c: 37:         Secuence_Two();
+   367                           ;main.c: 66:         Secuence_Two();
    368  06FA  120A  118A  27A2  120A  118A  	fcall	_Secuence_Two
    369  06FF                     l787:	
    370                           
-   371                           ;main.c: 38:         Secuence_Three();
+   371                           ;main.c: 67:         Secuence_Three();
    372  06FF  120A  118A  2712  120A  118A  	fcall	_Secuence_Three
    373  0704                     l789:	
    374                           
-   375                           ;main.c: 39:         Secuence_Four();
+   375                           ;main.c: 68:         Secuence_Four();
    376  0704  120A  118A  2750  120A  118A  	fcall	_Secuence_Four
    377  0709                     l791:	
    378                           
-   379                           ;main.c: 40:         Secuence_Five();
+   379                           ;main.c: 69:         Secuence_Five();
    380  0709  120A  118A  26B4  120A  118A  	fcall	_Secuence_Five
    381  070E  2EF5               	goto	l783
    382  070F  120A  118A  2800   	ljmp	start
@@ -400,7 +400,7 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
    386  07A2                     __ptext1:	
    387 ;; *************** function _Secuence_Two *****************
    388 ;; Defined at:
-   389 ;;		line 65 in file "main.c"
+   389 ;;		line 96 in file "main.c"
    390 ;; Parameters:    Size  Location     Type
    391 ;;		None
    392 ;; Auto vars:     Size  Location     Type
@@ -436,107 +436,107 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
    422                           ; Regs used in _Secuence_Two: [wreg+status,2+status,0+pclath+cstack]
    423                           
    424                           
-   425                           ;main.c: 67:     PORTC = 0x80;
+   425                           ;main.c: 98:     PORTC = (unsigned char)0x80;
    426  07A2  3080               	movlw	128
    427  07A3  1283               	bcf	3,5	;RP0=0, select bank0
    428  07A4  1303               	bcf	3,6	;RP1=0, select bank0
    429  07A5  0087               	movwf	7	;volatile
    430  07A6                     l673:	
    431                           
-   432                           ;main.c: 68:     Timer_Delay();
+   432                           ;main.c: 99:     Timer_Delay();
    433  07A6  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
    434  07AB                     l675:	
    435                           
-   436                           ;main.c: 69:     PORTC = 0xC0;
+   436                           ;main.c: 100:     PORTC = (unsigned char)0xC0;
    437  07AB  30C0               	movlw	192
    438  07AC  1283               	bcf	3,5	;RP0=0, select bank0
    439  07AD  1303               	bcf	3,6	;RP1=0, select bank0
    440  07AE  0087               	movwf	7	;volatile
    441                           
-   442                           ;main.c: 70:     Timer_Delay();
+   442                           ;main.c: 101:     Timer_Delay();
    443  07AF  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
    444  07B4                     l677:	
    445                           
-   446                           ;main.c: 71:     PORTC = 0xE0;
+   446                           ;main.c: 102:     PORTC = (unsigned char)0xE0;
    447  07B4  30E0               	movlw	224
    448  07B5  1283               	bcf	3,5	;RP0=0, select bank0
    449  07B6  1303               	bcf	3,6	;RP1=0, select bank0
    450  07B7  0087               	movwf	7	;volatile
    451  07B8                     l679:	
    452                           
-   453                           ;main.c: 72:     Timer_Delay();
+   453                           ;main.c: 103:     Timer_Delay();
    454  07B8  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
    455                           
-   456                           ;main.c: 73:     PORTC = 0xF0;
+   456                           ;main.c: 104:     PORTC = (unsigned char)0xF0;
    457  07BD  30F0               	movlw	240
    458  07BE  1283               	bcf	3,5	;RP0=0, select bank0
    459  07BF  1303               	bcf	3,6	;RP1=0, select bank0
    460  07C0  0087               	movwf	7	;volatile
    461  07C1                     l681:	
    462                           
-   463                           ;main.c: 74:     Timer_Delay();
+   463                           ;main.c: 105:     Timer_Delay();
    464  07C1  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
    465  07C6                     l683:	
    466                           
-   467                           ;main.c: 75:     PORTC = 0xF8;
+   467                           ;main.c: 106:     PORTC = (unsigned char)0xF8;
    468  07C6  30F8               	movlw	248
    469  07C7  1283               	bcf	3,5	;RP0=0, select bank0
    470  07C8  1303               	bcf	3,6	;RP1=0, select bank0
    471  07C9  0087               	movwf	7	;volatile
    472                           
-   473                           ;main.c: 76:     Timer_Delay();
+   473                           ;main.c: 107:     Timer_Delay();
    474  07CA  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
    475  07CF                     l685:	
    476                           
-   477                           ;main.c: 77:     PORTC = 0x78;
+   477                           ;main.c: 108:     PORTC = (unsigned char)0x78;
    478  07CF  3078               	movlw	120
    479  07D0  1283               	bcf	3,5	;RP0=0, select bank0
    480  07D1  1303               	bcf	3,6	;RP1=0, select bank0
    481  07D2  0087               	movwf	7	;volatile
    482  07D3                     l687:	
    483                           
-   484                           ;main.c: 78:     Timer_Delay();
+   484                           ;main.c: 109:     Timer_Delay();
    485  07D3  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
    486                           
-   487                           ;main.c: 79:     PORTC = 0x38;
+   487                           ;main.c: 110:     PORTC = (unsigned char)0x38;
    488  07D8  3038               	movlw	56
    489  07D9  1283               	bcf	3,5	;RP0=0, select bank0
    490  07DA  1303               	bcf	3,6	;RP1=0, select bank0
    491  07DB  0087               	movwf	7	;volatile
    492  07DC                     l689:	
    493                           
-   494                           ;main.c: 80:     Timer_Delay();
+   494                           ;main.c: 111:     Timer_Delay();
    495  07DC  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
    496  07E1                     l691:	
    497                           
-   498                           ;main.c: 81:     PORTC = 0x18;
+   498                           ;main.c: 112:     PORTC = (unsigned char)0x18;
    499  07E1  3018               	movlw	24
    500  07E2  1283               	bcf	3,5	;RP0=0, select bank0
    501  07E3  1303               	bcf	3,6	;RP1=0, select bank0
    502  07E4  0087               	movwf	7	;volatile
    503                           
-   504                           ;main.c: 82:     Timer_Delay();
+   504                           ;main.c: 113:     Timer_Delay();
    505  07E5  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
    506  07EA                     l693:	
    507                           
-   508                           ;main.c: 83:     PORTC = 0x8;
+   508                           ;main.c: 114:     PORTC = (unsigned char)0x8;
    509  07EA  3008               	movlw	8
    510  07EB  1283               	bcf	3,5	;RP0=0, select bank0
    511  07EC  1303               	bcf	3,6	;RP1=0, select bank0
    512  07ED  0087               	movwf	7	;volatile
    513  07EE                     l695:	
    514                           
-   515                           ;main.c: 84:     Timer_Delay();
+   515                           ;main.c: 115:     Timer_Delay();
    516  07EE  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
    517  07F3                     l697:	
    518                           
-   519                           ;main.c: 85:     PORTC = 0x00;
+   519                           ;main.c: 116:     PORTC = (unsigned char)0x00;
    520  07F3  1283               	bcf	3,5	;RP0=0, select bank0
    521  07F4  1303               	bcf	3,6	;RP1=0, select bank0
    522  07F5  0187               	clrf	7	;volatile
    523  07F6                     l699:	
    524                           
-   525                           ;main.c: 86:     Timer_Delay();
+   525                           ;main.c: 117:     Timer_Delay();
    526  07F6  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
    527  07FB                     l54:	
    528  07FB  0008               	return
@@ -546,7 +546,7 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
    532  0712                     __ptext2:	
    533 ;; *************** function _Secuence_Three *****************
    534 ;; Defined at:
-   535 ;;		line 89 in file "main.c"
+   535 ;;		line 120 in file "main.c"
    536 ;; Parameters:    Size  Location     Type
    537 ;;		None
    538 ;; Auto vars:     Size  Location     Type
@@ -582,78 +582,78 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
    568                           ; Regs used in _Secuence_Three: [wreg+status,2+status,0+pclath+cstack]
    569                           
    570                           
-   571                           ;main.c: 91:     PORTC = 0x0;
+   571                           ;main.c: 122:     PORTC = (unsigned char)0x0;
    572  0712  1283               	bcf	3,5	;RP0=0, select bank0
    573  0713  1303               	bcf	3,6	;RP1=0, select bank0
    574  0714  0187               	clrf	7	;volatile
    575  0715                     l703:	
    576                           
-   577                           ;main.c: 92:     Timer_Delay();
+   577                           ;main.c: 123:     Timer_Delay();
    578  0715  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
    579  071A                     l705:	
    580                           
-   581                           ;main.c: 93:     PORTC = 0x88;
+   581                           ;main.c: 124:     PORTC = (unsigned char)0x88;
    582  071A  3088               	movlw	136
    583  071B  1283               	bcf	3,5	;RP0=0, select bank0
    584  071C  1303               	bcf	3,6	;RP1=0, select bank0
    585  071D  0087               	movwf	7	;volatile
    586  071E                     l707:	
    587                           
-   588                           ;main.c: 94:     Timer_Delay();
+   588                           ;main.c: 125:     Timer_Delay();
    589  071E  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
    590  0723                     l709:	
    591                           
-   592                           ;main.c: 95:     PORTC = 0xD8;
+   592                           ;main.c: 126:     PORTC = (unsigned char)0xD8;
    593  0723  30D8               	movlw	216
    594  0724  1283               	bcf	3,5	;RP0=0, select bank0
    595  0725  1303               	bcf	3,6	;RP1=0, select bank0
    596  0726  0087               	movwf	7	;volatile
    597  0727                     l711:	
    598                           
-   599                           ;main.c: 96:     Timer_Delay();
+   599                           ;main.c: 127:     Timer_Delay();
    600  0727  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
    601  072C                     l713:	
    602                           
-   603                           ;main.c: 97:     PORTC = 0xF8;
+   603                           ;main.c: 128:     PORTC = (unsigned char)0xF8;
    604  072C  30F8               	movlw	248
    605  072D  1283               	bcf	3,5	;RP0=0, select bank0
    606  072E  1303               	bcf	3,6	;RP1=0, select bank0
    607  072F  0087               	movwf	7	;volatile
    608  0730                     l715:	
    609                           
-   610                           ;main.c: 98:     Timer_Delay();
+   610                           ;main.c: 129:     Timer_Delay();
    611  0730  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
    612  0735                     l717:	
    613                           
-   614                           ;main.c: 99:     PORTC = 0xD8;
+   614                           ;main.c: 130:     PORTC = (unsigned char)0xD8;
    615  0735  30D8               	movlw	216
    616  0736  1283               	bcf	3,5	;RP0=0, select bank0
    617  0737  1303               	bcf	3,6	;RP1=0, select bank0
    618  0738  0087               	movwf	7	;volatile
    619  0739                     l719:	
    620                           
-   621                           ;main.c: 100:     Timer_Delay();
+   621                           ;main.c: 131:     Timer_Delay();
    622  0739  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
    623  073E                     l721:	
    624                           
-   625                           ;main.c: 101:     PORTC = 0x88;
+   625                           ;main.c: 132:     PORTC = (unsigned char)0x88;
    626  073E  3088               	movlw	136
    627  073F  1283               	bcf	3,5	;RP0=0, select bank0
    628  0740  1303               	bcf	3,6	;RP1=0, select bank0
    629  0741  0087               	movwf	7	;volatile
    630  0742                     l723:	
    631                           
-   632                           ;main.c: 102:     Timer_Delay();
+   632                           ;main.c: 133:     Timer_Delay();
    633  0742  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
    634  0747                     l725:	
    635                           
-   636                           ;main.c: 103:     PORTC = 0x0;
+   636                           ;main.c: 134:     PORTC = (unsigned char)0x0;
    637  0747  1283               	bcf	3,5	;RP0=0, select bank0
    638  0748  1303               	bcf	3,6	;RP1=0, select bank0
    639  0749  0187               	clrf	7	;volatile
    640  074A                     l727:	
    641                           
-   642                           ;main.c: 104:     Timer_Delay();
+   642                           ;main.c: 135:     Timer_Delay();
    643  074A  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
    644  074F                     l57:	
    645  074F  0008               	return
@@ -663,7 +663,7 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
    649  068F                     __ptext3:	
    650 ;; *************** function _Secuence_One *****************
    651 ;; Defined at:
-   652 ;;		line 56 in file "main.c"
+   652 ;;		line 88 in file "main.c"
    653 ;; Parameters:    Size  Location     Type
    654 ;;		None
    655 ;; Auto vars:     Size  Location     Type
@@ -699,24 +699,24 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
    685                           ; Regs used in _Secuence_One: [wreg+status,2+status,0+pclath+cstack]
    686                           
    687                           
-   688                           ;main.c: 58:     PORTC = 0xF8;
+   688                           ;main.c: 90:     PORTC = (unsigned char)0xF8;
    689  068F  30F8               	movlw	248
    690  0690  1283               	bcf	3,5	;RP0=0, select bank0
    691  0691  1303               	bcf	3,6	;RP1=0, select bank0
    692  0692  0087               	movwf	7	;volatile
    693  0693                     l665:	
    694                           
-   695                           ;main.c: 59:     Timer_Delay();
+   695                           ;main.c: 91:     Timer_Delay();
    696  0693  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
    697  0698                     l667:	
    698                           
-   699                           ;main.c: 60:     PORTC = 0x0;
+   699                           ;main.c: 92:     PORTC = (unsigned char)0x0;
    700  0698  1283               	bcf	3,5	;RP0=0, select bank0
    701  0699  1303               	bcf	3,6	;RP1=0, select bank0
    702  069A  0187               	clrf	7	;volatile
    703  069B                     l669:	
    704                           
-   705                           ;main.c: 61:     Timer_Delay();
+   705                           ;main.c: 93:     Timer_Delay();
    706  069B  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
    707  06A0                     l51:	
    708  06A0  0008               	return
@@ -726,7 +726,7 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
    712  0750                     __ptext4:	
    713 ;; *************** function _Secuence_Four *****************
    714 ;; Defined at:
-   715 ;;		line 107 in file "main.c"
+   715 ;;		line 138 in file "main.c"
    716 ;; Parameters:    Size  Location     Type
    717 ;;		None
    718 ;; Auto vars:     Size  Location     Type
@@ -762,97 +762,97 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
    748                           ; Regs used in _Secuence_Four: [wreg+status,2+status,0+pclath+cstack]
    749                           
    750                           
-   751                           ;main.c: 109:     PORTC = 0x80;
+   751                           ;main.c: 140:     PORTC = (unsigned char)0x80;
    752  0750  3080               	movlw	128
    753  0751  1283               	bcf	3,5	;RP0=0, select bank0
    754  0752  1303               	bcf	3,6	;RP1=0, select bank0
    755  0753  0087               	movwf	7	;volatile
    756  0754                     l731:	
    757                           
-   758                           ;main.c: 110:     Timer_Delay();
+   758                           ;main.c: 141:     Timer_Delay();
    759  0754  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
    760  0759                     l733:	
    761                           
-   762                           ;main.c: 111:     PORTC = 0x40;
+   762                           ;main.c: 142:     PORTC = (unsigned char)0x40;
    763  0759  3040               	movlw	64
    764  075A  1283               	bcf	3,5	;RP0=0, select bank0
    765  075B  1303               	bcf	3,6	;RP1=0, select bank0
    766  075C  0087               	movwf	7	;volatile
    767                           
-   768                           ;main.c: 112:     Timer_Delay();
+   768                           ;main.c: 143:     Timer_Delay();
    769  075D  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
    770  0762                     l735:	
    771                           
-   772                           ;main.c: 113:     PORTC = 0x20;
+   772                           ;main.c: 144:     PORTC = (unsigned char)0x20;
    773  0762  3020               	movlw	32
    774  0763  1283               	bcf	3,5	;RP0=0, select bank0
    775  0764  1303               	bcf	3,6	;RP1=0, select bank0
    776  0765  0087               	movwf	7	;volatile
    777  0766                     l737:	
    778                           
-   779                           ;main.c: 114:     Timer_Delay();
+   779                           ;main.c: 145:     Timer_Delay();
    780  0766  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
    781                           
-   782                           ;main.c: 115:     PORTC = 0x10;
+   782                           ;main.c: 146:     PORTC = (unsigned char)0x10;
    783  076B  3010               	movlw	16
    784  076C  1283               	bcf	3,5	;RP0=0, select bank0
    785  076D  1303               	bcf	3,6	;RP1=0, select bank0
    786  076E  0087               	movwf	7	;volatile
    787  076F                     l739:	
    788                           
-   789                           ;main.c: 116:     Timer_Delay();
+   789                           ;main.c: 147:     Timer_Delay();
    790  076F  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
    791  0774                     l741:	
    792                           
-   793                           ;main.c: 117:     PORTC = 0x8;
+   793                           ;main.c: 148:     PORTC = (unsigned char)0x8;
    794  0774  3008               	movlw	8
    795  0775  1283               	bcf	3,5	;RP0=0, select bank0
    796  0776  1303               	bcf	3,6	;RP1=0, select bank0
    797  0777  0087               	movwf	7	;volatile
    798                           
-   799                           ;main.c: 118:     Timer_Delay();
+   799                           ;main.c: 149:     Timer_Delay();
    800  0778  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
    801  077D                     l743:	
    802                           
-   803                           ;main.c: 119:     PORTC = 0x10;
+   803                           ;main.c: 150:     PORTC = (unsigned char)0x10;
    804  077D  3010               	movlw	16
    805  077E  1283               	bcf	3,5	;RP0=0, select bank0
    806  077F  1303               	bcf	3,6	;RP1=0, select bank0
    807  0780  0087               	movwf	7	;volatile
    808  0781                     l745:	
    809                           
-   810                           ;main.c: 120:     Timer_Delay();
+   810                           ;main.c: 151:     Timer_Delay();
    811  0781  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
    812                           
-   813                           ;main.c: 121:     PORTC = 0x20;
+   813                           ;main.c: 152:     PORTC = (unsigned char)0x20;
    814  0786  3020               	movlw	32
    815  0787  1283               	bcf	3,5	;RP0=0, select bank0
    816  0788  1303               	bcf	3,6	;RP1=0, select bank0
    817  0789  0087               	movwf	7	;volatile
    818  078A                     l747:	
    819                           
-   820                           ;main.c: 122:     Timer_Delay();
+   820                           ;main.c: 153:     Timer_Delay();
    821  078A  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
    822  078F                     l749:	
    823                           
-   824                           ;main.c: 123:     PORTC = 0x40;
+   824                           ;main.c: 154:     PORTC = (unsigned char)0x40;
    825  078F  3040               	movlw	64
    826  0790  1283               	bcf	3,5	;RP0=0, select bank0
    827  0791  1303               	bcf	3,6	;RP1=0, select bank0
    828  0792  0087               	movwf	7	;volatile
    829                           
-   830                           ;main.c: 124:     Timer_Delay();
+   830                           ;main.c: 155:     Timer_Delay();
    831  0793  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
    832  0798                     l751:	
    833                           
-   834                           ;main.c: 125:     PORTC = 0x80;
+   834                           ;main.c: 156:     PORTC = (unsigned char)0x80;
    835  0798  3080               	movlw	128
    836  0799  1283               	bcf	3,5	;RP0=0, select bank0
    837  079A  1303               	bcf	3,6	;RP1=0, select bank0
    838  079B  0087               	movwf	7	;volatile
    839  079C                     l753:	
    840                           
-   841                           ;main.c: 126:     Timer_Delay();
+   841                           ;main.c: 157:     Timer_Delay();
    842  079C  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
    843  07A1                     l60:	
    844  07A1  0008               	return
@@ -862,7 +862,7 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
    848  06B4                     __ptext5:	
    849 ;; *************** function _Secuence_Five *****************
    850 ;; Defined at:
-   851 ;;		line 129 in file "main.c"
+   851 ;;		line 160 in file "main.c"
    852 ;; Parameters:    Size  Location     Type
    853 ;;		None
    854 ;; Auto vars:     Size  Location     Type
@@ -898,55 +898,55 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
    884                           ; Regs used in _Secuence_Five: [wreg+status,2+status,0+pclath+cstack]
    885                           
    886                           
-   887                           ;main.c: 131:     PORTC = 0xA8;
+   887                           ;main.c: 162:     PORTC = (unsigned char)0xA8;
    888  06B4  30A8               	movlw	168
    889  06B5  1283               	bcf	3,5	;RP0=0, select bank0
    890  06B6  1303               	bcf	3,6	;RP1=0, select bank0
    891  06B7  0087               	movwf	7	;volatile
    892  06B8                     l757:	
    893                           
-   894                           ;main.c: 132:     Timer_Delay();
+   894                           ;main.c: 163:     Timer_Delay();
    895  06B8  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
    896  06BD                     l759:	
    897                           
-   898                           ;main.c: 133:     PORTC = 0x50;
+   898                           ;main.c: 164:     PORTC = (unsigned char)0x50;
    899  06BD  3050               	movlw	80
    900  06BE  1283               	bcf	3,5	;RP0=0, select bank0
    901  06BF  1303               	bcf	3,6	;RP1=0, select bank0
    902  06C0  0087               	movwf	7	;volatile
    903                           
-   904                           ;main.c: 134:     Timer_Delay();
+   904                           ;main.c: 165:     Timer_Delay();
    905  06C1  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
    906  06C6                     l761:	
    907                           
-   908                           ;main.c: 135:     PORTC = 0xF8;
+   908                           ;main.c: 166:     PORTC = (unsigned char)0xF8;
    909  06C6  30F8               	movlw	248
    910  06C7  1283               	bcf	3,5	;RP0=0, select bank0
    911  06C8  1303               	bcf	3,6	;RP1=0, select bank0
    912  06C9  0087               	movwf	7	;volatile
    913  06CA                     l763:	
    914                           
-   915                           ;main.c: 136:     Timer_Delay();
+   915                           ;main.c: 167:     Timer_Delay();
    916  06CA  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
    917                           
-   918                           ;main.c: 137:     PORTC = 0x50;
+   918                           ;main.c: 168:     PORTC = (unsigned char)0x50;
    919  06CF  3050               	movlw	80
    920  06D0  1283               	bcf	3,5	;RP0=0, select bank0
    921  06D1  1303               	bcf	3,6	;RP1=0, select bank0
    922  06D2  0087               	movwf	7	;volatile
    923  06D3                     l765:	
    924                           
-   925                           ;main.c: 138:     Timer_Delay();
+   925                           ;main.c: 169:     Timer_Delay();
    926  06D3  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
    927  06D8                     l767:	
    928                           
-   929                           ;main.c: 139:     PORTC = 0xA8;
+   929                           ;main.c: 170:     PORTC = (unsigned char)0xA8;
    930  06D8  30A8               	movlw	168
    931  06D9  1283               	bcf	3,5	;RP0=0, select bank0
    932  06DA  1303               	bcf	3,6	;RP1=0, select bank0
    933  06DB  0087               	movwf	7	;volatile
    934                           
-   935                           ;main.c: 140:     Timer_Delay();
+   935                           ;main.c: 171:     Timer_Delay();
    936  06DC  120A  118A  26A1  120A  118A  	fcall	_Timer_Delay
    937  06E1                     l63:	
    938  06E1  0008               	return
@@ -956,7 +956,7 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
    942  06A1                     __ptext6:	
    943 ;; *************** function _Timer_Delay *****************
    944 ;; Defined at:
-   945 ;;		line 45 in file "main.c"
+   945 ;;		line 73 in file "main.c"
    946 ;; Parameters:    Size  Location     Type
    947 ;;		None
    948 ;; Auto vars:     Size  Location     Type
@@ -995,7 +995,7 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
    981                           ; Regs used in _Timer_Delay: [wreg+status,2+status,0]
    982                           
    983                           
-   984                           ;main.c: 48:     PIE1 &= 0x1;
+   984                           ;main.c: 76:     PIE1 &= (unsigned char)0x1;
    985  06A1  3001               	movlw	1
    986  06A2  00F0               	movwf	??_Timer_Delay
    987  06A3  0870               	movf	??_Timer_Delay,w
@@ -1004,22 +1004,22 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
    990  06A6  058C               	andwf	12,f	;volatile
    991  06A7                     l657:	
    992                           
-   993                           ;main.c: 49:     TMR1L = 0x18;
+   993                           ;main.c: 78:     TMR1L = (unsigned char)0x18;
    994  06A7  3018               	movlw	24
    995  06A8  1283               	bcf	3,5	;RP0=0, select bank0
    996  06A9  1303               	bcf	3,6	;RP1=0, select bank0
    997  06AA  008E               	movwf	14	;volatile
    998  06AB                     l659:	
    999                           
-  1000                           ;main.c: 50:     TMR1H = 0x86;
+  1000                           ;main.c: 79:     TMR1H = (unsigned char)0x86;
   1001  06AB  3086               	movlw	134
   1002  06AC  008F               	movwf	15	;volatile
   1003  06AD                     l661:	
   1004                           
-  1005                           ;main.c: 51:     T1CON |= 0x1;
+  1005                           ;main.c: 82:     T1CON |= (unsigned char)0x1;
   1006  06AD  1410               	bsf	16,0	;volatile
   1007  06AE                     l45:	
-  1008                           ;main.c: 52:     while(PIR1bits.TMR1IF == 0);
+  1008                           ;main.c: 84:     while(PIR1bits.TMR1IF == 0){};
   1009                           
   1010  06AE  1C0C               	btfss	12,0	;volatile
   1011  06AF  2EB1               	goto	u11
@@ -1029,7 +1029,7 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
   1015  06B2                     u10:	
   1016  06B2                     l47:	
   1017                           
-  1018                           ;main.c: 53:     PIR1bits.TMR1IF = 0;
+  1018                           ;main.c: 85:     PIR1bits.TMR1IF = 0;
   1019  06B2  100C               	bcf	12,0	;volatile
   1020  06B3                     l48:	
   1021  06B3  0008               	return
@@ -1159,7 +1159,7 @@ DATA                 0      0       0      12        0.0%
 
 
 Microchip Technology PIC Macro Assembler V2.10 build 88905656 
-Symbol Table                                                                                   Wed Oct 09 11:40:43 2019
+Symbol Table                                                                                   Fri Nov 08 18:15:54 2019
 
         ?_Secuence_Three 0070                       l51 06A0                       l60 07A1  
                      l45 06AE                       l54 07FB                       l47 06B2  

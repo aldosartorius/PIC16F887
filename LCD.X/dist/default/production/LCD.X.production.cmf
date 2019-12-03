@@ -13,50 +13,52 @@
 %PSECTS
 $dist/default/production\LCD.X.production.o
 cinit CODE 0 7FC 7FC 4 2
-text1 CODE 0 701 701 3D 2
-text2 CODE 0 73E 73E 52 2
-text3 CODE 0 6B1 6B1 25 2
-text4 CODE 0 6D6 6D6 2B 2
-text5 CODE 0 668 668 D 2
-text6 CODE 0 675 675 1A 2
-text7 CODE 0 68F 68F 22 2
-maintext CODE 0 790 790 6C 2
-cstackCOMMON COMMON 1 70 70 E 1
-cstackBANK0 BANK0 1 20 20 2 1
-strings STRING 0 3 3 1B 2
-$C:\Users\Soul_PC\AppData\Local\Temp\sf14.o
+text1 CODE 0 724 724 3D 2
+text2 CODE 0 7AA 7AA 52 2
+text3 CODE 0 6D4 6D4 25 2
+text4 CODE 0 6F9 6F9 2B 2
+text5 CODE 0 67C 67C D 2
+text6 CODE 0 69C 69C 16 2
+text7 CODE 0 689 689 13 2
+text8 CODE 0 6B2 6B2 22 2
+maintext CODE 0 761 761 49 2
+cstackCOMMON COMMON 1 70 70 B 1
+strings STRING 0 3 3 20 2
+$C:\Users\Soul_PC\AppData\Local\Temp\s4ec.o
 end_init CODE 0 0 0 3 2
-config CONFIG 0 2007 2007 2 2
+config CONFIG 0 2007 2007 1 2
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
 # is described on a single line as follows:
 #    <class name> <range> <delta>
 # Addresses given in the range are in hexadecimal and units of delta.
 %UNUSED
-RAM 22-6F 1
+RAM 20-6F 1
 RAM A0-EF 1
 RAM 110-16F 1
 RAM 190-1EF 1
-BANK0 22-6F 1
+BANK0 20-6F 1
 BANK1 A0-EF 1
 BANK2 110-16F 1
 BANK3 190-1EF 1
-CONST 1E-667 2
+CONST 23-67B 2
 CONST 800-1FFF 2
-ENTRY 1E-667 2
+ENTRY 23-67B 2
 ENTRY 800-1FFF 2
 IDLOC 2000-2003 2
 STACK 110-16F 1
-CODE 1E-667 2
+CODE 23-67B 2
 CODE 800-1FFF 2
 SFR0 0-1F 1
 SFR1 80-9F 1
 SFR2 100-10F 1
 SFR3 180-18F 1
+COMMON 7B-7D 1
+CONFIG 2008-2008 2
 EEDATA 2100-21FF 2
-STRCODE 1E-667 2
+STRCODE 23-67B 2
 STRCODE 800-1FFF 2
-STRING 1E-667 2
+STRING 23-67B 2
 STRING 800-1FFF 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
@@ -72,99 +74,110 @@ STRING 800-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\LCD.X.production.o
-7FC cinit CODE >494:C:\Users\Soul_PC\AppData\Local\Temp\sf14.s
-7FC cinit CODE >497:C:\Users\Soul_PC\AppData\Local\Temp\sf14.s
-7FC cinit CODE >503:C:\Users\Soul_PC\AppData\Local\Temp\sf14.s
-7FC cinit CODE >505:C:\Users\Soul_PC\AppData\Local\Temp\sf14.s
-7FD cinit CODE >506:C:\Users\Soul_PC\AppData\Local\Temp\sf14.s
-68F text7 CODE >12:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-690 text7 CODE >14:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-694 text7 CODE >15:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-698 text7 CODE >16:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-698 text7 CODE >17:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-69B text7 CODE >19:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-69F text7 CODE >20:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-6A1 text7 CODE >21:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-6A1 text7 CODE >22:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-6A2 text7 CODE >24:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-6A6 text7 CODE >25:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-6A8 text7 CODE >26:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-6A8 text7 CODE >27:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-6A9 text7 CODE >29:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-6AD text7 CODE >30:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-6AF text7 CODE >31:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-6AF text7 CODE >32:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-6B0 text7 CODE >33:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-675 text6 CODE >35:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-676 text6 CODE >37:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-679 text6 CODE >38:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-67F text6 CODE >39:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-682 text6 CODE >40:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-68B text6 CODE >41:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-68E text6 CODE >42:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-668 text5 CODE >44:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-668 text5 CODE >46:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-66E text5 CODE >47:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-674 text5 CODE >49:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-6D6 text4 CODE >91:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-6D7 text4 CODE >94:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-6DC text4 CODE >95:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-6E1 text4 CODE >96:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-6E4 text4 CODE >97:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-6F2 text4 CODE >98:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-6F5 text4 CODE >100:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-6F6 text4 CODE >101:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-6FC text4 CODE >102:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-6FF text4 CODE >104:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-700 text4 CODE >105:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-6B1 text3 CODE >107:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-6B2 text3 CODE >110:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-6B5 text3 CODE >111:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-6D5 text3 CODE >112:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-73E text2 CODE >51:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-73F text2 CODE >54:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-744 text2 CODE >56:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-749 text2 CODE >57:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-755 text2 CODE >58:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-75A text2 CODE >59:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-760 text2 CODE >60:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-766 text2 CODE >61:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-767 text2 CODE >62:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-76D text2 CODE >64:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-772 text2 CODE >65:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-77E text2 CODE >66:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-783 text2 CODE >67:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-789 text2 CODE >68:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-78F text2 CODE >70:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-701 text1 CODE >72:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-701 text1 CODE >75:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-707 text1 CODE >79:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-70D text1 CODE >81:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-713 text1 CODE >82:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-719 text1 CODE >83:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-71F text1 CODE >84:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-725 text1 CODE >85:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-72B text1 CODE >86:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-731 text1 CODE >87:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-737 text1 CODE >88:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-73D text1 CODE >89:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X/LCD_driver.c
-790 maintext CODE >21:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\main.c
-790 maintext CODE >23:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\main.c
-796 maintext CODE >25:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\main.c
-799 maintext CODE >26:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\main.c
-79E maintext CODE >30:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\main.c
-7A6 maintext CODE >31:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\main.c
-7AD maintext CODE >32:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\main.c
-7B1 maintext CODE >34:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\main.c
-7B6 maintext CODE >35:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\main.c
-7BE maintext CODE >36:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\main.c
-7C4 maintext CODE >38:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\main.c
-7CA maintext CODE >40:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\main.c
-7D4 maintext CODE >41:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\main.c
-7DA maintext CODE >42:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\main.c
-7E7 maintext CODE >43:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\main.c
-7E8 maintext CODE >46:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\main.c
-7F2 maintext CODE >47:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\main.c
+7FC cinit CODE >644:C:\Users\Soul_PC\AppData\Local\Temp\s4ec.s
+7FC cinit CODE >647:C:\Users\Soul_PC\AppData\Local\Temp\s4ec.s
+7FC cinit CODE >653:C:\Users\Soul_PC\AppData\Local\Temp\s4ec.s
+7FC cinit CODE >655:C:\Users\Soul_PC\AppData\Local\Temp\s4ec.s
+7FD cinit CODE >656:C:\Users\Soul_PC\AppData\Local\Temp\s4ec.s
+6B2 text8 CODE >12:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+6B3 text8 CODE >13:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+6B7 text8 CODE >14:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+6BA text8 CODE >15:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+6BB text8 CODE >16:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+6BB text8 CODE >17:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+6BE text8 CODE >18:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+6BE text8 CODE >19:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+6C2 text8 CODE >20:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+6C3 text8 CODE >21:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+6C4 text8 CODE >22:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+6C4 text8 CODE >23:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+6C5 text8 CODE >24:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+6C5 text8 CODE >25:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+6C9 text8 CODE >26:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+6CA text8 CODE >27:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+6CB text8 CODE >28:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+6CB text8 CODE >29:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+6CC text8 CODE >30:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+6CC text8 CODE >31:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+6D0 text8 CODE >32:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+6D1 text8 CODE >33:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+6D2 text8 CODE >34:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+6D2 text8 CODE >35:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+6D3 text8 CODE >37:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+689 text7 CODE >107:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+689 text7 CODE >110:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+68F text7 CODE >112:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+693 text7 CODE >113:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+695 text7 CODE >116:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+696 text7 CODE >117:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+69A text7 CODE >118:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+69B text7 CODE >119:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+69C text6 CODE >39:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+69D text6 CODE >40:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+6A0 text6 CODE >41:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+6A6 text6 CODE >42:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+6A9 text6 CODE >43:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+6AE text6 CODE >44:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+6B1 text6 CODE >45:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+67C text5 CODE >47:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+67C text5 CODE >48:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+682 text5 CODE >49:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+688 text5 CODE >51:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+6F9 text4 CODE >87:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+6FA text4 CODE >89:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+6FF text4 CODE >90:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+704 text4 CODE >91:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+707 text4 CODE >92:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+715 text4 CODE >93:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+718 text4 CODE >94:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+719 text4 CODE >95:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+71F text4 CODE >96:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+722 text4 CODE >97:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+723 text4 CODE >98:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+6D4 text3 CODE >100:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+6D5 text3 CODE >102:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+6D8 text3 CODE >103:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+6E5 text3 CODE >104:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+6F8 text3 CODE >105:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+7AA text2 CODE >53:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+7AB text2 CODE >55:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+7B0 text2 CODE >57:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+7B5 text2 CODE >58:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+7C1 text2 CODE >59:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+7C6 text2 CODE >60:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+7CC text2 CODE >61:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+7D2 text2 CODE >62:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+7D3 text2 CODE >63:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+7D9 text2 CODE >65:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+7DE text2 CODE >66:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+7EA text2 CODE >67:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+7EF text2 CODE >68:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+7F5 text2 CODE >69:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+7FB text2 CODE >71:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+724 text1 CODE >73:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+724 text1 CODE >75:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+72A text1 CODE >76:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+730 text1 CODE >77:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+736 text1 CODE >78:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+73C text1 CODE >79:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+742 text1 CODE >80:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+748 text1 CODE >81:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+74E text1 CODE >82:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+754 text1 CODE >83:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+75A text1 CODE >84:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+760 text1 CODE >85:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\LCD_driver.c
+761 maintext CODE >41:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\main.c
+761 maintext CODE >45:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\main.c
+765 maintext CODE >48:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\main.c
+766 maintext CODE >49:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\main.c
+76B maintext CODE >53:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\main.c
+770 maintext CODE >54:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\main.c
+778 maintext CODE >55:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\main.c
+77E maintext CODE >56:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\main.c
+786 maintext CODE >57:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\main.c
+78C maintext CODE >58:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\main.c
+78E maintext CODE >59:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\main.c
+793 maintext CODE >60:D:\Autocapacitacion\Codigo\Programas_PIC16F887\LCD.X\main.c
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -178,45 +191,47 @@ $dist/default/production\LCD.X.production.o
 # is the name of the object file in which the symbol was defined.
 %SYMTAB
 ___latbits 2 0 ABS 0 - dist/default/production\LCD.X.production.o
-__Hspace_0 2009 0 ABS 0 - -
-__Hspace_1 7E 0 ABS 0 - -
+__Hspace_0 2008 0 ABS 0 - -
+__Hspace_1 7B 0 ABS 0 - -
 __Hspace_2 0 0 ABS 0 - -
 __Hspace_3 0 0 ABS 0 - -
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
 Lcd_Print_String@a 77 0 COMMON 1 cstackCOMMON dist/default/production\LCD.X.production.o
 Lcd_Print_String@i 75 0 COMMON 1 cstackCOMMON dist/default/production\LCD.X.production.o
 __Hstrings 0 0 ABS 0 strings -
-___sp 0 0 STACK 2 stack C:\Users\Soul_PC\AppData\Local\Temp\sf14.o
-_main F20 0 CODE 0 maintext dist/default/production\LCD.X.production.o
+_PIE1 8C 0 ABS 0 - dist/default/production\LCD.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\Soul_PC\AppData\Local\Temp\s4ec.o
+_main EC2 0 CODE 0 maintext dist/default/production\LCD.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\LCD.X.production.o
-start 0 0 CODE 0 init C:\Users\Soul_PC\AppData\Local\Temp\sf14.o
+start 0 0 CODE 0 init C:\Users\Soul_PC\AppData\Local\Temp\s4ec.o
 __size_of_main 0 0 ABS 0 - dist/default/production\LCD.X.production.o
 __Hpowerup 0 0 CODE 0 powerup -
-_Lcd_Print_String D62 0 CODE 0 text3 dist/default/production\LCD.X.production.o
-intlevel0 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\sf14.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\sf14.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\sf14.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\sf14.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\sf14.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\sf14.o
+_Lcd_Print_String DA8 0 CODE 0 text3 dist/default/production\LCD.X.production.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\s4ec.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\s4ec.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\s4ec.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\s4ec.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\s4ec.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\s4ec.o
 wtemp0 7E 0 ABS 0 - dist/default/production\LCD.X.production.o
 __Hfunctab 0 0 ENTRY 0 functab -
 __size_of_Lcd_Set_Cursor 0 0 ABS 0 - dist/default/production\LCD.X.production.o
 __Hclrtext 0 0 ABS 0 clrtext -
 __Lmaintext 0 0 ABS 0 maintext -
-___stackhi 0 0 ABS 0 - C:\Users\Soul_PC\AppData\Local\Temp\sf14.o
-___stacklo 0 0 ABS 0 - C:\Users\Soul_PC\AppData\Local\Temp\sf14.o
-_Lcd_Print_Char DAC 0 CODE 0 text4 dist/default/production\LCD.X.production.o
+___stackhi 0 0 ABS 0 - C:\Users\Soul_PC\AppData\Local\Temp\s4ec.o
+___stacklo 0 0 ABS 0 - C:\Users\Soul_PC\AppData\Local\Temp\s4ec.o
+_Lcd_Print_Char DF2 0 CODE 0 text4 dist/default/production\LCD.X.production.o
 Lcd_Print_Char@data 74 0 COMMON 1 cstackCOMMON dist/default/production\LCD.X.production.o
-_Lcd_SetBit D1E 0 CODE 0 text7 dist/default/production\LCD.X.production.o
-Lcd_Set_Cursor@temp 7A 0 COMMON 1 cstackCOMMON dist/default/production\LCD.X.production.o
-__end_of_Lcd_Print_String DAC 0 CODE 0 text3 dist/default/production\LCD.X.production.o
+_Lcd_SetBit D64 0 CODE 0 text8 dist/default/production\LCD.X.production.o
+__end_of_Timer_Delay D38 0 CODE 0 text7 dist/default/production\LCD.X.production.o
+Lcd_Set_Cursor@temp 78 0 COMMON 1 cstackCOMMON dist/default/production\LCD.X.production.o
+__end_of_Lcd_Print_String DF2 0 CODE 0 text3 dist/default/production\LCD.X.production.o
 start_initialization FF8 0 CODE 0 cinit dist/default/production\LCD.X.production.o
+_OSCCON 8F 0 ABS 0 - dist/default/production\LCD.X.production.o
 __size_of_Lcd_Print_String 0 0 ABS 0 - dist/default/production\LCD.X.production.o
-__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\LCD.X.production.o
 __size_of_Lcd_Cmd 0 0 ABS 0 - dist/default/production\LCD.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\Soul_PC\AppData\Local\Temp\sf14.o
-__end_of_Lcd_Print_Char E02 0 CODE 0 text4 dist/default/production\LCD.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\Soul_PC\AppData\Local\Temp\s4ec.o
+__end_of_Lcd_Print_Char E48 0 CODE 0 text4 dist/default/production\LCD.X.production.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -226,9 +241,9 @@ __Hidloc 0 0 IDLOC 0 idloc -
 __Hstack 0 0 STACK 2 stack -
 __stringbase 10 0 STRING 0 strings dist/default/production\LCD.X.production.o
 __Hmaintext 0 0 ABS 0 maintext -
-__end_of_Lcd_SetBit D62 0 CODE 0 text7 dist/default/production\LCD.X.production.o
+__end_of_Lcd_SetBit DA8 0 CODE 0 text8 dist/default/production\LCD.X.production.o
 __Hcommon 0 0 ABS 0 common -
-__Hconfig 4012 0 CONFIG 0 config -
+__Hconfig 4010 0 CONFIG 0 config -
 __Lbank0 0 0 ABS 0 bank0 -
 __Lbank1 0 0 ABS 0 bank1 -
 __Lbank2 0 0 ABS 0 bank2 -
@@ -236,7 +251,8 @@ __Lbank3 0 0 ABS 0 bank3 -
 __Lcinit FF8 0 CODE 0 cinit -
 __Lidloc 0 0 IDLOC 0 idloc -
 __Lstack 0 0 STACK 2 stack -
-Lcd_Set_Cursor@column 74 0 COMMON 1 cstackCOMMON dist/default/production\LCD.X.production.o
+_PORTDbits 8 0 ABS 0 - dist/default/production\LCD.X.production.o
+Lcd_Set_Cursor@column 72 0 COMMON 1 cstackCOMMON dist/default/production\LCD.X.production.o
 __Habs1 0 0 ABS 0 abs1 -
 __Hcode 0 0 ABS 0 code -
 __Hinit 0 0 CODE 0 init -
@@ -253,84 +269,76 @@ __Lsfr1 0 0 ABS 0 sfr1 -
 __Lsfr2 0 0 ABS 0 sfr2 -
 __Lsfr3 0 0 ABS 0 sfr3 -
 __Ltext 0 0 ABS 0 text -
-__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
 __HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
-_RD2 42 0 ABS 0 - dist/default/production\LCD.X.production.o
-_RD3 43 0 ABS 0 - dist/default/production\LCD.X.production.o
-_RD4 44 0 ABS 0 - dist/default/production\LCD.X.production.o
-_RD5 45 0 ABS 0 - dist/default/production\LCD.X.production.o
-_RD6 46 0 ABS 0 - dist/default/production\LCD.X.production.o
-_RD7 47 0 ABS 0 - dist/default/production\LCD.X.production.o
-__S0 2009 0 ABS 0 - -
-__S1 7E 0 ABS 0 - -
+__S0 2008 0 ABS 0 - -
+__S1 7B 0 ABS 0 - -
 __S2 0 0 ABS 0 - -
 __S3 0 0 ABS 0 - -
-Lcd_Set_Cursor@row 77 0 COMMON 1 cstackCOMMON dist/default/production\LCD.X.production.o
-__CFG_BOREN$ON 0 0 ABS 0 - dist/default/production\LCD.X.production.o
-__end_of_Lcd_Clear CEA 0 CODE 0 text5 dist/default/production\LCD.X.production.o
+Lcd_Set_Cursor@row 75 0 COMMON 1 cstackCOMMON dist/default/production\LCD.X.production.o
+__end_of_Lcd_Clear D12 0 CODE 0 text5 dist/default/production\LCD.X.production.o
 __Lintentry 0 0 CODE 0 intentry -
 __stringtab 6 0 STRING 0 strings dist/default/production\LCD.X.production.o
-__end_of_Lcd_Start E7C 0 CODE 0 text1 dist/default/production\LCD.X.production.o
-reset_vec 0 0 CODE 0 reset_vec C:\Users\Soul_PC\AppData\Local\Temp\sf14.o
+__end_of_Lcd_Start EC2 0 CODE 0 text1 dist/default/production\LCD.X.production.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Soul_PC\AppData\Local\Temp\s4ec.o
 __size_of_Lcd_Clear 0 0 ABS 0 - dist/default/production\LCD.X.production.o
 __size_of_Lcd_Start 0 0 ABS 0 - dist/default/production\LCD.X.production.o
-__end_of_Lcd_Cmd D1E 0 CODE 0 text6 dist/default/production\LCD.X.production.o
-_Lcd_Clear CD0 0 CODE 0 text5 dist/default/production\LCD.X.production.o
-_Lcd_Start E02 0 CODE 0 text1 dist/default/production\LCD.X.production.o
-_Lcd_Set_Cursor E7C 0 CODE 0 text2 dist/default/production\LCD.X.production.o
-__pmaintext F20 0 CODE 0 maintext dist/default/production\LCD.X.production.o
+__size_of_Timer_Delay 0 0 ABS 0 - dist/default/production\LCD.X.production.o
+__end_of_Lcd_Cmd D64 0 CODE 0 text6 dist/default/production\LCD.X.production.o
+_Lcd_Clear CF8 0 CODE 0 text5 dist/default/production\LCD.X.production.o
+_Lcd_Start E48 0 CODE 0 text1 dist/default/production\LCD.X.production.o
+_Lcd_Set_Cursor F54 0 CODE 0 text2 dist/default/production\LCD.X.production.o
+__pmaintext EC2 0 CODE 0 maintext dist/default/production\LCD.X.production.o
 __Lcommon 0 0 ABS 0 common -
 __Lconfig 400E 0 CONFIG 0 config -
-__CFG_CP$OFF 0 0 ABS 0 - dist/default/production\LCD.X.production.o
 __CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\LCD.X.production.o
 Lcd_Print_Char@Lower_Nibble 72 0 COMMON 1 cstackCOMMON dist/default/production\LCD.X.production.o
+main@count 79 0 COMMON 1 cstackCOMMON dist/default/production\LCD.X.production.o
 __end_of__stringtab 12 0 STRING 0 strings dist/default/production\LCD.X.production.o
-__CFG_LVP$OFF 0 0 ABS 0 - dist/default/production\LCD.X.production.o
 __Lspace_0 0 0 ABS 0 - -
 __Lspace_1 0 0 ABS 0 - -
 __Lspace_2 0 0 ABS 0 - -
 __Lspace_3 0 0 ABS 0 - -
-main@ia 20 0 BANK0 1 cstackBANK0 dist/default/production\LCD.X.production.o
-__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+_PIR1bits C 0 ABS 0 - dist/default/production\LCD.X.production.o
 __Lend_init 0 0 CODE 0 end_init -
 __LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
 end_of_initialization FF8 0 CODE 0 cinit dist/default/production\LCD.X.production.o
-__end_of_Lcd_Set_Cursor F20 0 CODE 0 text2 dist/default/production\LCD.X.production.o
+__end_of_Lcd_Set_Cursor FF8 0 CODE 0 text2 dist/default/production\LCD.X.production.o
 __Hintentry 0 0 CODE 0 intentry -
-Lcd_Set_Cursor@y 79 0 COMMON 1 cstackCOMMON dist/default/production\LCD.X.production.o
-Lcd_Set_Cursor@z 78 0 COMMON 1 cstackCOMMON dist/default/production\LCD.X.production.o
+Lcd_Set_Cursor@y 77 0 COMMON 1 cstackCOMMON dist/default/production\LCD.X.production.o
+Lcd_Set_Cursor@z 76 0 COMMON 1 cstackCOMMON dist/default/production\LCD.X.production.o
 __size_of_Lcd_SetBit 0 0 ABS 0 - dist/default/production\LCD.X.production.o
 __Lstrings 0 0 ABS 0 strings -
 __Hreset_vec 0 0 CODE 0 reset_vec -
 Lcd_SetBit@data_bit 70 0 COMMON 1 cstackCOMMON dist/default/production\LCD.X.production.o
-__ptext1 E02 0 CODE 0 text1 dist/default/production\LCD.X.production.o
-__ptext2 E7C 0 CODE 0 text2 dist/default/production\LCD.X.production.o
-__ptext3 D62 0 CODE 0 text3 dist/default/production\LCD.X.production.o
-__ptext4 DAC 0 CODE 0 text4 dist/default/production\LCD.X.production.o
-__ptext5 CD0 0 CODE 0 text5 dist/default/production\LCD.X.production.o
-__ptext6 CEA 0 CODE 0 text6 dist/default/production\LCD.X.production.o
-__ptext7 D1E 0 CODE 0 text7 dist/default/production\LCD.X.production.o
+__ptext1 E48 0 CODE 0 text1 dist/default/production\LCD.X.production.o
+__ptext2 F54 0 CODE 0 text2 dist/default/production\LCD.X.production.o
+__ptext3 DA8 0 CODE 0 text3 dist/default/production\LCD.X.production.o
+__ptext4 DF2 0 CODE 0 text4 dist/default/production\LCD.X.production.o
+__ptext5 CF8 0 CODE 0 text5 dist/default/production\LCD.X.production.o
+__ptext6 D38 0 CODE 0 text6 dist/default/production\LCD.X.production.o
+__ptext7 D12 0 CODE 0 text7 dist/default/production\LCD.X.production.o
+__ptext8 D64 0 CODE 0 text8 dist/default/production\LCD.X.production.o
 Lcd_Print_Char@Upper_Nibble 73 0 COMMON 1 cstackCOMMON dist/default/production\LCD.X.production.o
 __Lpowerup 0 0 CODE 0 powerup -
 __Leeprom_data 0 0 EEDATA 3 eeprom_data -
 __Lreset_vec 0 0 CODE 0 reset_vec -
-__CFG_FOSC$HS 0 0 ABS 0 - dist/default/production\LCD.X.production.o
 __size_of_Lcd_Print_Char 0 0 ABS 0 - dist/default/production\LCD.X.production.o
 __end_of__initialization FF8 0 CODE 0 cinit dist/default/production\LCD.X.production.o
 __Lfunctab 0 0 ENTRY 0 functab -
-Lcd_Cmd@a 73 0 COMMON 1 cstackCOMMON dist/default/production\LCD.X.production.o
+Lcd_Cmd@a 71 0 COMMON 1 cstackCOMMON dist/default/production\LCD.X.production.o
 __Lclrtext 0 0 ABS 0 clrtext -
-__CFG_PWRTE$ON 0 0 ABS 0 - dist/default/production\LCD.X.production.o
 __pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\LCD.X.production.o
 __Hend_init 6 0 CODE 0 end_init -
-__end_of_main FF8 0 CODE 0 maintext dist/default/production\LCD.X.production.o
+_Timer_Delay D12 0 CODE 0 text7 dist/default/production\LCD.X.production.o
+__end_of_main F54 0 CODE 0 maintext dist/default/production\LCD.X.production.o
+_T1CON 10 0 ABS 0 - dist/default/production\LCD.X.production.o
+_TMR1H F 0 ABS 0 - dist/default/production\LCD.X.production.o
+_TMR1L E 0 ABS 0 - dist/default/production\LCD.X.production.o
 _TRISD 88 0 ABS 0 - dist/default/production\LCD.X.production.o
 __Hram 0 0 ABS 0 ram -
 __Lram 0 0 ABS 0 ram -
-__CFG_CPD$OFF 0 0 ABS 0 - dist/default/production\LCD.X.production.o
-_Lcd_Cmd CEA 0 CODE 0 text6 dist/default/production\LCD.X.production.o
+_Lcd_Cmd D38 0 CODE 0 text6 dist/default/production\LCD.X.production.o
 __initialization FF8 0 CODE 0 cinit dist/default/production\LCD.X.production.o
-__CFG_WRT$OFF 0 0 ABS 0 - dist/default/production\LCD.X.production.o
 __pstrings 6 0 STRING 0 strings dist/default/production\LCD.X.production.o
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
@@ -358,19 +366,19 @@ __pstrings 6 0 STRING 0 strings dist/default/production\LCD.X.production.o
 # All other numeric quantities are in decimal.
 %SEGMENTS
 cinit 0 7FC FF8 4 2
-text1 0 701 E02 3D 2
-text2 0 73E E7C 52 2
-text3 0 6B1 D62 25 2
-text4 0 6D6 DAC 2B 2
-text5 0 668 CD0 D 2
-text6 0 675 CEA 1A 2
-text7 0 68F D1E 22 2
-maintext 0 790 F20 6C 2
-cstackCOMMON 1 70 70 E 1
-cstackBANK0 1 20 20 2 1
+text1 0 724 E48 3D 2
+text2 0 7AA F54 52 2
+text3 0 6D4 DA8 25 2
+text4 0 6F9 DF2 2B 2
+text5 0 67C CF8 D 2
+text6 0 69C D38 16 2
+text7 0 689 D12 13 2
+text8 0 6B2 D64 22 2
+maintext 0 761 EC2 49 2
+cstackCOMMON 1 70 70 B 1
 reset_vec 0 0 0 3 2
-strings 0 3 6 1B 2
-config 0 2007 400E 2 2
+strings 0 3 6 20 2
+config 0 2007 400E 1 2
 # OTES Section
 # This section contains data of all the note-psects.  The beginning of the section
 # is indicated by OTES. The first line indicates the name and decimal

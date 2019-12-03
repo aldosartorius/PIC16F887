@@ -7,15 +7,9 @@
 # 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
 # 1 "main.c" 2
-
-
-
-
-
-
-
-
+# 33 "main.c"
 #pragma config WDTE = OFF
+
 
 # 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\xc.h" 1 3
 # 18 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\xc.h" 3
@@ -1340,1133 +1334,6 @@ extern volatile EECON1bits_t EECON1bits __attribute__((address(0x18C)));
 extern volatile unsigned char EECON2 __attribute__((address(0x18D)));
 
 __asm("EECON2 equ 018Dh");
-# 3557 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\pic16f887.h" 3
-extern volatile __bit ABDEN __attribute__((address(0xC38)));
-
-
-extern volatile __bit ABDOVF __attribute__((address(0xC3F)));
-
-
-extern volatile __bit ACKDT __attribute__((address(0x48D)));
-
-
-extern volatile __bit ACKEN __attribute__((address(0x48C)));
-
-
-extern volatile __bit ACKSTAT __attribute__((address(0x48E)));
-
-
-extern volatile __bit ADCS0 __attribute__((address(0xFE)));
-
-
-extern volatile __bit ADCS1 __attribute__((address(0xFF)));
-
-
-extern volatile __bit ADDEN __attribute__((address(0xC3)));
-
-
-extern volatile __bit ADFM __attribute__((address(0x4FF)));
-
-
-extern volatile __bit ADIE __attribute__((address(0x466)));
-
-
-extern volatile __bit ADIF __attribute__((address(0x66)));
-
-
-extern volatile __bit ADON __attribute__((address(0xF8)));
-
-
-extern volatile __bit ANS0 __attribute__((address(0xC40)));
-
-
-extern volatile __bit ANS1 __attribute__((address(0xC41)));
-
-
-extern volatile __bit ANS10 __attribute__((address(0xC4A)));
-
-
-extern volatile __bit ANS11 __attribute__((address(0xC4B)));
-
-
-extern volatile __bit ANS12 __attribute__((address(0xC4C)));
-
-
-extern volatile __bit ANS13 __attribute__((address(0xC4D)));
-
-
-extern volatile __bit ANS2 __attribute__((address(0xC42)));
-
-
-extern volatile __bit ANS3 __attribute__((address(0xC43)));
-
-
-extern volatile __bit ANS4 __attribute__((address(0xC44)));
-
-
-extern volatile __bit ANS5 __attribute__((address(0xC45)));
-
-
-extern volatile __bit ANS6 __attribute__((address(0xC46)));
-
-
-extern volatile __bit ANS7 __attribute__((address(0xC47)));
-
-
-extern volatile __bit ANS8 __attribute__((address(0xC48)));
-
-
-extern volatile __bit ANS9 __attribute__((address(0xC49)));
-
-
-extern volatile __bit BCLIE __attribute__((address(0x46B)));
-
-
-extern volatile __bit BCLIF __attribute__((address(0x6B)));
-
-
-extern volatile __bit BF __attribute__((address(0x4A0)));
-
-
-extern volatile __bit BRG0 __attribute__((address(0x4C8)));
-
-
-extern volatile __bit BRG1 __attribute__((address(0x4C9)));
-
-
-extern volatile __bit BRG10 __attribute__((address(0x4D2)));
-
-
-extern volatile __bit BRG11 __attribute__((address(0x4D3)));
-
-
-extern volatile __bit BRG12 __attribute__((address(0x4D4)));
-
-
-extern volatile __bit BRG13 __attribute__((address(0x4D5)));
-
-
-extern volatile __bit BRG14 __attribute__((address(0x4D6)));
-
-
-extern volatile __bit BRG15 __attribute__((address(0x4D7)));
-
-
-extern volatile __bit BRG16 __attribute__((address(0xC3B)));
-
-
-extern volatile __bit BRG2 __attribute__((address(0x4CA)));
-
-
-extern volatile __bit BRG3 __attribute__((address(0x4CB)));
-
-
-extern volatile __bit BRG4 __attribute__((address(0x4CC)));
-
-
-extern volatile __bit BRG5 __attribute__((address(0x4CD)));
-
-
-extern volatile __bit BRG6 __attribute__((address(0x4CE)));
-
-
-extern volatile __bit BRG7 __attribute__((address(0x4CF)));
-
-
-extern volatile __bit BRG8 __attribute__((address(0x4D0)));
-
-
-extern volatile __bit BRG9 __attribute__((address(0x4D1)));
-
-
-extern volatile __bit BRGH __attribute__((address(0x4C2)));
-
-
-extern volatile __bit C1CH0 __attribute__((address(0x838)));
-
-
-extern volatile __bit C1CH1 __attribute__((address(0x839)));
-
-
-extern volatile __bit C1IE __attribute__((address(0x46D)));
-
-
-extern volatile __bit C1IF __attribute__((address(0x6D)));
-
-
-extern volatile __bit C1OE __attribute__((address(0x83D)));
-
-
-extern volatile __bit C1ON __attribute__((address(0x83F)));
-
-
-extern volatile __bit C1OUT __attribute__((address(0x83E)));
-
-
-extern volatile __bit C1POL __attribute__((address(0x83C)));
-
-
-extern volatile __bit C1R __attribute__((address(0x83A)));
-
-
-extern volatile __bit C1RSEL __attribute__((address(0x84D)));
-
-
-extern volatile __bit C1SEN __attribute__((address(0xC2D)));
-
-
-extern volatile __bit C2CH0 __attribute__((address(0x840)));
-
-
-extern volatile __bit C2CH1 __attribute__((address(0x841)));
-
-
-extern volatile __bit C2IE __attribute__((address(0x46E)));
-
-
-extern volatile __bit C2IF __attribute__((address(0x6E)));
-
-
-extern volatile __bit C2OE __attribute__((address(0x845)));
-
-
-extern volatile __bit C2ON __attribute__((address(0x847)));
-
-
-extern volatile __bit C2OUT __attribute__((address(0x846)));
-
-
-extern volatile __bit C2POL __attribute__((address(0x844)));
-
-
-extern volatile __bit C2R __attribute__((address(0x842)));
-
-
-extern volatile __bit C2REN __attribute__((address(0xC2C)));
-
-
-extern volatile __bit C2RSEL __attribute__((address(0x84C)));
-
-
-extern volatile __bit C2SYNC __attribute__((address(0x848)));
-
-
-extern volatile __bit CARRY __attribute__((address(0x18)));
-
-
-extern volatile __bit CCP1IE __attribute__((address(0x462)));
-
-
-extern volatile __bit CCP1IF __attribute__((address(0x62)));
-
-
-extern volatile __bit CCP1M0 __attribute__((address(0xB8)));
-
-
-extern volatile __bit CCP1M1 __attribute__((address(0xB9)));
-
-
-extern volatile __bit CCP1M2 __attribute__((address(0xBA)));
-
-
-extern volatile __bit CCP1M3 __attribute__((address(0xBB)));
-
-
-extern volatile __bit CCP1X __attribute__((address(0xBD)));
-
-
-extern volatile __bit CCP1Y __attribute__((address(0xBC)));
-
-
-extern volatile __bit CCP2IE __attribute__((address(0x468)));
-
-
-extern volatile __bit CCP2IF __attribute__((address(0x68)));
-
-
-extern volatile __bit CCP2M0 __attribute__((address(0xE8)));
-
-
-extern volatile __bit CCP2M1 __attribute__((address(0xE9)));
-
-
-extern volatile __bit CCP2M2 __attribute__((address(0xEA)));
-
-
-extern volatile __bit CCP2M3 __attribute__((address(0xEB)));
-
-
-extern volatile __bit CCP2X __attribute__((address(0xED)));
-
-
-extern volatile __bit CCP2Y __attribute__((address(0xEC)));
-
-
-extern volatile __bit CHS0 __attribute__((address(0xFA)));
-
-
-extern volatile __bit CHS1 __attribute__((address(0xFB)));
-
-
-extern volatile __bit CHS2 __attribute__((address(0xFC)));
-
-
-extern volatile __bit CHS3 __attribute__((address(0xFD)));
-
-
-extern volatile __bit CKE __attribute__((address(0x4A6)));
-
-
-extern volatile __bit CKP __attribute__((address(0xA4)));
-
-
-extern volatile __bit CREN __attribute__((address(0xC4)));
-
-
-extern volatile __bit CSRC __attribute__((address(0x4C7)));
-
-
-extern volatile __bit DATA_ADDRESS __attribute__((address(0x4A5)));
-
-
-extern volatile __bit DC __attribute__((address(0x19)));
-
-
-extern volatile __bit DC1B0 __attribute__((address(0xBC)));
-
-
-extern volatile __bit DC1B1 __attribute__((address(0xBD)));
-
-
-extern volatile __bit DC2B0 __attribute__((address(0xEC)));
-
-
-extern volatile __bit DC2B1 __attribute__((address(0xED)));
-
-
-extern volatile __bit D_A __attribute__((address(0x4A5)));
-
-
-extern volatile __bit D_nA __attribute__((address(0x4A5)));
-
-
-extern volatile __bit ECCPAS0 __attribute__((address(0x4E4)));
-
-
-extern volatile __bit ECCPAS1 __attribute__((address(0x4E5)));
-
-
-extern volatile __bit ECCPAS2 __attribute__((address(0x4E6)));
-
-
-extern volatile __bit ECCPASE __attribute__((address(0x4E7)));
-
-
-extern volatile __bit EEIE __attribute__((address(0x46C)));
-
-
-extern volatile __bit EEIF __attribute__((address(0x6C)));
-
-
-extern volatile __bit EEPGD __attribute__((address(0xC67)));
-
-
-extern volatile __bit FERR __attribute__((address(0xC2)));
-
-
-extern volatile __bit FVREN __attribute__((address(0xC28)));
-
-
-extern volatile __bit GCEN __attribute__((address(0x48F)));
-
-
-extern volatile __bit GIE __attribute__((address(0x5F)));
-
-
-extern volatile __bit GO __attribute__((address(0xF9)));
-
-
-extern volatile __bit GO_DONE __attribute__((address(0xF9)));
-
-
-extern volatile __bit GO_nDONE __attribute__((address(0xF9)));
-
-
-extern volatile __bit HTS __attribute__((address(0x47A)));
-
-
-extern volatile __bit I2C_DATA __attribute__((address(0x4A5)));
-
-
-extern volatile __bit I2C_READ __attribute__((address(0x4A2)));
-
-
-extern volatile __bit I2C_START __attribute__((address(0x4A3)));
-
-
-extern volatile __bit I2C_STOP __attribute__((address(0x4A4)));
-
-
-extern volatile __bit INTE __attribute__((address(0x5C)));
-
-
-extern volatile __bit INTEDG __attribute__((address(0x40E)));
-
-
-extern volatile __bit INTF __attribute__((address(0x59)));
-
-
-extern volatile __bit IOCB0 __attribute__((address(0x4B0)));
-
-
-extern volatile __bit IOCB1 __attribute__((address(0x4B1)));
-
-
-extern volatile __bit IOCB2 __attribute__((address(0x4B2)));
-
-
-extern volatile __bit IOCB3 __attribute__((address(0x4B3)));
-
-
-extern volatile __bit IOCB4 __attribute__((address(0x4B4)));
-
-
-extern volatile __bit IOCB5 __attribute__((address(0x4B5)));
-
-
-extern volatile __bit IOCB6 __attribute__((address(0x4B6)));
-
-
-extern volatile __bit IOCB7 __attribute__((address(0x4B7)));
-
-
-extern volatile __bit IRCF0 __attribute__((address(0x47C)));
-
-
-extern volatile __bit IRCF1 __attribute__((address(0x47D)));
-
-
-extern volatile __bit IRCF2 __attribute__((address(0x47E)));
-
-
-extern volatile __bit IRP __attribute__((address(0x1F)));
-
-
-extern volatile __bit LTS __attribute__((address(0x479)));
-
-
-extern volatile __bit MC1OUT __attribute__((address(0x84F)));
-
-
-extern volatile __bit MC2OUT __attribute__((address(0x84E)));
-
-
-extern volatile __bit MSK0 __attribute__((address(0x498)));
-
-
-extern volatile __bit MSK1 __attribute__((address(0x499)));
-
-
-extern volatile __bit MSK2 __attribute__((address(0x49A)));
-
-
-extern volatile __bit MSK3 __attribute__((address(0x49B)));
-
-
-extern volatile __bit MSK4 __attribute__((address(0x49C)));
-
-
-extern volatile __bit MSK5 __attribute__((address(0x49D)));
-
-
-extern volatile __bit MSK6 __attribute__((address(0x49E)));
-
-
-extern volatile __bit MSK7 __attribute__((address(0x49F)));
-
-
-extern volatile __bit OERR __attribute__((address(0xC1)));
-
-
-extern volatile __bit OSFIE __attribute__((address(0x46F)));
-
-
-extern volatile __bit OSFIF __attribute__((address(0x6F)));
-
-
-extern volatile __bit OSTS __attribute__((address(0x47B)));
-
-
-extern volatile __bit P1M0 __attribute__((address(0xBE)));
-
-
-extern volatile __bit P1M1 __attribute__((address(0xBF)));
-
-
-extern volatile __bit PDC0 __attribute__((address(0x4D8)));
-
-
-extern volatile __bit PDC1 __attribute__((address(0x4D9)));
-
-
-extern volatile __bit PDC2 __attribute__((address(0x4DA)));
-
-
-extern volatile __bit PDC3 __attribute__((address(0x4DB)));
-
-
-extern volatile __bit PDC4 __attribute__((address(0x4DC)));
-
-
-extern volatile __bit PDC5 __attribute__((address(0x4DD)));
-
-
-extern volatile __bit PDC6 __attribute__((address(0x4DE)));
-
-
-extern volatile __bit PEIE __attribute__((address(0x5E)));
-
-
-extern volatile __bit PEN __attribute__((address(0x48A)));
-
-
-extern volatile __bit PRSEN __attribute__((address(0x4DF)));
-
-
-extern volatile __bit PS0 __attribute__((address(0x408)));
-
-
-extern volatile __bit PS1 __attribute__((address(0x409)));
-
-
-extern volatile __bit PS2 __attribute__((address(0x40A)));
-
-
-extern volatile __bit PSA __attribute__((address(0x40B)));
-
-
-extern volatile __bit PSSAC0 __attribute__((address(0x4E2)));
-
-
-extern volatile __bit PSSAC1 __attribute__((address(0x4E3)));
-
-
-extern volatile __bit PSSBD0 __attribute__((address(0x4E0)));
-
-
-extern volatile __bit PSSBD1 __attribute__((address(0x4E1)));
-
-
-extern volatile __bit PULSR __attribute__((address(0xC2A)));
-
-
-extern volatile __bit PULSS __attribute__((address(0xC2B)));
-
-
-extern volatile __bit RA0 __attribute__((address(0x28)));
-
-
-extern volatile __bit RA1 __attribute__((address(0x29)));
-
-
-extern volatile __bit RA2 __attribute__((address(0x2A)));
-
-
-extern volatile __bit RA3 __attribute__((address(0x2B)));
-
-
-extern volatile __bit RA4 __attribute__((address(0x2C)));
-
-
-extern volatile __bit RA5 __attribute__((address(0x2D)));
-
-
-extern volatile __bit RA6 __attribute__((address(0x2E)));
-
-
-extern volatile __bit RA7 __attribute__((address(0x2F)));
-
-
-extern volatile __bit RB0 __attribute__((address(0x30)));
-
-
-extern volatile __bit RB1 __attribute__((address(0x31)));
-
-
-extern volatile __bit RB2 __attribute__((address(0x32)));
-
-
-extern volatile __bit RB3 __attribute__((address(0x33)));
-
-
-extern volatile __bit RB4 __attribute__((address(0x34)));
-
-
-extern volatile __bit RB5 __attribute__((address(0x35)));
-
-
-extern volatile __bit RB6 __attribute__((address(0x36)));
-
-
-extern volatile __bit RB7 __attribute__((address(0x37)));
-
-
-extern volatile __bit RBIE __attribute__((address(0x5B)));
-
-
-extern volatile __bit RBIF __attribute__((address(0x58)));
-
-
-extern volatile __bit RC0 __attribute__((address(0x38)));
-
-
-extern volatile __bit RC1 __attribute__((address(0x39)));
-
-
-extern volatile __bit RC2 __attribute__((address(0x3A)));
-
-
-extern volatile __bit RC3 __attribute__((address(0x3B)));
-
-
-extern volatile __bit RC4 __attribute__((address(0x3C)));
-
-
-extern volatile __bit RC5 __attribute__((address(0x3D)));
-
-
-extern volatile __bit RC6 __attribute__((address(0x3E)));
-
-
-extern volatile __bit RC7 __attribute__((address(0x3F)));
-
-
-extern volatile __bit RC8_9 __attribute__((address(0xC6)));
-
-
-extern volatile __bit RC9 __attribute__((address(0xC6)));
-
-
-extern volatile __bit RCD8 __attribute__((address(0xC0)));
-
-
-extern volatile __bit RCEN __attribute__((address(0x48B)));
-
-
-extern volatile __bit RCIDL __attribute__((address(0xC3E)));
-
-
-extern volatile __bit RCIE __attribute__((address(0x465)));
-
-
-extern volatile __bit RCIF __attribute__((address(0x65)));
-
-
-extern volatile __bit RD __attribute__((address(0xC60)));
-
-
-extern volatile __bit RD0 __attribute__((address(0x40)));
-
-
-extern volatile __bit RD1 __attribute__((address(0x41)));
-
-
-extern volatile __bit RD2 __attribute__((address(0x42)));
-
-
-extern volatile __bit RD3 __attribute__((address(0x43)));
-
-
-extern volatile __bit RD4 __attribute__((address(0x44)));
-
-
-extern volatile __bit RD5 __attribute__((address(0x45)));
-
-
-extern volatile __bit RD6 __attribute__((address(0x46)));
-
-
-extern volatile __bit RD7 __attribute__((address(0x47)));
-
-
-extern volatile __bit RE0 __attribute__((address(0x48)));
-
-
-extern volatile __bit RE1 __attribute__((address(0x49)));
-
-
-extern volatile __bit RE2 __attribute__((address(0x4A)));
-
-
-extern volatile __bit RE3 __attribute__((address(0x4B)));
-
-
-extern volatile __bit READ_WRITE __attribute__((address(0x4A2)));
-
-
-extern volatile __bit RP0 __attribute__((address(0x1D)));
-
-
-extern volatile __bit RP1 __attribute__((address(0x1E)));
-
-
-extern volatile __bit RSEN __attribute__((address(0x489)));
-
-
-extern volatile __bit RX9 __attribute__((address(0xC6)));
-
-
-extern volatile __bit RX9D __attribute__((address(0xC0)));
-
-
-extern volatile __bit R_W __attribute__((address(0x4A2)));
-
-
-extern volatile __bit R_nW __attribute__((address(0x4A2)));
-
-
-extern volatile __bit SBOREN __attribute__((address(0x474)));
-
-
-extern volatile __bit SCKP __attribute__((address(0xC3C)));
-
-
-extern volatile __bit SCS __attribute__((address(0x478)));
-
-
-extern volatile __bit SEN __attribute__((address(0x488)));
-
-
-extern volatile __bit SENDB __attribute__((address(0x4C3)));
-
-
-extern volatile __bit SMP __attribute__((address(0x4A7)));
-
-
-extern volatile __bit SPEN __attribute__((address(0xC7)));
-
-
-extern volatile __bit SR0 __attribute__((address(0xC2E)));
-
-
-extern volatile __bit SR1 __attribute__((address(0xC2F)));
-
-
-extern volatile __bit SREN __attribute__((address(0xC5)));
-
-
-extern volatile __bit SSPEN __attribute__((address(0xA5)));
-
-
-extern volatile __bit SSPIE __attribute__((address(0x463)));
-
-
-extern volatile __bit SSPIF __attribute__((address(0x63)));
-
-
-extern volatile __bit SSPM0 __attribute__((address(0xA0)));
-
-
-extern volatile __bit SSPM1 __attribute__((address(0xA1)));
-
-
-extern volatile __bit SSPM2 __attribute__((address(0xA2)));
-
-
-extern volatile __bit SSPM3 __attribute__((address(0xA3)));
-
-
-extern volatile __bit SSPOV __attribute__((address(0xA6)));
-
-
-extern volatile __bit STRA __attribute__((address(0x4E8)));
-
-
-extern volatile __bit STRB __attribute__((address(0x4E9)));
-
-
-extern volatile __bit STRC __attribute__((address(0x4EA)));
-
-
-extern volatile __bit STRD __attribute__((address(0x4EB)));
-
-
-extern volatile __bit STRSYNC __attribute__((address(0x4EC)));
-
-
-extern volatile __bit SWDTEN __attribute__((address(0x828)));
-
-
-extern volatile __bit SYNC __attribute__((address(0x4C4)));
-
-
-extern volatile __bit T0CS __attribute__((address(0x40D)));
-
-
-extern volatile __bit T0IE __attribute__((address(0x5D)));
-
-
-extern volatile __bit T0IF __attribute__((address(0x5A)));
-
-
-extern volatile __bit T0SE __attribute__((address(0x40C)));
-
-
-extern volatile __bit T1CKPS0 __attribute__((address(0x84)));
-
-
-extern volatile __bit T1CKPS1 __attribute__((address(0x85)));
-
-
-extern volatile __bit T1GINV __attribute__((address(0x87)));
-
-
-extern volatile __bit T1GIV __attribute__((address(0x87)));
-
-
-extern volatile __bit T1GSS __attribute__((address(0x849)));
-
-
-extern volatile __bit T1INSYNC __attribute__((address(0x82)));
-
-
-extern volatile __bit T1OSCEN __attribute__((address(0x83)));
-
-
-extern volatile __bit T1SYNC __attribute__((address(0x82)));
-
-
-extern volatile __bit T2CKPS0 __attribute__((address(0x90)));
-
-
-extern volatile __bit T2CKPS1 __attribute__((address(0x91)));
-
-
-extern volatile __bit TMR0IE __attribute__((address(0x5D)));
-
-
-extern volatile __bit TMR0IF __attribute__((address(0x5A)));
-
-
-extern volatile __bit TMR1CS __attribute__((address(0x81)));
-
-
-extern volatile __bit TMR1GE __attribute__((address(0x86)));
-
-
-extern volatile __bit TMR1IE __attribute__((address(0x460)));
-
-
-extern volatile __bit TMR1IF __attribute__((address(0x60)));
-
-
-extern volatile __bit TMR1ON __attribute__((address(0x80)));
-
-
-extern volatile __bit TMR2IE __attribute__((address(0x461)));
-
-
-extern volatile __bit TMR2IF __attribute__((address(0x61)));
-
-
-extern volatile __bit TMR2ON __attribute__((address(0x92)));
-
-
-extern volatile __bit TOUTPS0 __attribute__((address(0x93)));
-
-
-extern volatile __bit TOUTPS1 __attribute__((address(0x94)));
-
-
-extern volatile __bit TOUTPS2 __attribute__((address(0x95)));
-
-
-extern volatile __bit TOUTPS3 __attribute__((address(0x96)));
-
-
-extern volatile __bit TRISA0 __attribute__((address(0x428)));
-
-
-extern volatile __bit TRISA1 __attribute__((address(0x429)));
-
-
-extern volatile __bit TRISA2 __attribute__((address(0x42A)));
-
-
-extern volatile __bit TRISA3 __attribute__((address(0x42B)));
-
-
-extern volatile __bit TRISA4 __attribute__((address(0x42C)));
-
-
-extern volatile __bit TRISA5 __attribute__((address(0x42D)));
-
-
-extern volatile __bit TRISA6 __attribute__((address(0x42E)));
-
-
-extern volatile __bit TRISA7 __attribute__((address(0x42F)));
-
-
-extern volatile __bit TRISB0 __attribute__((address(0x430)));
-
-
-extern volatile __bit TRISB1 __attribute__((address(0x431)));
-
-
-extern volatile __bit TRISB2 __attribute__((address(0x432)));
-
-
-extern volatile __bit TRISB3 __attribute__((address(0x433)));
-
-
-extern volatile __bit TRISB4 __attribute__((address(0x434)));
-
-
-extern volatile __bit TRISB5 __attribute__((address(0x435)));
-
-
-extern volatile __bit TRISB6 __attribute__((address(0x436)));
-
-
-extern volatile __bit TRISB7 __attribute__((address(0x437)));
-
-
-extern volatile __bit TRISC0 __attribute__((address(0x438)));
-
-
-extern volatile __bit TRISC1 __attribute__((address(0x439)));
-
-
-extern volatile __bit TRISC2 __attribute__((address(0x43A)));
-
-
-extern volatile __bit TRISC3 __attribute__((address(0x43B)));
-
-
-extern volatile __bit TRISC4 __attribute__((address(0x43C)));
-
-
-extern volatile __bit TRISC5 __attribute__((address(0x43D)));
-
-
-extern volatile __bit TRISC6 __attribute__((address(0x43E)));
-
-
-extern volatile __bit TRISC7 __attribute__((address(0x43F)));
-
-
-extern volatile __bit TRISD0 __attribute__((address(0x440)));
-
-
-extern volatile __bit TRISD1 __attribute__((address(0x441)));
-
-
-extern volatile __bit TRISD2 __attribute__((address(0x442)));
-
-
-extern volatile __bit TRISD3 __attribute__((address(0x443)));
-
-
-extern volatile __bit TRISD4 __attribute__((address(0x444)));
-
-
-extern volatile __bit TRISD5 __attribute__((address(0x445)));
-
-
-extern volatile __bit TRISD6 __attribute__((address(0x446)));
-
-
-extern volatile __bit TRISD7 __attribute__((address(0x447)));
-
-
-extern volatile __bit TRISE0 __attribute__((address(0x448)));
-
-
-extern volatile __bit TRISE1 __attribute__((address(0x449)));
-
-
-extern volatile __bit TRISE2 __attribute__((address(0x44A)));
-
-
-extern volatile __bit TRISE3 __attribute__((address(0x44B)));
-
-
-extern volatile __bit TRMT __attribute__((address(0x4C1)));
-
-
-extern volatile __bit TUN0 __attribute__((address(0x480)));
-
-
-extern volatile __bit TUN1 __attribute__((address(0x481)));
-
-
-extern volatile __bit TUN2 __attribute__((address(0x482)));
-
-
-extern volatile __bit TUN3 __attribute__((address(0x483)));
-
-
-extern volatile __bit TUN4 __attribute__((address(0x484)));
-
-
-extern volatile __bit TX8_9 __attribute__((address(0x4C6)));
-
-
-extern volatile __bit TX9 __attribute__((address(0x4C6)));
-
-
-extern volatile __bit TX9D __attribute__((address(0x4C0)));
-
-
-extern volatile __bit TXD8 __attribute__((address(0x4C0)));
-
-
-extern volatile __bit TXEN __attribute__((address(0x4C5)));
-
-
-extern volatile __bit TXIE __attribute__((address(0x464)));
-
-
-extern volatile __bit TXIF __attribute__((address(0x64)));
-
-
-extern volatile __bit UA __attribute__((address(0x4A1)));
-
-
-extern volatile __bit ULPWUE __attribute__((address(0x475)));
-
-
-extern volatile __bit ULPWUIE __attribute__((address(0x46A)));
-
-
-extern volatile __bit ULPWUIF __attribute__((address(0x6A)));
-
-
-extern volatile __bit VCFG0 __attribute__((address(0x4FC)));
-
-
-extern volatile __bit VCFG1 __attribute__((address(0x4FD)));
-
-
-extern volatile __bit VR0 __attribute__((address(0x4B8)));
-
-
-extern volatile __bit VR1 __attribute__((address(0x4B9)));
-
-
-extern volatile __bit VR2 __attribute__((address(0x4BA)));
-
-
-extern volatile __bit VR3 __attribute__((address(0x4BB)));
-
-
-extern volatile __bit VREN __attribute__((address(0x4BF)));
-
-
-extern volatile __bit VROE __attribute__((address(0x4BE)));
-
-
-extern volatile __bit VRR __attribute__((address(0x4BD)));
-
-
-extern volatile __bit VRSS __attribute__((address(0x4BC)));
-
-
-extern volatile __bit WCOL __attribute__((address(0xA7)));
-
-
-extern volatile __bit WDTPS0 __attribute__((address(0x829)));
-
-
-extern volatile __bit WDTPS1 __attribute__((address(0x82A)));
-
-
-extern volatile __bit WDTPS2 __attribute__((address(0x82B)));
-
-
-extern volatile __bit WDTPS3 __attribute__((address(0x82C)));
-
-
-extern volatile __bit WPUB0 __attribute__((address(0x4A8)));
-
-
-extern volatile __bit WPUB1 __attribute__((address(0x4A9)));
-
-
-extern volatile __bit WPUB2 __attribute__((address(0x4AA)));
-
-
-extern volatile __bit WPUB3 __attribute__((address(0x4AB)));
-
-
-extern volatile __bit WPUB4 __attribute__((address(0x4AC)));
-
-
-extern volatile __bit WPUB5 __attribute__((address(0x4AD)));
-
-
-extern volatile __bit WPUB6 __attribute__((address(0x4AE)));
-
-
-extern volatile __bit WPUB7 __attribute__((address(0x4AF)));
-
-
-extern volatile __bit WR __attribute__((address(0xC61)));
-
-
-extern volatile __bit WREN __attribute__((address(0xC62)));
-
-
-extern volatile __bit WRERR __attribute__((address(0xC63)));
-
-
-extern volatile __bit WUE __attribute__((address(0xC39)));
-
-
-extern volatile __bit ZERO __attribute__((address(0x1A)));
-
-
-extern volatile __bit nA __attribute__((address(0x4A5)));
-
-
-extern volatile __bit nADDRESS __attribute__((address(0x4A5)));
-
-
-extern volatile __bit nBO __attribute__((address(0x470)));
-
-
-extern volatile __bit nBOR __attribute__((address(0x470)));
-
-
-extern volatile __bit nDONE __attribute__((address(0xF9)));
-
-
-extern volatile __bit nPD __attribute__((address(0x1B)));
-
-
-extern volatile __bit nPOR __attribute__((address(0x471)));
-
-
-extern volatile __bit nRBPU __attribute__((address(0x40F)));
-
-
-extern volatile __bit nRC8 __attribute__((address(0xC6)));
-
-
-extern volatile __bit nT1SYNC __attribute__((address(0x82)));
-
-
-extern volatile __bit nTO __attribute__((address(0x1C)));
-
-
-extern volatile __bit nTX8 __attribute__((address(0x4C6)));
-
-
-extern volatile __bit nW __attribute__((address(0x4A2)));
-
-
-extern volatile __bit nWRITE __attribute__((address(0x4A2)));
 # 2703 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\pic_chip_select.h" 2 3
 # 13 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\pic.h" 2 3
 # 30 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\pic.h" 3
@@ -2496,15 +1363,12 @@ extern unsigned char eeprom_read(unsigned char addr);
 extern __attribute__((nonreentrant)) void _delay(unsigned long);
 #pragma intrinsic(_delaywdt)
 extern __attribute__((nonreentrant)) void _delaywdt(unsigned long);
-# 137 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\pic.h" 3
-extern __bank0 unsigned char __resetbits;
-extern __bank0 __bit __powerdown;
-extern __bank0 __bit __timeout;
 # 27 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\xc.h" 2 3
-# 10 "main.c" 2
+# 35 "main.c" 2
 
 
 
+int main(void);
 void Timer_Delay(void);
 void Secuence_One(void);
 void Secuence_Two(void);
@@ -2513,18 +1377,21 @@ void Secuence_Four(void);
 void Secuence_Five(void);
 
 
-void main(void) {
+int main(void) {
 
-     OSCCON = 0x15;
 
-    ANSEL &= 0x0;
-    ANSELH &=0x0;
+    OSCCON = 0x15;
 
-    TRISC &= 0x0;
-    TRISE &= 0x0;
 
-    PORTC &= 0x0;
-    PORTE &= 0B001;
+    ANSEL &= (unsigned char)0x0;
+    ANSELH &=(unsigned char)0x0;
+
+
+    TRISC &= (unsigned char)0x0;
+    TRISE &= (unsigned char)0x0;
+
+    PORTC &= (unsigned char)0x0;
+    PORTE &= (unsigned char)0B001;
 
     while(1){
 
@@ -2534,104 +1401,105 @@ void main(void) {
         Secuence_Four();
         Secuence_Five();
     }
-    return;
 }
 
 void Timer_Delay(void){
 
 
-    PIE1 &= 0x1;
-    TMR1L = 0x18;
-    TMR1H = 0x86;
-    T1CON |= 0x1;
-    while(PIR1bits.TMR1IF == 0);
+    PIE1 &= (unsigned char)0x1;
+
+    TMR1L = (unsigned char)0x18;
+    TMR1H = (unsigned char)0x86;
+
+
+    T1CON |= (unsigned char)0x1;
+
+    while(PIR1bits.TMR1IF == 0){};
     PIR1bits.TMR1IF = 0;
 }
 
 void Secuence_One(void){
 
-    PORTC = 0xF8;
+    PORTC = (unsigned char)0xF8;
     Timer_Delay();
-    PORTC = 0x0;
+    PORTC = (unsigned char)0x0;
     Timer_Delay();
-
 }
 
 void Secuence_Two(void){
 
-    PORTC = 0x80;
+    PORTC = (unsigned char)0x80;
     Timer_Delay();
-    PORTC = 0xC0;
+    PORTC = (unsigned char)0xC0;
     Timer_Delay();
-    PORTC = 0xE0;
+    PORTC = (unsigned char)0xE0;
     Timer_Delay();
-    PORTC = 0xF0;
+    PORTC = (unsigned char)0xF0;
     Timer_Delay();
-    PORTC = 0xF8;
+    PORTC = (unsigned char)0xF8;
     Timer_Delay();
-    PORTC = 0x78;
+    PORTC = (unsigned char)0x78;
     Timer_Delay();
-    PORTC = 0x38;
+    PORTC = (unsigned char)0x38;
     Timer_Delay();
-    PORTC = 0x18;
+    PORTC = (unsigned char)0x18;
     Timer_Delay();
-    PORTC = 0x8;
+    PORTC = (unsigned char)0x8;
     Timer_Delay();
-    PORTC = 0x00;
+    PORTC = (unsigned char)0x00;
     Timer_Delay();
 }
 
 void Secuence_Three(void){
 
-    PORTC = 0x0;
+    PORTC = (unsigned char)0x0;
     Timer_Delay();
-    PORTC = 0x88;
+    PORTC = (unsigned char)0x88;
     Timer_Delay();
-    PORTC = 0xD8;
+    PORTC = (unsigned char)0xD8;
     Timer_Delay();
-    PORTC = 0xF8;
+    PORTC = (unsigned char)0xF8;
     Timer_Delay();
-    PORTC = 0xD8;
+    PORTC = (unsigned char)0xD8;
     Timer_Delay();
-    PORTC = 0x88;
+    PORTC = (unsigned char)0x88;
     Timer_Delay();
-    PORTC = 0x0;
+    PORTC = (unsigned char)0x0;
     Timer_Delay();
 }
 
 void Secuence_Four(void){
 
-    PORTC = 0x80;
+    PORTC = (unsigned char)0x80;
     Timer_Delay();
-    PORTC = 0x40;
+    PORTC = (unsigned char)0x40;
     Timer_Delay();
-    PORTC = 0x20;
+    PORTC = (unsigned char)0x20;
     Timer_Delay();
-    PORTC = 0x10;
+    PORTC = (unsigned char)0x10;
     Timer_Delay();
-    PORTC = 0x8;
+    PORTC = (unsigned char)0x8;
     Timer_Delay();
-    PORTC = 0x10;
+    PORTC = (unsigned char)0x10;
     Timer_Delay();
-    PORTC = 0x20;
+    PORTC = (unsigned char)0x20;
     Timer_Delay();
-    PORTC = 0x40;
+    PORTC = (unsigned char)0x40;
     Timer_Delay();
-    PORTC = 0x80;
+    PORTC = (unsigned char)0x80;
     Timer_Delay();
 }
 
 void Secuence_Five(void){
 
-    PORTC = 0xA8;
+    PORTC = (unsigned char)0xA8;
     Timer_Delay();
-    PORTC = 0x50;
+    PORTC = (unsigned char)0x50;
     Timer_Delay();
-    PORTC = 0xF8;
+    PORTC = (unsigned char)0xF8;
     Timer_Delay();
-    PORTC = 0x50;
+    PORTC = (unsigned char)0x50;
     Timer_Delay();
-    PORTC = 0xA8;
+    PORTC = (unsigned char)0xA8;
     Timer_Delay();
-
 }

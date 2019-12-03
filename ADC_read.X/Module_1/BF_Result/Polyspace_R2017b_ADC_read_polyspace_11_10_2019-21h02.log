@@ -1,0 +1,165 @@
+<polyspace-bug-finder-nodesktop R2017b PID9136 PGID9136>
+
+Polyspace verification of ADC_read_polyspace project.
+Starting at 11/10/2019, 21h02.
+
+Option -main-generator-writes-variables has no effect in Polyspace Bug Finder.
+Option -main-generator-calls has no effect in Polyspace Bug Finder.
+Option -float-rounding-mode has no effect in Polyspace Bug Finder.
+Option -scalar-overflows-checks has no effect in Polyspace Bug Finder.
+Option -scalar-overflows-behavior has no effect in Polyspace Bug Finder.
+Option -uncalled-function-checks has no effect in Polyspace Bug Finder.
+Option -check-subnormal has no effect in Polyspace Bug Finder.
+Option -O2 has no effect in Polyspace Bug Finder.
+
+Activated checkers: 
+       INT_ZERO_DIV, FLOAT_ZERO_DIV, INT_CONV_OVFL, UINT_CONV_OVFL, SIGN_CHANGE, FLOAT_CONV_OVFL, 
+  INT_STD_LIB, FLOAT_STD_LIB, OUT_BOUND_ARRAY, NULL_PTR, OUT_BOUND_PTR, FUNC_CAST, PTR_CAST, 
+  MEM_STD_LIB, STR_STD_LIB, FREED_PTR, DOUBLE_DEALLOCATION, BAD_FREE, BAD_EQUAL_USE, 
+  BAD_EQUAL_EQUAL_USE, DECL_MISMATCH, MISSING_NULL_CHAR, PTR_SIZEOF_MISMATCH, TYPEDEF_MISMATCH, 
+  USELESS_WRITE, NON_INIT_VAR, NON_INIT_PTR, VAR_SHADOWING, MISSING_RETURN, RESOURCE_LEAK, 
+  UNREACHABLE, DEAD_CODE, PARTIALLY_ACCESSED_ARRAY, USELESS_IF, DEADLOCK, BAD_LOCK, DOUBLE_LOCK, 
+  DATA_RACE, DOUBLE_UNLOCK, BAD_UNLOCK, OTHER_STD_LIB, ASSERT, STRING_FORMAT, IMPROPER_ARRAY_INIT, 
+  BAD_PTR_SCALING, SIZEOF_MISUSE, FLOAT_ABSORPTION, LOCAL_ADDR_ESCAPE, STR_FORMAT_BUFFER_OVERFLOW, 
+  STRLIB_BUFFER_OVERFLOW, STRLIB_BUFFER_UNDERFLOW, PUTENV_AUTO_VAR, PTR_TO_DIFF_ARRAY, 
+  ALIGNMENT_CHANGE, READ_ONLY_RESOURCE_WRITE, CLOSED_RESOURCE_USE, DOUBLE_RESOURCE_CLOSE, 
+  DOUBLE_RESOURCE_OPEN, OPERATOR_PRECEDENCE, STD_FUNC_ARG_MISMATCH, INVALID_MEMORY_ASSUMPTION, 
+  CONSTANT_OBJECT_WRITE, INVALID_VA_LIST_ARG, NON_POSITIVE_VLA_SIZE, MEMCMP_STRINGS, 
+  MEMCMP_PADDING_DATA, ERRNO_MISUSE, MISSING_ERRNO_RESET, CHARACTER_MISUSE, CHAR_EOF_CONFUSED, 
+  IO_INTERLEAVING, SIG_HANDLER_COMP_EXCP_RETURN, SIG_HANDLER_CALLING_SIGNAL, 
+  UNPROTOTYPED_FUNC_CALL, FILE_OBJECT_MISUSE, FLEXIBLE_ARRAY_MEMBER_STRUCT_MISUSE, 
+  SIG_HANDLER_SHARED_OBJECT, DATA_RACE_STD_LIB
+
+Remark: By default, some results are not generated for headers.
+|       Search for '-generate-results-for' in user documentation to generate results for these headers.
+
+Verifying sources compliance ...
+Warning: MISRA C:2012 checker: the rule 17.3 has been disabled because it applies to the C90 standard and the selected standard is C99.
+Warning: MISRA C:2012 checker: the rule 8.1 has been disabled because it applies to the C90 standard and the selected standard is C99.
+
+Options used with Verifier:
+-bug-finder=true
+-polyspace-version=2.4 (R2017b)
+-date=10/11/2019
+
+User:
+-compiler=gnu4.9
+-lang=C
+-author=Soul_PC
+-results-dir=D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\Module_1\BF_Result
+-target=i386
+-misra3=mandatory-required
+-verif-version=1.0
+-no-default-system-includes=true (non-official option)
+-prog=ADC_read_polyspace
+-D1=__XC8
+-D2=__PICC__
+-D3=__CLANG__
+-D4=_16F887
+-to=Software Safety Analysis level 2
+-I1=C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include
+-I2=C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\c90
+-import-comments=D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\Module_1\BF_Result\comments_bak
+-dos=true
+-custom-target=[false,8,2,2,-1,4,8,4,4,4,2,1,1,little,unsigned_int,int,unknown] (non-official option)
+
+
+Verifying host configuration:
+Number of cores:                4
+Processor type:                 amd64
+Processor model:                Intel(R) Core(TM) i7-4710HQ CPU @ 2.50GHz
+Processor frequency:            2.494 GHz
+Memory > 4 GB:                                                 15.92 GB
+Tmp space available in C:\Users\Soul_PC\AppData\Local\Temp:    40.98 GB
+
+Remark: 4 core(s) detected. The verification uses 4 core(s).
+*** Configuration of the host :	OK
+
+
+Type D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\Module_1\BF_Result\kill-rte-kernel.bat on host DESKTOP-P36S46J to halt Verifier process
+
+
+Polyspace C analysis
+Copyright 1999-2017 The MathWorks, Inc.
+All rights reserved.
+
+Starting at: Sun Nov 10 21:02:05 2019
+Host: MINGW64_NTx_64-6.2 DESKTOP-P36S46J 0 amd64
+User: Soul_PC
+**********************************************************
+***
+*** Verifying GNU C 4.9 sources
+***
+**********************************************************
+
+Verifying sources ...
+Verifying main.c (1/1)
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\c90\stdint.h, line 28: error: identifier "__int24" is undefined
+|  typedef __int24 int24_t;
+|          ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\c90\stdint.h, line 65: error: identifier "__uint24" is undefined
+|  typedef __uint24 uint24_t;
+|          ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\c90\stdint.h, line 109: error: identifier "__int24" is undefined
+|  typedef __int24 int_least24_t;
+|          ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\c90\stdint.h, line 154: error: identifier "__uint24" is undefined
+|  typedef __uint24 uint_least24_t;
+|          ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\c90\stdint.h, line 200: error: identifier "__int24" is undefined
+|  typedef __int24 int_fast24_t;
+|          ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\c90\stdint.h, line 240: error: identifier "__uint24" is undefined
+|  typedef __uint24 uint_fast24_t;
+|          ^
+
+6 errors detected in the compilation of "main.c".
+D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c: warning: Failed compilation.
+Global compilation phase...
+Warning: MISRA C:2012 rules checking might be incomplete because of preprocessing or compilation errors.
+
+Packing compilation data
+done.
+
+Importing comments from D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\Module_1\BF_Result\comments_bak folder
+
+Operation completed:
+--------------------
+
+Diff statistics for MISRA C:2012 results:
+-----------------------------------------
+| Number of unmatched commented results                                      : 0
+| Number of unmatched uncommented results                                    : 5
+| Number of results comments not imported because a more recent one was found: 0
+| Number of partially imported results comments (due to a result change)     : 0
+| Number of fully imported results comments                                  : 0
+| Number of matched results without comment                                  : 0
+| Number of matched results with a comment coming from source code annotation: 0
+| Total number of results                                                    : 5
+
+
+**********************************************************
+***
+*** GNU C 4.9 sources verification done
+***
+**********************************************************
+Ending at: Sun Nov 10 21:02:10 2019
+User time for compilation: 00:00:04.45 (4.46real, 4.46u + 0s (0.02gc))
+
+
+-------------------------------------------------------------------
+---                                                             ---
+---  Verifier has detected compilation error(s) in the code.    ---
+---  Please correct them and launch the analysis again.         ---
+---                                                             ---
+-------------------------------------------------------------------
+
+
+Failure at: Sun Nov 10 21:02:10 2019
+Error: Exiting because of previous error
+User time for polyspace-bug-finder-nodesktop: 00:00:05.45 (5.46real, 5.46u + 0s (0.02gc))

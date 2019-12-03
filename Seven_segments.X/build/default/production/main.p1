@@ -37,38 +37,38 @@ Version 4.0 HI-TECH Software Intermediate Code
 "183
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f887.h: 183: extern volatile PORTAbits_t PORTAbits __attribute__((address(0x005)));
 [v _PORTAbits `VS5 ~T0 @X0 0 e@5 ]
-"27 main.c
-[; ;main.c: 27: void Timer_Delay(void);
+"51 main.c
+[; ;main.c: 51: void Timer_Delay(void);
 [v _Timer_Delay `(v ~T0 @X0 0 ef ]
-"28
-[; ;main.c: 28: void zero(void);
+"40
+[; ;main.c: 40: void zero(void);
 [v _zero `(v ~T0 @X0 0 ef ]
-"29
-[; ;main.c: 29: void one(void);
+"41
+[; ;main.c: 41: void one(void);
 [v _one `(v ~T0 @X0 0 ef ]
-"30
-[; ;main.c: 30: void two(void);
+"42
+[; ;main.c: 42: void two(void);
 [v _two `(v ~T0 @X0 0 ef ]
-"31
-[; ;main.c: 31: void three(void);
+"43
+[; ;main.c: 43: void three(void);
 [v _three `(v ~T0 @X0 0 ef ]
-"32
-[; ;main.c: 32: void four(void);
+"44
+[; ;main.c: 44: void four(void);
 [v _four `(v ~T0 @X0 0 ef ]
-"33
-[; ;main.c: 33: void five(void);
+"45
+[; ;main.c: 45: void five(void);
 [v _five `(v ~T0 @X0 0 ef ]
-"34
-[; ;main.c: 34: void six(void);
+"46
+[; ;main.c: 46: void six(void);
 [v _six `(v ~T0 @X0 0 ef ]
-"35
-[; ;main.c: 35: void seven(void);
+"47
+[; ;main.c: 47: void seven(void);
 [v _seven `(v ~T0 @X0 0 ef ]
-"36
-[; ;main.c: 36: void eight(void);
+"48
+[; ;main.c: 48: void eight(void);
 [v _eight `(v ~T0 @X0 0 ef ]
-"37
-[; ;main.c: 37: void nine(void);
+"49
+[; ;main.c: 49: void nine(void);
 [v _nine `(v ~T0 @X0 0 ef ]
 "1702 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f887.h
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f887.h: 1702: extern volatile unsigned char PIE1 __attribute__((address(0x08C)));
@@ -93,22 +93,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "553
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f887.h: 553: extern volatile PIR1bits_t PIR1bits __attribute__((address(0x00C)));
 [v _PIR1bits `VS18 ~T0 @X0 0 e@12 ]
-"9 main.c
-[p x FOSC = INTRC_CLKOUT ]
-"10
+"34 main.c
 [p x WDTE = OFF ]
-"11
-[p x PWRTE = OFF ]
-"12
-[p x BOREN = OFF ]
-"13
-[p x IESO = OFF ]
-"14
-[p x LVP = ON ]
-"17
-[p x BOR4V = BOR40V ]
-"18
-[p x WRT = OFF ]
 "54 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f887.h
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f887.h: 54: __asm("INDF equ 00h");
 [; <" INDF equ 00h ;# ">
@@ -344,282 +330,281 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f887.h: 3546: __asm("EECON2 equ 018Dh");
 [; <" EECON2 equ 018Dh ;# ">
 [v $root$_main `(v ~T0 @X0 0 e ]
-"41 main.c
-[; ;main.c: 41: void main(void) {
-[v _main `(v ~T0 @X0 1 ef ]
+"54 main.c
+[; ;main.c: 54: int main(void) {
+[v _main `(i ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"44
-[; ;main.c: 44:     OSCCON = 0x15;
+"57
+[; ;main.c: 57:     OSCCON = (unsigned char)0x15;
 [e = _OSCCON -> -> 21 `i `uc ]
-"45
-[; ;main.c: 45:     ANSEL &= 0x0;
-[e =& _ANSEL -> -> 0 `i `Vuc ]
-"46
-[; ;main.c: 46:     ANSELH &=0x0;
-[e =& _ANSELH -> -> 0 `i `Vuc ]
-"47
-[; ;main.c: 47:     TRISC = 0x0;
+"60
+[; ;main.c: 60:     ANSEL &= (unsigned char)0x0;
+[e =& _ANSEL -> -> -> 0 `i `uc `Vuc ]
+"61
+[; ;main.c: 61:     ANSELH &=(unsigned char)0x0;
+[e =& _ANSELH -> -> -> 0 `i `uc `Vuc ]
+"63
+[; ;main.c: 63:     TRISC = (unsigned char)0x0;
 [e = _TRISC -> -> 0 `i `uc ]
-"48
-[; ;main.c: 48:     TRISAbits.TRISA2 = 0;
+"64
+[; ;main.c: 64:     TRISAbits.TRISA2 = 0;
 [e = . . _TRISAbits 0 2 -> -> 0 `i `uc ]
-"49
-[; ;main.c: 49:     PORTC &= 0x0;
-[e =& _PORTC -> -> 0 `i `Vuc ]
-"50
-[; ;main.c: 50:      PORTAbits.RA2 = 1;
+"65
+[; ;main.c: 65:     PORTC &= (unsigned char)0x0;
+[e =& _PORTC -> -> -> 0 `i `uc `Vuc ]
+"66
+[; ;main.c: 66:     PORTAbits.RA2 = 1;
 [e = . . _PORTAbits 0 2 -> -> 1 `i `uc ]
-"52
-[; ;main.c: 52:     while(1){
+"68
+[; ;main.c: 68:     while(1){
 [e :U 140 ]
 {
-"53
-[; ;main.c: 53:         Timer_Delay();
-[e ( _Timer_Delay ..  ]
-"54
-[; ;main.c: 54:         zero();
-[e ( _zero ..  ]
-"55
-[; ;main.c: 55:         Timer_Delay();
-[e ( _Timer_Delay ..  ]
-"56
-[; ;main.c: 56:         one();
-[e ( _one ..  ]
-"57
-[; ;main.c: 57:         Timer_Delay();
-[e ( _Timer_Delay ..  ]
-"58
-[; ;main.c: 58:         two();
-[e ( _two ..  ]
-"59
-[; ;main.c: 59:         Timer_Delay();
-[e ( _Timer_Delay ..  ]
-"60
-[; ;main.c: 60:         three();
-[e ( _three ..  ]
-"61
-[; ;main.c: 61:         Timer_Delay();
-[e ( _Timer_Delay ..  ]
-"62
-[; ;main.c: 62:         four();
-[e ( _four ..  ]
-"63
-[; ;main.c: 63:         Timer_Delay();
-[e ( _Timer_Delay ..  ]
-"64
-[; ;main.c: 64:         five();
-[e ( _five ..  ]
-"65
-[; ;main.c: 65:         Timer_Delay();
-[e ( _Timer_Delay ..  ]
-"66
-[; ;main.c: 66:         six();
-[e ( _six ..  ]
-"67
-[; ;main.c: 67:         Timer_Delay();
-[e ( _Timer_Delay ..  ]
-"68
-[; ;main.c: 68:         seven();
-[e ( _seven ..  ]
 "69
 [; ;main.c: 69:         Timer_Delay();
 [e ( _Timer_Delay ..  ]
 "70
-[; ;main.c: 70:       eight();
-[e ( _eight ..  ]
+[; ;main.c: 70:         zero();
+[e ( _zero ..  ]
 "71
-[; ;main.c: 71:       Timer_Delay();
+[; ;main.c: 71:         Timer_Delay();
 [e ( _Timer_Delay ..  ]
 "72
-[; ;main.c: 72:          nine();
-[e ( _nine ..  ]
+[; ;main.c: 72:         one();
+[e ( _one ..  ]
+"73
+[; ;main.c: 73:         Timer_Delay();
+[e ( _Timer_Delay ..  ]
 "74
-[; ;main.c: 74:     }
+[; ;main.c: 74:         two();
+[e ( _two ..  ]
+"75
+[; ;main.c: 75:         Timer_Delay();
+[e ( _Timer_Delay ..  ]
+"76
+[; ;main.c: 76:         three();
+[e ( _three ..  ]
+"77
+[; ;main.c: 77:         Timer_Delay();
+[e ( _Timer_Delay ..  ]
+"78
+[; ;main.c: 78:         four();
+[e ( _four ..  ]
+"79
+[; ;main.c: 79:         Timer_Delay();
+[e ( _Timer_Delay ..  ]
+"80
+[; ;main.c: 80:         five();
+[e ( _five ..  ]
+"81
+[; ;main.c: 81:         Timer_Delay();
+[e ( _Timer_Delay ..  ]
+"82
+[; ;main.c: 82:         six();
+[e ( _six ..  ]
+"83
+[; ;main.c: 83:         Timer_Delay();
+[e ( _Timer_Delay ..  ]
+"84
+[; ;main.c: 84:         seven();
+[e ( _seven ..  ]
+"85
+[; ;main.c: 85:         Timer_Delay();
+[e ( _Timer_Delay ..  ]
+"86
+[; ;main.c: 86:         eight();
+[e ( _eight ..  ]
+"87
+[; ;main.c: 87:         Timer_Delay();
+[e ( _Timer_Delay ..  ]
+"88
+[; ;main.c: 88:         nine();
+[e ( _nine ..  ]
+"89
+[; ;main.c: 89:     }
 }
 [e :U 139 ]
 [e $U 140  ]
 [e :U 141 ]
-"76
-[; ;main.c: 76:     return;
-[e $UE 138  ]
-"77
-[; ;main.c: 77: }
+"90
+[; ;main.c: 90: }
 [e :UE 138 ]
 }
-"78
-[; ;main.c: 78: void zero(void){
+"91
+[; ;main.c: 91: void zero(void){
 [v _zero `(v ~T0 @X0 1 ef ]
 {
 [e :U _zero ]
 [f ]
-"80
-[; ;main.c: 80:     PORTC = 0x3F;
+"93
+[; ;main.c: 93:     PORTC = (unsigned char)0x3F;
 [e = _PORTC -> -> 63 `i `uc ]
-"81
-[; ;main.c: 81: }
+"94
+[; ;main.c: 94: }
 [e :UE 142 ]
 }
-"82
-[; ;main.c: 82: void one(void){
+"95
+[; ;main.c: 95: void one(void){
 [v _one `(v ~T0 @X0 1 ef ]
 {
 [e :U _one ]
 [f ]
-"84
-[; ;main.c: 84:     PORTC = 0x06;
+"97
+[; ;main.c: 97:     PORTC = (unsigned char)0x06;
 [e = _PORTC -> -> 6 `i `uc ]
-"85
-[; ;main.c: 85: }
+"98
+[; ;main.c: 98: }
 [e :UE 143 ]
 }
-"86
-[; ;main.c: 86: void two(void){
+"99
+[; ;main.c: 99: void two(void){
 [v _two `(v ~T0 @X0 1 ef ]
 {
 [e :U _two ]
 [f ]
-"88
-[; ;main.c: 88:     PORTC = 0x5B;
+"101
+[; ;main.c: 101:     PORTC = (unsigned char)0x5B;
 [e = _PORTC -> -> 91 `i `uc ]
-"89
-[; ;main.c: 89: }
+"102
+[; ;main.c: 102: }
 [e :UE 144 ]
 }
-"90
-[; ;main.c: 90: void three(void){
+"103
+[; ;main.c: 103: void three(void){
 [v _three `(v ~T0 @X0 1 ef ]
 {
 [e :U _three ]
 [f ]
-"92
-[; ;main.c: 92:     PORTC = 0x4F;
+"105
+[; ;main.c: 105:     PORTC = (unsigned char)0x4F;
 [e = _PORTC -> -> 79 `i `uc ]
-"93
-[; ;main.c: 93: }
+"106
+[; ;main.c: 106: }
 [e :UE 145 ]
 }
-"94
-[; ;main.c: 94: void four(void){
+"107
+[; ;main.c: 107: void four(void){
 [v _four `(v ~T0 @X0 1 ef ]
 {
 [e :U _four ]
 [f ]
-"96
-[; ;main.c: 96:     PORTC = 0x66;
+"109
+[; ;main.c: 109:     PORTC = (unsigned char)0x66;
 [e = _PORTC -> -> 102 `i `uc ]
-"97
-[; ;main.c: 97: }
+"110
+[; ;main.c: 110: }
 [e :UE 146 ]
 }
-"98
-[; ;main.c: 98: void five(void){
+"111
+[; ;main.c: 111: void five(void){
 [v _five `(v ~T0 @X0 1 ef ]
 {
 [e :U _five ]
 [f ]
-"100
-[; ;main.c: 100:     PORTC = 0x6D;
+"113
+[; ;main.c: 113:     PORTC = (unsigned char)0x6D;
 [e = _PORTC -> -> 109 `i `uc ]
-"101
-[; ;main.c: 101: }
+"114
+[; ;main.c: 114: }
 [e :UE 147 ]
 }
-"102
-[; ;main.c: 102: void six(void){
+"115
+[; ;main.c: 115: void six(void){
 [v _six `(v ~T0 @X0 1 ef ]
 {
 [e :U _six ]
 [f ]
-"104
-[; ;main.c: 104:     PORTC = 0x7D;
+"117
+[; ;main.c: 117:     PORTC = (unsigned char)0x7D;
 [e = _PORTC -> -> 125 `i `uc ]
-"105
-[; ;main.c: 105: }
+"118
+[; ;main.c: 118: }
 [e :UE 148 ]
 }
-"107
-[; ;main.c: 107: void seven(void){
+"119
+[; ;main.c: 119: void seven(void){
 [v _seven `(v ~T0 @X0 1 ef ]
 {
 [e :U _seven ]
 [f ]
-"109
-[; ;main.c: 109:     PORTC = 0x07;
+"121
+[; ;main.c: 121:     PORTC = (unsigned char)0x07;
 [e = _PORTC -> -> 7 `i `uc ]
-"110
-[; ;main.c: 110: }
+"122
+[; ;main.c: 122: }
 [e :UE 149 ]
 }
-"111
-[; ;main.c: 111: void eight(void){
+"123
+[; ;main.c: 123: void eight(void){
 [v _eight `(v ~T0 @X0 1 ef ]
 {
 [e :U _eight ]
 [f ]
-"113
-[; ;main.c: 113:     PORTC = 0x7F;
+"125
+[; ;main.c: 125:     PORTC = (unsigned char)0x7F;
 [e = _PORTC -> -> 127 `i `uc ]
-"114
-[; ;main.c: 114: }
+"126
+[; ;main.c: 126: }
 [e :UE 150 ]
 }
-"116
-[; ;main.c: 116: void nine(void){
+"127
+[; ;main.c: 127: void nine(void){
 [v _nine `(v ~T0 @X0 1 ef ]
 {
 [e :U _nine ]
 [f ]
-"118
-[; ;main.c: 118:     PORTC = 0x6F;
+"129
+[; ;main.c: 129:     PORTC = (unsigned char)0x6F;
 [e = _PORTC -> -> 111 `i `uc ]
-"119
-[; ;main.c: 119: }
+"130
+[; ;main.c: 130: }
 [e :UE 151 ]
 }
-"121
-[; ;main.c: 121: void DP(void){
+"132
+[; ;main.c: 132: void DP(void){
 [v _DP `(v ~T0 @X0 1 ef ]
 {
 [e :U _DP ]
 [f ]
-"123
-[; ;main.c: 123:     PORTC = 0x6F;
+"134
+[; ;main.c: 134:     PORTC = (unsigned char)0x6F;
 [e = _PORTC -> -> 111 `i `uc ]
-"124
-[; ;main.c: 124: }
+"135
+[; ;main.c: 135: }
 [e :UE 152 ]
 }
-"126
-[; ;main.c: 126: void Timer_Delay(void){
+"137
+[; ;main.c: 137: void Timer_Delay(void){
 [v _Timer_Delay `(v ~T0 @X0 1 ef ]
 {
 [e :U _Timer_Delay ]
 [f ]
-"129
-[; ;main.c: 129:     PIE1 &= 0x1;
-[e =& _PIE1 -> -> 1 `i `Vuc ]
-"130
-[; ;main.c: 130:     TMR1L = 0x18;
+"140
+[; ;main.c: 140:     PIE1 &= (unsigned char)0x1;
+[e =& _PIE1 -> -> -> 1 `i `uc `Vuc ]
+"142
+[; ;main.c: 142:     TMR1L = (unsigned char)0x18;
 [e = _TMR1L -> -> 24 `i `uc ]
-"131
-[; ;main.c: 131:     TMR1H = 0x86;
+"143
+[; ;main.c: 143:     TMR1H = (unsigned char)0x86;
 [e = _TMR1H -> -> 134 `i `uc ]
-"132
-[; ;main.c: 132:     T1CON |= 0x1;
-[e =| _T1CON -> -> 1 `i `Vuc ]
-"133
-[; ;main.c: 133:     while(PIR1bits.TMR1IF == 0);
+"146
+[; ;main.c: 146:     T1CON |= (unsigned char)0x1;
+[e =| _T1CON -> -> -> 1 `i `uc `Vuc ]
+"148
+[; ;main.c: 148:     while(PIR1bits.TMR1IF == 0){};
 [e $U 154  ]
 [e :U 155 ]
+{
+}
 [e :U 154 ]
 [e $ == -> . . _PIR1bits 0 0 `i -> 0 `i 155  ]
 [e :U 156 ]
-"134
-[; ;main.c: 134:     PIR1bits.TMR1IF = 0;
+"149
+[; ;main.c: 149:     PIR1bits.TMR1IF = 0;
 [e = . . _PIR1bits 0 0 -> -> 0 `i `uc ]
-"135
-[; ;main.c: 135: }
+"150
+[; ;main.c: 150: }
 [e :UE 153 ]
 }

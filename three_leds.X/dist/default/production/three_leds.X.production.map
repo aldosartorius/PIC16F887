@@ -5,7 +5,7 @@ Linker command line:
 -W-3 --edf=C:\Program Files (x86)\Microchip\xc8\v2.10\pic\dat\en_msgs.txt \
   -cs -h+dist/default/production\three_leds.X.production.sym \
   --cmf=dist/default/production\three_leds.X.production.cmf -z -Q16F887 \
-  -oC:\Users\Soul_PC\AppData\Local\Temp\s4v4.2 --defsym=__MPLAB_BUILD=1 \
+  -oC:\Users\Soul_PC\AppData\Local\Temp\sh64.2 --defsym=__MPLAB_BUILD=1 \
   -Mdist/default/production/three_leds.X.production.map -E1 -ver=XC8 \
   --acfsm=1493 -ASTACK=0110h-016Fh -pstack=STACK -ACODE=00h-07FFhx4 \
   -ASTRCODE=00h-01FFFh -ASTRING=00h-0FFhx32 -ACONST=00h-0FFhx32 \
@@ -18,7 +18,7 @@ Linker command line:
   -pfunctab=ENTRY -ACONFIG=02007h-02008h -pconfig=CONFIG -DCONFIG=2 \
   -AIDLOC=02000h-02003h -pidloc=IDLOC -DIDLOC=2 -AEEDATA=00h-0FFh/02100h \
   -peeprom_data=EEDATA -DEEDATA=2 -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 \
-  -DENTRY=2 -k C:\Users\Soul_PC\AppData\Local\Temp\s4v4.o \
+  -DENTRY=2 -k C:\Users\Soul_PC\AppData\Local\Temp\sh64.o \
   dist/default/production\three_leds.X.production.o 
 
 Object code version is 3.11
@@ -28,7 +28,7 @@ Machine type is 16F887
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\Soul_PC\AppData\Local\Temp\s4v4.o
+C:\Users\Soul_PC\AppData\Local\Temp\sh64.o
                 end_init                              0        0        3        0       0
                 config                             2007     2007        1     400E       0
 dist/default/production\three_leds.X.production.o
@@ -246,13 +246,13 @@ FUNCTION INFORMATION:
 
  *************** function _main *****************
  Defined at:
-		line 17 in file "newmain.c"
+		line 44 in file "newmain.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
-  count           2    0        int 
+		None
  Return value:  Size  Location     Type
-                  1    wreg      void 
+                  2   32[None  ] int 
  Registers used:
 		wreg, status,2, status,0, pclath, cstack
  Tracked objects:
@@ -261,10 +261,10 @@ FUNCTION INFORMATION:
 		Unchanged: 
  Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
       Params:         0       0       0       0       0
-      Locals:         2       0       0       0       0
+      Locals:         0       0       0       0       0
       Temps:          1       0       0       0       0
-      Totals:         3       0       0       0       0
-Total ram usage:        3 bytes
+      Totals:         1       0       0       0       0
+Total ram usage:        1 bytes
  Hardware stack levels required when called:    1
  This function calls:
 		_Timer_Delay
@@ -275,7 +275,7 @@ Total ram usage:        3 bytes
 
  *************** function _Timer_Delay *****************
  Defined at:
-		line 48 in file "newmain.c"
+		line 76 in file "newmain.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type

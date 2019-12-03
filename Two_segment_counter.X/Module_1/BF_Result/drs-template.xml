@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--EDRS Version 2.0-->
+<global>
+   <file name="C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\pic16f887.h" comment="">
+      <scalar name="ANSEL" comment="" line="3387" base_type="uint8" attributes="volatile extern" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="12" init_range="" global_assert="disabled" assert_range="disabled"/>
+      <scalar name="ANSELH" comment="" line="3449" base_type="uint8" attributes="volatile extern" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="12" init_range="" global_assert="disabled" assert_range="disabled"/>
+      <scalar name="PIE1" comment="" line="1702" base_type="uint8" attributes="volatile extern" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="12" init_range="" global_assert="disabled" assert_range="disabled"/>
+      <struct name="PIR1bits" comment="" line="553" attributes="volatile extern">
+         <struct comment="" line="553" attributes="volatile extern">
+            <scalar name="TMR1IF" comment="" line="553" base_type="uint1" attributes="volatile extern" complete_type="uint1" init_mode="MAIN_GENERATOR" init_modes_allowed="12" init_range="" global_assert="disabled" assert_range="disabled"/>
+         </struct>
+      </struct>
+      <struct name="PORTAbits" comment="" line="183" attributes="volatile extern">
+         <struct comment="" line="183" attributes="volatile extern">
+            <scalar name="RA2" comment="" line="183" base_type="uint1" attributes="volatile extern" complete_type="uint1" init_mode="MAIN_GENERATOR" init_modes_allowed="12" init_range="" global_assert="disabled" assert_range="disabled"/>
+            <scalar name="RA3" comment="" line="183" base_type="uint1" attributes="volatile extern" complete_type="uint1" init_mode="MAIN_GENERATOR" init_modes_allowed="12" init_range="" global_assert="disabled" assert_range="disabled"/>
+         </struct>
+      </struct>
+      <scalar name="PORTC" comment="" line="290" base_type="uint8" attributes="volatile extern" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="12" init_range="" global_assert="disabled" assert_range="disabled"/>
+      <scalar name="T1CON" comment="" line="671" base_type="uint8" attributes="volatile extern" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="12" init_range="" global_assert="disabled" assert_range="disabled"/>
+      <scalar name="TMR1H" comment="" line="664" base_type="uint8" attributes="volatile extern" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="12" init_range="" global_assert="disabled" assert_range="disabled"/>
+      <scalar name="TMR1L" comment="" line="657" base_type="uint8" attributes="volatile extern" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="12" init_range="" global_assert="disabled" assert_range="disabled"/>
+      <struct name="TRISAbits" comment="" line="1433" attributes="volatile extern">
+         <struct comment="" line="1433" attributes="volatile extern">
+            <scalar name="TRISA2" comment="" line="1433" base_type="uint1" attributes="volatile extern" complete_type="uint1" init_mode="MAIN_GENERATOR" init_modes_allowed="12" init_range="" global_assert="disabled" assert_range="disabled"/>
+            <scalar name="TRISA3" comment="" line="1433" base_type="uint1" attributes="volatile extern" complete_type="uint1" init_mode="MAIN_GENERATOR" init_modes_allowed="12" init_range="" global_assert="disabled" assert_range="disabled"/>
+         </struct>
+      </struct>
+      <scalar name="TRISC" comment="" line="1540" base_type="uint8" attributes="volatile extern" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="12" init_range="" global_assert="disabled" assert_range="disabled"/>
+   </file>
+   <file name="D:\\Autocapacitacion\\Codigo\\Programas_PIC16F887\\Two_segment_counter.X\\main.c" comment="">
+      <function name="Timer_Delay" comment="" line="92" main_generator_called="MAIN_GENERATOR"/>
+      <function name="main" comment="" line="41" main_generator_called="MAIN_GENERATOR">
+         <scalar name="return" comment="" line="41" base_type="int16" complete_type="int16" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+   </file>
+</global>

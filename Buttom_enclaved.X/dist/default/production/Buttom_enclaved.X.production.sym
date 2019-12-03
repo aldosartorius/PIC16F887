@@ -1,13 +1,10 @@
-__CFG_WRT$OFF 0 0 ABS 0
-__S0 2009 0 ABS 0
+__S0 2008 0 ABS 0
 __S1 73 0 ABS 0
 __S2 0 0 ABS 0
 __S3 0 0 ABS 0
 __Hintentry 0 0 CODE 0
 __Lintentry 0 0 CODE 0
-__CFG_BOREN$ON 0 0 ABS 0
 _PIE1 8C 0 ABS 0
-__CFG_BOR4V$BOR40V 0 0 ABS 0
 _main 7CC 0 CODE 0
 ___sp 0 0 STACK 2
 btemp 7E 0 ABS 0
@@ -18,13 +15,12 @@ _TMR1L E 0 ABS 0
 reset_vec 0 0 CODE 0
 _T1CON 10 0 ABS 0
 wtemp0 7E 0 ABS 0
-__Hconfig 2009 0 CONFIG 0
+__Hconfig 2008 0 CONFIG 0
 __Lconfig 2007 0 CONFIG 0
 __Hram 0 0 ABS 0
 __Lram 0 0 ABS 0
 __Hfunctab 0 0 ENTRY 0
 __Lfunctab 0 0 ENTRY 0
-__CFG_FOSC$INTRC_CLKOUT 0 0 ABS 0
 __Hcommon 0 0 ABS 0
 __Lcommon 0 0 ABS 0
 __Heeprom_data 0 0 EEDATA 3
@@ -49,7 +45,6 @@ __Linit 0 0 CODE 0
 __end_of_main 7FC 0 CODE 0
 __Htext 0 0 ABS 0
 __Ltext 0 0 ABS 0
-__CFG_LVP$ON 0 0 ABS 0
 end_of_initialization 7FC 0 CODE 0
 ___stacklo 0 0 ABS 0
 _TRISCbits 87 0 ABS 0
@@ -80,9 +75,8 @@ __Hidloc 0 0 IDLOC 0
 __Lidloc 0 0 IDLOC 0
 __Hstack 0 0 STACK 2
 __Lstack 0 0 STACK 2
-__Hspace_0 2009 0 ABS 0
+__Hspace_0 2008 0 ABS 0
 __Lspace_0 0 0 ABS 0
-__CFG_IESO$ON 0 0 ABS 0
 __Hspace_1 73 0 ABS 0
 __Lspace_1 0 0 ABS 0
 __Hspace_2 0 0 ABS 0
@@ -93,7 +87,6 @@ __Hspace_3 0 0 ABS 0
 __Lspace_3 0 0 ABS 0
 __size_of_main 0 0 ABS 0
 __end_of_Timer_Delay 7CC 0 CODE 0
-__CFG_PWRTE$OFF 0 0 ABS 0
 __Hend_init 3 0 CODE 0
 __Lend_init 0 0 CODE 0
 __Hreset_vec 0 0 CODE 0
@@ -109,55 +102,51 @@ intlevel5 0 0 ENTRY 0
 __HcstackCOMMON 0 0 ABS 0
 __LcstackCOMMON 0 0 ABS 0
 __pcstackCOMMON 70 0 COMMON 1
-__CFG_CPD$OFF 0 0 ABS 0
 start_initialization 7FC 0 CODE 0
 __Hmaintext 0 0 ABS 0
 __Lmaintext 0 0 ABS 0
 __pmaintext 7CC 0 CODE 0
-__CFG_MCLRE$ON 0 0 ABS 0
 __initialization 7FC 0 CODE 0
-__CFG_CP$OFF 0 0 ABS 0
-__CFG_FCMEN$ON 0 0 ABS 0
 %segments
 reset_vec 0 5 CODE 0 0
 cinit FF8 FFF CODE FF8 0
-config 400E 4011 CONFIG 400E 0
+config 400E 400F CONFIG 400E 0
 cstackCOMMON 70 72 COMMON 70 1
 maintext F98 FF7 CODE F98 0
 text1 F72 F97 CODE F72 0
 %locals
 dist/default/production\Buttom_enclaved.X.production.o
-C:\Users\Soul_PC\AppData\Local\Temp\sg34.s
-453 7FC 0 CODE 0
-456 7FC 0 CODE 0
-462 7FC 0 CODE 0
-464 7FC 0 CODE 0
-465 7FD 0 CODE 0
+C:\Users\Soul_PC\AppData\Local\Temp\skrk.s
+431 7FC 0 CODE 0
+434 7FC 0 CODE 0
+440 7FC 0 CODE 0
+442 7FC 0 CODE 0
+443 7FD 0 CODE 0
 main.c
-33 7CC 0 CODE 0
-35 7CC 0 CODE 0
-36 7CE 0 CODE 0
-37 7D1 0 CODE 0
-38 7D2 0 CODE 0
-40 7D3 0 CODE 0
-41 7D6 0 CODE 0
-45 7D7 0 CODE 0
-46 7DD 0 CODE 0
-47 7E3 0 CODE 0
-48 7E4 0 CODE 0
-49 7E5 0 CODE 0
-51 7E9 0 CODE 0
-52 7EA 0 CODE 0
-53 7EA 0 CODE 0
-54 7EB 0 CODE 0
-55 7EC 0 CODE 0
-60 7EE 0 CODE 0
-61 7F3 0 CODE 0
-69 7B9 0 CODE 0
-72 7B9 0 CODE 0
-73 7BF 0 CODE 0
-74 7C3 0 CODE 0
-75 7C5 0 CODE 0
-76 7C6 0 CODE 0
-77 7CA 0 CODE 0
-78 7CB 0 CODE 0
+43 7CC 0 CODE 0
+45 7CC 0 CODE 0
+47 7CE 0 CODE 0
+48 7D1 0 CODE 0
+49 7D2 0 CODE 0
+51 7D3 0 CODE 0
+52 7D6 0 CODE 0
+56 7D7 0 CODE 0
+57 7DD 0 CODE 0
+58 7E3 0 CODE 0
+59 7E4 0 CODE 0
+60 7E5 0 CODE 0
+62 7E9 0 CODE 0
+63 7EA 0 CODE 0
+64 7EA 0 CODE 0
+65 7EB 0 CODE 0
+66 7EC 0 CODE 0
+71 7EE 0 CODE 0
+72 7F3 0 CODE 0
+79 7B9 0 CODE 0
+82 7B9 0 CODE 0
+83 7BF 0 CODE 0
+84 7C3 0 CODE 0
+85 7C5 0 CODE 0
+86 7C6 0 CODE 0
+87 7CA 0 CODE 0
+88 7CB 0 CODE 0

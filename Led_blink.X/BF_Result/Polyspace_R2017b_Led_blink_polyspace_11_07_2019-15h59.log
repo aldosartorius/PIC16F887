@@ -1,0 +1,528 @@
+<polyspace-bug-finder-nodesktop R2017b PID18452 PGID18452>
+
+Polyspace verification of Led_blink_polyspace project.
+Starting at 11/07/2019, 15h59.
+
+Option -main-generator-writes-variables has no effect in Polyspace Bug Finder.
+Option -main-generator-calls has no effect in Polyspace Bug Finder.
+Option -float-rounding-mode has no effect in Polyspace Bug Finder.
+Option -scalar-overflows-checks has no effect in Polyspace Bug Finder.
+Option -scalar-overflows-behavior has no effect in Polyspace Bug Finder.
+Option -uncalled-function-checks has no effect in Polyspace Bug Finder.
+Option -check-subnormal has no effect in Polyspace Bug Finder.
+Option -O2 has no effect in Polyspace Bug Finder.
+
+Activated checkers: 
+       INT_ZERO_DIV, FLOAT_ZERO_DIV, INT_CONV_OVFL, UINT_CONV_OVFL, SIGN_CHANGE, FLOAT_CONV_OVFL, 
+  INT_STD_LIB, FLOAT_STD_LIB, OUT_BOUND_ARRAY, NULL_PTR, OUT_BOUND_PTR, FUNC_CAST, PTR_CAST, 
+  MEM_STD_LIB, STR_STD_LIB, FREED_PTR, DOUBLE_DEALLOCATION, BAD_FREE, BAD_EQUAL_USE, 
+  BAD_EQUAL_EQUAL_USE, DECL_MISMATCH, MISSING_NULL_CHAR, PTR_SIZEOF_MISMATCH, TYPEDEF_MISMATCH, 
+  USELESS_WRITE, NON_INIT_VAR, NON_INIT_PTR, VAR_SHADOWING, MISSING_RETURN, RESOURCE_LEAK, 
+  UNREACHABLE, DEAD_CODE, PARTIALLY_ACCESSED_ARRAY, USELESS_IF, DEADLOCK, BAD_LOCK, DOUBLE_LOCK, 
+  DATA_RACE, DOUBLE_UNLOCK, BAD_UNLOCK, OTHER_STD_LIB, ASSERT, STRING_FORMAT, IMPROPER_ARRAY_INIT, 
+  BAD_PTR_SCALING, SIZEOF_MISUSE, FLOAT_ABSORPTION, LOCAL_ADDR_ESCAPE, STR_FORMAT_BUFFER_OVERFLOW, 
+  STRLIB_BUFFER_OVERFLOW, STRLIB_BUFFER_UNDERFLOW, PUTENV_AUTO_VAR, PTR_TO_DIFF_ARRAY, 
+  ALIGNMENT_CHANGE, READ_ONLY_RESOURCE_WRITE, CLOSED_RESOURCE_USE, DOUBLE_RESOURCE_CLOSE, 
+  DOUBLE_RESOURCE_OPEN, OPERATOR_PRECEDENCE, STD_FUNC_ARG_MISMATCH, INVALID_MEMORY_ASSUMPTION, 
+  CONSTANT_OBJECT_WRITE, INVALID_VA_LIST_ARG, NON_POSITIVE_VLA_SIZE, MEMCMP_STRINGS, 
+  MEMCMP_PADDING_DATA, ERRNO_MISUSE, MISSING_ERRNO_RESET, CHARACTER_MISUSE, CHAR_EOF_CONFUSED, 
+  IO_INTERLEAVING, SIG_HANDLER_COMP_EXCP_RETURN, SIG_HANDLER_CALLING_SIGNAL, 
+  UNPROTOTYPED_FUNC_CALL, FILE_OBJECT_MISUSE, FLEXIBLE_ARRAY_MEMBER_STRUCT_MISUSE, 
+  SIG_HANDLER_SHARED_OBJECT, DATA_RACE_STD_LIB
+
+Remark: By default, some results are not generated for headers.
+|       Search for '-generate-results-for' in user documentation to generate results for these headers.
+
+Verifying sources compliance ...
+
+Options used with Verifier:
+-bug-finder=true
+-polyspace-version=2.4 (R2017b)
+-date=07/11/2019
+
+User:
+-compiler=gnu4.9
+-lang=C
+-author=Soul_PC
+-results-dir=D:\Autocapacitacion\Codigo\Programas_PIC16F887\Led_blink.X\BF_Result
+-target=i386
+-verif-version=1.0
+-no-default-system-includes=true (non-official option)
+-prog=Led_blink_polyspace
+-D1=__XC8
+-D2=__PICC__
+-D3=__CLANG__
+-D4=_16F877
+-to=Software Safety Analysis level 2
+-I1=C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include
+-I2=C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\c90
+-import-comments=D:\Autocapacitacion\Codigo\Programas_PIC16F887\Led_blink.X\BF_Result\comments_bak
+-dos=true
+-custom-target=[false,8,2,2,-1,4,8,4,4,4,2,1,1,little,unsigned_int,int,unknown] (non-official option)
+
+
+Verifying host configuration:
+Number of cores:                4
+Processor type:                 amd64
+Processor model:                Intel(R) Core(TM) i7-4710HQ CPU @ 2.50GHz
+Processor frequency:            2.494 GHz
+Memory > 4 GB:                                                 15.92 GB
+Tmp space available in C:\Users\Soul_PC\AppData\Local\Temp:    45.21 GB
+
+Remark: 4 core(s) detected. The verification uses 4 core(s).
+*** Configuration of the host :	OK
+
+
+Type D:\Autocapacitacion\Codigo\Programas_PIC16F887\Led_blink.X\BF_Result\kill-rte-kernel.bat on host DESKTOP-P36S46J to halt Verifier process
+
+
+Polyspace C analysis
+Copyright 1999-2017 The MathWorks, Inc.
+All rights reserved.
+
+Starting at: Thu Nov 07 15:59:15 2019
+Host: MINGW64_NTx_64-6.2 DESKTOP-P36S46J 0 amd64
+User: Soul_PC
+**********************************************************
+***
+*** Verifying GNU C 4.9 sources
+***
+**********************************************************
+
+Verifying sources ...
+Verifying main.c (1/1)
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2221: error: identifier "__bit" is undefined
+|  extern volatile __bit                   ACKDT               __attribute__((address(0x48D)));        // @ (0x91 * 8 + 5)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2224: error: identifier "__bit" is undefined
+|  extern volatile __bit                   ACKEN               __attribute__((address(0x48C)));        // @ (0x91 * 8 + 4)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2227: error: identifier "__bit" is undefined
+|  extern volatile __bit                   ACKSTAT             __attribute__((address(0x48E)));        // @ (0x91 * 8 + 6)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2230: error: identifier "__bit" is undefined
+|  extern volatile __bit                   ADCS0               __attribute__((address(0xFE))); // @ (0x1F * 8 + 6)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2233: error: identifier "__bit" is undefined
+|  extern volatile __bit                   ADCS1               __attribute__((address(0xFF))); // @ (0x1F * 8 + 7)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2236: error: identifier "__bit" is undefined
+|  extern volatile __bit                   ADDEN               __attribute__((address(0xC3))); // @ (0x18 * 8 + 3)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2239: error: identifier "__bit" is undefined
+|  extern volatile __bit                   ADFM                __attribute__((address(0x4FF)));        // @ (0x9F * 8 + 7)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2242: error: identifier "__bit" is undefined
+|  extern volatile __bit                   ADIE                __attribute__((address(0x466)));        // @ (0x8C * 8 + 6)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2245: error: identifier "__bit" is undefined
+|  extern volatile __bit                   ADIF                __attribute__((address(0x66))); // @ (0xC * 8 + 6)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2248: error: identifier "__bit" is undefined
+|  extern volatile __bit                   ADON                __attribute__((address(0xF8))); // @ (0x1F * 8 + 0)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2251: error: identifier "__bit" is undefined
+|  extern volatile __bit                   BCLIE               __attribute__((address(0x46B)));        // @ (0x8D * 8 + 3)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2254: error: identifier "__bit" is undefined
+|  extern volatile __bit                   BCLIF               __attribute__((address(0x6B))); // @ (0xD * 8 + 3)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2257: error: identifier "__bit" is undefined
+|  extern volatile __bit                   BF                  __attribute__((address(0x4A0)));        // @ (0x94 * 8 + 0)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2260: error: identifier "__bit" is undefined
+|  extern volatile __bit                   BRGH                __attribute__((address(0x4C2)));        // @ (0x98 * 8 + 2)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2263: error: identifier "__bit" is undefined
+|  extern volatile __bit                   CARRY               __attribute__((address(0x18))); // @ (0x3 * 8 + 0)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2266: error: identifier "__bit" is undefined
+|  extern volatile __bit                   CCP1IE              __attribute__((address(0x462)));        // @ (0x8C * 8 + 2)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2269: error: identifier "__bit" is undefined
+|  extern volatile __bit                   CCP1IF              __attribute__((address(0x62))); // @ (0xC * 8 + 2)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2272: error: identifier "__bit" is undefined
+|  extern volatile __bit                   CCP1M0              __attribute__((address(0xB8))); // @ (0x17 * 8 + 0)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2275: error: identifier "__bit" is undefined
+|  extern volatile __bit                   CCP1M1              __attribute__((address(0xB9))); // @ (0x17 * 8 + 1)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2278: error: identifier "__bit" is undefined
+|  extern volatile __bit                   CCP1M2              __attribute__((address(0xBA))); // @ (0x17 * 8 + 2)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2281: error: identifier "__bit" is undefined
+|  extern volatile __bit                   CCP1M3              __attribute__((address(0xBB))); // @ (0x17 * 8 + 3)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2284: error: identifier "__bit" is undefined
+|  extern volatile __bit                   CCP1X               __attribute__((address(0xBD))); // @ (0x17 * 8 + 5)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2287: error: identifier "__bit" is undefined
+|  extern volatile __bit                   CCP1Y               __attribute__((address(0xBC))); // @ (0x17 * 8 + 4)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2290: error: identifier "__bit" is undefined
+|  extern volatile __bit                   CCP2IE              __attribute__((address(0x468)));        // @ (0x8D * 8 + 0)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2293: error: identifier "__bit" is undefined
+|  extern volatile __bit                   CCP2IF              __attribute__((address(0x68))); // @ (0xD * 8 + 0)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2296: error: identifier "__bit" is undefined
+|  extern volatile __bit                   CCP2M0              __attribute__((address(0xE8))); // @ (0x1D * 8 + 0)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2299: error: identifier "__bit" is undefined
+|  extern volatile __bit                   CCP2M1              __attribute__((address(0xE9))); // @ (0x1D * 8 + 1)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2302: error: identifier "__bit" is undefined
+|  extern volatile __bit                   CCP2M2              __attribute__((address(0xEA))); // @ (0x1D * 8 + 2)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2305: error: identifier "__bit" is undefined
+|  extern volatile __bit                   CCP2M3              __attribute__((address(0xEB))); // @ (0x1D * 8 + 3)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2308: error: identifier "__bit" is undefined
+|  extern volatile __bit                   CCP2X               __attribute__((address(0xED))); // @ (0x1D * 8 + 5)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2311: error: identifier "__bit" is undefined
+|  extern volatile __bit                   CCP2Y               __attribute__((address(0xEC))); // @ (0x1D * 8 + 4)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2314: error: identifier "__bit" is undefined
+|  extern volatile __bit                   CHS0                __attribute__((address(0xFB))); // @ (0x1F * 8 + 3)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2317: error: identifier "__bit" is undefined
+|  extern volatile __bit                   CHS1                __attribute__((address(0xFC))); // @ (0x1F * 8 + 4)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2320: error: identifier "__bit" is undefined
+|  extern volatile __bit                   CHS2                __attribute__((address(0xFD))); // @ (0x1F * 8 + 5)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2323: error: identifier "__bit" is undefined
+|  extern volatile __bit                   CKE                 __attribute__((address(0x4A6)));        // @ (0x94 * 8 + 6)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2326: error: identifier "__bit" is undefined
+|  extern volatile __bit                   CKP                 __attribute__((address(0xA4))); // @ (0x14 * 8 + 4)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2329: error: identifier "__bit" is undefined
+|  extern volatile __bit                   CREN                __attribute__((address(0xC4))); // @ (0x18 * 8 + 4)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2332: error: identifier "__bit" is undefined
+|  extern volatile __bit                   CSRC                __attribute__((address(0x4C7)));        // @ (0x98 * 8 + 7)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2335: error: identifier "__bit" is undefined
+|  extern volatile __bit                   DATA_ADDRESS        __attribute__((address(0x4A5)));        // @ (0x94 * 8 + 5)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2338: error: identifier "__bit" is undefined
+|  extern volatile __bit                   DC                  __attribute__((address(0x19))); // @ (0x3 * 8 + 1)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2341: error: identifier "__bit" is undefined
+|  extern volatile __bit                   D_A                 __attribute__((address(0x4A5)));        // @ (0x94 * 8 + 5)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2344: error: identifier "__bit" is undefined
+|  extern volatile __bit                   D_nA                __attribute__((address(0x4A5)));        // @ (0x94 * 8 + 5)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2347: error: identifier "__bit" is undefined
+|  extern volatile __bit                   EEIE                __attribute__((address(0x46C)));        // @ (0x8D * 8 + 4)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2350: error: identifier "__bit" is undefined
+|  extern volatile __bit                   EEIF                __attribute__((address(0x6C))); // @ (0xD * 8 + 4)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2353: error: identifier "__bit" is undefined
+|  extern volatile __bit                   EEPGD               __attribute__((address(0xC67)));        // @ (0x18C * 8 + 7)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2356: error: identifier "__bit" is undefined
+|  extern volatile __bit                   FERR                __attribute__((address(0xC2))); // @ (0x18 * 8 + 2)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2359: error: identifier "__bit" is undefined
+|  extern volatile __bit                   GCEN                __attribute__((address(0x48F)));        // @ (0x91 * 8 + 7)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2362: error: identifier "__bit" is undefined
+|  extern volatile __bit                   GIE                 __attribute__((address(0x5F))); // @ (0xB * 8 + 7)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2365: error: identifier "__bit" is undefined
+|  extern volatile __bit                   GO                  __attribute__((address(0xFA))); // @ (0x1F * 8 + 2)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2368: error: identifier "__bit" is undefined
+|  extern volatile __bit                   GO_DONE             __attribute__((address(0xFA))); // @ (0x1F * 8 + 2)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2371: error: identifier "__bit" is undefined
+|  extern volatile __bit                   GO_nDONE            __attribute__((address(0xFA))); // @ (0x1F * 8 + 2)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2374: error: identifier "__bit" is undefined
+|  extern volatile __bit                   I2C_DATA            __attribute__((address(0x4A5)));        // @ (0x94 * 8 + 5)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2377: error: identifier "__bit" is undefined
+|  extern volatile __bit                   I2C_READ            __attribute__((address(0x4A2)));        // @ (0x94 * 8 + 2)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2380: error: identifier "__bit" is undefined
+|  extern volatile __bit                   I2C_START           __attribute__((address(0x4A3)));        // @ (0x94 * 8 + 3)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2383: error: identifier "__bit" is undefined
+|  extern volatile __bit                   I2C_STOP            __attribute__((address(0x4A4)));        // @ (0x94 * 8 + 4)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2386: error: identifier "__bit" is undefined
+|  extern volatile __bit                   IBF                 __attribute__((address(0x44F)));        // @ (0x89 * 8 + 7)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2389: error: identifier "__bit" is undefined
+|  extern volatile __bit                   IBOV                __attribute__((address(0x44D)));        // @ (0x89 * 8 + 5)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2392: error: identifier "__bit" is undefined
+|  extern volatile __bit                   INTE                __attribute__((address(0x5C))); // @ (0xB * 8 + 4)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2395: error: identifier "__bit" is undefined
+|  extern volatile __bit                   INTEDG              __attribute__((address(0x40E)));        // @ (0x81 * 8 + 6)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2398: error: identifier "__bit" is undefined
+|  extern volatile __bit                   INTF                __attribute__((address(0x59))); // @ (0xB * 8 + 1)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2401: error: identifier "__bit" is undefined
+|  extern volatile __bit                   IRP                 __attribute__((address(0x1F))); // @ (0x3 * 8 + 7)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2404: error: identifier "__bit" is undefined
+|  extern volatile __bit                   OBF                 __attribute__((address(0x44E)));        // @ (0x89 * 8 + 6)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2407: error: identifier "__bit" is undefined
+|  extern volatile __bit                   OERR                __attribute__((address(0xC1))); // @ (0x18 * 8 + 1)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2410: error: identifier "__bit" is undefined
+|  extern volatile __bit                   PCFG0               __attribute__((address(0x4F8)));        // @ (0x9F * 8 + 0)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2413: error: identifier "__bit" is undefined
+|  extern volatile __bit                   PCFG1               __attribute__((address(0x4F9)));        // @ (0x9F * 8 + 1)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2416: error: identifier "__bit" is undefined
+|  extern volatile __bit                   PCFG2               __attribute__((address(0x4FA)));        // @ (0x9F * 8 + 2)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2419: error: identifier "__bit" is undefined
+|  extern volatile __bit                   PCFG3               __attribute__((address(0x4FB)));        // @ (0x9F * 8 + 3)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2422: error: identifier "__bit" is undefined
+|  extern volatile __bit                   PEIE                __attribute__((address(0x5E))); // @ (0xB * 8 + 6)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2425: error: identifier "__bit" is undefined
+|  extern volatile __bit                   PEN                 __attribute__((address(0x48A)));        // @ (0x91 * 8 + 2)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2428: error: identifier "__bit" is undefined
+|  extern volatile __bit                   PS0                 __attribute__((address(0x408)));        // @ (0x81 * 8 + 0)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2431: error: identifier "__bit" is undefined
+|  extern volatile __bit                   PS1                 __attribute__((address(0x409)));        // @ (0x81 * 8 + 1)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2434: error: identifier "__bit" is undefined
+|  extern volatile __bit                   PS2                 __attribute__((address(0x40A)));        // @ (0x81 * 8 + 2)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2437: error: identifier "__bit" is undefined
+|  extern volatile __bit                   PSA                 __attribute__((address(0x40B)));        // @ (0x81 * 8 + 3)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2440: error: identifier "__bit" is undefined
+|  extern volatile __bit                   PSPIE               __attribute__((address(0x467)));        // @ (0x8C * 8 + 7)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2443: error: identifier "__bit" is undefined
+|  extern volatile __bit                   PSPIF               __attribute__((address(0x67))); // @ (0xC * 8 + 7)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2446: error: identifier "__bit" is undefined
+|  extern volatile __bit                   PSPMODE             __attribute__((address(0x44C)));        // @ (0x89 * 8 + 4)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2449: error: identifier "__bit" is undefined
+|  extern volatile __bit                   RA0                 __attribute__((address(0x28))); // @ (0x5 * 8 + 0)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2452: error: identifier "__bit" is undefined
+|  extern volatile __bit                   RA1                 __attribute__((address(0x29))); // @ (0x5 * 8 + 1)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2455: error: identifier "__bit" is undefined
+|  extern volatile __bit                   RA2                 __attribute__((address(0x2A))); // @ (0x5 * 8 + 2)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2458: error: identifier "__bit" is undefined
+|  extern volatile __bit                   RA3                 __attribute__((address(0x2B))); // @ (0x5 * 8 + 3)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2461: error: identifier "__bit" is undefined
+|  extern volatile __bit                   RA4                 __attribute__((address(0x2C))); // @ (0x5 * 8 + 4)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2464: error: identifier "__bit" is undefined
+|  extern volatile __bit                   RA5                 __attribute__((address(0x2D))); // @ (0x5 * 8 + 5)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2467: error: identifier "__bit" is undefined
+|  extern volatile __bit                   RB0                 __attribute__((address(0x30))); // @ (0x6 * 8 + 0)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2470: error: identifier "__bit" is undefined
+|  extern volatile __bit                   RB1                 __attribute__((address(0x31))); // @ (0x6 * 8 + 1)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2473: error: identifier "__bit" is undefined
+|  extern volatile __bit                   RB2                 __attribute__((address(0x32))); // @ (0x6 * 8 + 2)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2476: error: identifier "__bit" is undefined
+|  extern volatile __bit                   RB3                 __attribute__((address(0x33))); // @ (0x6 * 8 + 3)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2479: error: identifier "__bit" is undefined
+|  extern volatile __bit                   RB4                 __attribute__((address(0x34))); // @ (0x6 * 8 + 4)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2482: error: identifier "__bit" is undefined
+|  extern volatile __bit                   RB5                 __attribute__((address(0x35))); // @ (0x6 * 8 + 5)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2485: error: identifier "__bit" is undefined
+|  extern volatile __bit                   RB6                 __attribute__((address(0x36))); // @ (0x6 * 8 + 6)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2488: error: identifier "__bit" is undefined
+|  extern volatile __bit                   RB7                 __attribute__((address(0x37))); // @ (0x6 * 8 + 7)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2491: error: identifier "__bit" is undefined
+|  extern volatile __bit                   RBIE                __attribute__((address(0x5B))); // @ (0xB * 8 + 3)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2494: error: identifier "__bit" is undefined
+|  extern volatile __bit                   RBIF                __attribute__((address(0x58))); // @ (0xB * 8 + 0)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2497: error: identifier "__bit" is undefined
+|  extern volatile __bit                   RC0                 __attribute__((address(0x38))); // @ (0x7 * 8 + 0)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2500: error: identifier "__bit" is undefined
+|  extern volatile __bit                   RC1                 __attribute__((address(0x39))); // @ (0x7 * 8 + 1)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2503: error: identifier "__bit" is undefined
+|  extern volatile __bit                   RC2                 __attribute__((address(0x3A))); // @ (0x7 * 8 + 2)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2506: error: identifier "__bit" is undefined
+|  extern volatile __bit                   RC3                 __attribute__((address(0x3B))); // @ (0x7 * 8 + 3)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2509: error: identifier "__bit" is undefined
+|  extern volatile __bit                   RC4                 __attribute__((address(0x3C))); // @ (0x7 * 8 + 4)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2512: error: identifier "__bit" is undefined
+|  extern volatile __bit                   RC5                 __attribute__((address(0x3D))); // @ (0x7 * 8 + 5)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2515: error: identifier "__bit" is undefined
+|  extern volatile __bit                   RC6                 __attribute__((address(0x3E))); // @ (0x7 * 8 + 6)
+|                  ^
+
+C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877.h, line 2518: error: identifier "__bit" is undefined
+|  extern volatile __bit                   RC7                 __attribute__((address(0x3F))); // @ (0x7 * 8 + 7)
+|                  ^
+
+Error limit reached.
+100 errors detected in the compilation of "main.c".
+
+D:\Autocapacitacion\Codigo\Programas_PIC16F887\Led_blink.X\main.c: warning: Failed compilation.
+Global compilation phase...
+
+Packing compilation data
+done.
+
+Importing comments from D:\Autocapacitacion\Codigo\Programas_PIC16F887\Led_blink.X\BF_Result\comments_bak folder
+
+Operation completed:
+--------------------
+
+
+**********************************************************
+***
+*** GNU C 4.9 sources verification done
+***
+**********************************************************
+Ending at: Thu Nov 07 15:59:20 2019
+User time for compilation: 00:00:04.92 (4.93real, 4.93u + 0s (0.02gc))
+
+
+-------------------------------------------------------------------
+---                                                             ---
+---  Verifier has detected compilation error(s) in the code.    ---
+---  Please correct them and launch the analysis again.         ---
+---                                                             ---
+-------------------------------------------------------------------
+
+
+Failure at: Thu Nov 07 15:59:20 2019
+Error: Exiting because of previous error
+User time for polyspace-bug-finder-nodesktop: 00:00:05.78 (5.79real, 5.79u + 0s (0.02gc))

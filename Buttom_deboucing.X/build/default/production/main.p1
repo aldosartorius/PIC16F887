@@ -66,30 +66,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "369
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f887.h: 369: extern volatile PORTDbits_t PORTDbits __attribute__((address(0x008)));
 [v _PORTDbits `VS11 ~T0 @X0 0 e@8 ]
-"9 main.c
-[p x FOSC = INTRC_CLKOUT ]
-"10
+"32 main.c
 [p x WDTE = OFF ]
-"11
-[p x PWRTE = OFF ]
-"12
-[p x MCLRE = ON ]
-"13
-[p x CP = OFF ]
-"14
-[p x CPD = OFF ]
-"15
-[p x BOREN = ON ]
-"16
-[p x IESO = ON ]
-"17
-[p x FCMEN = ON ]
-"18
-[p x LVP = ON ]
-"21
-[p x BOR4V = BOR40V ]
-"22
-[p x WRT = OFF ]
 "54 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f887.h
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f887.h: 54: __asm("INDF equ 00h");
 [; <" INDF equ 00h ;# ">
@@ -325,71 +303,74 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f887.h: 3546: __asm("EECON2 equ 018Dh");
 [; <" EECON2 equ 018Dh ;# ">
 [v $root$_main `(v ~T0 @X0 0 e ]
-"30 main.c
-[; ;main.c: 30: void main(void) {
-[v _main `(v ~T0 @X0 1 ef ]
+"40 main.c
+[; ;main.c: 40: int main(void) {
+[v _main `(i ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"32
-[; ;main.c: 32:     TRISCbits.TRISC7 = 0;
+"42
+[; ;main.c: 42:     TRISCbits.TRISC7 = 0;
 [e = . . _TRISCbits 0 7 -> -> 0 `i `uc ]
-"33
-[; ;main.c: 33:     TRISDbits.TRISD0 = 1;
+"43
+[; ;main.c: 43:     TRISDbits.TRISD0 = 1;
 [e = . . _TRISDbits 0 0 -> -> 1 `i `uc ]
-"34
-[; ;main.c: 34:     TRISEbits.TRISE0 = 0;
+"44
+[; ;main.c: 44:     TRISEbits.TRISE0 = 0;
 [e = . . _TRISEbits 0 0 -> -> 0 `i `uc ]
-"36
-[; ;main.c: 36:     PORTCbits.RC7 = 0;
+"46
+[; ;main.c: 46:     PORTCbits.RC7 = 0;
 [e = . . _PORTCbits 0 7 -> -> 0 `i `uc ]
-"37
-[; ;main.c: 37:     PORTEbits.RE0 = 0;
+"47
+[; ;main.c: 47:     PORTEbits.RE0 = 0;
 [e = . . _PORTEbits 0 0 -> -> 0 `i `uc ]
-"39
-[; ;main.c: 39:     while(1){
+"49
+[; ;main.c: 49:     while(1){
 [e :U 140 ]
 {
-"41
-[; ;main.c: 41:         if(PORTDbits.RD0 == 0){
+"51
+[; ;main.c: 51:         if(PORTDbits.RD0 == 0){
 [e $ ! == -> . . _PORTDbits 0 0 `i -> 0 `i 142  ]
 {
-"42
-[; ;main.c: 42:             PORTEbits.RE0 = 1;
+"52
+[; ;main.c: 52:             PORTEbits.RE0 = 1;
 [e = . . _PORTEbits 0 0 -> -> 1 `i `uc ]
-"43
-[; ;main.c: 43:             PORTCbits.RC7 = 1;
+"53
+[; ;main.c: 53:             PORTCbits.RC7 = 1;
 [e = . . _PORTCbits 0 7 -> -> 1 `i `uc ]
-"44
-[; ;main.c: 44:         }
+"54
+[; ;main.c: 54:         }
 }
 [e $U 143  ]
-"45
-[; ;main.c: 45:         else if(PORTDbits.RD0 == 1){
+"55
+[; ;main.c: 55:         else if(PORTDbits.RD0 == 1){
 [e :U 142 ]
 [e $ ! == -> . . _PORTDbits 0 0 `i -> 1 `i 144  ]
 {
-"46
-[; ;main.c: 46:             PORTEbits.RE0 = 0;
+"56
+[; ;main.c: 56:             PORTEbits.RE0 = 0;
 [e = . . _PORTEbits 0 0 -> -> 0 `i `uc ]
-"47
-[; ;main.c: 47:             PORTCbits.RC7 = 0;
+"57
+[; ;main.c: 57:             PORTCbits.RC7 = 0;
 [e = . . _PORTCbits 0 7 -> -> 0 `i `uc ]
-"48
-[; ;main.c: 48:         }
+"58
+[; ;main.c: 58:         }
 }
+[e $U 145  ]
+"59
+[; ;main.c: 59:         else{};
 [e :U 144 ]
+{
+}
+[e :U 145 ]
 [e :U 143 ]
-"50
-[; ;main.c: 50:     }
+"60
+[; ;main.c: 60:     }
 }
 [e :U 139 ]
 [e $U 140  ]
 [e :U 141 ]
-"51
-[; ;main.c: 51:     return;
-[e $UE 138  ]
-"52
-[; ;main.c: 52: }
+"61
+[; ;main.c: 61: }
 [e :UE 138 ]
 }

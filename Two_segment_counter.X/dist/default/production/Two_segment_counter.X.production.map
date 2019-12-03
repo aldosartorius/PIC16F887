@@ -5,7 +5,7 @@ Linker command line:
 -W-3 --edf=C:\Program Files (x86)\Microchip\xc8\v2.10\pic\dat\en_msgs.txt \
   -cs -h+dist/default/production\Two_segment_counter.X.production.sym \
   --cmf=dist/default/production\Two_segment_counter.X.production.cmf -z \
-  -Q16F887 -oC:\Users\Soul_PC\AppData\Local\Temp\sfjc.3 \
+  -Q16F887 -oC:\Users\Soul_PC\AppData\Local\Temp\so88.2 \
   --defsym=__MPLAB_BUILD=1 \
   -Mdist/default/production/Two_segment_counter.X.production.map -E1 \
   -ver=XC8 --acfsm=1493 -ASTACK=0110h-016Fh -pstack=STACK \
@@ -19,7 +19,7 @@ Linker command line:
   -pfunctab=ENTRY -ACONFIG=02007h-02008h -pconfig=CONFIG -DCONFIG=2 \
   -AIDLOC=02000h-02003h -pidloc=IDLOC -DIDLOC=2 -AEEDATA=00h-0FFh/02100h \
   -peeprom_data=EEDATA -DEEDATA=2 -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 \
-  -DENTRY=2 -k C:\Users\Soul_PC\AppData\Local\Temp\sfjc.o \
+  -DENTRY=2 -k C:\Users\Soul_PC\AppData\Local\Temp\so88.o \
   dist/default/production\Two_segment_counter.X.production.o 
 
 Object code version is 3.11
@@ -29,9 +29,9 @@ Machine type is 16F887
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\Soul_PC\AppData\Local\Temp\sfjc.o
+C:\Users\Soul_PC\AppData\Local\Temp\so88.o
                 end_init                              0        0        3        0       0
-                config                             2007     2007        2     400E       0
+                config                             2007     2007        1     400E       0
 dist/default/production\Two_segment_counter.X.production.o
                 cinit                               7EE      7EE       12      FDC       0
                 text1                               6EE      6EE       13      DDC       0
@@ -88,7 +88,7 @@ TOTAL           Name                               Link     Load   Length     Sp
         CLASS   SFR3           
 
         CLASS   CONFIG         
-                config                             2007     2007        2         0
+                config                             2007     2007        1         0
 
         CLASS   IDLOC          
 
@@ -106,7 +106,7 @@ SEGMENTS        Name                           Load    Length   Top    Selector 
                 idataBANK0                     000714  000014  000728       E28       0  CODE        2
                 maintext                       000728  0000C6  0007EE       E50       0  CODE        2
                 cinit                          0007EE  000012  000800       FDC       0  CODE        2
-                config                         002007  000002  002009      400E       0  CONFIG      2
+                config                         002007  000001  002008      400E       0  CONFIG      2
 
 
 UNUSED ADDRESS RANGES
@@ -119,6 +119,7 @@ UNUSED ADDRESS RANGES
         CODE             0003-06ED            6EB           2
                          0800-1FFF            800
         COMMON           0075-007D              9           1
+        CONFIG           2008-2008              1           2
         CONST            0003-06ED            100           2
                          0800-1FFF            100
         EEDATA           2100-21FF            100           2
@@ -153,14 +154,7 @@ _TMR1L                   (abs)        000E
 _TRISAbits               (abs)        0085
 _TRISC                   (abs)        0087
 _Timer_Delay             text1        06EE
-__CFG_BOR4V$BOR40V       (abs)        0000
-__CFG_BOREN$OFF          (abs)        0000
-__CFG_FOSC$INTRC_CLKOUT  (abs)        0000
-__CFG_IESO$OFF           (abs)        0000
-__CFG_LVP$ON             (abs)        0000
-__CFG_PWRTE$OFF          (abs)        0000
 __CFG_WDTE$OFF           (abs)        0000
-__CFG_WRT$OFF            (abs)        0000
 __Habs1                  abs1         0000
 __Hbank0                 bank0        0000
 __Hbank1                 bank1        0000
@@ -170,7 +164,7 @@ __Hcinit                 cinit        0800
 __Hclrtext               clrtext      0000
 __Hcode                  code         0000
 __Hcommon                common       0000
-__Hconfig                config       2009
+__Hconfig                config       2008
 __HcstackBANK0           cstackBANK0  0000
 __HcstackCOMMON          cstackCOMMON 0000
 __HdataBANK0             dataBANK0    0000
@@ -190,7 +184,7 @@ __Hsfr0                  sfr0         0000
 __Hsfr1                  sfr1         0000
 __Hsfr2                  sfr2         0000
 __Hsfr3                  sfr3         0000
-__Hspace_0               (abs)        2009
+__Hspace_0               (abs)        2008
 __Hspace_1               (abs)        0075
 __Hspace_2               (abs)        0000
 __Hspace_3               (abs)        0000
@@ -233,7 +227,7 @@ __Lspace_3               (abs)        0000
 __Lstack                 stack        0000
 __Lstrings               strings      0000
 __Ltext                  text         0000
-__S0                     (abs)        2009
+__S0                     (abs)        2008
 __S1                     (abs)        0075
 __S2                     (abs)        0000
 __S3                     (abs)        0000
@@ -265,7 +259,7 @@ intlevel2                functab      0000
 intlevel3                functab      0000
 intlevel4                functab      0000
 intlevel5                functab      0000
-main@F1269               dataBANK0    003E
+main@F891                dataBANK0    003E
 main@anti_blink          cstackBANK0  0034
 main@count               cstackBANK0  0036
 main@count_122           cstackBANK0  0038
@@ -282,7 +276,7 @@ FUNCTION INFORMATION:
 
  *************** function _main *****************
  Defined at:
-		line 27 in file "main.c"
+		line 41 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -293,7 +287,7 @@ FUNCTION INFORMATION:
   units           2   26[BANK0 ] short 
   anti_blink      2   20[BANK0 ] short 
  Return value:  Size  Location     Type
-                  1    wreg      void 
+                  2   28[None  ] int 
  Registers used:
 		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
  Tracked objects:
@@ -316,7 +310,7 @@ Total ram usage:       34 bytes
 
  *************** function _Timer_Delay *****************
  Defined at:
-		line 79 in file "main.c"
+		line 92 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type

@@ -3,20 +3,6 @@
 [d edition pro ]
 [d chip 16F887 ]
 [d frameptr 0 ]
-"12 D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-[v _Lcd_SetBit Lcd_SetBit `(v  1 e 1 0 ]
-"35
-[v _Lcd_Cmd Lcd_Cmd `(v  1 e 1 0 ]
-"44
-[v _Lcd_Clear Lcd_Clear `(v  1 e 1 0 ]
-"51
-[v _Lcd_Set_Cursor Lcd_Set_Cursor `(v  1 e 1 0 ]
-"72
-[v _Lcd_Start Lcd_Start `(v  1 e 1 0 ]
-"91
-[v _Lcd_Print_Char Lcd_Print_Char `(v  1 e 1 0 ]
-"107
-[v _Lcd_Print_String Lcd_Print_String `(v  1 e 1 0 ]
 "5 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
 [v ___lldiv __lldiv `(ul  1 e 4 0 ]
 "5 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
@@ -65,13 +51,58 @@
 [v ___eecpymem __eecpymem `(v  1 e 1 0 ]
 "39
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
-"36 D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
-[v _main main `(v  1 e 1 0 ]
-"52
+"12 D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+[v _Lcd_SetBit Lcd_SetBit `(v  1 e 1 0 ]
+"39
+[v _Lcd_Cmd Lcd_Cmd `(v  1 e 1 0 ]
+"47
+[v _Lcd_Clear Lcd_Clear `(v  1 e 1 0 ]
+"53
+[v _Lcd_Set_Cursor Lcd_Set_Cursor `(v  1 e 1 0 ]
+"73
+[v _Lcd_Start Lcd_Start `(v  1 e 1 0 ]
+"87
+[v _Lcd_Print_Char Lcd_Print_Char `(v  1 e 1 0 ]
+"100
+[v _Lcd_Print_String Lcd_Print_String `(v  1 e 1 0 ]
+"107
+[v _Timer_Delay Timer_Delay `(v  1 e 1 0 ]
+"46 D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
+[v _main main `(i  1 e 2 0 ]
+"58
 [v _ADC_Init ADC_Init `(v  1 e 1 0 ]
-"60
+"71
 [v _ADC_Read ADC_Read `(v  1 e 1 0 ]
-"1238 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f887.h
+[s S80 . 1 `uc 1 RD0 1 0 :1:0 
+`uc 1 RD1 1 0 :1:1 
+`uc 1 RD2 1 0 :1:2 
+`uc 1 RD3 1 0 :1:3 
+`uc 1 RD4 1 0 :1:4 
+`uc 1 RD5 1 0 :1:5 
+`uc 1 RD6 1 0 :1:6 
+`uc 1 RD7 1 0 :1:7 
+]
+"369 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f887.h
+[u S89 . 1 `S80 1 . 1 0 ]
+[v _PORTDbits PORTDbits `VES89  1 e 1 @8 ]
+[s S106 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+]
+"553
+[u S114 . 1 `S106 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES114  1 e 1 @12 ]
+"657
+[v _TMR1L TMR1L `VEuc  1 e 1 @14 ]
+"664
+[v _TMR1H TMR1H `VEuc  1 e 1 @15 ]
+"671
+[v _T1CON T1CON `VEuc  1 e 1 @16 ]
+"1238
 [v _ADRESH ADRESH `VEuc  1 e 1 @30 ]
 "1245
 [v _ADCON0 ADCON0 `VEuc  1 e 1 @31 ]
@@ -79,52 +110,44 @@
 [v _TRISA TRISA `VEuc  1 e 1 @133 ]
 "1602
 [v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"1702
+[v _PIE1 PIE1 `VEuc  1 e 1 @140 ]
 "2970
 [v _ADRESL ADRESL `VEuc  1 e 1 @158 ]
 "2977
 [v _ADCON1 ADCON1 `VEuc  1 e 1 @159 ]
 "3387
 [v _ANSEL ANSEL `VEuc  1 e 1 @392 ]
-"3905
-[v _GO_nDONE GO_nDONE `VEb  1 e 0 @249 ]
-"4187
-[v _RD2 RD2 `VEb  1 e 0 @66 ]
-"4190
-[v _RD3 RD3 `VEb  1 e 0 @67 ]
-"4193
-[v _RD4 RD4 `VEb  1 e 0 @68 ]
-"4196
-[v _RD5 RD5 `VEb  1 e 0 @69 ]
-"4199
-[v _RD6 RD6 `VEb  1 e 0 @70 ]
-"4202
-[v _RD7 RD7 `VEb  1 e 0 @71 ]
 "358 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\doprnt.c
 [v _dpowers dpowers `DC[10]ul  1 s 40 dpowers ]
 "7 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\powers.c
 [v __powers_ _powers_ `DC[13]d  1 e 52 0 ]
 "39
 [v __npowers_ _npowers_ `DC[13]d  1 e 52 0 ]
-"28 D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
-[v _int_data int_data `i  1 e 2 0 ]
-"29
+"37 D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
 [v _char_data char_data `[16]uc  1 e 16 0 ]
-"30
-[v _scaled_int_data scaled_int_data `f  1 e 4 0 ]
-"36
-[v _main main `(v  1 e 1 0 ]
+"38
+[v _int_data int_data `us  1 e 2 0 ]
+"39
+[v _scaled_float_data scaled_float_data `f  1 e 4 0 ]
+"46
+[v _main main `(i  1 e 2 0 ]
 {
-"50
+"56
 } 0
-"72 D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
+"73 D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
 [v _Lcd_Start Lcd_Start `(v  1 e 1 0 ]
 {
-"89
+"85
 } 0
-"60 D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
+"71 D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
 [v _ADC_Read ADC_Read `(v  1 e 1 0 ]
 {
-"76
+"92
+[v ADC_Read@i_79 i `i  1 a 2 37 ]
+"73
+[v ADC_Read@i i `i  1 a 2 35 ]
+"95
 } 0
 "505 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\doprnt.c
 [v _sprintf sprintf `(i  1 e 2 0 ]
@@ -132,9 +155,9 @@
 [v sprintf@sp sp `*.4uc  1 a 1 wreg ]
 "533
 [v sprintf@fval fval `d  1 a 4 30 ]
-[u S257 . 4 `ul 1 vd 4 0 `d 1 integ 4 0 ]
+[u S326 . 4 `ul 1 vd 4 0 `d 1 integ 4 0 ]
 "543
-[v sprintf@tmpval tmpval `S257  1 a 4 25 ]
+[v sprintf@tmpval tmpval `S326  1 a 4 25 ]
 "545
 [v sprintf@val val `ul  1 a 4 19 ]
 "534
@@ -221,17 +244,17 @@
 "8 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\sprcmul.c
 [v ___flmul __flmul `(d  1 e 4 0 ]
 {
-[s S450 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+[s S519 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
 "13
-[s S455 . 4 `i 1 wordA 2 0 `i 1 wordB 2 2 ]
-[u S458 . 4 `l 1 i 4 0 `d 1 f 4 0 `S450 1 fAsBytes 4 0 `S455 1 fAsWords 4 0 ]
-[v ___flmul@prod prod `S458  1 a 4 24 ]
+[s S524 . 4 `i 1 wordA 2 0 `i 1 wordB 2 2 ]
+[u S527 . 4 `l 1 i 4 0 `d 1 f 4 0 `S519 1 fAsBytes 4 0 `S524 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S527  1 a 4 24 ]
 "12
 [v ___flmul@grs grs `ul  1 a 4 18 ]
-[s S527 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+[s S596 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
 "14
-[u S530 . 2 `i 1 i 2 0 `ui 1 n 2 0 `S527 1 nAsBytes 2 0 ]
-[v ___flmul@temp temp `S530  1 a 2 28 ]
+[u S599 . 2 `i 1 i 2 0 `ui 1 n 2 0 `S596 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S599  1 a 2 28 ]
 "10
 [v ___flmul@bexp bexp `uc  1 a 1 23 ]
 "11
@@ -288,14 +311,14 @@
 {
 [v ___xxtofl@sign sign `uc  1 a 1 wreg ]
 "13
-[v ___xxtofl@arg arg `ul  1 a 4 2 ]
+[v ___xxtofl@arg arg `ul  1 a 4 10 ]
 "12
-[v ___xxtofl@exp exp `uc  1 a 1 1 ]
+[v ___xxtofl@exp exp `uc  1 a 1 9 ]
 "10
 [v ___xxtofl@sign sign `uc  1 a 1 wreg ]
-[v ___xxtofl@val val `l  1 p 4 6 ]
+[v ___xxtofl@val val `l  1 p 4 0 ]
 "15
-[v ___xxtofl@sign sign `uc  1 a 1 0 ]
+[v ___xxtofl@sign sign `uc  1 a 1 8 ]
 "44
 } 0
 "15 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul16.c
@@ -387,84 +410,87 @@
 [v ___fldiv __fldiv `(d  1 e 4 0 ]
 {
 "21
-[v ___fldiv@grs grs `ul  1 a 4 26 ]
+[v ___fldiv@grs grs `ul  1 a 4 50 ]
 "22
-[v ___fldiv@rem rem `ul  1 a 4 19 ]
+[v ___fldiv@rem rem `ul  1 a 4 43 ]
 "20
-[v ___fldiv@new_exp new_exp `i  1 a 2 24 ]
+[v ___fldiv@new_exp new_exp `i  1 a 2 48 ]
 "19
-[v ___fldiv@aexp aexp `uc  1 a 1 31 ]
+[v ___fldiv@aexp aexp `uc  1 a 1 55 ]
 "18
-[v ___fldiv@bexp bexp `uc  1 a 1 30 ]
+[v ___fldiv@bexp bexp `uc  1 a 1 54 ]
 "16
-[v ___fldiv@sign sign `uc  1 a 1 23 ]
+[v ___fldiv@sign sign `uc  1 a 1 47 ]
 "8
-[v ___fldiv@a a `d  1 p 4 6 ]
-[v ___fldiv@b b `d  1 p 4 10 ]
+[v ___fldiv@a a `d  1 p 4 30 ]
+[v ___fldiv@b b `d  1 p 4 34 ]
 "185
 } 0
-"51 D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
+"53 D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
 [v _Lcd_Set_Cursor Lcd_Set_Cursor `(v  1 e 1 0 ]
 {
 [v Lcd_Set_Cursor@row row `uc  1 a 1 wreg ]
-"53
-[v Lcd_Set_Cursor@temp temp `uc  1 a 1 10 ]
-[v Lcd_Set_Cursor@y y `uc  1 a 1 9 ]
-[v Lcd_Set_Cursor@z z `uc  1 a 1 8 ]
-"51
-[v Lcd_Set_Cursor@row row `uc  1 a 1 wreg ]
-[v Lcd_Set_Cursor@column column `uc  1 p 1 4 ]
 "54
-[v Lcd_Set_Cursor@row row `uc  1 a 1 7 ]
-"70
+[v Lcd_Set_Cursor@temp temp `uc  1 a 1 8 ]
+[v Lcd_Set_Cursor@y y `uc  1 a 1 7 ]
+[v Lcd_Set_Cursor@z z `uc  1 a 1 6 ]
+"53
+[v Lcd_Set_Cursor@row row `uc  1 a 1 wreg ]
+[v Lcd_Set_Cursor@column column `uc  1 p 1 2 ]
+"55
+[v Lcd_Set_Cursor@row row `uc  1 a 1 5 ]
+"71
 } 0
-"107
+"100
 [v _Lcd_Print_String Lcd_Print_String `(v  1 e 1 0 ]
 {
-"109
+"101
 [v Lcd_Print_String@i i `i  1 a 2 10 ]
-"107
+"100
 [v Lcd_Print_String@a a `*.26uc  1 p 2 5 ]
-"112
+"105
 } 0
-"91
+"87
 [v _Lcd_Print_Char Lcd_Print_Char `(v  1 e 1 0 ]
 {
 [v Lcd_Print_Char@data data `uc  1 a 1 wreg ]
-"93
+"88
 [v Lcd_Print_Char@Upper_Nibble Upper_Nibble `uc  1 a 1 3 ]
 [v Lcd_Print_Char@Lower_Nibble Lower_Nibble `uc  1 a 1 2 ]
-"91
+"87
 [v Lcd_Print_Char@data data `uc  1 a 1 wreg ]
-"94
+"89
 [v Lcd_Print_Char@data data `uc  1 a 1 4 ]
-"105
+"98
 } 0
-"44
+"47
 [v _Lcd_Clear Lcd_Clear `(v  1 e 1 0 ]
 {
-"49
+"51
 } 0
-"35
+"39
 [v _Lcd_Cmd Lcd_Cmd `(v  1 e 1 0 ]
 {
 [v Lcd_Cmd@a a `uc  1 a 1 wreg ]
 [v Lcd_Cmd@a a `uc  1 a 1 wreg ]
-"37
-[v Lcd_Cmd@a a `uc  1 a 1 3 ]
-"42
+[v Lcd_Cmd@a a `uc  1 a 1 1 ]
+"45
+} 0
+"107
+[v _Timer_Delay Timer_Delay `(v  1 e 1 0 ]
+{
+"119
 } 0
 "12
 [v _Lcd_SetBit Lcd_SetBit `(v  1 e 1 0 ]
 {
 [v Lcd_SetBit@data_bit data_bit `uc  1 a 1 wreg ]
 [v Lcd_SetBit@data_bit data_bit `uc  1 a 1 wreg ]
-"14
 [v Lcd_SetBit@data_bit data_bit `uc  1 a 1 0 ]
-"33
+"37
 } 0
-"52 D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
+"58 D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
 [v _ADC_Init ADC_Init `(v  1 e 1 0 ]
 {
-"58
+"69
 } 0

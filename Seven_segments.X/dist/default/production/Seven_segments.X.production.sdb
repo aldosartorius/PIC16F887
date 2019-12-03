@@ -11,29 +11,29 @@
 [v ___eecpymem __eecpymem `(v  1 e 1 0 ]
 "39
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
-"41 D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-[v _main main `(v  1 e 1 0 ]
-"78
+"54 D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+[v _main main `(i  1 e 2 0 ]
+"91
 [v _zero zero `(v  1 e 1 0 ]
-"82
+"95
 [v _one one `(v  1 e 1 0 ]
-"86
+"99
 [v _two two `(v  1 e 1 0 ]
-"90
+"103
 [v _three three `(v  1 e 1 0 ]
-"94
-[v _four four `(v  1 e 1 0 ]
-"98
-[v _five five `(v  1 e 1 0 ]
-"102
-[v _six six `(v  1 e 1 0 ]
 "107
-[v _seven seven `(v  1 e 1 0 ]
+[v _four four `(v  1 e 1 0 ]
 "111
+[v _five five `(v  1 e 1 0 ]
+"115
+[v _six six `(v  1 e 1 0 ]
+"119
+[v _seven seven `(v  1 e 1 0 ]
+"123
 [v _eight eight `(v  1 e 1 0 ]
-"116
+"127
 [v _nine nine `(v  1 e 1 0 ]
-"126
+"137
 [v _Timer_Delay Timer_Delay `(v  1 e 1 0 ]
 [s S48 . 1 `uc 1 RA0 1 0 :1:0 
 `uc 1 RA1 1 0 :1:1 
@@ -88,63 +88,63 @@
 [v _ANSEL ANSEL `VEuc  1 e 1 @392 ]
 "3449
 [v _ANSELH ANSELH `VEuc  1 e 1 @393 ]
-"41 D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
-[v _main main `(v  1 e 1 0 ]
+"54 D:\Autocapacitacion\Codigo\Programas_PIC16F887\Seven_segments.X\main.c
+[v _main main `(i  1 e 2 0 ]
 {
-"77
+"90
 } 0
-"78
+"91
 [v _zero zero `(v  1 e 1 0 ]
 {
-"81
+"94
 } 0
-"86
+"99
 [v _two two `(v  1 e 1 0 ]
 {
-"89
+"102
 } 0
-"90
+"103
 [v _three three `(v  1 e 1 0 ]
 {
-"93
+"106
 } 0
-"102
+"115
 [v _six six `(v  1 e 1 0 ]
 {
-"105
+"118
+} 0
+"119
+[v _seven seven `(v  1 e 1 0 ]
+{
+"122
+} 0
+"95
+[v _one one `(v  1 e 1 0 ]
+{
+"98
+} 0
+"127
+[v _nine nine `(v  1 e 1 0 ]
+{
+"130
 } 0
 "107
-[v _seven seven `(v  1 e 1 0 ]
+[v _four four `(v  1 e 1 0 ]
 {
 "110
 } 0
-"82
-[v _one one `(v  1 e 1 0 ]
-{
-"85
-} 0
-"116
-[v _nine nine `(v  1 e 1 0 ]
-{
-"119
-} 0
-"94
-[v _four four `(v  1 e 1 0 ]
-{
-"97
-} 0
-"98
-[v _five five `(v  1 e 1 0 ]
-{
-"101
-} 0
 "111
-[v _eight eight `(v  1 e 1 0 ]
+[v _five five `(v  1 e 1 0 ]
 {
 "114
 } 0
+"123
+[v _eight eight `(v  1 e 1 0 ]
+{
 "126
+} 0
+"137
 [v _Timer_Delay Timer_Delay `(v  1 e 1 0 ]
 {
-"135
+"150
 } 0

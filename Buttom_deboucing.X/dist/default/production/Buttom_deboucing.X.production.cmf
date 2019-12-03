@@ -13,10 +13,10 @@
 %PSECTS
 $dist/default/production\Buttom_deboucing.X.production.o
 cinit CODE 0 7FC 7FC 4 2
-maintext CODE 0 7E2 7E2 1A 2
-$C:\Users\Soul_PC\AppData\Local\Temp\s2vg.o
+maintext CODE 0 7E1 7E1 1B 2
+$C:\Users\Soul_PC\AppData\Local\Temp\soj4.o
 end_init CODE 0 0 0 3 2
-config CONFIG 0 2007 2007 2 2
+config CONFIG 0 2007 2007 1 2
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
 # is described on a single line as follows:
@@ -31,23 +31,24 @@ BANK0 20-6F 1
 BANK1 A0-EF 1
 BANK2 110-16F 1
 BANK3 190-1EF 1
-CONST 3-7E1 2
+CONST 3-7E0 2
 CONST 800-1FFF 2
-ENTRY 3-7E1 2
+ENTRY 3-7E0 2
 ENTRY 800-1FFF 2
 IDLOC 2000-2003 2
 STACK 110-16F 1
-CODE 3-7E1 2
+CODE 3-7E0 2
 CODE 800-1FFF 2
 SFR0 0-1F 1
 SFR1 80-9F 1
 SFR2 100-10F 1
 SFR3 180-18F 1
 COMMON 70-7D 1
+CONFIG 2008-2008 2
 EEDATA 2100-21FF 2
-STRCODE 3-7E1 2
+STRCODE 3-7E0 2
 STRCODE 800-1FFF 2
-STRING 3-7E1 2
+STRING 3-7E0 2
 STRING 800-1FFF 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
@@ -63,25 +64,27 @@ STRING 800-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\Buttom_deboucing.X.production.o
-7FC cinit CODE >442:C:\Users\Soul_PC\AppData\Local\Temp\s2vg.s
-7FC cinit CODE >445:C:\Users\Soul_PC\AppData\Local\Temp\s2vg.s
-7FC cinit CODE >451:C:\Users\Soul_PC\AppData\Local\Temp\s2vg.s
-7FC cinit CODE >453:C:\Users\Soul_PC\AppData\Local\Temp\s2vg.s
-7FD cinit CODE >454:C:\Users\Soul_PC\AppData\Local\Temp\s2vg.s
-7E2 maintext CODE >30:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Buttom_deboucing.X\main.c
-7E2 maintext CODE >32:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Buttom_deboucing.X\main.c
-7E5 maintext CODE >33:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Buttom_deboucing.X\main.c
-7E6 maintext CODE >34:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Buttom_deboucing.X\main.c
-7E7 maintext CODE >36:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Buttom_deboucing.X\main.c
-7EA maintext CODE >37:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Buttom_deboucing.X\main.c
-7EB maintext CODE >39:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Buttom_deboucing.X\main.c
-7EB maintext CODE >41:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Buttom_deboucing.X\main.c
-7EF maintext CODE >42:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Buttom_deboucing.X\main.c
-7F0 maintext CODE >43:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Buttom_deboucing.X\main.c
-7F1 maintext CODE >44:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Buttom_deboucing.X\main.c
-7F2 maintext CODE >45:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Buttom_deboucing.X\main.c
-7F6 maintext CODE >46:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Buttom_deboucing.X\main.c
-7F7 maintext CODE >47:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Buttom_deboucing.X\main.c
+7FC cinit CODE >420:C:\Users\Soul_PC\AppData\Local\Temp\soj4.s
+7FC cinit CODE >423:C:\Users\Soul_PC\AppData\Local\Temp\soj4.s
+7FC cinit CODE >429:C:\Users\Soul_PC\AppData\Local\Temp\soj4.s
+7FC cinit CODE >431:C:\Users\Soul_PC\AppData\Local\Temp\soj4.s
+7FD cinit CODE >432:C:\Users\Soul_PC\AppData\Local\Temp\soj4.s
+7E1 maintext CODE >40:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Buttom_deboucing.X\main.c
+7E1 maintext CODE >42:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Buttom_deboucing.X\main.c
+7E4 maintext CODE >43:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Buttom_deboucing.X\main.c
+7E5 maintext CODE >44:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Buttom_deboucing.X\main.c
+7E6 maintext CODE >46:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Buttom_deboucing.X\main.c
+7E9 maintext CODE >47:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Buttom_deboucing.X\main.c
+7EA maintext CODE >49:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Buttom_deboucing.X\main.c
+7EA maintext CODE >51:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Buttom_deboucing.X\main.c
+7EE maintext CODE >52:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Buttom_deboucing.X\main.c
+7EF maintext CODE >53:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Buttom_deboucing.X\main.c
+7F0 maintext CODE >54:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Buttom_deboucing.X\main.c
+7F1 maintext CODE >55:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Buttom_deboucing.X\main.c
+7F5 maintext CODE >56:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Buttom_deboucing.X\main.c
+7F6 maintext CODE >57:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Buttom_deboucing.X\main.c
+7F7 maintext CODE >58:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Buttom_deboucing.X\main.c
+7F8 maintext CODE >59:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Buttom_deboucing.X\main.c
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -95,37 +98,35 @@ $dist/default/production\Buttom_deboucing.X.production.o
 # is the name of the object file in which the symbol was defined.
 %SYMTAB
 ___latbits 2 0 ABS 0 - dist/default/production\Buttom_deboucing.X.production.o
-__Hspace_0 2009 0 ABS 0 - -
+__Hspace_0 2008 0 ABS 0 - -
 __Hspace_1 0 0 ABS 0 - -
 __Hspace_2 0 0 ABS 0 - -
 __Hspace_3 0 0 ABS 0 - -
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
-__CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production\Buttom_deboucing.X.production.o
 __Hstrings 0 0 ABS 0 strings -
-___sp 0 0 STACK 2 stack C:\Users\Soul_PC\AppData\Local\Temp\s2vg.o
-_main FC4 0 CODE 0 maintext dist/default/production\Buttom_deboucing.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\Soul_PC\AppData\Local\Temp\soj4.o
+_main FC2 0 CODE 0 maintext dist/default/production\Buttom_deboucing.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\Buttom_deboucing.X.production.o
-start 0 0 CODE 0 init C:\Users\Soul_PC\AppData\Local\Temp\s2vg.o
+start 0 0 CODE 0 init C:\Users\Soul_PC\AppData\Local\Temp\soj4.o
 __size_of_main 0 0 ABS 0 - dist/default/production\Buttom_deboucing.X.production.o
 __Hpowerup 0 0 CODE 0 powerup -
-intlevel0 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\s2vg.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\s2vg.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\s2vg.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\s2vg.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\s2vg.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\s2vg.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\soj4.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\soj4.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\soj4.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\soj4.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\soj4.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\soj4.o
 wtemp0 7E 0 ABS 0 - dist/default/production\Buttom_deboucing.X.production.o
 __Hfunctab 0 0 ENTRY 0 functab -
 __Hclrtext 0 0 ABS 0 clrtext -
 __Lmaintext 0 0 ABS 0 maintext -
-__CFG_FOSC$INTRC_CLKOUT 0 0 ABS 0 - dist/default/production\Buttom_deboucing.X.production.o
-___stackhi 0 0 ABS 0 - C:\Users\Soul_PC\AppData\Local\Temp\s2vg.o
-___stacklo 0 0 ABS 0 - C:\Users\Soul_PC\AppData\Local\Temp\s2vg.o
+___stackhi 0 0 ABS 0 - C:\Users\Soul_PC\AppData\Local\Temp\soj4.o
+___stacklo 0 0 ABS 0 - C:\Users\Soul_PC\AppData\Local\Temp\soj4.o
 start_initialization FF8 0 CODE 0 cinit dist/default/production\Buttom_deboucing.X.production.o
 _TRISCbits 87 0 ABS 0 - dist/default/production\Buttom_deboucing.X.production.o
 _TRISDbits 88 0 ABS 0 - dist/default/production\Buttom_deboucing.X.production.o
 _TRISEbits 89 0 ABS 0 - dist/default/production\Buttom_deboucing.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\Soul_PC\AppData\Local\Temp\s2vg.o
+___int_sp 0 0 STACK 2 stack C:\Users\Soul_PC\AppData\Local\Temp\soj4.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -135,7 +136,7 @@ __Hidloc 0 0 IDLOC 0 idloc -
 __Hstack 0 0 STACK 2 stack -
 __Hmaintext 0 0 ABS 0 maintext -
 __Hcommon 0 0 ABS 0 common -
-__Hconfig 4012 0 CONFIG 0 config -
+__Hconfig 4010 0 CONFIG 0 config -
 __Lbank0 0 0 ABS 0 bank0 -
 __Lbank1 0 0 ABS 0 bank1 -
 __Lbank2 0 0 ABS 0 bank2 -
@@ -163,27 +164,21 @@ __Lsfr2 0 0 ABS 0 sfr2 -
 __Lsfr3 0 0 ABS 0 sfr3 -
 __Ltext 0 0 ABS 0 text -
 __HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
-__S0 2009 0 ABS 0 - -
+__S0 2008 0 ABS 0 - -
 __S1 0 0 ABS 0 - -
 __S2 0 0 ABS 0 - -
 __S3 0 0 ABS 0 - -
-__CFG_BOR4V$BOR40V 0 0 ABS 0 - dist/default/production\Buttom_deboucing.X.production.o
-__CFG_BOREN$ON 0 0 ABS 0 - dist/default/production\Buttom_deboucing.X.production.o
 __Lintentry 0 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\Soul_PC\AppData\Local\Temp\s2vg.o
-__CFG_FCMEN$ON 0 0 ABS 0 - dist/default/production\Buttom_deboucing.X.production.o
-__pmaintext FC4 0 CODE 0 maintext dist/default/production\Buttom_deboucing.X.production.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Soul_PC\AppData\Local\Temp\soj4.o
+__pmaintext FC2 0 CODE 0 maintext dist/default/production\Buttom_deboucing.X.production.o
 __Lcommon 0 0 ABS 0 common -
 __Lconfig 400E 0 CONFIG 0 config -
-__CFG_CP$OFF 0 0 ABS 0 - dist/default/production\Buttom_deboucing.X.production.o
-__CFG_IESO$ON 0 0 ABS 0 - dist/default/production\Buttom_deboucing.X.production.o
 __CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\Buttom_deboucing.X.production.o
 __Lspace_0 0 0 ABS 0 - -
 __Lspace_1 0 0 ABS 0 - -
 __Lspace_2 0 0 ABS 0 - -
 __Lspace_3 0 0 ABS 0 - -
 __Lend_init 0 0 CODE 0 end_init -
-__CFG_LVP$ON 0 0 ABS 0 - dist/default/production\Buttom_deboucing.X.production.o
 __LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
 end_of_initialization FF8 0 CODE 0 cinit dist/default/production\Buttom_deboucing.X.production.o
 __Hintentry 0 0 CODE 0 intentry -
@@ -200,10 +195,7 @@ __Hend_init 6 0 CODE 0 end_init -
 __end_of_main FF8 0 CODE 0 maintext dist/default/production\Buttom_deboucing.X.production.o
 __Hram 0 0 ABS 0 ram -
 __Lram 0 0 ABS 0 ram -
-__CFG_CPD$OFF 0 0 ABS 0 - dist/default/production\Buttom_deboucing.X.production.o
 __initialization FF8 0 CODE 0 cinit dist/default/production\Buttom_deboucing.X.production.o
-__CFG_PWRTE$OFF 0 0 ABS 0 - dist/default/production\Buttom_deboucing.X.production.o
-__CFG_WRT$OFF 0 0 ABS 0 - dist/default/production\Buttom_deboucing.X.production.o
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.
@@ -230,9 +222,9 @@ __CFG_WRT$OFF 0 0 ABS 0 - dist/default/production\Buttom_deboucing.X.production.
 # All other numeric quantities are in decimal.
 %SEGMENTS
 cinit 0 7FC FF8 4 2
-maintext 0 7E2 FC4 1A 2
+maintext 0 7E1 FC2 1B 2
 reset_vec 0 0 0 3 2
-config 0 2007 400E 2 2
+config 0 2007 400E 1 2
 # OTES Section
 # This section contains data of all the note-psects.  The beginning of the section
 # is indicated by OTES. The first line indicates the name and decimal

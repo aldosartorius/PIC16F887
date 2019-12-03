@@ -5,7 +5,7 @@ Linker command line:
 -W-3 --edf=C:\Program Files (x86)\Microchip\xc8\v2.10\pic\dat\en_msgs.txt \
   -cs -h+dist/default/production\Five_Secuency.X.production.sym \
   --cmf=dist/default/production\Five_Secuency.X.production.cmf -z -Q16F887 \
-  -oC:\Users\Soul_PC\AppData\Local\Temp\secc.2 --defsym=__MPLAB_BUILD=1 \
+  -oC:\Users\Soul_PC\AppData\Local\Temp\sr8k.2 --defsym=__MPLAB_BUILD=1 \
   -Mdist/default/production/Five_Secuency.X.production.map -E1 -ver=XC8 \
   --acfsm=1493 -ASTACK=0110h-016Fh -pstack=STACK -ACODE=00h-07FFhx4 \
   -ASTRCODE=00h-01FFFh -ASTRING=00h-0FFhx32 -ACONST=00h-0FFhx32 \
@@ -18,7 +18,7 @@ Linker command line:
   -pfunctab=ENTRY -ACONFIG=02007h-02008h -pconfig=CONFIG -DCONFIG=2 \
   -AIDLOC=02000h-02003h -pidloc=IDLOC -DIDLOC=2 -AEEDATA=00h-0FFh/02100h \
   -peeprom_data=EEDATA -DEEDATA=2 -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 \
-  -DENTRY=2 -k C:\Users\Soul_PC\AppData\Local\Temp\secc.o \
+  -DENTRY=2 -k C:\Users\Soul_PC\AppData\Local\Temp\sr8k.o \
   dist/default/production\Five_Secuency.X.production.o 
 
 Object code version is 3.11
@@ -28,7 +28,7 @@ Machine type is 16F887
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\Soul_PC\AppData\Local\Temp\secc.o
+C:\Users\Soul_PC\AppData\Local\Temp\sr8k.o
                 end_init                              0        0        3        0       0
                 config                             2007     2007        1     400E       0
 dist/default/production\Five_Secuency.X.production.o
@@ -280,13 +280,13 @@ FUNCTION INFORMATION:
 
  *************** function _main *****************
  Defined at:
-		line 21 in file "main.c"
+		line 47 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
 		None
  Return value:  Size  Location     Type
-                  1    wreg      void 
+                  2   38[None  ] int 
  Registers used:
 		wreg, status,2, status,0, pclath, cstack
  Tracked objects:
@@ -313,7 +313,7 @@ Total ram usage:        1 bytes
 
  *************** function _Secuence_Two *****************
  Defined at:
-		line 65 in file "main.c"
+		line 96 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -343,7 +343,7 @@ Total ram usage:        0 bytes
 
  *************** function _Secuence_Three *****************
  Defined at:
-		line 89 in file "main.c"
+		line 120 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -373,7 +373,7 @@ Total ram usage:        0 bytes
 
  *************** function _Secuence_One *****************
  Defined at:
-		line 56 in file "main.c"
+		line 88 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -403,7 +403,7 @@ Total ram usage:        0 bytes
 
  *************** function _Secuence_Four *****************
  Defined at:
-		line 107 in file "main.c"
+		line 138 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -433,7 +433,7 @@ Total ram usage:        0 bytes
 
  *************** function _Secuence_Five *****************
  Defined at:
-		line 129 in file "main.c"
+		line 160 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -463,7 +463,7 @@ Total ram usage:        0 bytes
 
  *************** function _Timer_Delay *****************
  Defined at:
-		line 45 in file "main.c"
+		line 73 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type

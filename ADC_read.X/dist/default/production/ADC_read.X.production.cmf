@@ -13,83 +13,85 @@
 %PSECTS
 $dist/default/production\ADC_read.X.production.o
 cinit CODE 0 7F3 7F3 D 2
-text1 CODE 0 1D21 1D21 3D 2
-text2 CODE 0 1172 1172 B0 2
+text1 CODE 0 1CFE 1CFE 3D 2
+text2 CODE 0 863 863 DD 2
 text3 CODE 0 239 239 5BA 2
 text4 CODE 0 940 940 35F 2
-text5 CODE 0 1ED8 1ED8 59 2
-text6 CODE 0 1F97 1F97 69 2
+text5 CODE 0 80A 80A 59 2
+text6 CODE 0 1F1B 1F1B 69 2
 text7 CODE 0 2E 2E 20B 2
-text8 CODE 0 1CE7 1CE7 3A 2
-text9 CODE 0 1DA0 1DA0 44 2
+text8 CODE 0 1CC4 1CC4 3A 2
+text9 CODE 0 1D7D 1D7D 44 2
 text10 CODE 0 C9F C9F 361 2
-text11 CODE 0 1CC0 1CC0 27 2
-text12 CODE 0 12DE 12DE BD 2
-text13 CODE 0 882 882 BE 2
-text14 CODE 0 1222 1222 BC 2
-text15 CODE 0 1C9B 1C9B 25 2
-text16 CODE 0 1E84 1E84 54 2
-text17 CODE 0 1F31 1F31 66 2
-text18 CODE 0 806 806 7C 2
-text19 CODE 0 1C77 1C77 24 2
+text11 CODE 0 1C9D 1C9D 27 2
+text12 CODE 0 1220 1220 BD 2
+text13 CODE 0 12DD 12DD BE 2
+text14 CODE 0 1166 1166 BA 2
+text15 CODE 0 1C78 1C78 25 2
+text16 CODE 0 1E61 1E61 54 2
+text17 CODE 0 1EB5 1EB5 66 2
+text18 CODE 0 1F84 1F84 7C 2
+text19 CODE 0 1C54 1C54 24 2
 text20 CODE 0 1578 1578 288 2
-text21 CODE 0 1C08 1C08 B 2
-text22 CODE 0 10D0 10D0 A2 2
-text23 CODE 0 1DE4 1DE4 4E 2
+text21 CODE 0 10B9 10B9 B 2
+text22 CODE 0 10C4 10C4 A2 2
+text23 CODE 0 1DC1 1DC1 4E 2
 text24 CODE 0 139B 139B 1DD 2
-text25 CODE 0 1E32 1E32 52 2
-text26 CODE 0 1D5E 1D5E 42 2
+text25 CODE 0 1E0F 1E0F 52 2
+text26 CODE 0 1D3B 1D3B 42 2
 text27 CODE 0 3 3 2B 2
-text28 CODE 0 1C13 1C13 D 2
-text29 CODE 0 1C20 1C20 1A 2
-text30 CODE 0 1C55 1C55 22 2
-text31 CODE 0 10BF 10BF 11 2
-maintext CODE 0 1C3A 1C3A 1B 2
+text28 CODE 0 1BD0 1BD0 D 2
+text29 CODE 0 1C01 1C01 16 2
+text30 CODE 0 1BEE 1BEE 13 2
+text31 CODE 0 1C32 1C32 22 2
+text32 CODE 0 1BDD 1BDD 11 2
+maintext CODE 0 1C17 1C17 1B 2
 cstackCOMMON COMMON 1 70 70 E 1
-cstackBANK0 BANK0 1 20 20 4E 1
-cstackBANK1 BANK1 1 A0 A0 26 1
-bssBANK1 BANK1 1 C6 C6 16 1
+cstackBANK0 BANK0 1 20 20 4F 1
+cstackBANK1 BANK1 1 A0 A0 27 1
+bssBANK1 BANK1 1 C7 C7 16 1
 strings STRING 0 1000 1000 B8 2
-clrtext CODE 0 1C00 1C00 8 2
-$C:\Users\Soul_PC\AppData\Local\Temp\s1330.o
+clrtext CODE 0 802 802 8 2
+$C:\Users\Soul_PC\AppData\Local\Temp\sng0.o
 end_init CODE 0 0 0 3 2
-config CONFIG 0 2007 2007 2 2
+config CONFIG 0 2007 2007 1 2
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
 # is described on a single line as follows:
 #    <class name> <range> <delta>
 # Addresses given in the range are in hexadecimal and units of delta.
 %UNUSED
-RAM 6E-6F 1
-RAM DC-EF 1
+RAM 6F-6F 1
+RAM DD-EF 1
 RAM 110-16F 1
 RAM 190-1EF 1
-BANK0 6E-6F 1
-BANK1 DC-EF 1
+BANK0 6F-6F 1
+BANK1 DD-EF 1
 BANK2 110-16F 1
 BANK3 190-1EF 1
-CONST 800-805 2
-CONST 10B8-10BE 2
-CONST 1800-1BFF 2
-ENTRY 800-805 2
-ENTRY 10B8-10BE 2
-ENTRY 1800-1BFF 2
+CONST 800-801 2
+CONST 10B8-10B8 2
+CONST 1800-1BCF 2
+ENTRY 800-801 2
+ENTRY 10B8-10B8 2
+ENTRY 1800-1BCF 2
 IDLOC 2000-2003 2
 STACK 110-16F 1
-CODE 800-805 2
-CODE 10B8-10BE 2
-CODE 1800-1BFF 2
+CODE 800-801 2
+CODE 10B8-10B8 2
+CODE 1800-1BCF 2
 SFR0 0-1F 1
 SFR1 80-9F 1
 SFR2 100-10F 1
 SFR3 180-18F 1
+CONFIG 2008-2008 2
 EEDATA 2100-21FF 2
-STRCODE 800-805 2
-STRCODE 10B8-10BE 2
-STRCODE 1800-1BFF 2
-STRING 800-805 2
-STRING 10B8-10BE 2
-STRING 1800-1BFF 2
+STRCODE 800-801 2
+STRCODE 10B8-10B8 2
+STRCODE 1800-1BCF 2
+STRING 800-801 2
+STRING 10B8-10B8 2
+STRING 1800-1BCF 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -104,81 +106,97 @@ STRING 1800-1BFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\ADC_read.X.production.o
-7F3 cinit CODE >765:C:\Users\Soul_PC\AppData\Local\Temp\s1330.s
-7F3 cinit CODE >768:C:\Users\Soul_PC\AppData\Local\Temp\s1330.s
-7F3 cinit CODE >800:C:\Users\Soul_PC\AppData\Local\Temp\s1330.s
-7F4 cinit CODE >801:C:\Users\Soul_PC\AppData\Local\Temp\s1330.s
-7F5 cinit CODE >802:C:\Users\Soul_PC\AppData\Local\Temp\s1330.s
-7F6 cinit CODE >803:C:\Users\Soul_PC\AppData\Local\Temp\s1330.s
-7F7 cinit CODE >804:C:\Users\Soul_PC\AppData\Local\Temp\s1330.s
-7FC cinit CODE >810:C:\Users\Soul_PC\AppData\Local\Temp\s1330.s
-7FC cinit CODE >812:C:\Users\Soul_PC\AppData\Local\Temp\s1330.s
-7FD cinit CODE >813:C:\Users\Soul_PC\AppData\Local\Temp\s1330.s
-10BF text31 CODE >52:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
-10BF text31 CODE >54:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
-10C3 text31 CODE >55:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
-10C7 text31 CODE >56:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
-10CB text31 CODE >57:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
-10CF text31 CODE >58:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
-1C55 text30 CODE >12:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-1C56 text30 CODE >14:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-1C5A text30 CODE >15:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-1C5E text30 CODE >16:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-1C5E text30 CODE >17:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-1C61 text30 CODE >19:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-1C65 text30 CODE >20:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-1C67 text30 CODE >21:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-1C67 text30 CODE >22:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-1C68 text30 CODE >24:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-1C6C text30 CODE >25:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-1C6E text30 CODE >26:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-1C6E text30 CODE >27:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-1C6F text30 CODE >29:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-1C73 text30 CODE >30:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-1C75 text30 CODE >31:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-1C75 text30 CODE >32:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-1C76 text30 CODE >33:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-1C20 text29 CODE >35:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-1C21 text29 CODE >37:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-1C24 text29 CODE >38:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-1C2A text29 CODE >39:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-1C2D text29 CODE >40:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-1C36 text29 CODE >41:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-1C39 text29 CODE >42:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-1C13 text28 CODE >44:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-1C13 text28 CODE >46:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-1C19 text28 CODE >47:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-1C1F text28 CODE >49:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-3 text27 CODE >91:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-4 text27 CODE >94:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-9 text27 CODE >95:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-E text27 CODE >96:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-11 text27 CODE >97:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-1F text27 CODE >98:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-22 text27 CODE >100:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-23 text27 CODE >101:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-29 text27 CODE >102:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-2C text27 CODE >104:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-2D text27 CODE >105:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-1D5E text26 CODE >107:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-1D5E text26 CODE >110:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-1D61 text26 CODE >111:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-1D9F text26 CODE >112:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-1E32 text25 CODE >51:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-1E33 text25 CODE >54:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-1E38 text25 CODE >56:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-1E3D text25 CODE >57:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-1E49 text25 CODE >58:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-1E4E text25 CODE >59:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-1E54 text25 CODE >60:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-1E5A text25 CODE >61:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-1E5B text25 CODE >62:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-1E61 text25 CODE >64:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-1E66 text25 CODE >65:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-1E72 text25 CODE >66:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-1E77 text25 CODE >67:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-1E7D text25 CODE >68:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-1E83 text25 CODE >70:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
+7F3 cinit CODE >899:C:\Users\Soul_PC\AppData\Local\Temp\sng0.s
+7F3 cinit CODE >902:C:\Users\Soul_PC\AppData\Local\Temp\sng0.s
+7F3 cinit CODE >934:C:\Users\Soul_PC\AppData\Local\Temp\sng0.s
+7F4 cinit CODE >935:C:\Users\Soul_PC\AppData\Local\Temp\sng0.s
+7F5 cinit CODE >936:C:\Users\Soul_PC\AppData\Local\Temp\sng0.s
+7F6 cinit CODE >937:C:\Users\Soul_PC\AppData\Local\Temp\sng0.s
+7F7 cinit CODE >938:C:\Users\Soul_PC\AppData\Local\Temp\sng0.s
+7FC cinit CODE >944:C:\Users\Soul_PC\AppData\Local\Temp\sng0.s
+7FC cinit CODE >946:C:\Users\Soul_PC\AppData\Local\Temp\sng0.s
+7FD cinit CODE >947:C:\Users\Soul_PC\AppData\Local\Temp\sng0.s
+1BDD text32 CODE >58:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
+1BDD text32 CODE >61:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
+1BE1 text32 CODE >64:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
+1BE5 text32 CODE >67:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
+1BE9 text32 CODE >68:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
+1BED text32 CODE >69:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
+1C32 text31 CODE >12:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1C33 text31 CODE >13:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1C37 text31 CODE >14:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1C3A text31 CODE >15:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1C3B text31 CODE >16:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1C3B text31 CODE >17:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1C3E text31 CODE >18:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1C3E text31 CODE >19:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1C42 text31 CODE >20:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1C43 text31 CODE >21:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1C44 text31 CODE >22:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1C44 text31 CODE >23:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1C45 text31 CODE >24:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1C45 text31 CODE >25:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1C49 text31 CODE >26:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1C4A text31 CODE >27:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1C4B text31 CODE >28:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1C4B text31 CODE >29:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1C4C text31 CODE >30:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1C4C text31 CODE >31:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1C50 text31 CODE >32:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1C51 text31 CODE >33:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1C52 text31 CODE >34:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1C52 text31 CODE >35:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1C53 text31 CODE >37:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1BEE text30 CODE >107:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1BEE text30 CODE >110:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1BF4 text30 CODE >112:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1BF8 text30 CODE >113:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1BFA text30 CODE >116:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1BFB text30 CODE >117:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1BFF text30 CODE >118:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1C00 text30 CODE >119:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1C01 text29 CODE >39:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1C02 text29 CODE >40:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1C05 text29 CODE >41:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1C0B text29 CODE >42:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1C0E text29 CODE >43:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1C13 text29 CODE >44:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1C16 text29 CODE >45:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1BD0 text28 CODE >47:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1BD0 text28 CODE >48:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1BD6 text28 CODE >49:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1BDC text28 CODE >51:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+3 text27 CODE >87:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+4 text27 CODE >89:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+9 text27 CODE >90:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+E text27 CODE >91:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+11 text27 CODE >92:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1F text27 CODE >93:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+22 text27 CODE >94:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+23 text27 CODE >95:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+29 text27 CODE >96:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+2C text27 CODE >97:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+2D text27 CODE >98:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1D3B text26 CODE >100:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1D3B text26 CODE >102:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1D3E text26 CODE >103:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1D5A text26 CODE >104:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1D7C text26 CODE >105:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1E0F text25 CODE >53:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1E10 text25 CODE >55:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1E15 text25 CODE >57:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1E1A text25 CODE >58:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1E26 text25 CODE >59:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1E2B text25 CODE >60:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1E31 text25 CODE >61:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1E37 text25 CODE >62:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1E38 text25 CODE >63:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1E3E text25 CODE >65:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1E43 text25 CODE >66:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1E4F text25 CODE >67:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1E54 text25 CODE >68:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1E5A text25 CODE >69:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1E60 text25 CODE >71:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
 139B text24 CODE >8:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\sprcdiv.c
 139B text24 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\sprcdiv.c
 13A2 text24 CODE >27:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\sprcdiv.c
@@ -265,31 +283,31 @@ E text27 CODE >96:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_
 156B text24 CODE >182:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\sprcdiv.c
 1572 text24 CODE >183:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\sprcdiv.c
 1577 text24 CODE >185:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\sprcdiv.c
-1DE4 text23 CODE >4:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fleq.c
-1DE4 text23 CODE >7:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fleq.c
-1DF8 text23 CODE >8:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fleq.c
-1E00 text23 CODE >9:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fleq.c
-1E14 text23 CODE >10:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fleq.c
-1E1C text23 CODE >11:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fleq.c
-1E31 text23 CODE >12:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fleq.c
-10D0 text22 CODE >4:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\flge.c
-10D0 text22 CODE >7:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\flge.c
-10E4 text22 CODE >8:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\flge.c
-10EC text22 CODE >9:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\flge.c
-1100 text22 CODE >10:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\flge.c
-1108 text22 CODE >12:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\flge.c
-110C text22 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\flge.c
-1130 text22 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\flge.c
-1134 text22 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\flge.c
-1158 text22 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\flge.c
-115A text22 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\flge.c
-115C text22 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\flge.c
-1171 text22 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\flge.c
-1C08 text21 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\flneg.c
-1C08 text21 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\flneg.c
-1C10 text21 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\flneg.c
-1C12 text21 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\flneg.c
-1C12 text21 CODE >20:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\flneg.c
+1DC1 text23 CODE >4:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fleq.c
+1DC1 text23 CODE >7:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fleq.c
+1DD5 text23 CODE >8:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fleq.c
+1DDD text23 CODE >9:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fleq.c
+1DF1 text23 CODE >10:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fleq.c
+1DF9 text23 CODE >11:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fleq.c
+1E0E text23 CODE >12:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fleq.c
+10C4 text22 CODE >4:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\flge.c
+10C4 text22 CODE >7:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\flge.c
+10D8 text22 CODE >8:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\flge.c
+10E0 text22 CODE >9:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\flge.c
+10F4 text22 CODE >10:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\flge.c
+10FC text22 CODE >12:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\flge.c
+1100 text22 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\flge.c
+1124 text22 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\flge.c
+1128 text22 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\flge.c
+114C text22 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\flge.c
+114E text22 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\flge.c
+1150 text22 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\flge.c
+1165 text22 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\flge.c
+10B9 text21 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\flneg.c
+10B9 text21 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\flneg.c
+10C1 text21 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\flneg.c
+10C3 text21 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\flneg.c
+10C3 text21 CODE >20:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\flneg.c
 1578 text20 CODE >10:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\sprcadd.c
 1578 text20 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\sprcadd.c
 157F text20 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\sprcadd.c
@@ -413,167 +431,167 @@ E text27 CODE >96:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_
 17FE text20 CODE >234:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\sprcadd.c
 17FF text20 CODE >235:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\sprcadd.c
 17FF text20 CODE >237:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\sprcadd.c
-1C77 text19 CODE >242:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\sprcadd.c
-1C77 text19 CODE >248:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\sprcadd.c
-1C7B text19 CODE >249:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\sprcadd.c
-1C9A text19 CODE >250:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\sprcadd.c
-806 text18 CODE >43:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fltol.c
-806 text18 CODE >47:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fltol.c
-813 text18 CODE >48:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fltol.c
-81C text18 CODE >49:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fltol.c
-831 text18 CODE >50:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fltol.c
-832 text18 CODE >51:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fltol.c
-83A text18 CODE >52:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fltol.c
-83C text18 CODE >53:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fltol.c
-840 text18 CODE >54:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fltol.c
-848 text18 CODE >57:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fltol.c
-851 text18 CODE >58:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fltol.c
-85A text18 CODE >60:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fltol.c
-861 text18 CODE >63:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fltol.c
-86A text18 CODE >64:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fltol.c
-86C text18 CODE >62:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fltol.c
-86C text18 CODE >65:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fltol.c
-871 text18 CODE >67:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fltol.c
-876 text18 CODE >68:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fltol.c
-881 text18 CODE >70:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fltol.c
-1F31 text17 CODE >5:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
-1F31 text17 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
-1F39 text17 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
-1F41 text17 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
-1F43 text17 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
-1F44 text17 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
-1F4D text17 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
-1F51 text17 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
-1F55 text17 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
-1F5E text17 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
-1F70 text17 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
-1F7E text17 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
-1F7F text17 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
-1F88 text17 CODE >27:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
-1F8E text17 CODE >29:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
-1F96 text17 CODE >30:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
-1E84 text16 CODE >5:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\llmod.c
-1E84 text16 CODE >12:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\llmod.c
-1E8C text16 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\llmod.c
-1E8E text16 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\llmod.c
-1E8F text16 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\llmod.c
-1E98 text16 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\llmod.c
-1E9C text16 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\llmod.c
-1EA0 text16 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\llmod.c
-1EB2 text16 CODE >20:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\llmod.c
-1EC0 text16 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\llmod.c
-1EC9 text16 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\llmod.c
-1ECF text16 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\llmod.c
-1ED7 text16 CODE >25:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\llmod.c
-1C9B text15 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul16.c
-1C9B text15 CODE >43:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul16.c
-1C9D text15 CODE >45:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul16.c
-1CA1 text15 CODE >46:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul16.c
-1CA7 text15 CODE >47:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul16.c
-1CAE text15 CODE >48:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul16.c
-1CB5 text15 CODE >49:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul16.c
-1CBB text15 CODE >52:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul16.c
-1CBF text15 CODE >53:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul16.c
-1222 text14 CODE >10:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
-1225 text14 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
-122E text14 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
-123D text14 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
-123E text14 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
-1246 text14 CODE >20:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
-1246 text14 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
-124E text14 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
-1257 text14 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
-125B text14 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
-125C text14 CODE >25:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
-1260 text14 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
-1269 text14 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
-1270 text14 CODE >29:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
-1274 text14 CODE >30:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
-1282 text14 CODE >31:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
-128B text14 CODE >28:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
-128B text14 CODE >32:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
-1292 text14 CODE >34:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
-1294 text14 CODE >35:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
-129D text14 CODE >33:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
-12A7 text14 CODE >37:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
-12AB text14 CODE >38:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
-12B3 text14 CODE >39:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
-12B5 text14 CODE >40:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
-12CB text14 CODE >41:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
-12D4 text14 CODE >42:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
-12D5 text14 CODE >43:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
-12DD text14 CODE >44:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
-882 text13 CODE >60:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fldivl.c
-882 text13 CODE >66:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fldivl.c
-88F text13 CODE >67:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fldivl.c
-898 text13 CODE >68:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fldivl.c
-8A4 text13 CODE >69:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fldivl.c
-8A4 text13 CODE >70:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fldivl.c
-8A5 text13 CODE >71:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fldivl.c
-8AD text13 CODE >72:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fldivl.c
-8AE text13 CODE >73:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fldivl.c
-8B6 text13 CODE >74:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fldivl.c
-8BE text13 CODE >75:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fldivl.c
-8C0 text13 CODE >76:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fldivl.c
-8C5 text13 CODE >77:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fldivl.c
-8C9 text13 CODE >79:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fldivl.c
-8D2 text13 CODE >80:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fldivl.c
-8E4 text13 CODE >81:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fldivl.c
-8F2 text13 CODE >82:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fldivl.c
-8F3 text13 CODE >84:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fldivl.c
-8FC text13 CODE >85:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fldivl.c
-902 text13 CODE >86:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fldivl.c
-906 text13 CODE >87:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fldivl.c
-90E text13 CODE >90:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fldivl.c
-917 text13 CODE >91:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fldivl.c
-920 text13 CODE >93:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fldivl.c
-927 text13 CODE >96:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fldivl.c
-930 text13 CODE >97:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fldivl.c
-932 text13 CODE >95:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fldivl.c
-932 text13 CODE >98:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fldivl.c
-937 text13 CODE >100:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fldivl.c
-93F text13 CODE >101:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fldivl.c
-12DE text12 CODE >60:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdivl.c
-12DE text12 CODE >66:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdivl.c
-12F1 text12 CODE >67:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdivl.c
-12FA text12 CODE >68:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdivl.c
-130C text12 CODE >69:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdivl.c
-130C text12 CODE >70:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdivl.c
-130D text12 CODE >71:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdivl.c
-1313 text12 CODE >72:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdivl.c
-1314 text12 CODE >73:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdivl.c
-131A text12 CODE >74:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdivl.c
-1322 text12 CODE >75:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdivl.c
-1324 text12 CODE >76:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdivl.c
-1329 text12 CODE >77:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdivl.c
-132D text12 CODE >79:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdivl.c
-1336 text12 CODE >80:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdivl.c
-1344 text12 CODE >81:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdivl.c
-134E text12 CODE >82:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdivl.c
-134F text12 CODE >84:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdivl.c
-1357 text12 CODE >85:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdivl.c
-135D text12 CODE >86:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdivl.c
-1361 text12 CODE >87:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdivl.c
-1369 text12 CODE >90:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdivl.c
-1372 text12 CODE >91:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdivl.c
-137B text12 CODE >93:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdivl.c
-1382 text12 CODE >96:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdivl.c
-138B text12 CODE >97:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdivl.c
-138D text12 CODE >95:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdivl.c
-138D text12 CODE >98:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdivl.c
-1392 text12 CODE >100:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdivl.c
-139A text12 CODE >101:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdivl.c
-1CC0 text11 CODE >4:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul8_16.c
-1CC1 text11 CODE >5:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul8_16.c
-1CC3 text11 CODE >6:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul8_16.c
-1CCA text11 CODE >51:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul8_16.c
-1CCE text11 CODE >52:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul8_16.c
-1CD4 text11 CODE >53:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul8_16.c
-1CD4 text11 CODE >54:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul8_16.c
-1CDB text11 CODE >55:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul8_16.c
-1CDD text11 CODE >56:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul8_16.c
-1CE2 text11 CODE >59:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul8_16.c
-1CE6 text11 CODE >60:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul8_16.c
+1C54 text19 CODE >242:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\sprcadd.c
+1C54 text19 CODE >248:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\sprcadd.c
+1C58 text19 CODE >249:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\sprcadd.c
+1C77 text19 CODE >250:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\sprcadd.c
+1F84 text18 CODE >43:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fltol.c
+1F84 text18 CODE >47:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fltol.c
+1F91 text18 CODE >48:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fltol.c
+1F9A text18 CODE >49:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fltol.c
+1FAF text18 CODE >50:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fltol.c
+1FB0 text18 CODE >51:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fltol.c
+1FB8 text18 CODE >52:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fltol.c
+1FBA text18 CODE >53:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fltol.c
+1FBE text18 CODE >54:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fltol.c
+1FC6 text18 CODE >57:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fltol.c
+1FCF text18 CODE >58:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fltol.c
+1FD8 text18 CODE >60:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fltol.c
+1FDF text18 CODE >63:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fltol.c
+1FE8 text18 CODE >64:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fltol.c
+1FEA text18 CODE >62:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fltol.c
+1FEA text18 CODE >65:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fltol.c
+1FEF text18 CODE >67:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fltol.c
+1FF4 text18 CODE >68:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fltol.c
+1FFF text18 CODE >70:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fltol.c
+1EB5 text17 CODE >5:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
+1EB5 text17 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
+1EBD text17 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
+1EC5 text17 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
+1EC7 text17 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
+1EC8 text17 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
+1ED1 text17 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
+1ED5 text17 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
+1ED9 text17 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
+1EE2 text17 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
+1EF4 text17 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
+1F02 text17 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
+1F03 text17 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
+1F0C text17 CODE >27:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
+1F12 text17 CODE >29:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
+1F1A text17 CODE >30:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
+1E61 text16 CODE >5:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\llmod.c
+1E61 text16 CODE >12:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\llmod.c
+1E69 text16 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\llmod.c
+1E6B text16 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\llmod.c
+1E6C text16 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\llmod.c
+1E75 text16 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\llmod.c
+1E79 text16 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\llmod.c
+1E7D text16 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\llmod.c
+1E8F text16 CODE >20:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\llmod.c
+1E9D text16 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\llmod.c
+1EA6 text16 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\llmod.c
+1EAC text16 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\llmod.c
+1EB4 text16 CODE >25:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\llmod.c
+1C78 text15 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul16.c
+1C78 text15 CODE >43:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul16.c
+1C7A text15 CODE >45:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul16.c
+1C7E text15 CODE >46:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul16.c
+1C84 text15 CODE >47:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul16.c
+1C8B text15 CODE >48:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul16.c
+1C92 text15 CODE >49:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul16.c
+1C98 text15 CODE >52:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul16.c
+1C9C text15 CODE >53:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul16.c
+1166 text14 CODE >10:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
+1167 text14 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
+1170 text14 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
+117F text14 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
+1180 text14 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
+1188 text14 CODE >20:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
+1188 text14 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
+1190 text14 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
+1199 text14 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
+119D text14 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
+119E text14 CODE >25:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
+11A2 text14 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
+11AB text14 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
+11B2 text14 CODE >29:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
+11B6 text14 CODE >30:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
+11C4 text14 CODE >31:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
+11CD text14 CODE >28:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
+11CD text14 CODE >32:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
+11D4 text14 CODE >34:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
+11D6 text14 CODE >35:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
+11DF text14 CODE >33:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
+11E9 text14 CODE >37:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
+11ED text14 CODE >38:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
+11F5 text14 CODE >39:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
+11F7 text14 CODE >40:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
+120D text14 CODE >41:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
+1216 text14 CODE >42:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
+1217 text14 CODE >43:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
+121F text14 CODE >44:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
+12DD text13 CODE >60:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fldivl.c
+12DD text13 CODE >66:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fldivl.c
+12EA text13 CODE >67:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fldivl.c
+12F3 text13 CODE >68:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fldivl.c
+12FF text13 CODE >69:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fldivl.c
+12FF text13 CODE >70:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fldivl.c
+1300 text13 CODE >71:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fldivl.c
+1308 text13 CODE >72:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fldivl.c
+1309 text13 CODE >73:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fldivl.c
+1311 text13 CODE >74:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fldivl.c
+1319 text13 CODE >75:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fldivl.c
+131B text13 CODE >76:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fldivl.c
+1320 text13 CODE >77:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fldivl.c
+1324 text13 CODE >79:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fldivl.c
+132D text13 CODE >80:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fldivl.c
+133F text13 CODE >81:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fldivl.c
+134D text13 CODE >82:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fldivl.c
+134E text13 CODE >84:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fldivl.c
+1357 text13 CODE >85:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fldivl.c
+135D text13 CODE >86:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fldivl.c
+1361 text13 CODE >87:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fldivl.c
+1369 text13 CODE >90:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fldivl.c
+1372 text13 CODE >91:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fldivl.c
+137B text13 CODE >93:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fldivl.c
+1382 text13 CODE >96:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fldivl.c
+138B text13 CODE >97:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fldivl.c
+138D text13 CODE >95:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fldivl.c
+138D text13 CODE >98:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fldivl.c
+1392 text13 CODE >100:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fldivl.c
+139A text13 CODE >101:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fldivl.c
+1220 text12 CODE >60:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdivl.c
+1220 text12 CODE >66:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdivl.c
+1233 text12 CODE >67:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdivl.c
+123C text12 CODE >68:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdivl.c
+124E text12 CODE >69:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdivl.c
+124E text12 CODE >70:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdivl.c
+124F text12 CODE >71:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdivl.c
+1255 text12 CODE >72:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdivl.c
+1256 text12 CODE >73:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdivl.c
+125C text12 CODE >74:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdivl.c
+1264 text12 CODE >75:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdivl.c
+1266 text12 CODE >76:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdivl.c
+126B text12 CODE >77:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdivl.c
+126F text12 CODE >79:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdivl.c
+1278 text12 CODE >80:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdivl.c
+1286 text12 CODE >81:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdivl.c
+1290 text12 CODE >82:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdivl.c
+1291 text12 CODE >84:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdivl.c
+1299 text12 CODE >85:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdivl.c
+129F text12 CODE >86:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdivl.c
+12A3 text12 CODE >87:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdivl.c
+12AB text12 CODE >90:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdivl.c
+12B4 text12 CODE >91:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdivl.c
+12BD text12 CODE >93:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdivl.c
+12C4 text12 CODE >96:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdivl.c
+12CD text12 CODE >97:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdivl.c
+12CF text12 CODE >95:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdivl.c
+12CF text12 CODE >98:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdivl.c
+12D4 text12 CODE >100:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdivl.c
+12DC text12 CODE >101:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdivl.c
+1C9D text11 CODE >4:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul8_16.c
+1C9E text11 CODE >5:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul8_16.c
+1CA0 text11 CODE >6:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul8_16.c
+1CA7 text11 CODE >51:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul8_16.c
+1CAB text11 CODE >52:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul8_16.c
+1CB1 text11 CODE >53:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul8_16.c
+1CB1 text11 CODE >54:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul8_16.c
+1CB8 text11 CODE >55:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul8_16.c
+1CBA text11 CODE >56:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul8_16.c
+1CBF text11 CODE >59:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul8_16.c
+1CC3 text11 CODE >60:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul8_16.c
 C9F text10 CODE >8:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\sprcmul.c
 C9F text10 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\sprcmul.c
 CA6 text10 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\sprcmul.c
@@ -658,35 +676,35 @@ FF3 text10 CODE >200:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\
 FF3 text10 CODE >201:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\sprcmul.c
 FF7 text10 CODE >203:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\sprcmul.c
 FFF text10 CODE >205:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\sprcmul.c
-1DA0 text9 CODE >5:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
-1DA0 text9 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
-1DA2 text9 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
-1DA8 text9 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
-1DAA text9 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
-1DAB text9 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
-1DB2 text9 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
-1DB6 text9 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
-1DBA text9 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
-1DC1 text9 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
-1DCB text9 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
-1DD1 text9 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
-1DD2 text9 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
-1DD9 text9 CODE >27:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
-1DDF text9 CODE >29:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
-1DE3 text9 CODE >30:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
-1CE7 text8 CODE >5:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwmod.c
-1CE7 text8 CODE >12:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwmod.c
-1CED text8 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwmod.c
-1CEF text8 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwmod.c
-1CF0 text8 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwmod.c
-1CF7 text8 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwmod.c
-1CFB text8 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwmod.c
-1CFF text8 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwmod.c
-1D09 text8 CODE >20:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwmod.c
-1D0F text8 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwmod.c
-1D16 text8 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwmod.c
-1D1C text8 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwmod.c
-1D20 text8 CODE >25:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwmod.c
+1D7D text9 CODE >5:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
+1D7D text9 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
+1D7F text9 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
+1D85 text9 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
+1D87 text9 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
+1D88 text9 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
+1D8F text9 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
+1D93 text9 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
+1D97 text9 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
+1D9E text9 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
+1DA8 text9 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
+1DAE text9 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
+1DAF text9 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
+1DB6 text9 CODE >27:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
+1DBC text9 CODE >29:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
+1DC0 text9 CODE >30:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
+1CC4 text8 CODE >5:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwmod.c
+1CC4 text8 CODE >12:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwmod.c
+1CCA text8 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwmod.c
+1CCC text8 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwmod.c
+1CCD text8 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwmod.c
+1CD4 text8 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwmod.c
+1CD8 text8 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwmod.c
+1CDC text8 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwmod.c
+1CE6 text8 CODE >20:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwmod.c
+1CEC text8 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwmod.c
+1CF3 text8 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwmod.c
+1CF9 text8 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwmod.c
+1CFD text8 CODE >25:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwmod.c
 2E text7 CODE >417:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\doprnt.c
 31 text7 CODE >421:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\doprnt.c
 37 text7 CODE >422:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\doprnt.c
@@ -694,52 +712,52 @@ FFF text10 CODE >205:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\
 14A text7 CODE >424:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\doprnt.c
 1F5 text7 CODE >425:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\doprnt.c
 238 text7 CODE >426:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\doprnt.c
-1F97 text6 CODE >5:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-1F97 text6 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-1F9A text6 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-1F9E text6 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-1FA3 text6 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-1FA5 text6 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-1FA9 text6 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-1FAE text6 CODE >20:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-1FB2 text6 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-1FB4 text6 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-1FBA text6 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-1FBC text6 CODE >25:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-1FBD text6 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-1FC4 text6 CODE >27:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-1FC8 text6 CODE >25:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-1FCC text6 CODE >30:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-1FD3 text6 CODE >31:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-1FDD text6 CODE >32:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-1FE3 text6 CODE >33:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-1FE4 text6 CODE >35:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-1FEB text6 CODE >36:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-1FF1 text6 CODE >38:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-1FF6 text6 CODE >39:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-1FFB text6 CODE >40:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-1FFF text6 CODE >41:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-1ED8 text5 CODE >5:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
-1ED8 text5 CODE >12:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
-1ED9 text5 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
-1EDD text5 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
-1EE2 text5 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
-1EE4 text5 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
-1EE8 text5 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
-1EED text5 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
-1EF3 text5 CODE >20:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
-1EF5 text5 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
-1EF6 text5 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
-1EFD text5 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
-1F01 text5 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
-1F05 text5 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
-1F0F text5 CODE >27:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
-1F15 text5 CODE >28:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
-1F1C text5 CODE >29:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
-1F22 text5 CODE >31:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
-1F27 text5 CODE >32:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
-1F2C text5 CODE >33:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
-1F30 text5 CODE >34:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+1F1B text6 CODE >5:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+1F1B text6 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+1F1E text6 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+1F22 text6 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+1F27 text6 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+1F29 text6 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+1F2D text6 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+1F32 text6 CODE >20:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+1F36 text6 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+1F38 text6 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+1F3E text6 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+1F40 text6 CODE >25:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+1F41 text6 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+1F48 text6 CODE >27:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+1F4C text6 CODE >25:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+1F50 text6 CODE >30:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+1F57 text6 CODE >31:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+1F61 text6 CODE >32:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+1F67 text6 CODE >33:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+1F68 text6 CODE >35:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+1F6F text6 CODE >36:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+1F75 text6 CODE >38:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+1F7A text6 CODE >39:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+1F7F text6 CODE >40:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+1F83 text6 CODE >41:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+80A text5 CODE >5:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+80A text5 CODE >12:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+80B text5 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+80F text5 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+814 text5 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+816 text5 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+81A text5 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+81F text5 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+825 text5 CODE >20:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+827 text5 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+828 text5 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+82F text5 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+833 text5 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+837 text5 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+841 text5 CODE >27:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+847 text5 CODE >28:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+84E text5 CODE >29:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+854 text5 CODE >31:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+859 text5 CODE >32:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+85E text5 CODE >33:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+862 text5 CODE >34:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
 940 text4 CODE >433:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\doprnt.c
 943 text4 CODE >436:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\doprnt.c
 947 text4 CODE >437:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\doprnt.c
@@ -834,48 +852,52 @@ C9E text4 CODE >449:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\c
 7DC text3 CODE >553:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\doprnt.c
 7EE text3 CODE >1564:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\doprnt.c
 7F2 text3 CODE >1567:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\doprnt.c
-1172 text2 CODE >60:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
-1172 text2 CODE >62:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
-117D text2 CODE >63:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
-1180 text2 CODE >64:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
-1184 text2 CODE >66:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
-118A text2 CODE >67:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
-11D9 text2 CODE >68:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
-11EB text2 CODE >70:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
-11F0 text2 CODE >71:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
-11F8 text2 CODE >72:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
-1201 text2 CODE >73:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
-1209 text2 CODE >74:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
-1212 text2 CODE >75:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
-1221 text2 CODE >76:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
-1D21 text1 CODE >72:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-1D21 text1 CODE >75:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-1D27 text1 CODE >79:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-1D2D text1 CODE >81:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-1D33 text1 CODE >82:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-1D39 text1 CODE >83:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-1D3F text1 CODE >84:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-1D45 text1 CODE >85:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-1D4B text1 CODE >86:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-1D51 text1 CODE >87:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-1D57 text1 CODE >88:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-1D5D text1 CODE >89:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X/LCD_driver.c
-1C3A maintext CODE >36:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
-1C3A maintext CODE >38:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
-1C3D maintext CODE >39:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
-1C42 maintext CODE >40:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
-1C47 maintext CODE >41:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
-1C4C maintext CODE >45:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
-1C00 clrtext CODE >787:C:\Users\Soul_PC\AppData\Local\Temp\s1330.s
-1C00 clrtext CODE >788:C:\Users\Soul_PC\AppData\Local\Temp\s1330.s
-1C01 clrtext CODE >789:C:\Users\Soul_PC\AppData\Local\Temp\s1330.s
-1C01 clrtext CODE >790:C:\Users\Soul_PC\AppData\Local\Temp\s1330.s
-1C02 clrtext CODE >791:C:\Users\Soul_PC\AppData\Local\Temp\s1330.s
-1C03 clrtext CODE >792:C:\Users\Soul_PC\AppData\Local\Temp\s1330.s
-1C04 clrtext CODE >793:C:\Users\Soul_PC\AppData\Local\Temp\s1330.s
-1C05 clrtext CODE >794:C:\Users\Soul_PC\AppData\Local\Temp\s1330.s
-1C06 clrtext CODE >795:C:\Users\Soul_PC\AppData\Local\Temp\s1330.s
-1C07 clrtext CODE >796:C:\Users\Soul_PC\AppData\Local\Temp\s1330.s
+863 text2 CODE >71:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
+863 text2 CODE >73:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
+867 text2 CODE >74:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
+86C text2 CODE >75:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
+881 text2 CODE >77:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
+884 text2 CODE >79:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
+888 text2 CODE >82:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
+88E text2 CODE >83:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
+8E4 text2 CODE >84:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
+8FA text2 CODE >86:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
+8FF text2 CODE >87:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
+907 text2 CODE >88:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
+910 text2 CODE >89:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
+918 text2 CODE >90:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
+921 text2 CODE >92:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
+925 text2 CODE >93:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
+92A text2 CODE >94:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
+93F text2 CODE >95:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
+1CFE text1 CODE >73:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1CFE text1 CODE >75:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1D04 text1 CODE >76:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1D0A text1 CODE >77:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1D10 text1 CODE >78:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1D16 text1 CODE >79:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1D1C text1 CODE >80:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1D22 text1 CODE >81:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1D28 text1 CODE >82:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1D2E text1 CODE >83:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1D34 text1 CODE >84:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1D3A text1 CODE >85:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\LCD_driver.c
+1C17 maintext CODE >46:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
+1C17 maintext CODE >48:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
+1C1A maintext CODE >49:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
+1C1F maintext CODE >50:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
+1C24 maintext CODE >51:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
+1C29 maintext CODE >54:D:\Autocapacitacion\Codigo\Programas_PIC16F887\ADC_read.X\main.c
+802 clrtext CODE >921:C:\Users\Soul_PC\AppData\Local\Temp\sng0.s
+802 clrtext CODE >922:C:\Users\Soul_PC\AppData\Local\Temp\sng0.s
+803 clrtext CODE >923:C:\Users\Soul_PC\AppData\Local\Temp\sng0.s
+803 clrtext CODE >924:C:\Users\Soul_PC\AppData\Local\Temp\sng0.s
+804 clrtext CODE >925:C:\Users\Soul_PC\AppData\Local\Temp\sng0.s
+805 clrtext CODE >926:C:\Users\Soul_PC\AppData\Local\Temp\sng0.s
+806 clrtext CODE >927:C:\Users\Soul_PC\AppData\Local\Temp\sng0.s
+807 clrtext CODE >928:C:\Users\Soul_PC\AppData\Local\Temp\sng0.s
+808 clrtext CODE >929:C:\Users\Soul_PC\AppData\Local\Temp\sng0.s
+809 clrtext CODE >930:C:\Users\Soul_PC\AppData\Local\Temp\sng0.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -891,20 +913,20 @@ C9E text4 CODE >449:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\c
 ___latbits 2 0 ABS 0 - dist/default/production\ADC_read.X.production.o
 ___awdiv@counter 20 0 BANK0 1 cstackBANK0 dist/default/production\ADC_read.X.production.o
 ___lwmod@counter 75 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
-__Hspace_0 2009 0 ABS 0 - -
-__Hspace_1 DC 0 ABS 0 - -
+__Hspace_0 2008 0 ABS 0 - -
+__Hspace_1 DD 0 ABS 0 - -
 __Hspace_2 0 0 ABS 0 - -
 __Hspace_3 0 0 ABS 0 - -
-__end_of__tdiv_to_l_ 2736 0 CODE 0 text12 dist/default/production\ADC_read.X.production.o
+__end_of__tdiv_to_l_ 25BA 0 CODE 0 text12 dist/default/production\ADC_read.X.production.o
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
-__CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production\ADC_read.X.production.o
 Lcd_Print_String@a 75 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
 Lcd_Print_String@i 7A 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
 __Hstrings 0 0 ABS 0 strings -
-___sp 0 0 STACK 2 stack C:\Users\Soul_PC\AppData\Local\Temp\s1330.o
-_main 3874 0 CODE 0 maintext dist/default/production\ADC_read.X.production.o
+_PIE1 8C 0 ABS 0 - dist/default/production\ADC_read.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\Soul_PC\AppData\Local\Temp\sng0.o
+_main 382E 0 CODE 0 maintext dist/default/production\ADC_read.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\ADC_read.X.production.o
-start 0 0 CODE 0 init C:\Users\Soul_PC\AppData\Local\Temp\s1330.o
+start 0 0 CODE 0 init C:\Users\Soul_PC\AppData\Local\Temp\sng0.o
 ___flmul@aexp 36 0 BANK0 1 cstackBANK0 dist/default/production\ADC_read.X.production.o
 ___flmul@bexp 37 0 BANK0 1 cstackBANK0 dist/default/production\ADC_read.X.production.o
 ___flmul@prod 38 0 BANK0 1 cstackBANK0 dist/default/production\ADC_read.X.production.o
@@ -929,14 +951,14 @@ ___awmod@sign 76 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.prod
 __end_of__npowers_ 20F0 0 STRING 0 strings dist/default/production\ADC_read.X.production.o
 __size_of_ADC_Init 0 0 ABS 0 - dist/default/production\ADC_read.X.production.o
 __size_of_ADC_Read 0 0 ABS 0 - dist/default/production\ADC_read.X.production.o
-_sprintf$779 AA 0 BANK1 1 cstackBANK1 dist/default/production\ADC_read.X.production.o
-_Lcd_Print_String 3ABC 0 CODE 0 text26 dist/default/production\ADC_read.X.production.o
-intlevel0 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\s1330.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\s1330.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\s1330.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\s1330.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\s1330.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\s1330.o
+_sprintf$840 AA 0 BANK1 1 cstackBANK1 dist/default/production\ADC_read.X.production.o
+_Lcd_Print_String 3A76 0 CODE 0 text26 dist/default/production\ADC_read.X.production.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\sng0.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\sng0.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\sng0.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\sng0.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\sng0.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\sng0.o
 __size_of__div_to_l_ 0 0 ABS 0 - dist/default/production\ADC_read.X.production.o
 wtemp0 7E 0 ABS 0 - dist/default/production\ADC_read.X.production.o
 ___llmod@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
@@ -952,41 +974,41 @@ _ADCON0 1F 0 ABS 0 - dist/default/production\ADC_read.X.production.o
 _ADCON1 9F 0 ABS 0 - dist/default/production\ADC_read.X.production.o
 _ADRESH 1E 0 ABS 0 - dist/default/production\ADC_read.X.production.o
 _ADRESL 9E 0 ABS 0 - dist/default/production\ADC_read.X.production.o
-__end_of__Umul8_16 39CE 0 CODE 0 text11 dist/default/production\ADC_read.X.production.o
+__end_of__Umul8_16 3988 0 CODE 0 text11 dist/default/production\ADC_read.X.production.o
 ___awdiv@dividend 79 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
 __size_of__Umul8_16 0 0 ABS 0 - dist/default/production\ADC_read.X.production.o
-__end_of___fleq 3C64 0 CODE 0 text23 dist/default/production\ADC_read.X.production.o
-__end_of___flge 22E4 0 CODE 0 text22 dist/default/production\ADC_read.X.production.o
-__end_of___wmul 3980 0 CODE 0 text15 dist/default/production\ADC_read.X.production.o
+__end_of___fleq 3C1E 0 CODE 0 text23 dist/default/production\ADC_read.X.production.o
+__end_of___flge 22CC 0 CODE 0 text22 dist/default/production\ADC_read.X.production.o
+__end_of___wmul 393A 0 CODE 0 text15 dist/default/production\ADC_read.X.production.o
 ?__tdiv_to_l_ 70 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
-_int_data CA 0 BANK1 1 bssBANK1 dist/default/production\ADC_read.X.production.o
+_int_data CB 0 BANK1 1 bssBANK1 dist/default/production\ADC_read.X.production.o
 __Lmaintext 0 0 ABS 0 maintext -
 __size_of_sprintf 0 0 ABS 0 - dist/default/production\ADC_read.X.production.o
-___fldiv@aexp 3F 0 BANK0 1 cstackBANK0 dist/default/production\ADC_read.X.production.o
-___fldiv@bexp 3E 0 BANK0 1 cstackBANK0 dist/default/production\ADC_read.X.production.o
-___fldiv@sign 37 0 BANK0 1 cstackBANK0 dist/default/production\ADC_read.X.production.o
-_ADC_Init 217E 0 CODE 0 text31 dist/default/production\ADC_read.X.production.o
-_ADC_Read 22E4 0 CODE 0 text2 dist/default/production\ADC_read.X.production.o
+___fldiv@aexp 57 0 BANK0 1 cstackBANK0 dist/default/production\ADC_read.X.production.o
+___fldiv@bexp 56 0 BANK0 1 cstackBANK0 dist/default/production\ADC_read.X.production.o
+___fldiv@sign 4F 0 BANK0 1 cstackBANK0 dist/default/production\ADC_read.X.production.o
+_ADC_Init 37BA 0 CODE 0 text32 dist/default/production\ADC_read.X.production.o
+_ADC_Read 10C6 0 CODE 0 text2 dist/default/production\ADC_read.X.production.o
 ___awdiv@divisor 77 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
 ___lwmod@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
-__end_of___awdiv 4000 0 CODE 0 text6 dist/default/production\ADC_read.X.production.o
-__end_of___awmod 3E62 0 CODE 0 text5 dist/default/production\ADC_read.X.production.o
-__Umul8_16 3980 0 CODE 0 text11 dist/default/production\ADC_read.X.production.o
+__end_of___awdiv 3F08 0 CODE 0 text6 dist/default/production\ADC_read.X.production.o
+__end_of___awmod 10C6 0 CODE 0 text5 dist/default/production\ADC_read.X.production.o
+__Umul8_16 393A 0 CODE 0 text11 dist/default/production\ADC_read.X.production.o
 __end_of___fladd 3000 0 CODE 0 text20 dist/default/production\ADC_read.X.production.o
 __end_of___fldiv 2AF0 0 CODE 0 text24 dist/default/production\ADC_read.X.production.o
 __end_of___flmul 2000 0 CODE 0 text10 dist/default/production\ADC_read.X.production.o
-__end_of___flneg 3826 0 CODE 0 text21 dist/default/production\ADC_read.X.production.o
-__end_of___flsub 3936 0 CODE 0 text19 dist/default/production\ADC_read.X.production.o
-__end_of___fltol 1104 0 CODE 0 text18 dist/default/production\ADC_read.X.production.o
-__end_of___lldiv 3F2E 0 CODE 0 text17 dist/default/production\ADC_read.X.production.o
-__end_of___llmod 3DB0 0 CODE 0 text16 dist/default/production\ADC_read.X.production.o
-__end_of___lwdiv 3BC8 0 CODE 0 text9 dist/default/production\ADC_read.X.production.o
-__end_of___lwmod 3A42 0 CODE 0 text8 dist/default/production\ADC_read.X.production.o
+__end_of___flneg 2188 0 CODE 0 text21 dist/default/production\ADC_read.X.production.o
+__end_of___flsub 38F0 0 CODE 0 text19 dist/default/production\ADC_read.X.production.o
+__end_of___fltol 4000 0 CODE 0 text18 dist/default/production\ADC_read.X.production.o
+__end_of___lldiv 3E36 0 CODE 0 text17 dist/default/production\ADC_read.X.production.o
+__end_of___llmod 3D6A 0 CODE 0 text16 dist/default/production\ADC_read.X.production.o
+__end_of___lwdiv 3B82 0 CODE 0 text9 dist/default/production\ADC_read.X.production.o
+__end_of___lwmod 39FC 0 CODE 0 text8 dist/default/production\ADC_read.X.production.o
 __Umul8_16@multiplicand 70 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
-__end_of_ADC_Init 21A0 0 CODE 0 text31 dist/default/production\ADC_read.X.production.o
-__end_of_ADC_Read 2444 0 CODE 0 text2 dist/default/production\ADC_read.X.production.o
-___stackhi 0 0 ABS 0 - C:\Users\Soul_PC\AppData\Local\Temp\s1330.o
-___stacklo 0 0 ABS 0 - C:\Users\Soul_PC\AppData\Local\Temp\s1330.o
+__end_of_ADC_Init 37DC 0 CODE 0 text32 dist/default/production\ADC_read.X.production.o
+__end_of_ADC_Read 1280 0 CODE 0 text2 dist/default/production\ADC_read.X.production.o
+___stackhi 0 0 ABS 0 - C:\Users\Soul_PC\AppData\Local\Temp\sng0.o
+___stacklo 0 0 ABS 0 - C:\Users\Soul_PC\AppData\Local\Temp\sng0.o
 _dpowers 20F0 0 STRING 0 strings dist/default/production\ADC_read.X.production.o
 _Lcd_Print_Char 6 0 CODE 0 text27 dist/default/production\ADC_read.X.production.o
 __size_of__tdiv_to_l_ 0 0 ABS 0 - dist/default/production\ADC_read.X.production.o
@@ -995,30 +1017,31 @@ Lcd_Print_Char@data 74 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.
 ___lwdiv@quotient 7B 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
 ___fladd@a 56 0 BANK0 1 cstackBANK0 dist/default/production\ADC_read.X.production.o
 ___fladd@b 52 0 BANK0 1 cstackBANK0 dist/default/production\ADC_read.X.production.o
-___fldiv@a 26 0 BANK0 1 cstackBANK0 dist/default/production\ADC_read.X.production.o
-___fldiv@b 2A 0 BANK0 1 cstackBANK0 dist/default/production\ADC_read.X.production.o
-_Lcd_SetBit 38AA 0 CODE 0 text30 dist/default/production\ADC_read.X.production.o
+___fldiv@a 3E 0 BANK0 1 cstackBANK0 dist/default/production\ADC_read.X.production.o
+___fldiv@b 42 0 BANK0 1 cstackBANK0 dist/default/production\ADC_read.X.production.o
+_Lcd_SetBit 3864 0 CODE 0 text31 dist/default/production\ADC_read.X.production.o
 __size_of_scale 0 0 ABS 0 - dist/default/production\ADC_read.X.production.o
 ___flmul@a 28 0 BANK0 1 cstackBANK0 dist/default/production\ADC_read.X.production.o
 ___flmul@b 24 0 BANK0 1 cstackBANK0 dist/default/production\ADC_read.X.production.o
 ___flsub@a 66 0 BANK0 1 cstackBANK0 dist/default/production\ADC_read.X.production.o
 ___flsub@b 6A 0 BANK0 1 cstackBANK0 dist/default/production\ADC_read.X.production.o
-Lcd_Set_Cursor@temp 7A 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
-__end_of_Lcd_Print_String 3B40 0 CODE 0 text26 dist/default/production\ADC_read.X.production.o
+__end_of_Timer_Delay 3802 0 CODE 0 text30 dist/default/production\ADC_read.X.production.o
+Lcd_Set_Cursor@temp 78 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
+__end_of_Lcd_Print_String 3AFA 0 CODE 0 text26 dist/default/production\ADC_read.X.production.o
 ___lwmod@dividend 72 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
 ___lldiv@counter 7D 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
 start_initialization FE6 0 CODE 0 cinit dist/default/production\ADC_read.X.production.o
 __size_of_Lcd_Print_String 0 0 ABS 0 - dist/default/production\ADC_read.X.production.o
 ___lldiv@dividend 74 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
 fround@prec 51 0 BANK0 1 cstackBANK0 dist/default/production\ADC_read.X.production.o
-_GO_nDONE F9 0 ABS 0 - dist/default/production\ADC_read.X.production.o
-clear_ram0 3800 0 CODE 0 clrtext dist/default/production\ADC_read.X.production.o
+ADC_Read@i C3 0 BANK1 1 cstackBANK1 dist/default/production\ADC_read.X.production.o
+clear_ram0 1004 0 CODE 0 clrtext dist/default/production\ADC_read.X.production.o
 __pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\ADC_read.X.production.o
 __pcstackBANK1 A0 0 BANK1 1 cstackBANK1 dist/default/production\ADC_read.X.production.o
 __tdiv_to_l_@f1 70 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
 __tdiv_to_l_@f2 74 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
 __size_of_Lcd_Cmd 0 0 ABS 0 - dist/default/production\ADC_read.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\Soul_PC\AppData\Local\Temp\s1330.o
+___int_sp 0 0 STACK 2 stack C:\Users\Soul_PC\AppData\Local\Temp\sng0.o
 __end_of_Lcd_Print_Char 5C 0 CODE 0 text27 dist/default/production\ADC_read.X.production.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
@@ -1031,13 +1054,13 @@ __stringbase 201E 0 STRING 0 strings dist/default/production\ADC_read.X.producti
 ___lwdiv@counter 7D 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
 __size_of___xxtofl 0 0 ABS 0 - dist/default/production\ADC_read.X.production.o
 __Hmaintext 0 0 ABS 0 maintext -
-___xxtofl@arg 22 0 BANK0 1 cstackBANK0 dist/default/production\ADC_read.X.production.o
-___xxtofl@exp 21 0 BANK0 1 cstackBANK0 dist/default/production\ADC_read.X.production.o
-___xxtofl@val 76 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
+___xxtofl@arg 7A 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
+___xxtofl@exp 79 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
+___xxtofl@val 70 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
 __end_of_sprintf FE6 0 CODE 0 text3 dist/default/production\ADC_read.X.production.o
-__end_of_Lcd_SetBit 38EE 0 CODE 0 text30 dist/default/production\ADC_read.X.production.o
+__end_of_Lcd_SetBit 38A8 0 CODE 0 text31 dist/default/production\ADC_read.X.production.o
 __Hcommon 0 0 ABS 0 common -
-__Hconfig 4012 0 CONFIG 0 config -
+__Hconfig 4010 0 CONFIG 0 config -
 __Lbank0 0 0 ABS 0 bank0 -
 __Lbank1 0 0 ABS 0 bank1 -
 __Lbank2 0 0 ABS 0 bank2 -
@@ -1046,7 +1069,8 @@ __Lcinit FE6 0 CODE 0 cinit -
 __Lidloc 0 0 IDLOC 0 idloc -
 __Lstack 0 0 STACK 2 stack -
 ___flmul@grs 32 0 BANK0 1 cstackBANK0 dist/default/production\ADC_read.X.production.o
-Lcd_Set_Cursor@column 74 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
+_PORTDbits 8 0 ABS 0 - dist/default/production\ADC_read.X.production.o
+Lcd_Set_Cursor@column 72 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
 __Habs1 0 0 ABS 0 abs1 -
 __Hcode 0 0 ABS 0 code -
 __Hinit 0 0 CODE 0 init -
@@ -1063,112 +1087,105 @@ __Lsfr1 0 0 ABS 0 sfr1 -
 __Lsfr2 0 0 ABS 0 sfr2 -
 __Lsfr3 0 0 ABS 0 sfr3 -
 __Ltext 0 0 ABS 0 text -
-___fleq 3BC8 0 CODE 0 text23 dist/default/production\ADC_read.X.production.o
-___flge 21A0 0 CODE 0 text22 dist/default/production\ADC_read.X.production.o
-___wmul 3936 0 CODE 0 text15 dist/default/production\ADC_read.X.production.o
+___fleq 3B82 0 CODE 0 text23 dist/default/production\ADC_read.X.production.o
+___flge 2188 0 CODE 0 text22 dist/default/production\ADC_read.X.production.o
+___wmul 38F0 0 CODE 0 text15 dist/default/production\ADC_read.X.production.o
 __LcstackBANK0 0 0 ABS 0 cstackBANK0 -
 __LcstackBANK1 0 0 ABS 0 cstackBANK1 -
 __HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
-_RD2 42 0 ABS 0 - dist/default/production\ADC_read.X.production.o
-_RD3 43 0 ABS 0 - dist/default/production\ADC_read.X.production.o
-_RD4 44 0 ABS 0 - dist/default/production\ADC_read.X.production.o
-_RD5 45 0 ABS 0 - dist/default/production\ADC_read.X.production.o
-_RD6 46 0 ABS 0 - dist/default/production\ADC_read.X.production.o
-_RD7 47 0 ABS 0 - dist/default/production\ADC_read.X.production.o
-__S0 2009 0 ABS 0 - -
-__S1 DC 0 ABS 0 - -
+__S0 2008 0 ABS 0 - -
+__S1 DD 0 ABS 0 - -
 __S2 0 0 ABS 0 - -
 __S3 0 0 ABS 0 - -
-__CFG_BOR4V$BOR40V 0 0 ABS 0 - dist/default/production\ADC_read.X.production.o
-Lcd_Set_Cursor@row 77 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
+Lcd_Set_Cursor@row 75 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
 sprintf@val B3 0 BANK1 1 cstackBANK1 dist/default/production\ADC_read.X.production.o
-___xxtofl 2444 0 CODE 0 text14 dist/default/production\ADC_read.X.production.o
+___xxtofl 22CC 0 CODE 0 text14 dist/default/production\ADC_read.X.production.o
 _fround 5C 0 CODE 0 text7 dist/default/production\ADC_read.X.production.o
-_fround$776 4D 0 BANK0 1 cstackBANK0 dist/default/production\ADC_read.X.production.o
-_fround$777 49 0 BANK0 1 cstackBANK0 dist/default/production\ADC_read.X.production.o
-__CFG_BOREN$ON 0 0 ABS 0 - dist/default/production\ADC_read.X.production.o
-__end_of_Lcd_Clear 3840 0 CODE 0 text28 dist/default/production\ADC_read.X.production.o
+_fround$837 4D 0 BANK0 1 cstackBANK0 dist/default/production\ADC_read.X.production.o
+_fround$838 49 0 BANK0 1 cstackBANK0 dist/default/production\ADC_read.X.production.o
+__end_of_Lcd_Clear 37BA 0 CODE 0 text28 dist/default/production\ADC_read.X.production.o
 __Lintentry 0 0 CODE 0 intentry -
 ___lldiv@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
 __stringtab 2000 0 STRING 0 strings dist/default/production\ADC_read.X.production.o
-__end_of_Lcd_Start 3ABC 0 CODE 0 text1 dist/default/production\ADC_read.X.production.o
-reset_vec 0 0 CODE 0 reset_vec C:\Users\Soul_PC\AppData\Local\Temp\s1330.o
+__end_of_Lcd_Start 3A76 0 CODE 0 text1 dist/default/production\ADC_read.X.production.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Soul_PC\AppData\Local\Temp\sng0.o
 __size_of_Lcd_Clear 0 0 ABS 0 - dist/default/production\ADC_read.X.production.o
 __size_of_Lcd_Start 0 0 ABS 0 - dist/default/production\ADC_read.X.production.o
-__end_of___xxtofl 25BC 0 CODE 0 text14 dist/default/production\ADC_read.X.production.o
+__end_of___xxtofl 2440 0 CODE 0 text14 dist/default/production\ADC_read.X.production.o
 __powers_ 2020 0 STRING 0 strings dist/default/production\ADC_read.X.production.o
-__end_of_Lcd_Cmd 3874 0 CODE 0 text29 dist/default/production\ADC_read.X.production.o
+__size_of_Timer_Delay 0 0 ABS 0 - dist/default/production\ADC_read.X.production.o
+__end_of_Lcd_Cmd 382E 0 CODE 0 text29 dist/default/production\ADC_read.X.production.o
 __size_of___fleq 0 0 ABS 0 - dist/default/production\ADC_read.X.production.o
 __size_of___flge 0 0 ABS 0 - dist/default/production\ADC_read.X.production.o
 __size_of___wmul 0 0 ABS 0 - dist/default/production\ADC_read.X.production.o
 __LbssBANK1 0 0 ABS 0 bssBANK1 -
-_scale$778 4C 0 BANK0 1 cstackBANK0 dist/default/production\ADC_read.X.production.o
-__CFG_FCMEN$ON 0 0 ABS 0 - dist/default/production\ADC_read.X.production.o
+_scale$839 4C 0 BANK0 1 cstackBANK0 dist/default/production\ADC_read.X.production.o
 ___awmod@counter 75 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
 __end_of__powers_ 2088 0 STRING 0 strings dist/default/production\ADC_read.X.production.o
 __tdiv_to_l_@cntr 24 0 BANK0 1 cstackBANK0 dist/default/production\ADC_read.X.production.o
 __tdiv_to_l_@exp1 25 0 BANK0 1 cstackBANK0 dist/default/production\ADC_read.X.production.o
 __tdiv_to_l_@quot 20 0 BANK0 1 cstackBANK0 dist/default/production\ADC_read.X.production.o
+ADC_Read@i_79 C5 0 BANK1 1 cstackBANK1 dist/default/production\ADC_read.X.production.o
 sprintf@eexp B7 0 BANK1 1 cstackBANK1 dist/default/production\ADC_read.X.production.o
 sprintf@flag AF 0 BANK1 1 cstackBANK1 dist/default/production\ADC_read.X.production.o
 sprintf@fval BE 0 BANK1 1 cstackBANK1 dist/default/production\ADC_read.X.production.o
 sprintf@prec B1 0 BANK1 1 cstackBANK1 dist/default/production\ADC_read.X.production.o
 ___fladd@signs 62 0 BANK0 1 cstackBANK0 dist/default/production\ADC_read.X.production.o
 __ptext10 193E 0 CODE 0 text10 dist/default/production\ADC_read.X.production.o
-__ptext11 3980 0 CODE 0 text11 dist/default/production\ADC_read.X.production.o
-__ptext12 25BC 0 CODE 0 text12 dist/default/production\ADC_read.X.production.o
-__ptext13 1104 0 CODE 0 text13 dist/default/production\ADC_read.X.production.o
-__ptext14 2444 0 CODE 0 text14 dist/default/production\ADC_read.X.production.o
-__ptext15 3936 0 CODE 0 text15 dist/default/production\ADC_read.X.production.o
-__ptext16 3D08 0 CODE 0 text16 dist/default/production\ADC_read.X.production.o
-__ptext17 3E62 0 CODE 0 text17 dist/default/production\ADC_read.X.production.o
-__ptext18 100C 0 CODE 0 text18 dist/default/production\ADC_read.X.production.o
-__ptext19 38EE 0 CODE 0 text19 dist/default/production\ADC_read.X.production.o
+__ptext11 393A 0 CODE 0 text11 dist/default/production\ADC_read.X.production.o
+__ptext12 2440 0 CODE 0 text12 dist/default/production\ADC_read.X.production.o
+__ptext13 25BA 0 CODE 0 text13 dist/default/production\ADC_read.X.production.o
+__ptext14 22CC 0 CODE 0 text14 dist/default/production\ADC_read.X.production.o
+__ptext15 38F0 0 CODE 0 text15 dist/default/production\ADC_read.X.production.o
+__ptext16 3CC2 0 CODE 0 text16 dist/default/production\ADC_read.X.production.o
+__ptext17 3D6A 0 CODE 0 text17 dist/default/production\ADC_read.X.production.o
+__ptext18 3F08 0 CODE 0 text18 dist/default/production\ADC_read.X.production.o
+__ptext19 38A8 0 CODE 0 text19 dist/default/production\ADC_read.X.production.o
 __ptext20 2AF0 0 CODE 0 text20 dist/default/production\ADC_read.X.production.o
-__ptext21 3810 0 CODE 0 text21 dist/default/production\ADC_read.X.production.o
-__ptext22 21A0 0 CODE 0 text22 dist/default/production\ADC_read.X.production.o
-__ptext23 3BC8 0 CODE 0 text23 dist/default/production\ADC_read.X.production.o
+__ptext21 2172 0 CODE 0 text21 dist/default/production\ADC_read.X.production.o
+__ptext22 2188 0 CODE 0 text22 dist/default/production\ADC_read.X.production.o
+__ptext23 3B82 0 CODE 0 text23 dist/default/production\ADC_read.X.production.o
 __ptext24 2736 0 CODE 0 text24 dist/default/production\ADC_read.X.production.o
-__ptext25 3C64 0 CODE 0 text25 dist/default/production\ADC_read.X.production.o
-__ptext26 3ABC 0 CODE 0 text26 dist/default/production\ADC_read.X.production.o
+__ptext25 3C1E 0 CODE 0 text25 dist/default/production\ADC_read.X.production.o
+__ptext26 3A76 0 CODE 0 text26 dist/default/production\ADC_read.X.production.o
 __ptext27 6 0 CODE 0 text27 dist/default/production\ADC_read.X.production.o
-__ptext28 3826 0 CODE 0 text28 dist/default/production\ADC_read.X.production.o
-__ptext29 3840 0 CODE 0 text29 dist/default/production\ADC_read.X.production.o
-__ptext30 38AA 0 CODE 0 text30 dist/default/production\ADC_read.X.production.o
-__ptext31 217E 0 CODE 0 text31 dist/default/production\ADC_read.X.production.o
-_Lcd_Clear 3826 0 CODE 0 text28 dist/default/production\ADC_read.X.production.o
-_Lcd_Start 3A42 0 CODE 0 text1 dist/default/production\ADC_read.X.production.o
-___awdiv 3F2E 0 CODE 0 text6 dist/default/production\ADC_read.X.production.o
-___awmod 3DB0 0 CODE 0 text5 dist/default/production\ADC_read.X.production.o
-_Lcd_Set_Cursor 3C64 0 CODE 0 text25 dist/default/production\ADC_read.X.production.o
+__ptext28 37A0 0 CODE 0 text28 dist/default/production\ADC_read.X.production.o
+__ptext29 3802 0 CODE 0 text29 dist/default/production\ADC_read.X.production.o
+__ptext30 37DC 0 CODE 0 text30 dist/default/production\ADC_read.X.production.o
+__ptext31 3864 0 CODE 0 text31 dist/default/production\ADC_read.X.production.o
+__ptext32 37BA 0 CODE 0 text32 dist/default/production\ADC_read.X.production.o
+_Lcd_Clear 37A0 0 CODE 0 text28 dist/default/production\ADC_read.X.production.o
+_Lcd_Start 39FC 0 CODE 0 text1 dist/default/production\ADC_read.X.production.o
+___awdiv 3E36 0 CODE 0 text6 dist/default/production\ADC_read.X.production.o
+___awmod 1014 0 CODE 0 text5 dist/default/production\ADC_read.X.production.o
+_Lcd_Set_Cursor 3C1E 0 CODE 0 text25 dist/default/production\ADC_read.X.production.o
 ___fladd 2AF0 0 CODE 0 text20 dist/default/production\ADC_read.X.production.o
 ___fldiv 2736 0 CODE 0 text24 dist/default/production\ADC_read.X.production.o
 ___flmul 193E 0 CODE 0 text10 dist/default/production\ADC_read.X.production.o
-___flneg 3810 0 CODE 0 text21 dist/default/production\ADC_read.X.production.o
-___flsub 38EE 0 CODE 0 text19 dist/default/production\ADC_read.X.production.o
-___fltol 100C 0 CODE 0 text18 dist/default/production\ADC_read.X.production.o
-__tdiv_to_l_ 25BC 0 CODE 0 text12 dist/default/production\ADC_read.X.production.o
-___lldiv 3E62 0 CODE 0 text17 dist/default/production\ADC_read.X.production.o
-___llmod 3D08 0 CODE 0 text16 dist/default/production\ADC_read.X.production.o
-___lwdiv 3B40 0 CODE 0 text9 dist/default/production\ADC_read.X.production.o
-___lwmod 39CE 0 CODE 0 text8 dist/default/production\ADC_read.X.production.o
-__pmaintext 3874 0 CODE 0 maintext dist/default/production\ADC_read.X.production.o
+___flneg 2172 0 CODE 0 text21 dist/default/production\ADC_read.X.production.o
+___flsub 38A8 0 CODE 0 text19 dist/default/production\ADC_read.X.production.o
+___fltol 3F08 0 CODE 0 text18 dist/default/production\ADC_read.X.production.o
+__tdiv_to_l_ 2440 0 CODE 0 text12 dist/default/production\ADC_read.X.production.o
+___lldiv 3D6A 0 CODE 0 text17 dist/default/production\ADC_read.X.production.o
+___llmod 3CC2 0 CODE 0 text16 dist/default/production\ADC_read.X.production.o
+___lwdiv 3AFA 0 CODE 0 text9 dist/default/production\ADC_read.X.production.o
+___lwmod 3988 0 CODE 0 text8 dist/default/production\ADC_read.X.production.o
+__pmaintext 382E 0 CODE 0 maintext dist/default/production\ADC_read.X.production.o
 __Umul8_16@multiplier 78 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
 __Lcommon 0 0 ABS 0 common -
 __Lconfig 400E 0 CONFIG 0 config -
-__CFG_CP$OFF 0 0 ABS 0 - dist/default/production\ADC_read.X.production.o
-__CFG_IESO$ON 0 0 ABS 0 - dist/default/production\ADC_read.X.production.o
 __CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\ADC_read.X.production.o
 ___wmul@multiplier 70 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
-___fldiv@grs 3A 0 BANK0 1 cstackBANK0 dist/default/production\ADC_read.X.production.o
-___fldiv@rem 33 0 BANK0 1 cstackBANK0 dist/default/production\ADC_read.X.production.o
+___fldiv@grs 52 0 BANK0 1 cstackBANK0 dist/default/production\ADC_read.X.production.o
+___fldiv@rem 4B 0 BANK0 1 cstackBANK0 dist/default/production\ADC_read.X.production.o
+_scaled_float_data C7 0 BANK1 1 bssBANK1 dist/default/production\ADC_read.X.production.o
 Lcd_Print_Char@Lower_Nibble 72 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
 __size_of_fround 0 0 ABS 0 - dist/default/production\ADC_read.X.production.o
 ___lwdiv@divisor 76 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
-___fldiv@new_exp 38 0 BANK0 1 cstackBANK0 dist/default/production\ADC_read.X.production.o
+___fldiv@new_exp 50 0 BANK0 1 cstackBANK0 dist/default/production\ADC_read.X.production.o
 ___fladd@grs 65 0 BANK0 1 cstackBANK0 dist/default/production\ADC_read.X.production.o
 __end_of__stringtab 2020 0 STRING 0 strings dist/default/production\ADC_read.X.production.o
-__div_to_l_ 1104 0 CODE 0 text13 dist/default/production\ADC_read.X.production.o
+__div_to_l_ 25BA 0 CODE 0 text13 dist/default/production\ADC_read.X.production.o
 ___fleq@ff1 70 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
 ___fleq@ff2 74 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
 __Lspace_0 0 0 ABS 0 - -
@@ -1180,27 +1197,25 @@ __HcstackBANK1 0 0 ABS 0 cstackBANK1 -
 __Umul8_16@product 74 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
 ___flge@ff1 70 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
 ___flge@ff2 74 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
-__CFG_FOSC$EXTRC_CLKOUT 0 0 ABS 0 - dist/default/production\ADC_read.X.production.o
+_PIR1bits C 0 ABS 0 - dist/default/production\ADC_read.X.production.o
 __Lend_init 0 0 CODE 0 end_init -
-__CFG_LVP$ON 0 0 ABS 0 - dist/default/production\ADC_read.X.production.o
 __LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
 ___fltol@exp1 5B 0 BANK0 1 cstackBANK0 dist/default/production\ADC_read.X.production.o
 __div_to_l_@f1 70 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
 __div_to_l_@f2 74 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
 end_of_initialization FF8 0 CODE 0 cinit dist/default/production\ADC_read.X.production.o
-__end_of_Lcd_Set_Cursor 3D08 0 CODE 0 text25 dist/default/production\ADC_read.X.production.o
+__end_of_Lcd_Set_Cursor 3CC2 0 CODE 0 text25 dist/default/production\ADC_read.X.production.o
 __Hintentry 0 0 CODE 0 intentry -
-Lcd_Set_Cursor@y 79 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
-Lcd_Set_Cursor@z 78 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
+Lcd_Set_Cursor@y 77 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
+Lcd_Set_Cursor@z 76 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
 __size_of_Lcd_SetBit 0 0 ABS 0 - dist/default/production\ADC_read.X.production.o
-_scaled_int_data C6 0 BANK1 1 bssBANK1 dist/default/production\ADC_read.X.production.o
 __Lstrings 0 0 ABS 0 strings -
 ___awdiv@quotient 22 0 BANK0 1 cstackBANK0 dist/default/production\ADC_read.X.production.o
 ?___awdiv 77 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
 ?___awmod 70 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
 ___lwdiv@dividend 78 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
 ?___fladd 52 0 BANK0 1 cstackBANK0 dist/default/production\ADC_read.X.production.o
-?___fldiv 26 0 BANK0 1 cstackBANK0 dist/default/production\ADC_read.X.production.o
+?___fldiv 3E 0 BANK0 1 cstackBANK0 dist/default/production\ADC_read.X.production.o
 ?___flmul 24 0 BANK0 1 cstackBANK0 dist/default/production\ADC_read.X.production.o
 ?___flneg 70 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
 ?___flsub 66 0 BANK0 1 cstackBANK0 dist/default/production\ADC_read.X.production.o
@@ -1214,20 +1229,20 @@ __HbssBANK1 0 0 ABS 0 bssBANK1 -
 ___awmod@dividend 72 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
 Lcd_SetBit@data_bit 70 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
 ___flneg@f1 70 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
-__ptext1 3A42 0 CODE 0 text1 dist/default/production\ADC_read.X.production.o
-__ptext2 22E4 0 CODE 0 text2 dist/default/production\ADC_read.X.production.o
+__ptext1 39FC 0 CODE 0 text1 dist/default/production\ADC_read.X.production.o
+__ptext2 10C6 0 CODE 0 text2 dist/default/production\ADC_read.X.production.o
 __ptext3 472 0 CODE 0 text3 dist/default/production\ADC_read.X.production.o
 __ptext4 1280 0 CODE 0 text4 dist/default/production\ADC_read.X.production.o
-__ptext5 3DB0 0 CODE 0 text5 dist/default/production\ADC_read.X.production.o
-__ptext6 3F2E 0 CODE 0 text6 dist/default/production\ADC_read.X.production.o
+__ptext5 1014 0 CODE 0 text5 dist/default/production\ADC_read.X.production.o
+__ptext6 3E36 0 CODE 0 text6 dist/default/production\ADC_read.X.production.o
 __ptext7 5C 0 CODE 0 text7 dist/default/production\ADC_read.X.production.o
-__ptext8 39CE 0 CODE 0 text8 dist/default/production\ADC_read.X.production.o
-__ptext9 3B40 0 CODE 0 text9 dist/default/production\ADC_read.X.production.o
+__ptext8 3988 0 CODE 0 text8 dist/default/production\ADC_read.X.production.o
+__ptext9 3AFA 0 CODE 0 text9 dist/default/production\ADC_read.X.production.o
 Lcd_Print_Char@Upper_Nibble 73 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
 ?__Umul8_16 70 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
 _sprintf 472 0 CODE 0 text3 dist/default/production\ADC_read.X.production.o
 __Lpowerup 0 0 CODE 0 powerup -
-?___xxtofl 76 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
+?___xxtofl 70 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
 __Leeprom_data 0 0 EEDATA 3 eeprom_data -
 sprintf@ap AE 0 BANK1 1 cstackBANK1 dist/default/production\ADC_read.X.production.o
 sprintf@sp BD 0 BANK1 1 cstackBANK1 dist/default/production\ADC_read.X.production.o
@@ -1237,13 +1252,13 @@ __Umul8_16@word_mpld 76 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read
 ___fltol@sign1 5A 0 BANK0 1 cstackBANK0 dist/default/production\ADC_read.X.production.o
 __Lreset_vec 0 0 CODE 0 reset_vec -
 scale@scl 50 0 BANK0 1 cstackBANK0 dist/default/production\ADC_read.X.production.o
-__end_of__div_to_l_ 1280 0 CODE 0 text13 dist/default/production\ADC_read.X.production.o
+__end_of__div_to_l_ 2736 0 CODE 0 text13 dist/default/production\ADC_read.X.production.o
 ___fltol@f1 51 0 BANK0 1 cstackBANK0 dist/default/production\ADC_read.X.production.o
 __size_of_Lcd_Print_Char 0 0 ABS 0 - dist/default/production\ADC_read.X.production.o
 __end_of__initialization FF8 0 CODE 0 cinit dist/default/production\ADC_read.X.production.o
 ___awmod@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
 __Lfunctab 0 0 ENTRY 0 functab -
-Lcd_Cmd@a 73 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
+Lcd_Cmd@a 71 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
 ?_scale 3E 0 BANK0 1 cstackBANK0 dist/default/production\ADC_read.X.production.o
 __Lclrtext 0 0 ABS 0 clrtext -
 sprintf@tmpval B9 0 BANK1 1 cstackBANK1 dist/default/production\ADC_read.X.production.o
@@ -1251,28 +1266,29 @@ ___lldiv@quotient 79 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.
 __pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
 __Hend_init 6 0 CODE 0 end_init -
 ___llmod@dividend 74 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
+_Timer_Delay 37DC 0 CODE 0 text30 dist/default/production\ADC_read.X.production.o
 ___llmod@counter 79 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
 sprintf@c C2 0 BANK1 1 cstackBANK1 dist/default/production\ADC_read.X.production.o
 sprintf@f A0 0 BANK1 1 cstackBANK1 dist/default/production\ADC_read.X.production.o
-__end_of_main 38AA 0 CODE 0 maintext dist/default/production\ADC_read.X.production.o
+__end_of_main 3864 0 CODE 0 maintext dist/default/production\ADC_read.X.production.o
 _ANSEL 188 0 ABS 0 - dist/default/production\ADC_read.X.production.o
 __end_of_dpowers 2140 0 STRING 0 strings dist/default/production\ADC_read.X.production.o
 ?_sprintf A0 0 BANK1 1 cstackBANK1 dist/default/production\ADC_read.X.production.o
+_T1CON 10 0 ABS 0 - dist/default/production\ADC_read.X.production.o
+_TMR1H F 0 ABS 0 - dist/default/production\ADC_read.X.production.o
+_TMR1L E 0 ABS 0 - dist/default/production\ADC_read.X.production.o
 _TRISA 85 0 ABS 0 - dist/default/production\ADC_read.X.production.o
 _TRISD 88 0 ABS 0 - dist/default/production\ADC_read.X.production.o
 __end_of_scale 193E 0 CODE 0 text4 dist/default/production\ADC_read.X.production.o
 __Hram 0 0 ABS 0 ram -
 __Lram 0 0 ABS 0 ram -
-__CFG_CPD$OFF 0 0 ABS 0 - dist/default/production\ADC_read.X.production.o
 _scale 1280 0 CODE 0 text4 dist/default/production\ADC_read.X.production.o
-_Lcd_Cmd 3840 0 CODE 0 text29 dist/default/production\ADC_read.X.production.o
+_Lcd_Cmd 3802 0 CODE 0 text29 dist/default/production\ADC_read.X.production.o
 __initialization FE6 0 CODE 0 cinit dist/default/production\ADC_read.X.production.o
-__CFG_PWRTE$OFF 0 0 ABS 0 - dist/default/production\ADC_read.X.production.o
-___xxtofl@sign 20 0 BANK0 1 cstackBANK0 dist/default/production\ADC_read.X.production.o
-__pbssBANK1 C6 0 BANK1 1 bssBANK1 dist/default/production\ADC_read.X.production.o
-__CFG_WRT$OFF 0 0 ABS 0 - dist/default/production\ADC_read.X.production.o
+___xxtofl@sign 78 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
+__pbssBANK1 C7 0 BANK1 1 bssBANK1 dist/default/production\ADC_read.X.production.o
 __pstrings 2000 0 STRING 0 strings dist/default/production\ADC_read.X.production.o
-_char_data CC 0 BANK1 1 bssBANK1 dist/default/production\ADC_read.X.production.o
+_char_data CD 0 BANK1 1 bssBANK1 dist/default/production\ADC_read.X.production.o
 ___wmul@product 74 0 COMMON 1 cstackCOMMON dist/default/production\ADC_read.X.production.o
 __div_to_l_@cntr 24 0 BANK0 1 cstackBANK0 dist/default/production\ADC_read.X.production.o
 __div_to_l_@exp1 25 0 BANK0 1 cstackBANK0 dist/default/production\ADC_read.X.production.o
@@ -1303,44 +1319,45 @@ __div_to_l_@quot 20 0 BANK0 1 cstackBANK0 dist/default/production\ADC_read.X.pro
 # All other numeric quantities are in decimal.
 %SEGMENTS
 cinit 0 7F3 FE6 D 2
-text1 0 1D21 3A42 3D 2
-text2 0 1172 22E4 B0 2
+text1 0 1CFE 39FC 3D 2
+text2 0 863 10C6 DD 2
 text3 0 239 472 5BA 2
 text4 0 940 1280 35F 2
-text5 0 1ED8 3DB0 59 2
-text6 0 1F97 3F2E 69 2
+text5 0 80A 1014 59 2
+text6 0 1F1B 3E36 69 2
 text7 0 2E 5C 20B 2
-text8 0 1CE7 39CE 3A 2
-text9 0 1DA0 3B40 44 2
+text8 0 1CC4 3988 3A 2
+text9 0 1D7D 3AFA 44 2
 text10 0 C9F 193E 361 2
-text11 0 1CC0 3980 27 2
-text12 0 12DE 25BC BD 2
-text13 0 882 1104 BE 2
-text14 0 1222 2444 BC 2
-text15 0 1C9B 3936 25 2
-text16 0 1E84 3D08 54 2
-text17 0 1F31 3E62 66 2
-text18 0 806 100C 7C 2
-text19 0 1C77 38EE 24 2
+text11 0 1C9D 393A 27 2
+text12 0 1220 2440 BD 2
+text13 0 12DD 25BA BE 2
+text14 0 1166 22CC BA 2
+text15 0 1C78 38F0 25 2
+text16 0 1E61 3CC2 54 2
+text17 0 1EB5 3D6A 66 2
+text18 0 1F84 3F08 7C 2
+text19 0 1C54 38A8 24 2
 text20 0 1578 2AF0 288 2
-text21 0 1C08 3810 B 2
-text22 0 10D0 21A0 A2 2
-text23 0 1DE4 3BC8 4E 2
+text21 0 10B9 2172 B 2
+text22 0 10C4 2188 A2 2
+text23 0 1DC1 3B82 4E 2
 text24 0 139B 2736 1DD 2
-text25 0 1E32 3C64 52 2
-text26 0 1D5E 3ABC 42 2
-text28 0 1C13 3826 D 2
-text29 0 1C20 3840 1A 2
-text30 0 1C55 38AA 22 2
-text31 0 10BF 217E 11 2
-maintext 0 1C3A 3874 1B 2
+text25 0 1E0F 3C1E 52 2
+text26 0 1D3B 3A76 42 2
+text28 0 1BD0 37A0 D 2
+text29 0 1C01 3802 16 2
+text30 0 1BEE 37DC 13 2
+text31 0 1C32 3864 22 2
+text32 0 1BDD 37BA 11 2
+maintext 0 1C17 382E 1B 2
 cstackCOMMON 1 70 70 E 1
-cstackBANK0 1 20 20 4E 1
-cstackBANK1 1 A0 A0 3C 1
+cstackBANK0 1 20 20 4F 1
+cstackBANK1 1 A0 A0 3D 1
 reset_vec 0 0 0 2E 2
 strings 0 1000 2000 B8 2
-clrtext 0 1C00 3800 8 2
-config 0 2007 400E 2 2
+clrtext 0 802 1004 8 2
+config 0 2007 400E 1 2
 # OTES Section
 # This section contains data of all the note-psects.  The beginning of the section
 # is indicated by OTES. The first line indicates the name and decimal

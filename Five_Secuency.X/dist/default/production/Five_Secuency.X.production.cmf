@@ -11,7 +11,7 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\Soul_PC\AppData\Local\Temp\secc.o
+$C:\Users\Soul_PC\AppData\Local\Temp\sr8k.o
 end_init CODE 0 0 0 3 2
 config CONFIG 0 2007 2007 1 2
 $dist/default/production\Five_Secuency.X.production.o
@@ -71,108 +71,108 @@ STRING 800-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\Five_Secuency.X.production.o
-7FC cinit CODE >442:C:\Users\Soul_PC\AppData\Local\Temp\secc.s
-7FC cinit CODE >445:C:\Users\Soul_PC\AppData\Local\Temp\secc.s
-7FC cinit CODE >451:C:\Users\Soul_PC\AppData\Local\Temp\secc.s
-7FC cinit CODE >453:C:\Users\Soul_PC\AppData\Local\Temp\secc.s
-7FD cinit CODE >454:C:\Users\Soul_PC\AppData\Local\Temp\secc.s
-6A1 text6 CODE >45:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-6A1 text6 CODE >48:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-6A7 text6 CODE >49:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-6AB text6 CODE >50:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-6AD text6 CODE >51:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-6AE text6 CODE >52:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-6B2 text6 CODE >53:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-6B3 text6 CODE >54:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-6B4 text5 CODE >129:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-6B4 text5 CODE >131:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-6B8 text5 CODE >132:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-6BD text5 CODE >133:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-6C1 text5 CODE >134:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-6C6 text5 CODE >135:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-6CA text5 CODE >136:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-6CF text5 CODE >137:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-6D3 text5 CODE >138:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-6D8 text5 CODE >139:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-6DC text5 CODE >140:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-6E1 text5 CODE >142:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-750 text4 CODE >107:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-750 text4 CODE >109:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-754 text4 CODE >110:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-759 text4 CODE >111:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-75D text4 CODE >112:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-762 text4 CODE >113:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-766 text4 CODE >114:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-76B text4 CODE >115:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-76F text4 CODE >116:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-774 text4 CODE >117:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-778 text4 CODE >118:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-77D text4 CODE >119:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-781 text4 CODE >120:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-786 text4 CODE >121:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-78A text4 CODE >122:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-78F text4 CODE >123:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-793 text4 CODE >124:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-798 text4 CODE >125:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-79C text4 CODE >126:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-7A1 text4 CODE >127:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-68F text3 CODE >56:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-68F text3 CODE >58:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-693 text3 CODE >59:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-698 text3 CODE >60:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-69B text3 CODE >61:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-6A0 text3 CODE >63:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-712 text2 CODE >89:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-712 text2 CODE >91:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-715 text2 CODE >92:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-71A text2 CODE >93:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-71E text2 CODE >94:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-723 text2 CODE >95:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-727 text2 CODE >96:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-72C text2 CODE >97:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-730 text2 CODE >98:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-735 text2 CODE >99:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-739 text2 CODE >100:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-73E text2 CODE >101:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-742 text2 CODE >102:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-747 text2 CODE >103:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-74A text2 CODE >104:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-74F text2 CODE >105:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-7A2 text1 CODE >65:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-7A2 text1 CODE >67:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-7A6 text1 CODE >68:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-7AB text1 CODE >69:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-7AF text1 CODE >70:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-7B4 text1 CODE >71:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-7B8 text1 CODE >72:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-7BD text1 CODE >73:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-7C1 text1 CODE >74:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-7C6 text1 CODE >75:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-7CA text1 CODE >76:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-7CF text1 CODE >77:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-7D3 text1 CODE >78:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-7D8 text1 CODE >79:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-7DC text1 CODE >80:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-7E1 text1 CODE >81:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-7E5 text1 CODE >82:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-7EA text1 CODE >83:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-7EE text1 CODE >84:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-7F3 text1 CODE >85:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-7F6 text1 CODE >86:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-7FB text1 CODE >87:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-6E2 maintext CODE >21:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-6E2 maintext CODE >23:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-6E6 maintext CODE >25:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-6E9 maintext CODE >26:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-6EA maintext CODE >28:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-6ED maintext CODE >29:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-6EE maintext CODE >31:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-6F1 maintext CODE >32:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-6F5 maintext CODE >36:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-6FA maintext CODE >37:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-6FF maintext CODE >38:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-704 maintext CODE >39:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
-709 maintext CODE >40:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+7FC cinit CODE >442:C:\Users\Soul_PC\AppData\Local\Temp\sr8k.s
+7FC cinit CODE >445:C:\Users\Soul_PC\AppData\Local\Temp\sr8k.s
+7FC cinit CODE >451:C:\Users\Soul_PC\AppData\Local\Temp\sr8k.s
+7FC cinit CODE >453:C:\Users\Soul_PC\AppData\Local\Temp\sr8k.s
+7FD cinit CODE >454:C:\Users\Soul_PC\AppData\Local\Temp\sr8k.s
+6A1 text6 CODE >73:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+6A1 text6 CODE >76:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+6A7 text6 CODE >78:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+6AB text6 CODE >79:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+6AD text6 CODE >82:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+6AE text6 CODE >84:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+6B2 text6 CODE >85:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+6B3 text6 CODE >86:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+6B4 text5 CODE >160:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+6B4 text5 CODE >162:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+6B8 text5 CODE >163:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+6BD text5 CODE >164:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+6C1 text5 CODE >165:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+6C6 text5 CODE >166:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+6CA text5 CODE >167:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+6CF text5 CODE >168:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+6D3 text5 CODE >169:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+6D8 text5 CODE >170:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+6DC text5 CODE >171:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+6E1 text5 CODE >172:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+750 text4 CODE >138:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+750 text4 CODE >140:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+754 text4 CODE >141:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+759 text4 CODE >142:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+75D text4 CODE >143:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+762 text4 CODE >144:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+766 text4 CODE >145:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+76B text4 CODE >146:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+76F text4 CODE >147:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+774 text4 CODE >148:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+778 text4 CODE >149:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+77D text4 CODE >150:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+781 text4 CODE >151:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+786 text4 CODE >152:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+78A text4 CODE >153:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+78F text4 CODE >154:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+793 text4 CODE >155:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+798 text4 CODE >156:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+79C text4 CODE >157:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+7A1 text4 CODE >158:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+68F text3 CODE >88:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+68F text3 CODE >90:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+693 text3 CODE >91:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+698 text3 CODE >92:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+69B text3 CODE >93:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+6A0 text3 CODE >94:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+712 text2 CODE >120:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+712 text2 CODE >122:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+715 text2 CODE >123:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+71A text2 CODE >124:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+71E text2 CODE >125:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+723 text2 CODE >126:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+727 text2 CODE >127:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+72C text2 CODE >128:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+730 text2 CODE >129:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+735 text2 CODE >130:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+739 text2 CODE >131:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+73E text2 CODE >132:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+742 text2 CODE >133:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+747 text2 CODE >134:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+74A text2 CODE >135:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+74F text2 CODE >136:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+7A2 text1 CODE >96:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+7A2 text1 CODE >98:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+7A6 text1 CODE >99:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+7AB text1 CODE >100:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+7AF text1 CODE >101:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+7B4 text1 CODE >102:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+7B8 text1 CODE >103:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+7BD text1 CODE >104:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+7C1 text1 CODE >105:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+7C6 text1 CODE >106:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+7CA text1 CODE >107:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+7CF text1 CODE >108:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+7D3 text1 CODE >109:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+7D8 text1 CODE >110:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+7DC text1 CODE >111:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+7E1 text1 CODE >112:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+7E5 text1 CODE >113:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+7EA text1 CODE >114:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+7EE text1 CODE >115:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+7F3 text1 CODE >116:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+7F6 text1 CODE >117:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+7FB text1 CODE >118:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+6E2 maintext CODE >47:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+6E2 maintext CODE >50:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+6E6 maintext CODE >53:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+6E9 maintext CODE >54:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+6EA maintext CODE >57:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+6ED maintext CODE >58:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+6EE maintext CODE >60:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+6F1 maintext CODE >61:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+6F5 maintext CODE >65:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+6FA maintext CODE >66:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+6FF maintext CODE >67:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+704 maintext CODE >68:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
+709 maintext CODE >69:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Five_Secuency.X\main.c
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -193,31 +193,31 @@ __Hspace_3 0 0 ABS 0 - -
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
 __Hstrings 0 0 ABS 0 strings -
 _PIE1 8C 0 ABS 0 - dist/default/production\Five_Secuency.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\Soul_PC\AppData\Local\Temp\secc.o
+___sp 0 0 STACK 2 stack C:\Users\Soul_PC\AppData\Local\Temp\sr8k.o
 _main DC4 0 CODE 0 maintext dist/default/production\Five_Secuency.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\Five_Secuency.X.production.o
-start 0 0 CODE 0 init C:\Users\Soul_PC\AppData\Local\Temp\secc.o
+start 0 0 CODE 0 init C:\Users\Soul_PC\AppData\Local\Temp\sr8k.o
 __size_of_main 0 0 ABS 0 - dist/default/production\Five_Secuency.X.production.o
 __Hpowerup 0 0 CODE 0 powerup -
-intlevel0 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\secc.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\secc.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\secc.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\secc.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\secc.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\secc.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\sr8k.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\sr8k.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\sr8k.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\sr8k.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\sr8k.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\sr8k.o
 wtemp0 7E 0 ABS 0 - dist/default/production\Five_Secuency.X.production.o
 __Hfunctab 0 0 ENTRY 0 functab -
 __Hclrtext 0 0 ABS 0 clrtext -
 _ANSELH 189 0 ABS 0 - dist/default/production\Five_Secuency.X.production.o
 __Lmaintext 0 0 ABS 0 maintext -
-___stackhi 0 0 ABS 0 - C:\Users\Soul_PC\AppData\Local\Temp\secc.o
-___stacklo 0 0 ABS 0 - C:\Users\Soul_PC\AppData\Local\Temp\secc.o
+___stackhi 0 0 ABS 0 - C:\Users\Soul_PC\AppData\Local\Temp\sr8k.o
+___stacklo 0 0 ABS 0 - C:\Users\Soul_PC\AppData\Local\Temp\sr8k.o
 __end_of_Timer_Delay D68 0 CODE 0 text6 dist/default/production\Five_Secuency.X.production.o
 start_initialization FF8 0 CODE 0 cinit dist/default/production\Five_Secuency.X.production.o
 _OSCCON 8F 0 ABS 0 - dist/default/production\Five_Secuency.X.production.o
 _Secuence_One D1E 0 CODE 0 text3 dist/default/production\Five_Secuency.X.production.o
 _Secuence_Two F44 0 CODE 0 text1 dist/default/production\Five_Secuency.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\Soul_PC\AppData\Local\Temp\secc.o
+___int_sp 0 0 STACK 2 stack C:\Users\Soul_PC\AppData\Local\Temp\sr8k.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -262,7 +262,7 @@ __S3 0 0 ABS 0 - -
 __end_of_Secuence_One D42 0 CODE 0 text3 dist/default/production\Five_Secuency.X.production.o
 __end_of_Secuence_Two FF8 0 CODE 0 text1 dist/default/production\Five_Secuency.X.production.o
 __Lintentry 0 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\Soul_PC\AppData\Local\Temp\secc.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Soul_PC\AppData\Local\Temp\sr8k.o
 __size_of_Timer_Delay 0 0 ABS 0 - dist/default/production\Five_Secuency.X.production.o
 __pmaintext DC4 0 CODE 0 maintext dist/default/production\Five_Secuency.X.production.o
 __Lcommon 0 0 ABS 0 common -

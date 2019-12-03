@@ -11,9 +11,9 @@
 [v ___eecpymem __eecpymem `(v  1 e 1 0 ]
 "39
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
-"17 D:\Autocapacitacion\Codigo\Programas_PIC16F887\three_leds.X\newmain.c
-[v _main main `(v  1 e 1 0 ]
-"48
+"44 D:\Autocapacitacion\Codigo\Programas_PIC16F887\three_leds.X\newmain.c
+[v _main main `(i  1 e 2 0 ]
+"76
 [v _Timer_Delay Timer_Delay `(v  1 e 1 0 ]
 "290 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f887.h
 [v _PORTC PORTC `VEuc  1 e 1 @7 ]
@@ -79,13 +79,13 @@
 [v _ANSEL ANSEL `VEuc  1 e 1 @392 ]
 "3449
 [v _ANSELH ANSELH `VEuc  1 e 1 @393 ]
-"17 D:\Autocapacitacion\Codigo\Programas_PIC16F887\three_leds.X\newmain.c
-[v _main main `(v  1 e 1 0 ]
+"44 D:\Autocapacitacion\Codigo\Programas_PIC16F887\three_leds.X\newmain.c
+[v _main main `(i  1 e 2 0 ]
 {
-"46
+"74
 } 0
-"48
+"76
 [v _Timer_Delay Timer_Delay `(v  1 e 1 0 ]
 {
-"62
+"92
 } 0

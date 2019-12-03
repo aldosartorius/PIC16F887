@@ -20,9 +20,9 @@ cstackBANK0 BANK0 1 20 20 1E 1
 inittext CODE 0 701 701 13 2
 idataBANK0 CODE 0 714 714 14 2
 dataBANK0 BANK0 1 3E 3E 14 1
-$C:\Users\Soul_PC\AppData\Local\Temp\sfjc.o
+$C:\Users\Soul_PC\AppData\Local\Temp\so88.o
 end_init CODE 0 0 0 3 2
-config CONFIG 0 2007 2007 2 2
+config CONFIG 0 2007 2007 1 2
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
 # is described on a single line as follows:
@@ -50,6 +50,7 @@ SFR1 80-9F 1
 SFR2 100-10F 1
 SFR3 180-18F 1
 COMMON 75-7D 1
+CONFIG 2008-2008 2
 EEDATA 2100-21FF 2
 STRCODE 3-6ED 2
 STRCODE 800-1FFF 2
@@ -69,78 +70,78 @@ STRING 800-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\Two_segment_counter.X.production.o
-7EE cinit CODE >483:C:\Users\Soul_PC\AppData\Local\Temp\sfjc.s
-7EE cinit CODE >486:C:\Users\Soul_PC\AppData\Local\Temp\sfjc.s
-7EE cinit CODE >527:C:\Users\Soul_PC\AppData\Local\Temp\sfjc.s
-7EF cinit CODE >528:C:\Users\Soul_PC\AppData\Local\Temp\sfjc.s
-7F0 cinit CODE >529:C:\Users\Soul_PC\AppData\Local\Temp\sfjc.s
-7F1 cinit CODE >530:C:\Users\Soul_PC\AppData\Local\Temp\sfjc.s
-7F2 cinit CODE >531:C:\Users\Soul_PC\AppData\Local\Temp\sfjc.s
-7F3 cinit CODE >532:C:\Users\Soul_PC\AppData\Local\Temp\sfjc.s
-7F4 cinit CODE >533:C:\Users\Soul_PC\AppData\Local\Temp\sfjc.s
-7F5 cinit CODE >534:C:\Users\Soul_PC\AppData\Local\Temp\sfjc.s
-7F6 cinit CODE >535:C:\Users\Soul_PC\AppData\Local\Temp\sfjc.s
-7F7 cinit CODE >536:C:\Users\Soul_PC\AppData\Local\Temp\sfjc.s
-7FC cinit CODE >542:C:\Users\Soul_PC\AppData\Local\Temp\sfjc.s
-7FC cinit CODE >544:C:\Users\Soul_PC\AppData\Local\Temp\sfjc.s
-7FD cinit CODE >545:C:\Users\Soul_PC\AppData\Local\Temp\sfjc.s
-6EE text1 CODE >79:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
-6EE text1 CODE >82:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
-6F4 text1 CODE >83:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
-6F8 text1 CODE >84:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
-6FA text1 CODE >85:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
-6FB text1 CODE >86:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
-6FF text1 CODE >87:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
-700 text1 CODE >88:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
-728 maintext CODE >27:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
-728 maintext CODE >29:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
-72C maintext CODE >30:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
-72E maintext CODE >31:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
-730 maintext CODE >32:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
-745 maintext CODE >34:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
-748 maintext CODE >35:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
-749 maintext CODE >36:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
-74C maintext CODE >37:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
-74D maintext CODE >38:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
-74E maintext CODE >39:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
-751 maintext CODE >46:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
-75B maintext CODE >47:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
-75C maintext CODE >48:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
-75E maintext CODE >49:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
-763 maintext CODE >50:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
-778 maintext CODE >51:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
-77B maintext CODE >54:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
-783 maintext CODE >55:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
-784 maintext CODE >56:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
-786 maintext CODE >57:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
-78B maintext CODE >58:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
-7A0 maintext CODE >59:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
-7A3 maintext CODE >61:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
-7A9 maintext CODE >62:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
-7B6 maintext CODE >63:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
-7BA maintext CODE >64:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
-7C0 maintext CODE >67:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
-7CF maintext CODE >68:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
-7D3 maintext CODE >69:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
-7D9 maintext CODE >70:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
-7E6 maintext CODE >71:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
-701 inittext CODE >501:C:\Users\Soul_PC\AppData\Local\Temp\sfjc.s
-701 inittext CODE >502:C:\Users\Soul_PC\AppData\Local\Temp\sfjc.s
-702 inittext CODE >503:C:\Users\Soul_PC\AppData\Local\Temp\sfjc.s
-703 inittext CODE >504:C:\Users\Soul_PC\AppData\Local\Temp\sfjc.s
-704 inittext CODE >505:C:\Users\Soul_PC\AppData\Local\Temp\sfjc.s
-705 inittext CODE >512:C:\Users\Soul_PC\AppData\Local\Temp\sfjc.s
-705 inittext CODE >513:C:\Users\Soul_PC\AppData\Local\Temp\sfjc.s
-70A inittext CODE >514:C:\Users\Soul_PC\AppData\Local\Temp\sfjc.s
-70B inittext CODE >515:C:\Users\Soul_PC\AppData\Local\Temp\sfjc.s
-70C inittext CODE >516:C:\Users\Soul_PC\AppData\Local\Temp\sfjc.s
-70D inittext CODE >517:C:\Users\Soul_PC\AppData\Local\Temp\sfjc.s
-70E inittext CODE >518:C:\Users\Soul_PC\AppData\Local\Temp\sfjc.s
-70F inittext CODE >519:C:\Users\Soul_PC\AppData\Local\Temp\sfjc.s
-710 inittext CODE >520:C:\Users\Soul_PC\AppData\Local\Temp\sfjc.s
-711 inittext CODE >521:C:\Users\Soul_PC\AppData\Local\Temp\sfjc.s
-712 inittext CODE >522:C:\Users\Soul_PC\AppData\Local\Temp\sfjc.s
-713 inittext CODE >523:C:\Users\Soul_PC\AppData\Local\Temp\sfjc.s
+7EE cinit CODE >469:C:\Users\Soul_PC\AppData\Local\Temp\so88.s
+7EE cinit CODE >472:C:\Users\Soul_PC\AppData\Local\Temp\so88.s
+7EE cinit CODE >513:C:\Users\Soul_PC\AppData\Local\Temp\so88.s
+7EF cinit CODE >514:C:\Users\Soul_PC\AppData\Local\Temp\so88.s
+7F0 cinit CODE >515:C:\Users\Soul_PC\AppData\Local\Temp\so88.s
+7F1 cinit CODE >516:C:\Users\Soul_PC\AppData\Local\Temp\so88.s
+7F2 cinit CODE >517:C:\Users\Soul_PC\AppData\Local\Temp\so88.s
+7F3 cinit CODE >518:C:\Users\Soul_PC\AppData\Local\Temp\so88.s
+7F4 cinit CODE >519:C:\Users\Soul_PC\AppData\Local\Temp\so88.s
+7F5 cinit CODE >520:C:\Users\Soul_PC\AppData\Local\Temp\so88.s
+7F6 cinit CODE >521:C:\Users\Soul_PC\AppData\Local\Temp\so88.s
+7F7 cinit CODE >522:C:\Users\Soul_PC\AppData\Local\Temp\so88.s
+7FC cinit CODE >528:C:\Users\Soul_PC\AppData\Local\Temp\so88.s
+7FC cinit CODE >530:C:\Users\Soul_PC\AppData\Local\Temp\so88.s
+7FD cinit CODE >531:C:\Users\Soul_PC\AppData\Local\Temp\so88.s
+6EE text1 CODE >92:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
+6EE text1 CODE >95:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
+6F4 text1 CODE >97:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
+6F8 text1 CODE >98:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
+6FA text1 CODE >101:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
+6FB text1 CODE >102:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
+6FF text1 CODE >103:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
+700 text1 CODE >104:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
+728 maintext CODE >41:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
+728 maintext CODE >43:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
+72C maintext CODE >44:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
+72E maintext CODE >45:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
+730 maintext CODE >46:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
+745 maintext CODE >49:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
+748 maintext CODE >50:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
+749 maintext CODE >53:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
+74C maintext CODE >54:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
+74D maintext CODE >55:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
+74E maintext CODE >56:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
+751 maintext CODE >61:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
+75B maintext CODE >62:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
+75C maintext CODE >63:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
+75E maintext CODE >64:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
+763 maintext CODE >65:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
+778 maintext CODE >66:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
+77B maintext CODE >69:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
+783 maintext CODE >70:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
+784 maintext CODE >71:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
+786 maintext CODE >72:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
+78B maintext CODE >73:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
+7A0 maintext CODE >74:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
+7A3 maintext CODE >76:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
+7A9 maintext CODE >77:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
+7B6 maintext CODE >78:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
+7BA maintext CODE >79:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
+7C0 maintext CODE >82:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
+7CF maintext CODE >83:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
+7D3 maintext CODE >84:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
+7D9 maintext CODE >85:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
+7E6 maintext CODE >86:D:\Autocapacitacion\Codigo\Programas_PIC16F887\Two_segment_counter.X\main.c
+701 inittext CODE >487:C:\Users\Soul_PC\AppData\Local\Temp\so88.s
+701 inittext CODE >488:C:\Users\Soul_PC\AppData\Local\Temp\so88.s
+702 inittext CODE >489:C:\Users\Soul_PC\AppData\Local\Temp\so88.s
+703 inittext CODE >490:C:\Users\Soul_PC\AppData\Local\Temp\so88.s
+704 inittext CODE >491:C:\Users\Soul_PC\AppData\Local\Temp\so88.s
+705 inittext CODE >498:C:\Users\Soul_PC\AppData\Local\Temp\so88.s
+705 inittext CODE >499:C:\Users\Soul_PC\AppData\Local\Temp\so88.s
+70A inittext CODE >500:C:\Users\Soul_PC\AppData\Local\Temp\so88.s
+70B inittext CODE >501:C:\Users\Soul_PC\AppData\Local\Temp\so88.s
+70C inittext CODE >502:C:\Users\Soul_PC\AppData\Local\Temp\so88.s
+70D inittext CODE >503:C:\Users\Soul_PC\AppData\Local\Temp\so88.s
+70E inittext CODE >504:C:\Users\Soul_PC\AppData\Local\Temp\so88.s
+70F inittext CODE >505:C:\Users\Soul_PC\AppData\Local\Temp\so88.s
+710 inittext CODE >506:C:\Users\Soul_PC\AppData\Local\Temp\so88.s
+711 inittext CODE >507:C:\Users\Soul_PC\AppData\Local\Temp\so88.s
+712 inittext CODE >508:C:\Users\Soul_PC\AppData\Local\Temp\so88.s
+713 inittext CODE >509:C:\Users\Soul_PC\AppData\Local\Temp\so88.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -155,42 +156,39 @@ $dist/default/production\Two_segment_counter.X.production.o
 %SYMTAB
 ___latbits 2 0 ABS 0 - dist/default/production\Two_segment_counter.X.production.o
 __LdataBANK0 0 0 ABS 0 dataBANK0 -
-__Hspace_0 2009 0 ABS 0 - -
+__Hspace_0 2008 0 ABS 0 - -
 __Hspace_1 75 0 ABS 0 - -
 __Hspace_2 0 0 ABS 0 - -
 __Hspace_3 0 0 ABS 0 - -
-__CFG_IESO$OFF 0 0 ABS 0 - dist/default/production\Two_segment_counter.X.production.o
 __HidataBANK0 0 0 ABS 0 idataBANK0 -
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
 __Hstrings 0 0 ABS 0 strings -
 _PIE1 8C 0 ABS 0 - dist/default/production\Two_segment_counter.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\Soul_PC\AppData\Local\Temp\sfjc.o
+___sp 0 0 STACK 2 stack C:\Users\Soul_PC\AppData\Local\Temp\so88.o
 _main E50 0 CODE 0 maintext dist/default/production\Two_segment_counter.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\Two_segment_counter.X.production.o
-start 0 0 CODE 0 init C:\Users\Soul_PC\AppData\Local\Temp\sfjc.o
-__CFG_BOREN$OFF 0 0 ABS 0 - dist/default/production\Two_segment_counter.X.production.o
+start 0 0 CODE 0 init C:\Users\Soul_PC\AppData\Local\Temp\so88.o
 __size_of_main 0 0 ABS 0 - dist/default/production\Two_segment_counter.X.production.o
 __LidataBANK0 0 0 ABS 0 idataBANK0 -
 __Hpowerup 0 0 CODE 0 powerup -
-intlevel0 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\sfjc.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\sfjc.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\sfjc.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\sfjc.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\sfjc.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\sfjc.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\so88.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\so88.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\so88.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\so88.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\so88.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\so88.o
 wtemp0 7E 0 ABS 0 - dist/default/production\Two_segment_counter.X.production.o
 __Hfunctab 0 0 ENTRY 0 functab -
 __Hclrtext 0 0 ABS 0 clrtext -
 _ANSELH 189 0 ABS 0 - dist/default/production\Two_segment_counter.X.production.o
 __Lmaintext 0 0 ABS 0 maintext -
-__CFG_FOSC$INTRC_CLKOUT 0 0 ABS 0 - dist/default/production\Two_segment_counter.X.production.o
-___stackhi 0 0 ABS 0 - C:\Users\Soul_PC\AppData\Local\Temp\sfjc.o
-___stacklo 0 0 ABS 0 - C:\Users\Soul_PC\AppData\Local\Temp\sfjc.o
+___stackhi 0 0 ABS 0 - C:\Users\Soul_PC\AppData\Local\Temp\so88.o
+___stacklo 0 0 ABS 0 - C:\Users\Soul_PC\AppData\Local\Temp\so88.o
 __end_of_Timer_Delay E02 0 CODE 0 text1 dist/default/production\Two_segment_counter.X.production.o
 start_initialization FDC 0 CODE 0 cinit dist/default/production\Two_segment_counter.X.production.o
 _TRISAbits 85 0 ABS 0 - dist/default/production\Two_segment_counter.X.production.o
 __pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\Two_segment_counter.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\Soul_PC\AppData\Local\Temp\sfjc.o
+___int_sp 0 0 STACK 2 stack C:\Users\Soul_PC\AppData\Local\Temp\so88.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -200,7 +198,7 @@ __Hidloc 0 0 IDLOC 0 idloc -
 __Hstack 0 0 STACK 2 stack -
 __Hmaintext 0 0 ABS 0 maintext -
 __Hcommon 0 0 ABS 0 common -
-__Hconfig 4012 0 CONFIG 0 config -
+__Hconfig 4010 0 CONFIG 0 config -
 __Lbank0 0 0 ABS 0 bank0 -
 __Lbank1 0 0 ABS 0 bank1 -
 __Lbank2 0 0 ABS 0 bank2 -
@@ -229,13 +227,12 @@ __Lsfr3 0 0 ABS 0 sfr3 -
 __Ltext 0 0 ABS 0 text -
 __LcstackBANK0 0 0 ABS 0 cstackBANK0 -
 __HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
-__S0 2009 0 ABS 0 - -
+__S0 2008 0 ABS 0 - -
 __S1 75 0 ABS 0 - -
 __S2 0 0 ABS 0 - -
 __S3 0 0 ABS 0 - -
-__CFG_BOR4V$BOR40V 0 0 ABS 0 - dist/default/production\Two_segment_counter.X.production.o
 __Lintentry 0 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\Soul_PC\AppData\Local\Temp\sfjc.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Soul_PC\AppData\Local\Temp\so88.o
 __size_of_Timer_Delay 0 0 ABS 0 - dist/default/production\Two_segment_counter.X.production.o
 __pdataBANK0 3E 0 BANK0 1 dataBANK0 dist/default/production\Two_segment_counter.X.production.o
 main@anti_blink 34 0 BANK0 1 cstackBANK0 dist/default/production\Two_segment_counter.X.production.o
@@ -244,7 +241,7 @@ __Lcommon 0 0 ABS 0 common -
 __Lconfig 400E 0 CONFIG 0 config -
 __CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\Two_segment_counter.X.production.o
 __Hinittext 0 0 ABS 0 inittext -
-main@F1269 3E 0 BANK0 1 dataBANK0 dist/default/production\Two_segment_counter.X.production.o
+main@F891 3E 0 BANK0 1 dataBANK0 dist/default/production\Two_segment_counter.X.production.o
 main@tens 3C 0 BANK0 1 cstackBANK0 dist/default/production\Two_segment_counter.X.production.o
 main@count 36 0 BANK0 1 cstackBANK0 dist/default/production\Two_segment_counter.X.production.o
 main@units 3A 0 BANK0 1 cstackBANK0 dist/default/production\Two_segment_counter.X.production.o
@@ -256,7 +253,6 @@ init_fetch0 E02 0 CODE 0 inittext dist/default/production\Two_segment_counter.X.
 __HcstackBANK0 0 0 ABS 0 cstackBANK0 -
 _PIR1bits C 0 ABS 0 - dist/default/production\Two_segment_counter.X.production.o
 __Lend_init 0 0 CODE 0 end_init -
-__CFG_LVP$ON 0 0 ABS 0 - dist/default/production\Two_segment_counter.X.production.o
 __LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
 end_of_initialization FF8 0 CODE 0 cinit dist/default/production\Two_segment_counter.X.production.o
 __Hintentry 0 0 CODE 0 intentry -
@@ -286,8 +282,6 @@ __Hram 0 0 ABS 0 ram -
 __Lram 0 0 ABS 0 ram -
 __HdataBANK0 0 0 ABS 0 dataBANK0 -
 __initialization FDC 0 CODE 0 cinit dist/default/production\Two_segment_counter.X.production.o
-__CFG_PWRTE$OFF 0 0 ABS 0 - dist/default/production\Two_segment_counter.X.production.o
-__CFG_WRT$OFF 0 0 ABS 0 - dist/default/production\Two_segment_counter.X.production.o
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.
@@ -321,7 +315,7 @@ cstackBANK0 1 20 20 32 1
 inittext 0 701 E02 13 2
 reset_vec 0 0 0 3 2
 idataBANK0 0 714 E28 14 2
-config 0 2007 400E 2 2
+config 0 2007 400E 1 2
 # OTES Section
 # This section contains data of all the note-psects.  The beginning of the section
 # is indicated by OTES. The first line indicates the name and decimal

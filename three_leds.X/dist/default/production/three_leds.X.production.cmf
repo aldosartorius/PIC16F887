@@ -16,7 +16,7 @@ cinit CODE 0 7FC 7FC 4 2
 text1 CODE 0 7AB 7AB 14 2
 maintext CODE 0 7BF 7BF 3D 2
 cstackCOMMON COMMON 1 70 70 2 1
-$C:\Users\Soul_PC\AppData\Local\Temp\s4v4.o
+$C:\Users\Soul_PC\AppData\Local\Temp\sh64.o
 end_init CODE 0 0 0 3 2
 config CONFIG 0 2007 2007 1 2
 # %UNUSED Section
@@ -66,38 +66,37 @@ STRING 800-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\three_leds.X.production.o
-7FC cinit CODE >435:C:\Users\Soul_PC\AppData\Local\Temp\s4v4.s
-7FC cinit CODE >438:C:\Users\Soul_PC\AppData\Local\Temp\s4v4.s
-7FC cinit CODE >444:C:\Users\Soul_PC\AppData\Local\Temp\s4v4.s
-7FC cinit CODE >446:C:\Users\Soul_PC\AppData\Local\Temp\s4v4.s
-7FD cinit CODE >447:C:\Users\Soul_PC\AppData\Local\Temp\s4v4.s
-7AB text1 CODE >48:D:\Autocapacitacion\Codigo\Programas_PIC16F887\three_leds.X\newmain.c
-7AB text1 CODE >51:D:\Autocapacitacion\Codigo\Programas_PIC16F887\three_leds.X\newmain.c
-7AE text1 CODE >53:D:\Autocapacitacion\Codigo\Programas_PIC16F887\three_leds.X\newmain.c
-7B2 text1 CODE >54:D:\Autocapacitacion\Codigo\Programas_PIC16F887\three_leds.X\newmain.c
-7B4 text1 CODE >56:D:\Autocapacitacion\Codigo\Programas_PIC16F887\three_leds.X\newmain.c
-7B8 text1 CODE >57:D:\Autocapacitacion\Codigo\Programas_PIC16F887\three_leds.X\newmain.c
-7B9 text1 CODE >60:D:\Autocapacitacion\Codigo\Programas_PIC16F887\three_leds.X\newmain.c
-7BD text1 CODE >61:D:\Autocapacitacion\Codigo\Programas_PIC16F887\three_leds.X\newmain.c
-7BE text1 CODE >62:D:\Autocapacitacion\Codigo\Programas_PIC16F887\three_leds.X\newmain.c
-7BF maintext CODE >17:D:\Autocapacitacion\Codigo\Programas_PIC16F887\three_leds.X\newmain.c
-7BF maintext CODE >19:D:\Autocapacitacion\Codigo\Programas_PIC16F887\three_leds.X\newmain.c
-7C3 maintext CODE >21:D:\Autocapacitacion\Codigo\Programas_PIC16F887\three_leds.X\newmain.c
-7C6 maintext CODE >22:D:\Autocapacitacion\Codigo\Programas_PIC16F887\three_leds.X\newmain.c
-7C7 maintext CODE >26:D:\Autocapacitacion\Codigo\Programas_PIC16F887\three_leds.X\newmain.c
-7CA maintext CODE >27:D:\Autocapacitacion\Codigo\Programas_PIC16F887\three_leds.X\newmain.c
-7CB maintext CODE >29:D:\Autocapacitacion\Codigo\Programas_PIC16F887\three_leds.X\newmain.c
-7CE maintext CODE >30:D:\Autocapacitacion\Codigo\Programas_PIC16F887\three_leds.X\newmain.c
-7D2 maintext CODE >31:D:\Autocapacitacion\Codigo\Programas_PIC16F887\three_leds.X\newmain.c
-7D2 maintext CODE >33:D:\Autocapacitacion\Codigo\Programas_PIC16F887\three_leds.X\newmain.c
-7D3 maintext CODE >36:D:\Autocapacitacion\Codigo\Programas_PIC16F887\three_leds.X\newmain.c
-7D7 maintext CODE >37:D:\Autocapacitacion\Codigo\Programas_PIC16F887\three_leds.X\newmain.c
-7DC maintext CODE >38:D:\Autocapacitacion\Codigo\Programas_PIC16F887\three_leds.X\newmain.c
-7E1 maintext CODE >39:D:\Autocapacitacion\Codigo\Programas_PIC16F887\three_leds.X\newmain.c
-7E5 maintext CODE >40:D:\Autocapacitacion\Codigo\Programas_PIC16F887\three_leds.X\newmain.c
-7EA maintext CODE >41:D:\Autocapacitacion\Codigo\Programas_PIC16F887\three_leds.X\newmain.c
-7EE maintext CODE >42:D:\Autocapacitacion\Codigo\Programas_PIC16F887\three_leds.X\newmain.c
-7F3 maintext CODE >43:D:\Autocapacitacion\Codigo\Programas_PIC16F887\three_leds.X\newmain.c
+7FC cinit CODE >435:C:\Users\Soul_PC\AppData\Local\Temp\sh64.s
+7FC cinit CODE >438:C:\Users\Soul_PC\AppData\Local\Temp\sh64.s
+7FC cinit CODE >444:C:\Users\Soul_PC\AppData\Local\Temp\sh64.s
+7FC cinit CODE >446:C:\Users\Soul_PC\AppData\Local\Temp\sh64.s
+7FD cinit CODE >447:C:\Users\Soul_PC\AppData\Local\Temp\sh64.s
+7AB text1 CODE >76:D:\Autocapacitacion\Codigo\Programas_PIC16F887\three_leds.X\newmain.c
+7AB text1 CODE >79:D:\Autocapacitacion\Codigo\Programas_PIC16F887\three_leds.X\newmain.c
+7AE text1 CODE >82:D:\Autocapacitacion\Codigo\Programas_PIC16F887\three_leds.X\newmain.c
+7B2 text1 CODE >83:D:\Autocapacitacion\Codigo\Programas_PIC16F887\three_leds.X\newmain.c
+7B4 text1 CODE >86:D:\Autocapacitacion\Codigo\Programas_PIC16F887\three_leds.X\newmain.c
+7B8 text1 CODE >87:D:\Autocapacitacion\Codigo\Programas_PIC16F887\three_leds.X\newmain.c
+7B9 text1 CODE >90:D:\Autocapacitacion\Codigo\Programas_PIC16F887\three_leds.X\newmain.c
+7BD text1 CODE >91:D:\Autocapacitacion\Codigo\Programas_PIC16F887\three_leds.X\newmain.c
+7BE text1 CODE >92:D:\Autocapacitacion\Codigo\Programas_PIC16F887\three_leds.X\newmain.c
+7BF maintext CODE >44:D:\Autocapacitacion\Codigo\Programas_PIC16F887\three_leds.X\newmain.c
+7BF maintext CODE >47:D:\Autocapacitacion\Codigo\Programas_PIC16F887\three_leds.X\newmain.c
+7C3 maintext CODE >50:D:\Autocapacitacion\Codigo\Programas_PIC16F887\three_leds.X\newmain.c
+7C6 maintext CODE >51:D:\Autocapacitacion\Codigo\Programas_PIC16F887\three_leds.X\newmain.c
+7C7 maintext CODE >55:D:\Autocapacitacion\Codigo\Programas_PIC16F887\three_leds.X\newmain.c
+7CA maintext CODE >56:D:\Autocapacitacion\Codigo\Programas_PIC16F887\three_leds.X\newmain.c
+7CB maintext CODE >58:D:\Autocapacitacion\Codigo\Programas_PIC16F887\three_leds.X\newmain.c
+7CE maintext CODE >59:D:\Autocapacitacion\Codigo\Programas_PIC16F887\three_leds.X\newmain.c
+7D2 maintext CODE >61:D:\Autocapacitacion\Codigo\Programas_PIC16F887\three_leds.X\newmain.c
+7D3 maintext CODE >65:D:\Autocapacitacion\Codigo\Programas_PIC16F887\three_leds.X\newmain.c
+7D7 maintext CODE >66:D:\Autocapacitacion\Codigo\Programas_PIC16F887\three_leds.X\newmain.c
+7DC maintext CODE >67:D:\Autocapacitacion\Codigo\Programas_PIC16F887\three_leds.X\newmain.c
+7E1 maintext CODE >68:D:\Autocapacitacion\Codigo\Programas_PIC16F887\three_leds.X\newmain.c
+7E5 maintext CODE >69:D:\Autocapacitacion\Codigo\Programas_PIC16F887\three_leds.X\newmain.c
+7EA maintext CODE >70:D:\Autocapacitacion\Codigo\Programas_PIC16F887\three_leds.X\newmain.c
+7EE maintext CODE >71:D:\Autocapacitacion\Codigo\Programas_PIC16F887\three_leds.X\newmain.c
+7F3 maintext CODE >72:D:\Autocapacitacion\Codigo\Programas_PIC16F887\three_leds.X\newmain.c
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -118,29 +117,29 @@ __Hspace_3 0 0 ABS 0 - -
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
 _T1CONbits 10 0 ABS 0 - dist/default/production\three_leds.X.production.o
 __Hstrings 0 0 ABS 0 strings -
-___sp 0 0 STACK 2 stack C:\Users\Soul_PC\AppData\Local\Temp\s4v4.o
+___sp 0 0 STACK 2 stack C:\Users\Soul_PC\AppData\Local\Temp\sh64.o
 _main F7E 0 CODE 0 maintext dist/default/production\three_leds.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\three_leds.X.production.o
-start 0 0 CODE 0 init C:\Users\Soul_PC\AppData\Local\Temp\s4v4.o
+start 0 0 CODE 0 init C:\Users\Soul_PC\AppData\Local\Temp\sh64.o
 __size_of_main 0 0 ABS 0 - dist/default/production\three_leds.X.production.o
 __Hpowerup 0 0 CODE 0 powerup -
-intlevel0 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\s4v4.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\s4v4.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\s4v4.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\s4v4.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\s4v4.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\s4v4.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\sh64.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\sh64.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\sh64.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\sh64.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\sh64.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\Soul_PC\AppData\Local\Temp\sh64.o
 wtemp0 7E 0 ABS 0 - dist/default/production\three_leds.X.production.o
 __Hfunctab 0 0 ENTRY 0 functab -
 __Hclrtext 0 0 ABS 0 clrtext -
 _ANSELH 189 0 ABS 0 - dist/default/production\three_leds.X.production.o
 __Lmaintext 0 0 ABS 0 maintext -
-___stackhi 0 0 ABS 0 - C:\Users\Soul_PC\AppData\Local\Temp\s4v4.o
-___stacklo 0 0 ABS 0 - C:\Users\Soul_PC\AppData\Local\Temp\s4v4.o
+___stackhi 0 0 ABS 0 - C:\Users\Soul_PC\AppData\Local\Temp\sh64.o
+___stacklo 0 0 ABS 0 - C:\Users\Soul_PC\AppData\Local\Temp\sh64.o
 __end_of_Timer_Delay F7E 0 CODE 0 text1 dist/default/production\three_leds.X.production.o
 start_initialization FF8 0 CODE 0 cinit dist/default/production\three_leds.X.production.o
 _OSCCON 8F 0 ABS 0 - dist/default/production\three_leds.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\Soul_PC\AppData\Local\Temp\s4v4.o
+___int_sp 0 0 STACK 2 stack C:\Users\Soul_PC\AppData\Local\Temp\sh64.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -180,7 +179,7 @@ __S1 72 0 ABS 0 - -
 __S2 0 0 ABS 0 - -
 __S3 0 0 ABS 0 - -
 __Lintentry 0 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\Soul_PC\AppData\Local\Temp\s4v4.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Soul_PC\AppData\Local\Temp\sh64.o
 __size_of_Timer_Delay 0 0 ABS 0 - dist/default/production\three_leds.X.production.o
 _PIE1bits 8C 0 ABS 0 - dist/default/production\three_leds.X.production.o
 __pmaintext F7E 0 CODE 0 maintext dist/default/production\three_leds.X.production.o

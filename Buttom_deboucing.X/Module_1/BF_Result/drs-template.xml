@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--EDRS Version 2.0-->
+<global>
+   <file name="C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\pic16f887.h" comment="">
+      <struct name="PORTCbits" comment="" line="307" attributes="volatile extern">
+         <struct comment="" line="307" attributes="volatile extern">
+            <scalar name="RC7" comment="" line="307" base_type="uint1" attributes="volatile extern" complete_type="uint1" init_mode="MAIN_GENERATOR" init_modes_allowed="12" init_range="" global_assert="disabled" assert_range="disabled"/>
+         </struct>
+      </struct>
+      <struct name="PORTDbits" comment="" line="369" attributes="volatile extern">
+         <struct comment="" line="369" attributes="volatile extern">
+            <scalar name="RD0" comment="" line="369" base_type="uint1" attributes="volatile extern" complete_type="uint1" init_mode="MAIN_GENERATOR" init_modes_allowed="12" init_range="" global_assert="disabled" assert_range="disabled"/>
+         </struct>
+      </struct>
+      <struct name="PORTEbits" comment="" line="427" attributes="volatile extern">
+         <struct comment="" line="427" attributes="volatile extern">
+            <scalar name="RE0" comment="" line="427" base_type="uint1" attributes="volatile extern" complete_type="uint1" init_mode="MAIN_GENERATOR" init_modes_allowed="12" init_range="" global_assert="disabled" assert_range="disabled"/>
+         </struct>
+      </struct>
+      <struct name="TRISCbits" comment="" line="1557" attributes="volatile extern">
+         <struct comment="" line="1557" attributes="volatile extern">
+            <scalar name="TRISC7" comment="" line="1557" base_type="uint1" attributes="volatile extern" complete_type="uint1" init_mode="MAIN_GENERATOR" init_modes_allowed="12" init_range="" global_assert="disabled" assert_range="disabled"/>
+         </struct>
+      </struct>
+      <struct name="TRISDbits" comment="" line="1619" attributes="volatile extern">
+         <struct comment="" line="1619" attributes="volatile extern">
+            <scalar name="TRISD0" comment="" line="1619" base_type="uint1" attributes="volatile extern" complete_type="uint1" init_mode="MAIN_GENERATOR" init_modes_allowed="12" init_range="" global_assert="disabled" assert_range="disabled"/>
+         </struct>
+      </struct>
+      <struct name="TRISEbits" comment="" line="1677" attributes="volatile extern">
+         <struct comment="" line="1677" attributes="volatile extern">
+            <scalar name="TRISE0" comment="" line="1677" base_type="uint1" attributes="volatile extern" complete_type="uint1" init_mode="MAIN_GENERATOR" init_modes_allowed="12" init_range="" global_assert="disabled" assert_range="disabled"/>
+         </struct>
+      </struct>
+   </file>
+   <file name="D:\\Autocapacitacion\\Codigo\\Programas_PIC16F887\\Buttom_deboucing.X\\main.c" comment="">
+      <function name="main" comment="" line="40" main_generator_called="MAIN_GENERATOR">
+         <scalar name="return" comment="" line="40" base_type="int16" complete_type="int16" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+   </file>
+</global>
